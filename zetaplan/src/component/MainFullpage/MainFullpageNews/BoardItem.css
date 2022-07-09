@@ -1,0 +1,25 @@
+.product-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px 25px;
+}
+.product-item p {
+  display: inline-block;
+}
+.item-title {
+  font-weight: 500;
+  color: #2c3540;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 400px;
+}
+
+.item-date {
+  margin-bottom: 3px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #2c3540;
+  width: 150px;
+  text-align: right;
+}

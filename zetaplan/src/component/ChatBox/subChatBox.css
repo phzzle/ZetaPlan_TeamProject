@@ -1,0 +1,71 @@
+/* ChatBox : Contact Us */
+
+#SubChatBox {
+    width: 10vw;
+    height: 14vw;
+    position: fixed;
+    bottom: 2vw;
+    right: 2vw;
+    z-index: 9999;
+    background-color: #3B4B59;
+    box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.4);
+    border-radius: 2rem;
+    text-align: center;
+}
+
+#SubChatBox .chatbox-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #efefef;
+    margin: 0.6vw 0 0.3vw;
+}
+
+#SubChatBox .chatbox-content {
+    text-align: left;
+    margin: 0 0.6vw;
+}
+
+#SubChatBox .chatbox-content .chatbox-subtitle {
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #efefef;
+    margin: 0.3vw 0;
+    position: relative;
+    padding-left: 1.4vw;
+}
+
+#SubChatBox .chatbox-content .chatbox-subtitle svg {
+    position: absolute;
+    top: 0.1vw;
+    left: 0;
+}
+
+#SubChatBox .chatbox-content p {
+    font-size: 0.8rem;
+    font-weight: normal;
+    color: #efefef;
+    margin: 0.2vw 0;
+}
+
+#SubChatBox .chatbox-btn {
+    width: 8.2vw;
+    height: 2.4vw;
+    line-height: 2.1vw;
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #F27B35;
+    border: 2px solid #efefef;
+    border-radius: 2rem;
+    margin: 0.8vw auto;
+    padding-right: 1vw;
+    box-sizing: border-box;
+    position: relative;
+}
+
+#SubChatBox .chatbox-btn svg {
+    position: absolute;
+    top: 0.25vw;
+    right: 0.2vw;
+}

@@ -1,0 +1,201 @@
+/* Header Area */
+
+* {
+    color: #efefef;
+    box-sizing: border-box;
+}
+
+a {
+    display: block;
+}
+
+#Header {
+    width: 100%;
+    background-color: #2c3540;
+    height: 80px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+}
+
+#Header #MainInner {
+    width: 1440px;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#Header .header-left {
+    width: 240px;
+    height: 100px;
+    background: url(./../../../public/img/common/logo_white.png) no-repeat center / cover;
+    font-size: 0;
+}
+
+#Header .header-nav-wrap .main-nav {
+    width: 870px;
+    line-height: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#Header .header-nav-wrap .main-nav .main-nav-list {
+    width: 145px;
+    position: relative;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#Header .header-nav-wrap .main-nav .main-nav-list .main-sub-nav {
+    width: 145px;
+    height: 300px;
+    line-height: normal;
+    font-size: 13px;
+    font-weight: normal;
+    background-color: #efefef;
+    box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    display: none;
+}
+
+#Header .header-nav-wrap .main-nav:hover .main-sub-nav {
+    display: block;
+    animation: navPop 0.5s linear;
+}
+
+#Header .header-nav-wrap .main-nav .main-nav-list .main-sub-nav .main-sub-nav-ul li {
+    color: #2c3540;
+    padding: 4px 8px;
+    margin: 3px 0;
+}
+
+#Header .header-nav-wrap .main-nav .main-nav-list .main-sub-nav .main-sub-nav-ul li:hover {
+    color: #F27B35;
+}
+
+#Header .header-nav-wrap .main-nav .main-nav-list .main-sub-nav .sub-nav-num {
+    height: 26px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+#Header .header-nav-wrap .main-nav .main-nav-list .main-sub-nav .nav-show-img {
+    width: 16px;
+    height: 16px;
+    display: none;
+}
+
+#Header .header-nav-wrap .main-nav .main-nav-list:hover .main-sub-nav .sub-nav-num {
+    font-size: 0;
+    width: 18px;
+    height: 18px;
+    margin: 7px auto;
+    background: url(./../../../public/img/mainFullpage/mainFullpageMain/star.svg) no-repeat center / cover;
+    animation: navPop 0.5s linear;
+    filter: invert(59%) sepia(68%) saturate(2568%) hue-rotate(340deg) brightness(101%) contrast(90%);
+}
+
+#Header .header-nav-wrap .main-nav .main-nav-list .main-sub-nav .main-sub-detail-nav {
+    margin-top: 6px;
+    text-align: right;
+}
+
+#Header .header-nav-wrap .main-nav .main-nav-list .main-sub-nav .main-sub-detail-nav li {
+    position: relative;
+}
+
+#Header .header-nav-wrap .main-nav .main-nav-list .main-sub-nav .main-sub-detail-nav li svg {
+    position: absolute;
+    top: 6px;
+    left: 0;
+}
+
+#Header .header-right {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#Header .header-right .lang-box {
+    width: 72px;
+    position: relative;
+    background-color: none;
+    padding-left: 16px;
+}
+
+#Header .header-right .lang-box ul {
+    position: absolute;
+    left: 2px;
+    top: 30px;
+    background-color: #efefef;
+    display: none;
+}
+
+#Header .header-right .lang-box:hover ul {
+    display: block;
+    animation: navPop 0.4s ease-in-out;
+}
+
+#Header .header-right .lang-box ul li {
+    margin: 10px 14px;
+    color: #2c3540;
+}
+
+#Header .header-right .lang-box svg {
+    margin-right: 0.5rem;
+    position: absolute;
+    left: 4px;
+}
+
+#Header .header-right .search-box {
+    width: 240px;
+    height: 30px;
+    background-color: rgba(239, 239, 239, 0.8);
+    border-radius: 2rem;
+    margin: 0 20px;
+    line-height: 27px;
+    position: relative;
+}
+
+#Header .header-right .search-box input {
+    width: 136px;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    color: #2c3540;
+    margin-left: 8px;
+}
+
+#Header .header-right .search-box input:focus {
+    outline: none;
+}
+
+#Header .header-right .search-box svg {
+    position: absolute;
+    top: 5px;
+    right: 6px;
+}
+
+@keyframes navPop {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes starPop {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

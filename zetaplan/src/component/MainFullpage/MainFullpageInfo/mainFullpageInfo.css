@@ -1,0 +1,110 @@
+/* info css */
+
+#fullpageInfo{
+    margin: auto;
+    background: url(./../../../../public/img/mainFullpage/mainFullpageInfo/infobg.png) no-repeat center / cover; 
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+#fullpageInfo #MainInner{
+    padding-top: 10%;
+}
+.main-info-box{
+    position: relative;
+    padding-bottom: 10%;
+}
+
+#fullpageInfo .main-info-title-box{
+    position: absolute;
+    top: -15%;
+    left: -13%;
+}
+
+#fullpageInfo .main-info-title {
+    position: relative;
+    font-size: 1.875rem;
+    font-weight: bold;
+    color: #efefef;
+    margin-left: 195px;
+  }
+#fullpageInfo #MainInner .main-info-title span {
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    color: #363636;
+  }
+
+#fullpageInfo .fullpageInfo-boxs {
+    display: grid;
+    grid-template-rows:  repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr) ;
+    grid-gap: 43px; 
+    margin: auto
+ }
+
+#fullpageInfo  .b-inner{
+      width: 1000px;
+      height: auto;
+      margin: auto;
+  }
+
+ #fullpageInfo .ir-box{
+      margin: auto;
+      width: 280px;
+      height: 150px;
+      border-radius: 5px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      box-shadow: 10px 10px 20px grey;
+  }
+#fullpageInfo .detail-box{
+    width: 86px;
+    border-radius: 5px;
+    border: 2px solid #fefefe;
+    color: #fefefe;
+    margin-left: 60%;
+    margin-top: 10%; 
+}
+#fullpageInfo .ir-box .info-detail{
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+}
+    #navy{
+        background-color: rgba(43, 53, 64, 0.8) ;
+        color: #fefefe;
+    }
+    #ivy{
+        background-color: rgba(217, 217, 217, 0.8) ;
+        color: rgb(43, 53, 64);
+    }
+    #ivy>h2, #ivy>p{
+       color: rgb(43, 53, 64);
+    }
+    #ivy .detail-box{
+        border: 2px solid rgb(43, 53, 64);
+         color: rgb(43, 53, 64);
+    }
+   #ivy .detail-box p{
+    color: rgb(43, 53, 64);
+   }
+   #navy-arrow{
+    color: rgb(43, 53, 64);
+    text-align: center;
+    }
+#fullpageInfo  .ir-box>h2{
+      font-size: 1.875rem;
+      font-weight: bold;
+      padding-bottom: 5%;
+  }
+ 
+#fullpageInfo   .detail-box p{
+    text-align: center;
+    padding: 5%;
+}
