@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './MainFullpageNews.css';
-import { FaHandshake, FaBullhorn } from 'react-icons/fa';
+import { FaBullhorn } from 'react-icons/fa';
 import { GrDocumentPerformance } from 'react-icons/gr';
 import { BsFillPlusSquareFill } from 'react-icons/bs';
-import { IoBusinessSharp } from 'react-icons/io5';
+import { IoBusinessSharp, IoNewspaperSharp } from 'react-icons/io5';
 
 import NewsItem from './NewsItem';
 import InvestItem from './InvestItem';
@@ -77,20 +77,25 @@ const MainFullpageNews = () => {
             <div className='board'>
               <h3 className='news-title'>
                 <FaBullhorn fill='#2C3540' size='36px' className='news-icon' />
-                <p>뉴스</p>
+                <p>공지사항</p>
               </h3>
-              <div className='board-list'>{newsList}</div>
-              <a href='http://zetaplan.com/category/news/'>
+              <div className='board-list'>{InvestList}</div>
+              <a href='http://zetaplan.com/ma/ma-deal-info/'>
                 <BsFillPlusSquareFill className='more-icon' />
               </a>
             </div>
             <div className='board'>
               <h3 className='news-title'>
-                <FaHandshake size='36px' fill='#2C3540' className='news-icon' />
-                <p>M&A 투자정보</p>
+                <IoNewspaperSharp
+                  size='36px'
+                  fill='#2C3540'
+                  className='news-icon'
+                />
+                <p>뉴스</p>
               </h3>
-              <div className='board-list'>{InvestList}</div>
-              <a href='http://zetaplan.com/ma/ma-deal-info/'>
+              <div className='board-list'>{newsList}</div>
+
+              <a href='http://zetaplan.com/category/news/'>
                 <BsFillPlusSquareFill className='more-icon' />
               </a>
             </div>
