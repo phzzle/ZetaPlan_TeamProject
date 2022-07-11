@@ -79,7 +79,7 @@ a {
 }
 
 #Header .header-nav-wrap .main-nav .main-nav-list .main-sub-nav .sub-nav-num {
-    height: 26px;
+    height: 30px;
     font-size: 16px;
     font-weight: bold;
     margin-top: 16px;
@@ -87,15 +87,15 @@ a {
 }
 
 #Header .header-nav-wrap .main-nav .main-nav-list .main-sub-nav .nav-show-img {
-    width: 16px;
-    height: 16px;
+    width: 22px;
+    height: 22px;
     display: none;
 }
 
 #Header .header-nav-wrap .main-nav .main-nav-list:hover .main-sub-nav .sub-nav-num {
     font-size: 0;
-    width: 18px;
-    height: 18px;
+    width: 22px;
+    height: 22px;
     margin: 7px auto;
     background: url(./../../../public/img/mainFullpage/mainFullpageMain/star.svg) no-repeat center / cover;
     animation: navPop 0.5s linear;
