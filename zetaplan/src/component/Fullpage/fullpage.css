@@ -4,7 +4,7 @@
     flex-direction: column;
     top: 50%;
     transform: translateY(-50%);
-    left: 5vw;
+    left: 70px;
     z-index: 9999;
 }
 
@@ -21,17 +21,17 @@
 .fullpage-paging button:nth-child(7),
 .fullpage-paging button:nth-child(8),
 .fullpage-paging button:nth-child(9) {
-    width: 0.520vw;
-    height: 0.520vw;
+    width: 8px;
+    height: 8px;
     border-radius: 50%;
     background-color: #2C3540;
     font-size: 0;
-    margin: 0.520vw 0;
+    margin: 8px 0;
 }
 
 .fullpage-paging button:disabled {
     background-color: #EFEFEF;
-    border: 0.130vw solid #2C3540;
+    border: 2px solid #2C3540;
 }
 
 #MainInner {

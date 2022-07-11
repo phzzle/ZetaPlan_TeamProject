@@ -1,11 +1,11 @@
 /* ChatBox : Contact Us */
 
 #ChatBox {
-    width: 10vw;
-    height: 14vw;
+    width: 150px;
+    height: 210px;
     position: fixed;
-    bottom: 2vw;
-    right: 2vw;
+    bottom: 25px;
+    right: 25px;
     z-index: 9999;
     background-color: #3B4B59;
     box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.4);
@@ -17,12 +17,12 @@
     font-size: 1.2rem;
     font-weight: bold;
     color: #efefef;
-    margin: 0.6vw 0 0.3vw;
+    margin: 8px 0 4px;
 }
 
 #ChatBox .chatbox-content {
     text-align: left;
-    margin: 0 0.6vw;
+    margin: 0 8px;
 }
 
 #ChatBox .chatbox-content .chatbox-subtitle {
@@ -30,14 +30,14 @@
     font-size: 1rem;
     font-weight: bold;
     color: #efefef;
-    margin: 0.3vw 0;
+    margin: 4px 0;
     position: relative;
-    padding-left: 1.4vw;
+    padding-left: 20px;
 }
 
 #ChatBox .chatbox-content .chatbox-subtitle svg {
     position: absolute;
-    top: 0.1vw;
+    top: 1px;
     left: 0;
 }
 
@@ -45,27 +45,27 @@
     font-size: 0.8rem;
     font-weight: normal;
     color: #efefef;
-    margin: 0.2vw 0;
+    margin: 4px 0;
 }
 
 #ChatBox .chatbox-btn {
-    width: 8.2vw;
-    height: 2.4vw;
-    line-height: 2.1vw;
+    width: 125px;
+    height: 36px;
+    line-height: 32px;
     display: block;
     font-size: 1rem;
     font-weight: bold;
     background-color: #F27B35;
     border: 2px solid #efefef;
     border-radius: 2rem;
-    margin: 0.8vw auto;
-    padding-right: 1vw;
+    margin: 10px auto;
+    padding-right: 14px;
     box-sizing: border-box;
     position: relative;
 }
 
 #ChatBox .chatbox-btn svg {
     position: absolute;
-    top: 0.25vw;
-    right: 0.2vw;
+    top: 4px;
+    right: 4px;
 }
