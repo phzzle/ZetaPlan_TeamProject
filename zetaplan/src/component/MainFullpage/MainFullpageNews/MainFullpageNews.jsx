@@ -78,11 +78,11 @@ const MainFullpageNews = () => {
               <h3 className='news-title'>
                 <FaBullhorn fill='#2C3540' size='36px' className='news-icon' />
                 <p>공지사항</p>
-                <a href='http://zetaplan.com/ma/ma-deal-info/'>
-                  <BsFillPlusSquareFill className='more-icon' size={24} />
-                </a>
               </h3>
               <div className='board-list'>{InvestList}</div>
+              <a href='http://zetaplan.com/ma/ma-deal-info/'>
+                <BsFillPlusSquareFill className='more-icon' />
+              </a>
             </div>
             <div className='board'>
               <h3 className='news-title'>
@@ -92,11 +92,12 @@ const MainFullpageNews = () => {
                   className='news-icon'
                 />
                 <p>뉴스</p>
-                <a href='http://zetaplan.com/category/news/'>
-                  <BsFillPlusSquareFill className='more-icon' size={24} />
-                </a>
               </h3>
               <div className='board-list'>{newsList}</div>
+
+              <a href='http://zetaplan.com/category/news/'>
+                <BsFillPlusSquareFill className='more-icon' />
+              </a>
             </div>
 
             <div className='board'>
@@ -107,11 +108,11 @@ const MainFullpageNews = () => {
                   className='news-icon'
                 />
                 <p>기업지원정보</p>
-                <a href='http://zetaplan.com/business-support-information/'>
-                  <BsFillPlusSquareFill className='more-icon' size={24} />
-                </a>
               </h3>
               <div className='board-list'>{PolicyinfoList}</div>
+              <a href='http://zetaplan.com/business-support-information/'>
+                <BsFillPlusSquareFill className='more-icon' />
+              </a>
             </div>
 
             <div className='board'>
@@ -121,12 +122,12 @@ const MainFullpageNews = () => {
                   size='36px'
                   className='news-icon'
                 />
-                <p>컨설팅 실적</p>{' '}
-                <a href='http://zetaplan.com/performance-consulting/'>
-                  <BsFillPlusSquareFill className='more-icon' size={24} />
-                </a>
+                <p>컨설팅 실적</p>
               </h3>
               <div className='board-list'>{ConsultingList}</div>
+              <a href='http://zetaplan.com/performance-consulting/'>
+                <BsFillPlusSquareFill className='more-icon' />
+              </a>
             </div>
           </div>
         </div>
