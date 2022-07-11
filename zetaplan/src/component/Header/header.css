@@ -97,7 +97,7 @@ a {
     width: 22px;
     height: 22px;
     margin: 7px auto;
-    background: url(./../../../public/img/mainFullpage/mainFullpageMain/polaris.png) no-repeat center / cover;
+    background: url(./../../../public/img/mainFullpage/mainFullpageMain/star.svg) no-repeat center / cover;
     animation: navPop 0.5s linear;
     filter: invert(59%) sepia(68%) saturate(2568%) hue-rotate(340deg) brightness(101%) contrast(90%);
 }
