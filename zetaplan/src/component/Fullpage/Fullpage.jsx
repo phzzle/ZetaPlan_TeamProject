@@ -6,6 +6,7 @@ import MainFullpageNews from './../MainFullpage/MainFullpageNews/MainFullpageNew
 import MainFullPageAbroad from '../MainFullpage/MainFullPageAbroad/MainFullPageAbroad';
 import MainFullpageInfo from '../MainFullpage/MainFullpageInfo/MainFullpageInfo';
 import MainFullPageFooter from './../MainFullpage/MainFullPageFooter/MainFullPageFooter';
+import CompanyHeader from '../Detail/CompanyHeader';
 
 export default class Fullpage extends React.Component {
   render() {
@@ -27,7 +28,7 @@ export default class Fullpage extends React.Component {
           <MainFullPageFooter />
         </Slide>
         <Slide>
-          <h1>페이지</h1>
+          <CompanyHeader />
         </Slide>
         <Slide>
           <h1>페이지</h1>
