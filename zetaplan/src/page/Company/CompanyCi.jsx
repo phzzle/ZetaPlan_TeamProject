@@ -14,7 +14,7 @@ const CompanyCi = () => {
           인간에게 복을 가져다는 주는 별자리입니다.
         </span>
         <a href="./../../../public/img/common/logo_png" download>
-          <button>JPG 다운로드</button>
+          <button className="download">JPG 다운로드</button>
         </a>
       </div>
     </div>

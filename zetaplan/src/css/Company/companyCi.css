@@ -1,6 +1,6 @@
 #companyCi {
-  color: black;
   text-align: center;
+  color: #333;
 }
 
 #companyCi .logo {
@@ -14,6 +14,6 @@
   transform: translateX(-271px);
 }
 
-#companyCi .logo_content {
-  color: red;
+#companyCi .download {
+  width: 100px;
 }
