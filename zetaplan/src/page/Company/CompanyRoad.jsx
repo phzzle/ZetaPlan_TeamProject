@@ -1,6 +1,6 @@
 import React from 'react';
 
-const AbroadCase = () => {
+const CompanyRoad = () => {
   return (
     <div>
       
@@ -8,4 +8,4 @@ const AbroadCase = () => {
   );
 };
 
-export default AbroadCase;
+export default CompanyRoad;

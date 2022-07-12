@@ -1,15 +1,11 @@
 import React from "react";
-import "./../css/Ci.css";
-import DetailHeader from "./../component/Detail/DetailHeader";
-import DetailFooter from "./../component/Detail/DetailFooter";
+import "./../../css/Company/companyCi.css";
 
-const Ci = () => {
-  return (
-    <div>
-      <DetailHeader />
-      <DetailFooter />
-    </div>
-  );
+const CompanyCi = () => {
+    return (
+      <div>
+      </div>
+    );
 };
 
-export default Ci;
+export default CompanyCi;
