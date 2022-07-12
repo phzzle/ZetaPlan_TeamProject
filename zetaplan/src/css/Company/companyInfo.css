@@ -1,0 +1,126 @@
+#companyInfo {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.company-info-title {
+  font-weight: 700;
+  font-size: 24px;
+  color: #2C3540;
+  margin-bottom: 24px;
+}
+.company-info-title-line {
+  width: 3px;
+  height: 50px;
+  background-color: #3B4B59;
+  margin-bottom: 60px;
+}
+.company-info, .company-info2 {
+  font-size: 0.875rem;
+  color: #2C3540;
+  text-align: center;
+  line-height: 160%;
+  margin-bottom: 60px;
+}
+.company-info2 {
+  margin-bottom: 0;
+  padding: 100px 0;
+}
+.info-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 370px;
+  background-color: #2c354037;
+  padding: 0 100px;
+  color: #2C3540;
+}
+.info-icon-container .info-icon-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.875rem;
+}
+.info-icon-container .info-icon-item .info-icon-box {
+  position: relative;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background-color: #eeeeee;
+  margin-bottom: 16px;
+}
+.info-icon-container .info-icon-item .info-icon-box .info-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+}
+
+.company-info-bg {
+  width: 100%;
+  height: 500px;
+  color: #fff;
+}
+.company-info-bg.info-bg1 {
+  background: url(../../../public/img/Company/CompanyInfo/infoBg1.jpg) no-repeat center / cover;
+  background-attachment: fixed;
+}
+.company-info-bg.info-bg2 {
+  background: url(../../../public/img/Company/CompanyInfo/infoBg2.jpg) no-repeat center / cover;
+  background-attachment: fixed;
+}
+.company-info-bg.info-bg3 {
+  background: url(../../../public/img/Company/CompanyInfo/infoBg3.jpg) no-repeat center / cover;
+  background-attachment: fixed;
+}
+.company-info-bg.info-bg4 {
+  background: url(../../../public/img/Company/CompanyInfo/infoBg4.jpg) no-repeat center / cover;
+  background-attachment: fixed;
+}
+.company-info-desc-box {
+  display: flex;
+  align-items: center;
+  height: 370px;
+}
+.company-info-desc {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  color: #2C3540;
+  background-color: #fff;
+  padding: 0 100px;
+}
+.company-info-desc .company-info-desc-title {
+  font-weight: 700;
+  letter-spacing: 6%;
+  margin-right: 32px;
+}
+.company-info-desc .company-info-desc-line {
+  position: relative;
+  bottom: -10px;
+  display: flex;
+  align-items: center;
+  margin-right: 60px;
+}
+.company-info-desc .company-info-desc-line span {
+  display: block;
+  background-color: #2C3540;
+}
+.company-info-desc .company-info-desc-line span:first-child {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+}
+.company-info-desc .company-info-desc-line span:last-child {
+  width: 100px;
+  height: 1px;
+}
+.company-info-desc .company-info-desc-content {
+  width: 790px;
+  font-size: 0.875rem;
+  line-height: 160%;
+}
