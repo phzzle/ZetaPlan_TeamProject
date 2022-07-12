@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './MainFullpageNews.css';
 import { FaBullhorn } from 'react-icons/fa';
 import { GrDocumentPerformance } from 'react-icons/gr';
-import { BsFillPlusSquareFill } from 'react-icons/bs';
+import { BsPlusLg } from 'react-icons/bs';
 import { IoBusinessSharp, IoNewspaperSharp } from 'react-icons/io5';
 
 import NewsItem from './NewsItem';
@@ -72,57 +72,57 @@ const MainFullpageNews = () => {
           <div className='board-box'>
             <div className='board'>
               <h3 className='news-title'>
-                <FaBullhorn fill='#2C3540' size='36px' className='news-icon' />
+                {/* <FaBullhorn fill='#2C3540' size='36px' className='news-icon' /> */}
                 <p>공지사항</p>
               </h3>
               <div className='board-list'>{InvestList}</div>
               <a href='http://zetaplan.com/ma/ma-deal-info/'>
-                <BsFillPlusSquareFill className='more-icon' />
+                <BsPlusLg className='more-icon' />
               </a>
             </div>
             <div className='board'>
               <h3 className='news-title'>
-                <IoNewspaperSharp
+                {/* <IoNewspaperSharp
                   size='36px'
                   fill='#2C3540'
                   className='news-icon'
-                />
+                /> */}
                 <p>뉴스</p>
               </h3>
               <div className='board-list'>{newsList}</div>
 
               <a href='http://zetaplan.com/category/news/'>
-                <BsFillPlusSquareFill className='more-icon' />
+                <BsPlusLg className='more-icon' />
               </a>
             </div>
 
             <div className='board'>
               <h3 className='news-title'>
-                <IoBusinessSharp
+                {/* <IoBusinessSharp
                   size='36px'
                   fill='#2C3540'
                   className='news-icon'
-                />
+                /> */}
                 <p>기업지원정보</p>
               </h3>
               <div className='board-list'>{PolicyinfoList}</div>
               <a href='http://zetaplan.com/business-support-information/'>
-                <BsFillPlusSquareFill className='more-icon' />
+                <BsPlusLg className='more-icon' />
               </a>
             </div>
 
             <div className='board'>
               <h3 className='news-title'>
-                <GrDocumentPerformance
+                {/* <GrDocumentPerformance
                   fill='#2C3540'
                   size='36px'
                   className='news-icon'
-                />
+                /> */}
                 <p>컨설팅 실적</p>
               </h3>
               <div className='board-list'>{ConsultingList}</div>
               <a href='http://zetaplan.com/performance-consulting/'>
-                <BsFillPlusSquareFill className='more-icon' />
+                <BsPlusLg className='more-icon' />
               </a>
             </div>
           </div>

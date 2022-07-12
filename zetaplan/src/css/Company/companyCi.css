@@ -7,13 +7,28 @@
   width: 542px;
   height: 181px;
   background: url(./.././../../public/img/common/logo.png) no-repeat center / cover;
-
   position: absolute;
-  top: 25%;
+  top: 28%;
   left: 50%;
   transform: translateX(-271px);
 }
 
-#companyCi .download {
-  width: 100px;
+#companyCi .logo_content {
+  margin-top: 450px;
+}
+#companyCi .logo_content .logo_content_top {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+}
+#companyCi .logo_content .logo_content_middle {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+#companyCi .logo_content .logo_content_bottom .download {
+  width: 95px;
+  height: 30px;
+  background-color: #888;
+  color: #efefef;
+  font-weight: bold;
+  margin-top: 30px;
 }
