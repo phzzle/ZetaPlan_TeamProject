@@ -6,8 +6,6 @@
 
 a {
     display: block;
-    width: 100%;
-    height: 100%;
 }
 
 #Header {
@@ -36,6 +34,11 @@ a {
     background: url(./../../../public/img/common/logo_white.png) no-repeat center / cover;
     font-size: 0;
     cursor: pointer;
+}
+
+#Header .header-left a {
+    width: 100%;
+    height: 100%;
 }
 
 #Header .header-nav-wrap .main-nav {
