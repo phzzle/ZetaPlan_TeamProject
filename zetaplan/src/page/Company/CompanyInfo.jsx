@@ -6,10 +6,12 @@ import { TbCertificate } from 'react-icons/tb';
 import { BsGraphUp } from 'react-icons/bs';
 import { FaBalanceScale } from 'react-icons/fa';
 import '../../css/Company/companyInfo.css';
+import CompanyHeader from '../../component/Detail/CompanyHeader';
 
-const CompanyInfo = () => {
+const CompanyInfo = ({title, sub}) => {
   return (
     <div>
+      <CompanyHeader title={title} sub={sub} />
       <div id='SubInner' className='company-info-container'>
         <div className="company-info-title-container">
           <h2 className='company-info-title'>기업소개</h2>

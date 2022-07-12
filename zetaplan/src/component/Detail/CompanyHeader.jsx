@@ -1,12 +1,13 @@
 import React from 'react';
-import { AiFillHome } from "react-icons/ai";
-import './companyHeader.css';
+import { AiFillHome, AiOutlineDown } from "react-icons/ai";
+import './subHeader.css';
 import Header from '../Header/Header';
+import SubChatBox from './../ChatBox/SubChatBox';
 
 const CompanyHeader = ({title, sub}) => {
 
   return (
-    <div id='CompanyHeader'>
+    <div id='SubHeader'>
       <Header />
       <div className='company-header-banner'>
         <div className='company-header-title-wrap'>
@@ -15,7 +16,7 @@ const CompanyHeader = ({title, sub}) => {
         </div>
         <nav className='company-header-nav'>
           <a href='/'><AiFillHome size="30px" /></a>
-          <span className='sub-nav-depth1-title'>{title}
+          <span className='sub-nav-depth1-title'>{title}<AiOutlineDown />
             <ul className='sub-nav-depth1'>
               <li><a href="/company">Company</a></li>
               <li><a href="/mna">M&A/IPO</a></li>
@@ -25,9 +26,9 @@ const CompanyHeader = ({title, sub}) => {
               <li><a href="/notice">Notice</a></li>
             </ul>
           </span>
-          <span className='sub-nav-depth2-sub'>{sub}
+          <span className='sub-nav-depth2-sub'>{sub}<AiOutlineDown />
             <ul className='sub-nav-depth2'>
-              <li><a href="/company/info">기업소개</a></li>
+              <li><a href="/company">기업소개</a></li>
               <li><a href="/company/ci">CI</a></li>
               <li><a href="/company/manpower">Manpower</a></li>
               <li><a href="/company/collabo">협력기관</a></li>
@@ -37,6 +38,7 @@ const CompanyHeader = ({title, sub}) => {
           </span>
         </nav>
       </div>
+      <SubChatBox />
     </div>
   );
 };

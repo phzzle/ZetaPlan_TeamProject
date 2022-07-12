@@ -1,10 +1,13 @@
 import React from 'react';
+import CompanyHeader from '../../component/Detail/CompanyHeader';
+import DetailFooter from '../../component/Detail/DetailFooter';
 import '../../css/Company/companyCollabo.css'
 
 
-const CompanyCollabo = () => {
+const CompanyCollabo = ({title, sub}) => {
   return (
     <div id='CompanyCollabo'>
+      <CompanyHeader title={title} sub={sub}/>
       <h1>협력기관</h1>
       <ul className='company_list'>
         <li><img src="../../../public/img/mainFullpage/mainFullpageFooter/FooterCompanyList/list01.png" alt="" /><a href="/">IPA</a></li>
@@ -70,6 +73,7 @@ const CompanyCollabo = () => {
         <li><img src="../../../public/img/mainFullpage/mainFullpageFooter/FooterCompanyList/list60.png" alt="" /><a href="/">IPA</a></li>
         <li><img src="../../../public/img/mainFullpage/mainFullpageFooter/FooterCompanyList/list61.png" alt="" /><a href="/">IPA</a></li>
       </ul>
+      <DetailFooter />
     </div>
   );
 };

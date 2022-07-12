@@ -1,9 +1,12 @@
 import React from "react";
+import CompanyHeader from "../../component/Detail/CompanyHeader";
+import DetailFooter from "../../component/Detail/DetailFooter";
 import "./../../css/Company/companyCi.css";
 
-const CompanyCi = () => {
+const CompanyCi = ({title, sub}) => {
   return (
     <div id="companyCi">
+      <CompanyHeader title={title} sub={sub} />
       <div className="logo"></div>
       <div className="logo_content">
         <div className="logo_content_top">제타플랜의 CI는 다음과 같은 의미가 있습니다.</div>
@@ -19,6 +22,7 @@ const CompanyCi = () => {
           </a>
         </div>
       </div>
+      <DetailFooter />
     </div>
   );
 };
