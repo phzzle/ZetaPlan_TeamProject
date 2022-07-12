@@ -1,1 +1,7 @@
-.company_list li {}
+.company_list li {
+    background: url(../../../public/img/mainFullpage/mainFullpageFooter/FooterCompanyList/list01.png);
+}
+
+.company_list h1 {
+    color: black;
+}
