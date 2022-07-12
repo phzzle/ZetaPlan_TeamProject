@@ -3,10 +3,14 @@ import { FaSearch } from "react-icons/fa";
 import { TiThMenu } from "react-icons/ti";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { IoEarth } from "react-icons/io5";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './header.css';
 
 const Header = () => {
+  const navigate = useNavigate();
+  const goToSearch = () => {
+    navigate('/search');
+  }
   return (
     <header id='Header'>
       <div id='MainInner'>
@@ -120,7 +124,7 @@ const Header = () => {
           </button>
           <div className='search-box'>
             <input type="text" placeholder='검색어를 입력하세요.'/>
-            <button><FaSearch size="1.2rem" fill='#2c3540'/></button>
+            <button onClick={() => goToSearch()}><FaSearch size="1.2rem" fill='#2c3540'/></button>
           </div>
           <button><TiThMenu size="2rem" /></button>
         </div>

@@ -33,6 +33,7 @@ a {
     height: 80px;
     background: url(./../../../public/img/common/logo_white.png) no-repeat center / cover;
     font-size: 0;
+    cursor: pointer;
 }
 
 #Header .header-nav-wrap .main-nav {
@@ -65,7 +66,7 @@ a {
 
 #Header .header-nav-wrap .main-nav:hover .main-sub-nav {
     display: block;
-    animation: navPop 0.5s linear;
+    animation: navPop 0.4s linear;
 }
 
 #Header .header-nav-wrap .main-nav .main-nav-list .main-sub-nav .main-sub-nav-ul li {
