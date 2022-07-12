@@ -1,5 +1,4 @@
 import React from 'react';
-import '../../css/Company/companycollabo.css'
 
 
 const CompanyCollabo = () => {
