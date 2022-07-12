@@ -6,11 +6,13 @@ const MainFullpageInfo = () => {
   return (
     <div id='fullpageInfo'>
       <div id='MainInner'>
+        <div className="main-info-container">
         <div className='main-info-box'>
           <div className='main-info-title-box'>
             <h2 className='main-info-title'>
-              BUSINESS
+             
               <span>사업소개</span>
+              BUSINESS
             </h2>
           </div>
           <div className='fullpageInfo-boxs'>
@@ -95,6 +97,7 @@ const MainFullpageInfo = () => {
         </div>
       </div>
     </div>
+  </div>
   );
 };
 
