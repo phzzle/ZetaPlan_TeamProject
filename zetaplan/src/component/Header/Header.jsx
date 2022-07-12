@@ -18,12 +18,13 @@ const Header = () => {
                 <a href='#'>Company</a>
                 <div className='main-sub-nav'>
                   <ul className='main-sub-nav-ul'>
-                    <li className="sub-nav-num">1</li>
+                    <li className="sub-nav-star"><div className='navStar'></div></li>
                     <li><a href="#">기업소개</a></li>
                     <li><a href="#">CI</a></li>
                     <li><a href="#">Manpower</a></li>
                     <li><a href="#">협력기관</a></li>
                     <li><a href="#">연혁</a></li>
+                    <li><a href="#">오시는 길</a></li>
                   </ul>
                 </div>
               </li>
@@ -31,7 +32,7 @@ const Header = () => {
                 <a href='#'>M&A/IPO</a>
                 <div className='main-sub-nav'>
                   <ul className='main-sub-nav-ul'>
-                    <li className="sub-nav-num sub-nav-num2">2</li>
+                    <li className="sub-nav-star"><div className='navStar'></div></li>
                     <li>
                       <a href="#">M&A</a>
                       <ul className='main-sub-detail-nav'>
@@ -55,7 +56,7 @@ const Header = () => {
                 <a href='#'>Invest</a>
                 <div className='main-sub-nav'>
                   <ul className='main-sub-nav-ul'>
-                    <li className="sub-nav-num sub-nav-num3">3</li>
+                    <li className="sub-nav-star"><div className='navStar'></div></li>
                     <li><a href="#">투자 개요/사례</a></li>
                     <li><a href="#">사업계획서/IR</a></li>
                     <li><a href="#">전략수립</a></li>
@@ -68,7 +69,7 @@ const Header = () => {
                 <a href='#'>Abroad</a>
                 <div className='main-sub-nav'>
                   <ul className='main-sub-nav-ul'>
-                    <li className="sub-nav-num sub-nav-num4">4</li>
+                    <li className="sub-nav-star"><div className='navStar'></div></li>
                     <li><a href="#">해외 지사 소개</a></li>
                     <li><a href="#">해외 진출 사례</a></li>
                     <li><a href="#">해외진출 컨설팅</a></li>
@@ -79,7 +80,7 @@ const Header = () => {
                 <a href='#'>Industry</a>
                 <div className='main-sub-nav'>
                   <ul className='main-sub-nav-ul'>
-                    <li className="sub-nav-num sub-nav-num5">5</li>
+                    <li className="sub-nav-star"><div className='navStar'></div></li>
                     <li><a href="#">산업 별 이슈</a></li>
                     <li><a href="#">지원사업</a></li>
                     <li><a href="#">기업 인증</a></li>
@@ -94,7 +95,7 @@ const Header = () => {
                 <a href='#'>Notice</a>
                 <div className='main-sub-nav'>
                   <ul className='main-sub-nav-ul'>
-                    <li className="sub-nav-num sub-nav-num6">6</li>
+                    <li className="sub-nav-star"><div className='navStar'></div></li>
                     <li><a href="#">공지사항</a></li>
                     <li><a href="#">뉴스</a></li>
                     <li><a href="#">칼럼</a></li>

@@ -78,29 +78,28 @@ a {
     color: #F27B35;
 }
 
-#Header .header-nav-wrap .main-nav .main-nav-list .main-sub-nav .sub-nav-num {
+#Header .header-nav-wrap .main-nav .main-nav-list .main-sub-nav .sub-nav-star {
     height: 34px;
     font-size: 16px;
     font-weight: bold;
+    text-align: center;
     margin-top: 16px;
     margin-bottom: 16px;
 }
 
-#Header .header-nav-wrap .main-nav .main-nav-list .main-sub-nav .nav-show-img {
+#Header .header-nav-wrap .main-nav .main-nav-list .main-sub-nav .sub-nav-star .navStar {
     width: 26px;
     height: 26px;
-    display: none;
+    margin: 0 auto;
+    background: url(./../../../public/img/mainFullpage/mainFullpageMain/polaris.png) no-repeat center / cover;
+    filter: invert(15%) sepia(22%) saturate(616%) hue-rotate(173deg) brightness(99%) contrast(87%);
+    opacity: 0.5;
 }
 
-#Header .header-nav-wrap .main-nav .main-nav-list:hover .main-sub-nav .sub-nav-num {
-    font-size: 0;
-    width: 26px;
-    height: 26px;
-    margin: 7px auto;
-    background: url(./../../../public/img/mainFullpage/mainFullpageMain/polaris.png) no-repeat center / cover;
+#Header .header-nav-wrap .main-nav .main-nav-list:hover .main-sub-nav .sub-nav-star .navStar {
     animation: navPop 0.5s linear;
     filter: invert(59%) sepia(68%) saturate(2568%) hue-rotate(340deg) brightness(101%) contrast(90%);
-    font-weight: bold;
+    opacity: 1;
 }
 
 #Header .header-nav-wrap .main-nav .main-nav-list .main-sub-nav .main-sub-detail-nav {
