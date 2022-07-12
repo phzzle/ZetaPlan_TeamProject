@@ -1,7 +1,6 @@
 /* Header Area */
 
 * {
-    color: #efefef;
     box-sizing: border-box;
 }
 
@@ -17,6 +16,7 @@ a {
     position: fixed;
     top: 0;
     z-index: 9999;
+    color: #efefef;
 }
 
 #Header #MainInner {

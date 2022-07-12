@@ -1,34 +1,39 @@
 import React from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, Navigate, useNavigate } from 'react-router-dom';
 import { AiFillHome } from "react-icons/ai";
 import { useState } from "react";
+import './companyHeader.css';
+import Header from '../Header/Header';
 
 const CompanyHeader = () => {
-  const menuList = [["기업소개", '/company/info'], ["CI", '/company/ci'], ["Manpower", '/company/manpower'], ["협력기관", '/company/collabo'], ["연혁", '/company/history'], ["오시는 길", '/company/road']];
-  const [selectedMenu, setSelectedMenu] = useState("기업소개");
-
-  const handleSelectedMenu = (e) => {
-    setSelectedMenu(e.target.value);
-  };
+  const navigate = useNavigate();
 
   return (
     <div id='CompanyHeader'>
+      <Header />
       <div className='company-header-banner'>
-        <div>
-          <h2>Company</h2>
-          <p></p>
+        <div className='company-header-title-wrap'>
+          <h2 className='company-header-title'>Company</h2>
+          <p className='company-header-des'>지구상의 모든 기업들의 시작과 성장과 안정을 위한 컨설팅 솔루션 제공</p>
         </div>
-        <nav>
-          <Link to='/'><AiFillHome /></Link>
-          <Link to='/company'>Company</Link>
-          <Link to={selectedMenu[2]}>{selectedMenu[1]}</Link>
-          <div>
-            <select onChange={handleSelectedMenu} value={selectedMenu[1]}>
-              {menuList.map((item) => (
-                <option value={item} key={item}>{item[1]}</option>
-              ))}
-            </select>
-          </div>
+        <nav className='company-header-nav'>
+          <a href='/'><AiFillHome size="30px" /></a>
+          <ul className='sub-nav-depth1'>
+            <li><a href="/company">Company</a></li>
+            <li><a href="/mna">M&A/IPO</a></li>
+            <li><a href="/invest">Invest</a></li>
+            <li><a href="/abroad">Abroad</a></li>
+            <li><a href="/industry">Industry</a></li>
+            <li><a href="/notice">Notice</a></li>
+          </ul>
+          <ul className='sub-nav-depth1'>
+            <li><a href="/company/info">기업소개</a></li>
+            <li><a href="/company/ci">CI</a></li>
+            <li><a href="/company/manpower">Manpower</a></li>
+            <li><a href="/company/collabo">협력기관</a></li>
+            <li><a href="/company/history">연혁</a></li>
+            <li><a href="/company/road">오시는길</a></li>
+          </ul>
         </nav>
       </div>
     </div>
