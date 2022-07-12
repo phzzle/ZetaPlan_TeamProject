@@ -1,0 +1,23 @@
+#CompanyCollabo {
+    text-align: center;
+}
+
+#CompanyCollabo h1 {
+    color: black;
+}
+
+#CompanyCollabo .company_list {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+#CompanyCollabo .company_list li {
+
+    color: black;
+}
+
+#CompanyCollabo .company_list li img {
+    width: 400px;
+    height: 300px;
+}
