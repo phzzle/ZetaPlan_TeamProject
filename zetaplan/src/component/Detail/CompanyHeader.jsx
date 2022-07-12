@@ -1,12 +1,9 @@
 import React from 'react';
-import { Link, Navigate, useNavigate } from 'react-router-dom';
 import { AiFillHome } from "react-icons/ai";
-import { useState } from "react";
 import './companyHeader.css';
 import Header from '../Header/Header';
 
-const CompanyHeader = () => {
-  const navigate = useNavigate();
+const CompanyHeader = ({title, sub}) => {
 
   return (
     <div id='CompanyHeader'>
@@ -18,22 +15,26 @@ const CompanyHeader = () => {
         </div>
         <nav className='company-header-nav'>
           <a href='/'><AiFillHome size="30px" /></a>
-          <ul className='sub-nav-depth1'>
-            <li><a href="/company">Company</a></li>
-            <li><a href="/mna">M&A/IPO</a></li>
-            <li><a href="/invest">Invest</a></li>
-            <li><a href="/abroad">Abroad</a></li>
-            <li><a href="/industry">Industry</a></li>
-            <li><a href="/notice">Notice</a></li>
-          </ul>
-          <ul className='sub-nav-depth1'>
-            <li><a href="/company/info">기업소개</a></li>
-            <li><a href="/company/ci">CI</a></li>
-            <li><a href="/company/manpower">Manpower</a></li>
-            <li><a href="/company/collabo">협력기관</a></li>
-            <li><a href="/company/history">연혁</a></li>
-            <li><a href="/company/road">오시는길</a></li>
-          </ul>
+          <span className='sub-nav-depth1-title'>{title}
+            <ul className='sub-nav-depth1'>
+              <li><a href="/company">Company</a></li>
+              <li><a href="/mna">M&A/IPO</a></li>
+              <li><a href="/invest">Invest</a></li>
+              <li><a href="/abroad">Abroad</a></li>
+              <li><a href="/industry">Industry</a></li>
+              <li><a href="/notice">Notice</a></li>
+            </ul>
+          </span>
+          <span className='sub-nav-depth2-sub'>{sub}
+            <ul className='sub-nav-depth2'>
+              <li><a href="/company/info">기업소개</a></li>
+              <li><a href="/company/ci">CI</a></li>
+              <li><a href="/company/manpower">Manpower</a></li>
+              <li><a href="/company/collabo">협력기관</a></li>
+              <li><a href="/company/history">연혁</a></li>
+              <li><a href="/company/road">오시는길</a></li>
+            </ul>
+          </span>
         </nav>
       </div>
     </div>

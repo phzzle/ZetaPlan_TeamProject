@@ -34,7 +34,7 @@
 
 #CompanyHeader .company-header-banner .company-header-nav {
     position: absolute;
-    width: 1000px;
+    width: 1200px;
     height: 50px;
     background-color: #2C3540;
     bottom: -25px;
@@ -43,18 +43,62 @@
     display: flex;
     line-height: 50px;
     box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.2);
+    color: #efefef;
 }
 
-#CompanyHeader .company-header-banner .company-header-nav svg {
-    margin: 0 20px;
+#CompanyHeader .company-header-nav svg {
+    margin: 0 50px;
 }
 
-#CompanyHeader .company-header-banner .company-header-nav .company-header-title-link {
+#CompanyHeader .company-header-nav .sub-nav-depth1-title,
+#CompanyHeader .company-header-nav .sub-nav-depth2-sub {
+    display: inline-block;
+    width: 180px;
     font-size: 16px;
-    margin: 0 20px;
 }
 
-#CompanyHeader .company-header-banner .company-header-nav .company-header-sub-link {
-    font-size: 1rem;
-    margin: 0 20px;
+#CompanyHeader .company-header-nav .sub-nav-depth1,
+#CompanyHeader .company-header-nav .sub-nav-depth2 {
+    font-size: 0.8rem;
+    position: absolute;
+    background-color: rgba(44, 53, 64, 0.5);
+    display: none;
+}
+
+#CompanyHeader .company-header-nav .sub-nav-depth2-sub:hover .sub-nav-depth2 {
+    display: block;
+    animation: navPop 0.4s ease-in-out;
+}
+
+#CompanyHeader .company-header-nav .sub-nav-depth1-title:hover .sub-nav-depth1 {
+    display: block;
+    animation: navPop 0.4s ease-in-out;
+}
+
+#CompanyHeader .company-header-nav .sub-nav-depth1 li,
+#CompanyHeader .company-header-nav .sub-nav-depth2 li {
+    width: 180px;
+    height: 30px;
+    line-height: 30px;
+}
+
+#CompanyHeader .company-header-nav .sub-nav-depth1 li:hover,
+#CompanyHeader .company-header-nav .sub-nav-depth2 li:hover {
+    background-color: #2C3540;
+}
+
+#CompanyHeader .company-header-nav .sub-nav-depth1 a,
+#CompanyHeader .company-header-nav .sub-nav-depth2 a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes navPop {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
