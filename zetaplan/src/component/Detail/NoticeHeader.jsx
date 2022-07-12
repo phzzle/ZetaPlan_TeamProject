@@ -8,9 +8,9 @@ const NoticeHeader = ({title, sub}) => {
   return (
     <div id='SubHeader'>
       <Header />
-      <div className='company-header-banner'>
+      <div className='company-header-banner notice-header-banner'>
         <div className='company-header-title-wrap'>
-          <h2 className='company-header-title'>M&A / IPO</h2>
+          <h2 className='company-header-title'>Notice</h2>
           <p className='company-header-des'>지구상의 모든 기업들의 시작과 성장과 안정을 위한 컨설팅 솔루션 제공</p>
         </div>
         <nav className='company-header-nav'>

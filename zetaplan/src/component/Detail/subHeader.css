@@ -8,11 +8,34 @@
 #SubHeader .company-header-banner {
     width: 100%;
     height: 100%;
-    background: url(./../../../public/img/common/detail_header.png) no-repeat center / cover;
     text-align: center;
     position: relative;
     box-sizing: border-box;
     z-index: 999;
+}
+
+#SubHeader .company-header-banner.com-header-banner {
+    background: url(./../../../public/img/common/Subbanner/sub_banner1.png) no-repeat center / cover;
+}
+
+#SubHeader .company-header-banner.ma-header-banner {
+    background: url(./../../../public/img/common/Subbanner/sub_banner2.png) no-repeat center / cover;
+}
+
+#SubHeader .company-header-banner.invest-header-banner {
+    background: url(./../../../public/img/common/Subbanner/sub_banner3.png) no-repeat center / cover;
+}
+
+#SubHeader .company-header-banner.abroad-header-banner {
+    background: url(./../../../public/img/common/Subbanner/sub_banner4.png) no-repeat center / cover;
+}
+
+#SubHeader .company-header-banner.industry-header-banner {
+    background: url(./../../../public/img/common/Subbanner/sub_banner5.png) no-repeat center / cover;
+}
+
+#SubHeader .company-header-banner.notice-header-banner {
+    background: url(./../../../public/img/common/Subbanner/sub_banner1.png) no-repeat center / cover;
 }
 
 #SubHeader .company-header-title-wrap {
