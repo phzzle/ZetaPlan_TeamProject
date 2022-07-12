@@ -1,7 +1,14 @@
-.company_list li {
-    background: url(../../../public/img/mainFullpage/mainFullpageFooter/FooterCompanyList/list01.png);
-}
-
 .company_list h1 {
     color: black;
+    font-size: 50px;
+}
+
+.company_list li {
+
+    background: url(../../../public/img/mainFullpage/mainFullpageFooter/FooterCompanyList/list01.png) no-repeat;
+}
+
+.company_list img {
+    width: 800px;
+    height: 500px;
 }

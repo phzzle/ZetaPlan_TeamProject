@@ -7,7 +7,10 @@ const CompanyCollabo = () => {
     <div>
       <h1>협력기관</h1>
       <ul className='company_list'>
-        <li></li>
+        <li><img src="../../../public/img/mainFullpage/mainFullpageFooter/FooterCompanyList/list01.png" alt="" /><a href="/">ipavietnam</a></li>
+        <li><img src="../../../public/img/mainFullpage/mainFullpageFooter/FooterCompanyList/list01.png" alt="" /><a href="/">ipavietnam</a></li>
+        <li><img src="../../../public/img/mainFullpage/mainFullpageFooter/FooterCompanyList/list01.png" alt="" /><a href="/">ipavietnam</a></li>
+        <li><img src="../../../public/img/mainFullpage/mainFullpageFooter/FooterCompanyList/list01.png" alt="" /><a href="/">ipavietnam</a></li>
       </ul>
     </div>
   );
