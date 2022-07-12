@@ -1,0 +1,19 @@
+#companyCi {
+  color: black;
+  text-align: center;
+}
+
+#companyCi .logo {
+  width: 542px;
+  height: 181px;
+  background: url(./.././../../public/img/common/logo.png) no-repeat center / cover;
+
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-271px);
+}
+
+#companyCi .logo_content {
+  color: red;
+}
