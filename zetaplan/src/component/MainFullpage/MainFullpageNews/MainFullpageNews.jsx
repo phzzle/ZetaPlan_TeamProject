@@ -62,10 +62,6 @@ const MainFullpageNews = () => {
     return <ConsultingItem key={item.id} item={item} />;
   });
 
-  /*   newsData.filter(function(e){
-    return e.code === "1234" && e.addr === "부산시 동구 수영동";
-}) */
-
   return (
     <div id='FullpageNews'>
       <div id='newsMainInner'>
