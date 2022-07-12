@@ -12,20 +12,23 @@
 #fullpageAbroad .main-abroad-container {
   position: relative;
   height: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
   background: url(./../../../../public/img/mainFullpage/mainFullpageAbroad/MainAbroadBg.png) no-repeat center / contain;
 }
 #fullpageAbroad .main-abroad-title {
   position: relative;
-  font-size: 27px;
+  font-size: 30px;
   font-weight: bold;
-  color: #efefef;
-  margin-left: 196px;
+  color: #2c3540;
+  padding-left: 20px;
+  margin-top: 20px;
 }
 #fullpageAbroad #MainInner .main-abroad-title span {
   position: absolute;
-  top: 10px;
-  left: -30px;
-  color: #363636;
+  top: -50%;
+  left: 4.5%;
+  z-index: -1;
 }
 #fullpageAbroad .abroad-bg {
   position: absolute;
