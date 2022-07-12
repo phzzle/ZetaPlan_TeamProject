@@ -2,7 +2,7 @@ import React from 'react';
 import { FaCommentsDollar } from 'react-icons/fa';
 import { TbPlaneDeparture } from 'react-icons/tb';
 import { FaRegHandshake } from 'react-icons/fa';
-import { GrCertificate } from 'react-icons/gr';
+import { TbCertificate } from 'react-icons/tb';
 import { BsGraphUp } from 'react-icons/bs';
 import { FaBalanceScale } from 'react-icons/fa';
 import '../../css/Company/companyInfo.css';
@@ -10,9 +10,11 @@ import '../../css/Company/companyInfo.css';
 const CompanyInfo = () => {
   return (
     <div>
-      <div id='companyInfo'>
-        <h2 className='company-info-title'>기업소개</h2>
-        <div className='company-info-title-line'></div>
+      <div id='SubInner' className='company-info-container'>
+        <div className="company-info-title-container">
+          <h2 className='company-info-title'>기업소개</h2>
+          <div className='company-info-title-line'></div>
+        </div>
         <p className='company-info'>
           (주)제타플랜인베스트는 <br/>
           “지구상의 모든 기업들의 시작과 성장과 안정을 위한 컨설팅 솔루션 제공”이라는 대명제를 가지고<br/>
@@ -51,7 +53,7 @@ const CompanyInfo = () => {
           </div>
           <div className="info-icon-item">
             <div className='info-icon-box'>
-              <GrCertificate className='info-icon' />
+              <TbCertificate className='info-icon' />
             </div>
             기업인증 컨설팅
           </div>
