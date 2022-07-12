@@ -7,8 +7,8 @@ const MainFullPageAbroad = () => {
       <div id="MainInner">
         <div className="main-abroad-container">
           <h2 className='main-abroad-title'>
-            ABROAD
-            <span>해외진출</span>
+            해외진출
+            <span>ABROAD</span>
           </h2>
           <div className="abroad-bg"></div>
         </div>
