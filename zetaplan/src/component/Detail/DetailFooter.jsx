@@ -4,8 +4,8 @@ import "./Detail.css";
 const DetailFooter = () => {
     return (
         <div id="DetailFooter">
-            < h1 className="logo" > LOGO</h1 >
-            <div className="footer-info" >
+            <h1 className="logo"> LOGO</h1>
+            <div className="footer-info">
                 <div>
                     Zeta Plan Investment Co., Ltd. Copyright 2006~2020
                     <br />
@@ -25,8 +25,8 @@ const DetailFooter = () => {
                     <strong>Ini Office</strong> 2 Jl Jenderal Gatot Subroto Kav.58, Kuningan Timur setiabudi Jakarta Selatan,
                     Indonesia
                 </div>
-            </div >
-        </div >
+            </div>
+        </div>
     );
 };
 

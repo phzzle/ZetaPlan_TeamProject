@@ -14,16 +14,16 @@ const Header = () => {
   return (
     <header id='Header'>
       <div id='MainInner'>
-        <div className='header-left'><Link to='/'>LOGO</Link></div>
+        <div className='header-left'><a href='/'>LOGO</a></div>
         <div className='header-nav-wrap'>
           <nav className='header-nav'>
           <ul className='main-nav'>
               <li className="main-nav-list">
-                <Link to='company/info'>Company</Link>
+                <Link to='/company'>Company</Link>
                 <div className='main-sub-nav'>
                   <ul className='main-sub-nav-ul'>
                     <li className="sub-nav-star"><div className='navStar'></div></li>
-                    <li><Link to='/company/info'>기업소개</Link></li>
+                    <li><Link to='/company'>기업소개</Link></li>
                     <li><Link to='/company/ci'>CI</Link></li>
                     <li><Link to='/company/manpower'>Manpower</Link></li>
                     <li><Link to='/company/collabo'>협력기관</Link></li>
@@ -46,7 +46,7 @@ const Header = () => {
                       </ul>
                     </li>
                     <li>
-                      <Link to='/ipo'>IPO</Link>
+                      <Link to='/ipo' className='main-sub-nav-ipo'>IPO</Link>
                       <ul className='main-sub-detail-nav'>
                         <li><Link to='/ipo/summary'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />IPO 개요</Link></li>
                         <li><Link to='/ipo/result'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />IPO 성과</Link></li>
@@ -114,7 +114,7 @@ const Header = () => {
         </div>
         <div className='header-right'>
           <button className='lang-box'>
-            <IoEarth size="1rem" />KOR
+            <IoEarth size="1rem" fill='#efefef' />KOR
             <ul>
               <li>KOR</li>
               <li>ENG</li>
@@ -126,7 +126,7 @@ const Header = () => {
             <input type="text" placeholder='검색어를 입력하세요.'/>
             <button onClick={() => goToSearch()}><FaSearch size="1.2rem" fill='#2c3540'/></button>
           </div>
-          <button><TiThMenu size="2rem" /></button>
+          <button><TiThMenu size="2rem" fill='#efefef' /></button>
         </div>
       </div>
     </header>

@@ -1,9 +1,12 @@
 import React from "react";
+import CompanyHeader from "../../component/Detail/CompanyHeader";
+import DetailFooter from "../../component/Detail/DetailFooter";
 import "./../../css/Company/companyCi.css";
 
-const CompanyCi = () => {
+const CompanyCi = ({title, sub}) => {
   return (
     <div id="companyCi">
+      <CompanyHeader />
       <div id="SubInner">
         <div className="logo"></div>
         <div className="logo_content">
@@ -21,6 +24,7 @@ const CompanyCi = () => {
           </div>
         </div>
       </div>
+      <DetailFooter />
     </div>
   );
 };
