@@ -1,11 +1,11 @@
 import React from "react";
 import "./MainFullPageFooter.css";
 import Footer from "../../Footer/Footer";
-import {IoIosArrowDroprightCircle} from "react-icons/io";
+import { IoIosArrowDroprightCircle } from "react-icons/io";
 
 // Import Swiper React components
-import {Swiper, SwiperSlide} from "swiper/react";
-import {Autoplay} from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper";
 
 const MainFullPageFooter = () => {
   return (
