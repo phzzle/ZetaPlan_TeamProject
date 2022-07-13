@@ -7,7 +7,7 @@ const CompanyManpower = ({ title, sub }) => {
   return (
     <div>
       <CompanyHeader title={title} sub={sub} />
-      <div id='SubInner' className='company-manpower-container'>
+      <div id='ManPowerSubInner' className='company-manpower-container'>
         <h1 className='manpower-title'>
           제타플랜 인베스트의 얼굴들을 소개합니다.
         </h1>
