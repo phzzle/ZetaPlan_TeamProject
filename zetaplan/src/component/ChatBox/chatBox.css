@@ -62,6 +62,7 @@
     padding-right: 14px;
     box-sizing: border-box;
     position: relative;
+    color: #efefef;
 }
 
 #ChatBox .chatbox-btn svg {
