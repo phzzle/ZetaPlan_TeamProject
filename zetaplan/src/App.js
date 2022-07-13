@@ -66,8 +66,8 @@ function App() {
             <Route path='/abroad/case' element={<AbroadCase title="Abroad" sub="해외 진출 사례" />} />
             <Route path='/abroad/process' element={<AbroadProcess title="Abroad" sub="해외진출 컨설팅" />} />
             <Route path='/industry' element={<IndustryIssue title="Industry" sub="산업 별 이슈" />} />
-            <Route path='/industry/support' element={<IndustrySupport title="Industry" sub="지원사업" />} />
-            <Route path='/industry/confirm' element={<IndustryConfirm title="Industry" sub="기업 인증" />} />
+            <Route path='/industry/support' element={<IndustrySupport title="Industry" sub="지원 사업" />} />
+            <Route path='/industry/confirm' element={<IndustryConfirm title="Industry" sub="기업/기술 인증" />} />
             <Route path='/industry/transfer' element={<IndustryTransfer title="Industry" sub="기술 이전" />} />
             <Route path='/industry/trade' element={<IndustryTrade title="Industry" sub="기술 거래" />} />
             <Route path='/industry/value' element={<IndustryValue title="Industry" sub="가치 평가" />} />
