@@ -8,26 +8,29 @@
   height: 181px;
   background: url(./.././../../public/img/common/logo.png) no-repeat center / cover;
   position: absolute;
-  top: 28%;
+  top: 40%;
   left: 50%;
   transform: translateX(-271px);
 }
 #companyCi .logo_content {
-  margin-top: 450px;
+  margin-top: 320px;
 }
 #companyCi .logo_content .logo_content_top {
   font-size: 1.4rem;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 #companyCi .logo_content .logo_content_middle {
   font-size: 1rem;
-  line-height: 1.5rem;
+  line-height: 1.7rem;
 }
 #companyCi .logo_content .logo_content_bottom .download {
-  width: 95px;
-  height: 30px;
-  background-color: #888;
-  color: #efefef;
+  width: 200px;
+  height: 40px;
+  background-color: #efefef;
+  border-radius: 10px;
+  border: #2c3540;
+  color: #2c3540;
   font-weight: bold;
-  margin-top: 30px;
+  margin-top: 50px;
+  margin-bottom: 100px;
 }
