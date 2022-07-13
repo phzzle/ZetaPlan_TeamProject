@@ -5,6 +5,7 @@
   line-height: 1.7;
 }
 #maresult #SubInner .mnaipo-maresult-section1 .mnaipo-maresult-title-container {
+  padding-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
