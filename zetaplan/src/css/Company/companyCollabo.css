@@ -4,20 +4,27 @@
 
 #CompanyCollabo h1 {
     color: black;
+    padding: 20px;
+    font-size: 24px;
 }
 
 #CompanyCollabo .company_list {
     display: flex;
     flex-wrap: wrap;
+    margin: 20px 30px;
 
 }
 
 #CompanyCollabo .company_list li {
-
+    line-height: 1;
     color: black;
+    width: 200px;
+    height: 200px;
 }
 
 #CompanyCollabo .company_list li img {
-    width: 400px;
-    height: 300px;
+    width: 70%;
+    height: 20%;
+    margin-bottom: 15px;
+
 }
