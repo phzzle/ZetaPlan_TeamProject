@@ -38,7 +38,7 @@ const Header = () => {
                   <ul className='main-sub-nav-ul'>
                     <li className="sub-nav-star"><div className='navStar'></div></li>
                     <li>
-                      <Link to='/mna'>M&A</Link>
+                      M&A
                       <ul className='main-sub-detail-nav'>
                         <li><Link to='/mna'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />M&A 개요</Link></li>
                         <li><Link to='/mna/result'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />M&A 성과</Link></li>
@@ -46,7 +46,7 @@ const Header = () => {
                       </ul>
                     </li>
                     <li>
-                      <Link to='/ipo' className='main-sub-nav-ipo'>IPO</Link>
+                      <div className='main-sub-nav-ipo'>IPO</div>
                       <ul className='main-sub-detail-nav'>
                         <li><Link to='/ipo'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />IPO 개요</Link></li>
                         <li><Link to='/ipo/result'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />IPO 성과</Link></li>

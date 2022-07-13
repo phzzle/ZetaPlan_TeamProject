@@ -49,11 +49,9 @@ function App() {
             <Route path='/company/collabo' element={<CompanyCollabo title="Company" sub="협력기관" />} />
             <Route path='/company/history' element={<CompanyHistory title="Company" sub="연혁" />} />
             <Route path='/company/road' element={<CompanyRoad title="Company" sub="오시는길" />} />
-            <Route path='/mna' element={<MA title="M&A/IPO" sub="M&A 개요" />} />
             <Route path='/mna' element={<MASummary title="M&A" sub="M&A 개요" />} />
             <Route path='/mna/result' element={<MAResult title="M&A" sub="M&A 성과" />} />
             <Route path='/mna/process' element={<MAProcess title="M&A" sub="M&A 컨설팅 과정" />} />
-            <Route path='/ipo' element={<Ipo title="M&A/IPO" sub="IPO 개요" />} />
             <Route path='/ipo' element={<IpoSummary title="IPO" sub="IPO 개요" />} />
             <Route path='/ipo/result' element={<IpoResult title="IPO" sub="IPO 성과" />} />
             <Route path='/ipo/process' element={<IpoProcess title="IPO" sub="IPO 컨설팅 과정" />} />
