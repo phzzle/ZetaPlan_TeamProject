@@ -1,0 +1,23 @@
+#maresult .mnaipo-maresult-section div {
+  margin-left: 10px;
+  margin-top: 30px;
+  font-size: 14px;
+  line-height: 1.7;
+}
+#maresult #SubInner .mnaipo-maresult-section1 .mnaipo-maresult-title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#maresult .mnaipo-maresult-section1 .mnaipo-maresult-title-container .mnaipo-maresult-title {
+  font-weight: 700;
+  font-size: 24px;
+  color: #2c3540;
+  margin-bottom: 24px;
+}
+#maresult .mnaipo-maresult-section1 .mnaipo-maresult-title-container .mnaipo-maresult-title-line {
+  width: 3px;
+  height: 50px;
+  background-color: #3b4b59;
+  margin-bottom: 60px;
+}
