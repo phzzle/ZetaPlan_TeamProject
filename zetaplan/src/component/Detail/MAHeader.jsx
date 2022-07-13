@@ -19,7 +19,7 @@ const MAHeader = ({title, sub}) => {
             <ul className='sub-nav-depth1'>
               <li><a href="/company">Company</a></li>
               <li><a href="/mna">M&A/IPO</a></li>
-              <li><a href="/invest">Invest</a></li>
+              <li><a href="/invest">투자/경영</a></li>
               <li><a href="/abroad">Abroad</a></li>
               <li><a href="/industry">Industry</a></li>
               <li><a href="/notice">Notice</a></li>

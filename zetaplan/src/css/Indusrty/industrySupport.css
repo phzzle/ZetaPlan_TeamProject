@@ -58,3 +58,35 @@
 #IndustrySupport1 .last-des {
     margin-bottom: 30px;
 }
+
+#IndustrySupport2 {
+    color: #2c3540;
+}
+
+#IndustrySupport2 .industry-support2-sub {
+    font-size: 18px;
+    margin: 25px 0 15px;
+}
+
+#IndustrySupport2 .industry-support2-sub-detail {
+    font-size: 14px;
+    color: #BF0628;
+    margin: 15px 5px;
+}
+
+#IndustrySupport2 .industry-support2-des {
+    font-size: 14px;
+    margin: 0 10px;
+    line-height: 1.4;
+}
+
+#IndustrySupport2 .industry-support2-refer {
+    display: block;
+    margin: 15px 0;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+#IndustrySupport2 .last-des {
+    margin-bottom: 30px;
+}

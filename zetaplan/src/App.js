@@ -7,11 +7,9 @@ import CompanyManpower from './page/Company/CompanyManpower';
 import CompanyCollabo from './page/Company/CompanyCollabo';
 import CompanyHistory from './page/Company/CompanyHistory';
 import CompanyRoad from './page/Company/CompanyRoad';
-import MA from './page/MnAIpo/MA';
 import MASummary from './page/MnAIpo/MASummary';
 import MAResult from './page/MnAIpo/MAResult';
 import MAProcess from './page/MnAIpo/MAProcess';
-import Ipo from './page/MnAIpo/Ipo';
 import IpoSummary from './page/MnAIpo/IpoSummary';
 import IpoResult from './page/MnAIpo/IpoResult';
 import IpoProcess from './page/MnAIpo/IpoProcess';
@@ -36,6 +34,7 @@ import NoticeColumn from './page/Notice/NoticeColumn';
 import NoticeInfo from './page/Notice/NoticeInfo';
 import NoticeInquiry from './page/Notice/NoticeInquiry';
 import NoticeRequest from './page/Notice/NoticeRequest';
+import InvestBusiness from './page/Invest/InvestBusiness';
 
 function App() {
   return (
@@ -55,11 +54,12 @@ function App() {
             <Route path='/ipo' element={<IpoSummary title="IPO" sub="IPO 개요" />} />
             <Route path='/ipo/result' element={<IpoResult title="IPO" sub="IPO 성과" />} />
             <Route path='/ipo/process' element={<IpoProcess title="IPO" sub="IPO 컨설팅 과정" />} />
-            <Route path='/invest' element={<InvestSummary title="Invest" sub="투자개요/사례" />} />
-            <Route path='/invest/plan' element={<InvestPlan title="Invest" sub="사업계획서/IR" />} />
-            <Route path='/invest/strategy' element={<InvestStrategy title="Invest" sub="전략수립" />} />
-            <Route path='/invest/empowerment' element={<InvestEmpowerment title="Invest" sub="역량강화" />} />
-            <Route path='/invest/process' element={<InvestProcess title="Invest" sub="투자 컨설팅 과정" />} />
+            <Route path='/invest/result' element={<InvestSummary title="투자/경영" sub="투자개요/사례" />} />
+            <Route path='/invest' element={<InvestBusiness title="투자/경영" sub="경영컨설팅" />} />
+            <Route path='/invest/plan' element={<InvestPlan title="투자/경영" sub="사업계획서/IR" />} />
+            <Route path='/invest/strategy' element={<InvestStrategy title="투자/경영" sub="전략수립" />} />
+            <Route path='/invest/empowerment' element={<InvestEmpowerment title="투자/경영" sub="역량강화" />} />
+            <Route path='/invest/process' element={<InvestProcess title="투자/경영" sub="투자 컨설팅 과정" />} />
             <Route path='/abroad' element={<AbroadInfo title="Abroad" sub="해외 지사 소개" />} />
             <Route path='/abroad/case' element={<AbroadCase title="Abroad" sub="해외 진출 사례" />} />
             <Route path='/abroad/process' element={<AbroadProcess title="Abroad" sub="해외진출 컨설팅" />} />
