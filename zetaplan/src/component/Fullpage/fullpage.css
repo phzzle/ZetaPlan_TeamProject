@@ -17,10 +17,7 @@
 .fullpage-paging button:nth-child(3),
 .fullpage-paging button:nth-child(4),
 .fullpage-paging button:nth-child(5),
-.fullpage-paging button:nth-child(6),
-.fullpage-paging button:nth-child(7),
-.fullpage-paging button:nth-child(8),
-.fullpage-paging button:nth-child(9) {
+.fullpage-paging button:nth-child(6) {
     width: 8px;
     height: 8px;
     border-radius: 50%;
