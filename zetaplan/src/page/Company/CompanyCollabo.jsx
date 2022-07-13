@@ -1,10 +1,13 @@
 import React from 'react';
+import CompanyHeader from '../../component/Detail/CompanyHeader';
+import DetailFooter from '../../component/Detail/DetailFooter';
 import '../../css/Company/companyCollabo.css'
 
 
-const CompanyCollabo = () => {
+const CompanyCollabo = ({title, sub}) => {
   return (
     <div id='CompanyCollabo'>
+      <CompanyHeader title={title} sub={sub}/>
       <div id='sub-inner'>
         <h1>협력기관</h1>
         <ul className='company_list'>
@@ -72,6 +75,7 @@ const CompanyCollabo = () => {
           <li></li>
         </ul>
       </div>
+      <DetailFooter />
     </div>
   );
 };
