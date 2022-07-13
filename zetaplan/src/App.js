@@ -74,8 +74,8 @@ function App() {
             <Route path='/industry/credit' element={<IndustryCredit title="Industry" sub="신용 평가" />} />
             <Route path='/notice' element={<Notice title="Notice" sub="공지사항" />} />
             <Route path='/notice/news' element={<NoticeNews title="Notice" sub="뉴스" />} />
-            <Route path='/notice/column' element={<NoticeColumn title="Notice" sub="칼럼" />} />
-            <Route path='/notice/info' element={<NoticeInfo title="Notice" sub="문의안내" />} />
+            <Route path='/notice/column' element={<NoticeColumn title="Notice" sub="기업지원정보" />} />
+            <Route path='/notice/info' element={<NoticeInfo title="Notice" sub="컨설팅 실적" />} />
             <Route path='/notice/inquiry' element={<NoticeInquiry title="Notice" sub="문의하기" />} />
             <Route path='/notice/request' element={<NoticeRequest title="Notice" sub="상담신청" />} />
           </Routes>

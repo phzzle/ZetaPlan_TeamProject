@@ -102,8 +102,8 @@ const Header = () => {
                     <li className="sub-nav-star"><div className='navStar'></div></li>
                     <li><Link to='/notice'>공지사항</Link></li>
                     <li><Link to='/notice/news'>뉴스</Link></li>
-                    <li><Link to='/notice/column'>칼럼</Link></li>
-                    <li><Link to='/notice/info'>문의안내</Link></li>
+                    <li><Link to='/notice/column'>기업지원정보</Link></li>
+                    <li><Link to='/notice/info'>컨설팅 실적</Link></li>
                     <li><Link to='/notice/inquiry'>문의하기</Link></li>
                     <li><Link to='/notice/request'>상담신청</Link></li>
                   </ul>

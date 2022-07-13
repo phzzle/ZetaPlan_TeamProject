@@ -29,8 +29,8 @@ const NoticeHeader = ({title, sub}) => {
             <ul className='sub-nav-depth2'>
               <li><a href="/notice">공지사항</a></li>
               <li><a href="/notice/news">뉴스</a></li>
-              <li><a href="/notice/column">칼럼</a></li>
-              <li><a href="/notice/info">문의안내</a></li>
+              <li><a href="/notice/column">기업지원정보</a></li>
+              <li><a href="/notice/info">컨설팅 실적</a></li>
               <li><a href="/notice/inquiry">문의하기</a></li>
               <li><a href="/notice/request">상담신청</a></li>
             </ul>
