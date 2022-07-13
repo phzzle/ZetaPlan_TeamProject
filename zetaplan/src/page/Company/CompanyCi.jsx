@@ -6,7 +6,7 @@ import "./../../css/Company/companyCi.css";
 const CompanyCi = ({title, sub}) => {
   return (
     <div id="companyCi">
-      <CompanyHeader />
+      <CompanyHeader title={title} sub={sub} />
       <div id="SubInner">
         <section>
           <div className="logo"></div>
