@@ -29,7 +29,7 @@ const IndustryHeader = ({title, sub}) => {
             <ul className='sub-nav-depth2'>
               <li><a href="/industry">산업 별 이슈</a></li>
               <li><a href="/industry/support">지원사업</a></li>
-              <li><a href="/industry/confirm">기업 인증</a></li>
+              <li><a href="/industry/confirm">기업/기술 인증</a></li>
               <li><a href="/industry/transfer">기술 이전</a></li>
               <li><a href="/industry/trade">기술 거래</a></li>
               <li><a href="/industry/value">가치 평가</a></li>
