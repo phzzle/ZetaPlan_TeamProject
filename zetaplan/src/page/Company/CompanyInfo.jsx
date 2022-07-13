@@ -7,6 +7,7 @@ import { BsGraphUp } from 'react-icons/bs';
 import { FaBalanceScale } from 'react-icons/fa';
 import '../../css/Company/companyInfo.css';
 import CompanyHeader from '../../component/Detail/CompanyHeader';
+import DetailFooter from '../../component/Detail/DetailFooter';
 
 const CompanyInfo = ({title, sub}) => {
   return (
@@ -129,6 +130,7 @@ const CompanyInfo = ({title, sub}) => {
           </div>
         </div>
       </div>
+      <DetailFooter />
     </div>
   );
 };
