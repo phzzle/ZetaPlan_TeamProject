@@ -1,36 +1,92 @@
 #companyCi {
   text-align: center;
-  color: #333;
+  color: #2c3540;
 }
 
-#companyCi .logo {
-  width: 542px;
-  height: 181px;
+#companyCi .company-ci-section1 .company-ci-title-container {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#companyCi .company-ci-section1 .company-ci-title-container .company-ci-title {
+  font-weight: 700;
+  font-size: 24px;
+  color: #2c3540;
+  margin-bottom: 24px;
+}
+#companyCi .company-ci-section1 .company-ci-title-container .company-ci-title-line {
+  width: 3px;
+  height: 50px;
+  background-color: #3b4b59;
+  margin-bottom: 60px;
+}
+
+#companyCi .company-ci-section2 .logo {
+  width: 419px;
+  height: 135px;
   background: url(./.././../../public/img/common/logo.png) no-repeat center / cover;
-  position: absolute;
-  top: 40%;
+  position: relative;
   left: 50%;
-  transform: translateX(-271px);
+  transform: translateX(-210px);
 }
-#companyCi .logo_content {
-  margin-top: 320px;
+#companyCi .company-ci-section2 .logo-content {
+  margin-top: px;
 }
-#companyCi .logo_content .logo_content_top {
+#companyCi .company-ci-section2 .logo-content .logo-content-top {
   font-size: 1.4rem;
   margin-bottom: 30px;
 }
-#companyCi .logo_content .logo_content_middle {
+#companyCi .company-ci-section2 .logo-content .logo-content-bottom {
   font-size: 1rem;
   line-height: 1.7rem;
+  margin-top: 50px;
+  margin-bottom: 100px;
 }
-#companyCi .logo_content .logo_content_bottom .download {
-  width: 200px;
+.red {
+  color: #bf0628;
+}
+
+/* ================================ */
+
+#companyCi .company-ci-section-left {
+  font-size: 1.4rem;
+  width: 250px;
+  margin: 50px 0 0 15px;
+  font-weight: bold;
+}
+
+.download {
+  width: 250px;
   height: 40px;
   background-color: #efefef;
   border-radius: 10px;
   border: #2c3540;
   color: #2c3540;
   font-weight: bold;
-  margin-top: 50px;
+}
+
+#companyCi .company-ci-section3 {
+  border-top: 1px solid #333;
+  text-align: left;
   margin-bottom: 100px;
+  display: flex;
+}
+
+#companyCi .company-ci-section3 .company-ci-section-right {
+  margin-top: 50px;
+  display: flex;
+  text-align: center;
+}
+
+#companyCi .company-ci-section3 .company-ci-section-right .company-ci-logo-black {
+  background: url(/public/img/common/logo_white.png) center;
+  width: 419px;
+  height: 135px;
+}
+
+#companyCi .company-ci-section3 .company-ci-section-right .company-ci-logo-white {
+  background: url(/public/img/common/logo_white.png) center;
+  width: 419px;
+  height: 135px;
 }
