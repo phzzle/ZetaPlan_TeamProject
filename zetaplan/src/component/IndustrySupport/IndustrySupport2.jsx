@@ -91,9 +91,33 @@ const IndustrySupport2 = () => {
       <h6 className='industry-support2-sub-detail'>재심사청구(심사전치) 제도</h6>
       <p className='industry-support2-des'>심사후 거절결정된 경우 거절결정불복심판을 청구한 후 명세서를 보정한 건에 대해 다 시 심사를 하였으나(심사전치제도) 개정 특허법에 따라 거절결정후 심판청구를 하지 않더라도 보정과 동시에 재심사를 청구하면 심사관에게 다시 심사받을 수 있음(재심사 청구제도)</p>
 
-      <h4 className='industry-support2-sub'>특허심사 주요제도 안내</h4>
-      <h6 className='industry-support2-sub-detail'>우선심사제도</h6>
-      <p className='industry-support2-des'>특허출원은 심사청구 순서에 따라 심사하는 것이 원칙이나, 모든 출원에 대해서 예외 없이 이러한 원칙을 적용하다 보면 공익이나 출원인의 권리를 적절하게 보호할 수 없 는 면이 있어 일정한 요건을 만족하는 출원에 대해서는 심사청구 순위에 관계없이 다 른 출원보다 먼저 심사하는 제도</p>
+      <h4 className='industry-support2-sub'>국제특허분류</h4>
+      <h6 className='industry-support2-sub-detail'>국제특허분류의 성립배경</h6>
+      <p className='industry-support2-des'>미국(USPC), 일본(JPC), 유럽(ECLA) 등 각국마다 다른 분류체계를 사용하여 왔으나, 국제 적으로 통일된 특허 분류체계가 필요함에 따라 1968년에 국제특허분류(IPC)가 도입됨</p>
+      <h6 className='industry-support2-sub-detail'>국제특허분류의 목적</h6>
+      <p className='industry-support2-des'> &#183; 특허문헌을 체계적으로 정리해서, 특허문헌에 포함되어 있는 기술 및 권리정보에 용이 하게 접근할 수 있게 하기 위함 </p>
+      <p className='industry-support2-des'> &#183; 특허정보의 모든 이용자에게 정보를 선택적으로 보급하기 위함</p>
+      <p className='industry-support2-des'> &#183; 주어진 기술분야에서 공지기술을 조사하기 위함</p>
+      <p className='industry-support2-des'> &#183; 여러 영역에서의 기술발전을 평가하는 공업소유권 통계를 내기 위함</p>
+      <h6 className='industry-support2-sub-detail'>국제특허분류의 구조</h6>
+      <p className='industry-support2-des'> &#183; 섹션, 클래스, 서브클래스 및 메인그룹 또는 서브그룹의 계층구조로 이루어짐<br />&lt;예&gt; F16K 1/00(or 1/02)의 경우</p>
+      <p className='industry-support2-des'> &#183; 섹션별 구분 (섹션 타이틀)<br />A 섹션 &#45; 생활필수품<br />B 섹션 &#45; 처리조작, 운수<br />C 섹션 &#45; 화학, 야금<br />D 섹션 &#45; 섬유, 종이<br />E 섹션 &#45; 고정구조물<br />F 섹션 &#45; 기계공학, 조명, 가열, 무기, 폭파<br />G 섹션 &#45; 물리학<br />H 섹션 &#45; 전기</p>
+      <img src="/img/Industry/IndustrySupport/IndustrySupport25.gif" alt="방식심사" />
+
+      <h4 className='industry-support2-sub'>PCT 국제출원</h4>
+      <h6 className='industry-support2-sub-detail'>PCT 국제출원의 개요</h6>
+      <p className='industry-support2-des'>특허협력조약(Patent Cooperation Treaty; PCT)에 의한 국제출원은 출원인이 자국 특허 청(수리관청)에 특허를 받고자 하는 국가를 지정하여 PCT 국제출원서를 제출하면 각 지정국에서 정규의 국내출원으로 인정해 주는 제도로서, 2008.10.1 현재 139개국이 가 입되어 있습니다.</p>
+      <h6 className='industry-support2-sub-detail'>PCT 국제출원의 절차</h6>
+      <p className='industry-support2-des'> &#183; 국제출원이 접수되면 수리관청에서 서류작성의 적정여부 등에 대한 방식심사(접수 후 1월 이내, 우선일 부터 13월경)를 합니다.</p>
+      <p className='industry-support2-des'> &#183; 국제조사기관에서 선행기술조사 및 특허성에 관한 검토를 하여 그 결과를 “국제조사보 고서” 및 “견해서”로 작성(조사용사본의 수령통지일부터 3월 또는 우선일 부터 9월 중 늦은 때까지이며, 통상 우선일 부터 16월경)하여 출원인 및 국제사무국에 통보합니다.<br />국제사무국에서는 우선일 부터 18월경과 후 국제출원 일체 및 국제조사보고서에 대 하여 국제공개를 합니다.</p>
+      <p className='industry-support2-des'> &#183; 별도의 선택적 절차인 국제예비심사를 청구하는 경우(통상 우선일 부터 22월) 국제예 비심사기관은 특허성에 관한 예비적인 심사를 하여 그 결과를 “특허성에 관한 국제예 비보고서(PCT 제2장)”으로 작성하여 출원인에게 통보합니다(통상 우선일 부터 28개월 시점) 출원인은 상기 보고서 등을 기초로 실제 특허를 얻고자 하는 국가에 국제출원의 번역문 및 국내수수료 등을 납부하는 국내단계에 진입(통상 우선일 부터 30개월 이내) 하여 해당 지정국에서 특허 심사절차를 밟게 됩니다. 우리나라는 우선일로부터 31개월 이내에 국내 단계절차를 밟아야 합니다.</p>
+      <span className='industry-support2-refer'>&#42; 우리나라 특허청을 수리관청으로 하여 출원하는 출원인은 국제조사기관으로 한국, 오 스트리아, 호주, 일본 특허청(일본어 출원에 한함)중 하나를 선택할 수 있으며, 국제예 비심사기관으로는 한국, 오스트리아, 일본 특허청(일본에서 국제조사를 받은 경우에 한함) 중 하나를 선택할 수 있습니다.</span>
+      <span className='industry-support2-refer'>&#42; 국외 PCT국제출원 중 우리나라를 국제조사기관으로 지정한 나라는 필리핀, 베트남, 인도, 인도네시아, 몽고, 뉴질랜드, 미국, 싱가포르, 말레이시아가 있습니다.</span>
+      <p className='industry-support2-des'> &#183; 여러 영역에서의 기술발전을 평가하는 공업소유권 통계를 내기 위함</p>
+      <h6 className='industry-support2-sub-detail'> PCT 국제출원에 필요한 서류</h6>
+      <p className='industry-support2-des'> &#183; PCT 국제출원을 하기 위해서는 Request(국제출원서), 명세서, 청구범위, 요약서, 도면 (있는 경우), 서열목록(해당하는 경우)으로 이루어진 국제출원 관련 서류를 별도로 제출 해야합니다. 국내출원시 제출한 서류를 그대로 제출하는 것이 아님에 유의하여야 합니다.</p>
+      <p className='industry-support2-des'> &#183; 명세서도 국내출원과 달리 PCT규칙에서 규정하는 기술순서에 따라 작성하여야 하며, 국내 출원과 달리 명세서와 청구범위를 구분하여 별도로 작성하여야 합니다. 국제출원 서 (Request)는 반드시 영어 또는 일본어(일본어 출원의 경우)로 작성하여야 합니다.</p>
+      <div className='industry-support2-img'><img src="/img/Industry/IndustrySupport/IndustrySupport26.gif" alt="방식심사" /></div>
     </div>
   );
 };

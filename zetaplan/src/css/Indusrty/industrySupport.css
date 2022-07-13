@@ -87,6 +87,47 @@
     line-height: 1.4;
 }
 
-#IndustrySupport2 .last-des {
-    margin-bottom: 30px;
+#IndustrySupport2 .industry-support2-img {
+    margin-bottom: 20px;
+}
+
+#IndustrySupport3 .industry-support3-sub {
+    font-size: 18px;
+    margin: 25px 0 15px;
+}
+
+#IndustrySupport3 .industry-support3-des {
+    font-size: 14px;
+    margin: 0 10px;
+    line-height: 1.4;
+}
+
+#IndustrySupport3 .industry-support3-refer {
+    display: block;
+    margin: 15px 0;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+#IndustrySupport3 .last-des {
+    margin-top: 15px;
+}
+
+#IndustrySupport3 .industry-support3-img {
+    margin-bottom: 20px;
+}
+
+#IndustrySupport4 .industry-support4-sub {
+    font-size: 18px;
+    margin: 25px 0 15px;
+}
+
+#IndustrySupport4 .industry-support4-des {
+    font-size: 14px;
+    margin: 0 10px;
+    line-height: 1.4;
+}
+
+#IndustrySupport4 .industry-support4-img {
+    margin-bottom: 20px;
 }
