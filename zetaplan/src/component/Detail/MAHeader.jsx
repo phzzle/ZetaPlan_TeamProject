@@ -27,12 +27,10 @@ const MAHeader = ({title, sub}) => {
           </span>
           <span className='sub-nav-depth2-sub'>{sub}<AiOutlineDown />
             <ul className='sub-nav-depth2'>
-              <li><a href="/mna">M&A</a></li>
-              <li><a href="/mna/summary">M&A 개요</a></li>
+              <li><a href="/mna">M&A 개요</a></li>
               <li><a href="/mna/result">M&A 성과</a></li>
               <li><a href="/mna/process">M&A 컨설팅 과정</a></li>
-              <li><a href="/ipo">IPO</a></li>
-              <li><a href="/ipo/summary">IPO 개요</a></li>
+              <li><a href="/ipo">IPO 개요</a></li>
               <li><a href="/ipo/result">IPO 성과</a></li>
               <li><a href="/ipo/process">IPO 컨설팅 과정</a></li>
             </ul>

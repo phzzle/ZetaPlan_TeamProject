@@ -1,0 +1,60 @@
+/* Industry 지원 사업 CSS */
+
+#IndustrySupport .industry-support-title {
+    width: 100px;
+    height: 180px;
+    line-height: 180px;
+    margin-top: 25px;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 auto;
+    color: #2c3540;
+}
+
+#IndustrySupport .industry-support-lists {
+    display: flex;
+    border-bottom: 1px solid rgba(44, 53, 64, 0.4);
+}
+
+#IndustrySupport .industry-support-lists .industry-support-list {
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #2c3540;
+    border-top: 1px solid rgba(44, 53, 64, 0.4);
+    border-left: 1px solid rgba(44, 53, 64, 0.4);
+}
+
+#IndustrySupport .industry-support-lists .industry-support-list:last-child {
+    border-right: 1px solid rgba(44, 53, 64, 0.4);
+}
+
+#IndustrySupport .industry-support-content {
+    width: 1200px;
+}
+
+#IndustrySupport1 {
+    color: #2c3540;
+}
+
+#IndustrySupport1 .industry-support1-sub {
+    font-size: 18px;
+    margin: 25px 0 15px;
+}
+
+#IndustrySupport1 .industry-support1-des {
+    font-size: 14px;
+    margin: 0 10px;
+    line-height: 1.4;
+}
+
+#IndustrySupport1 .industry-support1-refer {
+    display: block;
+    margin: 15px 0;
+    font-size: 14px;
+}
+
+#IndustrySupport1 .last-des {
+    margin-bottom: 30px;
+}
