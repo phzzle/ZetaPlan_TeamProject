@@ -2,29 +2,72 @@
     text-align: center;
 }
 
-#CompanyCollabo h1 {
-    color: black;
-    padding: 20px;
-    font-size: 24px;
+
+
+#CompanyCollabo #sub-inner {
+    width: 1200px;
+    margin: 0 auto;
+
 }
 
-#CompanyCollabo .company_list {
+#CompanyCollabo #sub-inner h1 {
+    color: #2C3540;
+    font-size: 24px;
+    margin-top: 25px;
+    height: 180px;
+    line-height: 180px;
+}
+
+#CompanyCollabo #sub-inner .company-info-title-line {
+    width: 3px;
+    height: 50px;
+    background-color: #3B4B59;
+    margin: 0 0 60px 50%;
+
+
+}
+
+#CompanyCollabo #sub-inner .company_list {
     display: flex;
     flex-wrap: wrap;
-    margin: 20px 30px;
-
+    text-align: center;
+    align-items: center;
 }
 
-#CompanyCollabo .company_list li {
+#CompanyCollabo #sub-inner .company_list li {
     line-height: 1;
     color: black;
     width: 200px;
-    height: 200px;
+    height: 130px;
+    position: relative;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
 }
 
-#CompanyCollabo .company_list li img {
-    width: 70%;
-    height: 20%;
-    margin-bottom: 15px;
+#CompanyCollabo #sub-inner .company_list a {
+    position: absolute;
+    display: none;
+    top: 10%;
+    width: 200px;
+    height: 80px;
+}
 
+#CompanyCollabo #sub-inner .company_list li img {
+    width: 70%;
+    height: 30%;
+    margin: 15px 0 0 0;
+
+}
+
+#CompanyCollabo #sub-inner .company_list li:hover a {
+    display: block;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2c3540e6;
+    font-size: 14px;
+    color: #efefef;
 }

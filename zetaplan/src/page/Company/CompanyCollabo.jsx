@@ -4,19 +4,27 @@ import DetailFooter from '../../component/Detail/DetailFooter';
 import '../../css/Company/companyCollabo.css'
 
 
-const CompanyCollabo = ({title, sub}) => {
+const CompanyCollabo = ({ title, sub }) => {
   return (
     <div id='CompanyCollabo'>
-      <CompanyHeader title={title} sub={sub}/>
+      <CompanyHeader title={title} sub={sub} />
       <div id='sub-inner'>
         <h1>협력기관</h1>
+        <div className='company-info-title-line'></div>
         <ul className='company_list'>
-          <li><img src="/img/mainFullpage/mainFullpageFooter/FooterCompanyList/list01.png" alt="" /><a href="/">IPA</a></li>
-          <li><img src="/img/mainFullpage/mainFullpageFooter/FooterCompanyList/list02.png" alt="" /><a href="/">베트남투자계획국</a></li>
-          <li><img src="/img/mainFullpage/mainFullpageFooter/FooterCompanyList/list03.png" alt="" /><a href="/">GDMC(Global Development & Management Consultants)</a></li>
-          <li><img src="/img/mainFullpage/mainFullpageFooter/FooterCompanyList/list04.png" alt="" /><a href="/">서울특별시</a></li>
-          <li><img src="/img/mainFullpage/mainFullpageFooter/FooterCompanyList/list05.png" alt="" /><a href="/">북경북광전자집단</a></li>
-          <li><img src="/img/mainFullpage/mainFullpageFooter/FooterCompanyList/list06.png" alt="" /><a href="/">761공장 C-Space</a></li>
+          <li><img src="/img/mainFullpage/mainFullpageFooter/FooterCompanyList/list01.png" alt="협력기관 IPA" />
+            <a href="https://investvietnam.vn/" target="blank">IPA </a>
+          </li>
+          <li><img src="/img/mainFullpage/mainFullpageFooter/FooterCompanyList/list02.png" alt="" />
+            <a href="/" target="blank">베트남투자계획국</a></li>
+          <li><img src="/img/mainFullpage/mainFullpageFooter/FooterCompanyList/list03.png" alt="" />
+            <a href="/" target="blank"><p>GDMC<br />(Global Development & Management Consultants)</p></a></li>
+          <li><img src="/img/mainFullpage/mainFullpageFooter/FooterCompanyList/list04.png" alt="" />
+            <a href="https://www.seoul.go.kr/main/index.jsp" target="blank">서울특별시</a></li>
+          <li><img src="/img/mainFullpage/mainFullpageFooter/FooterCompanyList/list05.png" alt="" />
+            <a href="http://www.bbef.com/" target="blank">북경북광전자집단</a></li>
+          <li><img src="/img/mainFullpage/mainFullpageFooter/FooterCompanyList/list06.png" alt="" />
+            <a href="http://www.761cspace.com/" target="blank">761공장 C-Space</a></li>
           <li><img src="/img/mainFullpage/mainFullpageFooter/FooterCompanyList/list07.png" alt="" /><a href="/">춘천바이오산업진흥원</a></li>
           <li><img src="/img/mainFullpage/mainFullpageFooter/FooterCompanyList/list08.png" alt="" /><a href="/">경기도</a></li>
           <li><img src="/img/mainFullpage/mainFullpageFooter/FooterCompanyList/list09.png" alt="" /><a href="/">하이서울기업연합회</a></li>
