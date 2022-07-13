@@ -1,5 +1,4 @@
 #companyCi {
-  text-align: center;
   color: #2c3540;
 }
 
@@ -20,6 +19,10 @@
   height: 50px;
   background-color: #3b4b59;
   margin-bottom: 60px;
+}
+
+#companyCi #SubInner {
+  text-align: center;
 }
 
 #companyCi .company-ci-section2 .logo {
@@ -80,7 +83,7 @@
 }
 
 #companyCi .company-ci-section3 .company-ci-section-right .company-ci-logo-black {
-  background: url(/public/img/common/logo_white.png) center;
+  background: url(/public/img/common/logo.png) center;
   width: 419px;
   height: 135px;
 }
