@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import '../../css/Notice/noticeRequest.css';
+import { useNavigate } from 'react-router-dom';
 import DetailFooter from '../../component/Detail/DetailFooter';
 import NoticeHeader from '../../component/Detail/NoticeHeader';
 
 const NoticeRequest = ({title, sub}) => {
+  const navigate = useNavigate();
   const [categoryNum, setCategoryNum] = useState(0);
   const category = [
     {
@@ -42,6 +44,9 @@ const NoticeRequest = ({title, sub}) => {
     let select = category.filter((item)=>{return item.category === currentCategory});
     setCategoryNum(select[0] !== undefined ? select[0].id : 0);
     // e.target.value가 category.category 와 같다면 그에 해당하는 id를 state로 설정한다.
+  }
+  const goBack = () => {
+    navigate(-1);
   }
 
   return (
@@ -82,7 +87,7 @@ const NoticeRequest = ({title, sub}) => {
                           </span>
                         )
                       })
-                      : console.log('categoryNum이 없음')
+                      : null
                     }
                   </div>
                 </td>
@@ -107,6 +112,12 @@ const NoticeRequest = ({title, sub}) => {
               </tr>
               <tr>
                 <th>
+                  <label htmlFor="userPos">직책</label>
+                </th>
+                <td><input type="text" id='userPos' /></td>
+              </tr>
+              <tr>
+                <th>
                   <label htmlFor="companyName">회사명</label>
                 </th>
                 <td><input type="text" id='companyName' className='full-input' /></td>
@@ -116,7 +127,7 @@ const NoticeRequest = ({title, sub}) => {
                   회사 분류
                 </th>
                 <td>
-                  <select name="">
+                  <select name="companyGroup">
                     <option value="">--분류를 선택해주세요. --</option>
                     <option value="거래소기업">거래소기업</option>
                     <option value="코스닥기업">코스닥기업</option>
@@ -134,7 +145,7 @@ const NoticeRequest = ({title, sub}) => {
                   회사 업종
                 </th>
                 <td>
-                  <select name="">
+                  <select name="companyType">
                     <option value="">-- 업종을 선택해주세요. --</option>
                     <option value="농림수산업/광업">농림수산업/광업</option>
                     <option value="식품/생활용품">식품/생활용품</option>
@@ -167,15 +178,15 @@ const NoticeRequest = ({title, sub}) => {
               </tr>
               <tr>
                 <th>
-                  <label htmlFor="">당기 매출</label>
+                  <label htmlFor="currentSale">당기 매출</label>
                 </th>
-                <td><input type="text" /></td>
+                <td><input type="text" id='currentSale' /></td>
               </tr>
               <tr>
                 <th>
-                  <label htmlFor="">예상 매출</label>
+                  <label htmlFor="projectionSale">예상 매출</label>
                 </th>
-                <td><input type="text" /></td>
+                <td><input type="text" id='projectionSale' /></td>
               </tr>
               <tr>
                 <th>
@@ -193,7 +204,7 @@ const NoticeRequest = ({title, sub}) => {
           </table>
           <div className="submit-btn-group">
             <button type="submit" className='request-submit-btn'>신청하기</button>
-            <button type='button' className='request-cancel-btn'>취소</button>
+            <button type='button' className='request-cancel-btn' onClick={goBack}>취소</button>
           </div>
         </form>
       </div>
