@@ -14,9 +14,9 @@ const CompanyInfo = ({title, sub}) => {
     <div>
       <CompanyHeader title={title} sub={sub} />
       <div id='SubInner' className='company-info-container'>
-        <div className="company-info-title-container">
-          <h2 className='company-info-title'>기업소개</h2>
-          <div className='company-info-title-line'></div>
+        <div className="company-title-container">
+          <h2 className='company-title'>기업소개</h2>
+          <div className='company-title-line'></div>
         </div>
         <p className='company-info'>
           (주)제타플랜인베스트는 <br/>
