@@ -8,9 +8,9 @@ const CompanyCollabo = ({ title, sub }) => {
   return (
     <div id='CompanyCollabo'>
       <CompanyHeader title={title} sub={sub} />
-      <div id='sub-inner'>
+      <div id='SubInner'>
         <div className="company-title-container">
-          <h2 className='company-title'>기업소개</h2>
+          <h2 className='company-title'>협력기관</h2>
           <div className='company-title-line'></div>
         </div>
         <ul className='company_list'>
