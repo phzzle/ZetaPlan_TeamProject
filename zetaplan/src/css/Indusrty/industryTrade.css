@@ -1,0 +1,59 @@
+#Trade {
+    color: #2c3540;
+  }
+  
+#Trade .industry-trade-section {
+    margin: 70px 0;
+  }
+#Trade .industry-trade-section div {
+    margin-left: 10px;
+    margin-top: 30px;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+#Trade #SubInner .industry-trade-section1 .industry-trade-title-container {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+#Trade .industry-trade-section1 .industry-trade-title-container .industry-trade-title {
+    font-weight: 700;
+    font-size: 24px;
+    color: #2c3540;
+    margin-bottom: 24px;
+  }
+  
+
+  /* =================== */
+
+  #Trade .industry-trade-part {
+    display: inline-block;
+    font-size: 18px;
+    margin-bottom: 10px;
+    position: relative;
+    font-weight: bold;
+  }
+  
+  #Trade .industry-trade-part::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 1.8px;
+    background-color: rgba(44, 53, 64, 0.5);
+    border-radius: 16px;
+    position: absolute;
+    right: -70px;
+    top: 50%;
+  }
+  
+  #Trade .industry-trade-part-txt {
+      font-size: 14px;
+      line-height: 18px;
+  }
+
+  #Trade .industry-trade-list{
+    list-style-type: disc;
+    box-sizing: border-box;
+    padding-left: 30px;
+  }

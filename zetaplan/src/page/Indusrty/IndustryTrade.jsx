@@ -1,11 +1,24 @@
 import React from 'react';
 import DetailFooter from '../../component/Detail/DetailFooter';
 import IndustryHeader from '../../component/Detail/IndustryHeader';
+import './../../css/Indusrty/industryTrade.css'
+import IndustryTrade1 from '../../component/Industry/Trade/IndustryTrade1';
+
 
 const IndustryTrade = ({title, sub}) => {
   return (
-    <div>
+    <div id='Trade'>
       <IndustryHeader title={title} sub={sub} />
+      <div id='SubInner'>
+        <section className="industry-trade-section1">
+            <div className="industry-trade-title-container">
+              <h2 className="industry-trade-title">기술거래</h2>
+              <div className="industry-trade-title-line"></div>
+            </div>
+        </section>
+        <IndustryTrade1 />
+
+      </div>
       <DetailFooter />
     </div>
   );
