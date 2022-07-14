@@ -7,7 +7,7 @@ const Pagination = ({ total,page,setPage,LIST_PER_PAGE}) => {
    //pagesNumArray.fill('a',5,8);
     console.log(pagesNumArray)
     return (
-        <div classname='paginationBox'>
+        <div className='paginationBox'>
                 <button className='PrevButton' onClick={()=>{setPage(page-1)}} disabled={page === 1}  >
                     이전
                 </button>
