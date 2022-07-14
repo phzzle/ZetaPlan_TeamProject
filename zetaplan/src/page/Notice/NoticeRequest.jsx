@@ -7,36 +7,43 @@ const NoticeRequest = ({title, sub}) => {
   const [categoryNum, setCategoryNum] = useState();
   const category = [
     {
-      id: 0,
-      category: 'M&A 구조조정',
+      id: 1,
+      category: 'M&A구조조정',
       detail: ['기업매도', '기업매수', '기업분할', '기업합병', '구조조정', '기업회생', '기타']
     },
     {
-      id: 1,
+      id: 2,
       category: '기업공개(IPO)',
       detail: ['코스닥', '코넥스상장', '유가증권', '주식공모', '우회상장', '해외상장', 'IR', '기타']
     },
     {
-      id: 2,
+      id: 3,
       category: '기업인증',
       detail: ['벤처기업', '이노비즈', '메인비즈', '연구소', '유망중소기업', '예비벤처', '기타']
     },
     {
-      id: 3,
+      id: 4,
       category: '정책자금',
       detail: ['운전자금', '시설자금', '기술금융', '창업자금', '출연자금', 'B2B 구매', 'P-CBO', '사업전환', '현동화', '협업화', '성장공유', '협업사업', '수출금융', '기타']
     },
     {
-      id: 4,
+      id: 5,
       category: '경영자문',
       detail: ['투자금융', 'PF 금융', '기업진단', '전략컨설팅', '재무자문', '계약자문', '법률자문', '기술/기업 가치평가', '학술용역', '세무회계', '인사/노무', '쿠폰제 컨설팅', '기타']
     },
     {
-      id: 5,
+      id: 6,
       category: '품질/시스템',
       detail: ['ISO', 'NET', 'NEP', 'GS', 'GD', 'KS', 'CE', 'UL', 'CCC', 'JJS', 'FDA', 'RoHS', 'K마크', 'HACCP', 'OHSAS', 'TS16949', 'TL9000', 'Q마크', 'S마크', 'KPS', '우수제품', '서비스품질우수기업', '국방품질경영시스템', 'IR52', '고효율기자재', '특허', '실용신안', '디자인', '성능인증', '친환경마크', '기타']
     }
-  ]
+  ];
+  const handleCategoryFnc = (e) => {
+    let currentCategory = e.target.value;
+    let select = category.filter((item)=>{return item.category === currentCategory});
+    console.log(select[0])
+    setCategoryNum(select[0] !== undefined ? select[0].id : 0);
+    // e.target.value가 category.category 와 같다면 그에 해당하는 id를 state로 설정한다.
+  }
 
   return (
     <div>
@@ -56,30 +63,28 @@ const NoticeRequest = ({title, sub}) => {
                   컨설팅 분야
                 </th>
                 <td>
-                  <select name="category" className='consulting-category'>
-                    <option value="">-- 컨설팅 분야를 선택해주세요. --</option>
-                    <option value="M&A구조조정">M&amp;A구조조정</option>
-                    <option value="기업공개">기업공개(IPO)</option>
+                  <select name="category" className='consulting-category' onChange={handleCategoryFnc}>
+                    <option value="none">-- 컨설팅 분야를 선택해주세요. --</option>
+                    <option value="M&amp;A구조조정">M&amp;A구조조정</option>
+                    <option value="기업공개(IPO)">기업공개(IPO)</option>
                     <option value="기업인증">기업인증</option>
                     <option value="정책자금">정책자금</option>
                     <option value="경영자문">경영자문</option>
                     <option value="품질/시스템">품질/시스템</option>
                   </select>
                   <div className='request-category-chkbox'>
-                    <input type="checkbox" value="기업매도" id='category1' />
-                    <label htmlFor="category1">기업매도</label>
-                    <input type="checkbox" value="기업매수" id='category2' />
-                    <label htmlFor="category2">기업매수</label>
-                    <input type="checkbox" value="기업분할" id='category3' />
-                    <label htmlFor="category3">기업분할</label>
-                    <input type="checkbox" value="기업합병" id='category4' />
-                    <label htmlFor="category4">기업합병</label>
-                    <input type="checkbox" value="구조조정" id='category5' />
-                    <label htmlFor="category5">구조조정</label>
-                    <input type="checkbox" value="기업회생" id='category6' />
-                    <label htmlFor="category6">기업회생</label>
-                    <input type="checkbox" value="기타" id='category7' />
-                    <label htmlFor="category7">기타</label>
+                    {
+                      categoryNum
+                      ? category[categoryNum].detail.map((ele)=>{
+                        return (
+                          <span className='category-chkbox-item'>
+                            <input type="checkbox" value="기업매도" id='category1' />
+                            <label htmlFor="category1">{ele}</label>
+                          </span>
+                        )
+                      })
+                      : null
+                    }
                   </div>
                 </td>
               </tr>
