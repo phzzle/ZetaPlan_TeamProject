@@ -9,9 +9,7 @@ const CompanyManpower = ({ title, sub }) => {
       <CompanyHeader title={title} sub={sub} />
       <div id='SubInner'>
         <div className='company-title-container'>
-          <h1 className='company-title'>
-            제타플랜 인베스트의 얼굴들을 소개합니다.
-          </h1>
+          <h1 className='company-title'>Manpower</h1>
           <div className='company-title-line'></div>
         </div>
         <ul className='manpower-box'>
@@ -22,6 +20,12 @@ const CompanyManpower = ({ title, sub }) => {
               <div className='manpower-image-cover'></div>
             </li>
           </a>
+          <div className='ex-box'>
+            <div className='ex-inner-box'>
+              <div className='ex-name'></div>
+              <div className='ex-sentence'></div>
+            </div>
+          </div>
           <li className='manpower-image'>
             <span>홍현권</span>
             <span>대표 컨설턴트</span>
