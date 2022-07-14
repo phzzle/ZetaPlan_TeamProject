@@ -1,8 +1,7 @@
 import React from 'react';
 import DetailFooter from '../../component/Detail/DetailFooter';
 import IndustryHeader from '../../component/Detail/IndustryHeader';
-import IssueList from './IndustryIssue/IssueList';
-
+import IssueList from '../../component/Industry/Issue/IssueList';
 
 const IndustryIssue = ({title, sub}) => {
   return (
