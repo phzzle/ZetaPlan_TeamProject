@@ -33,6 +33,10 @@
   font-family: 'Noto Sans KR', sans-serif;
   padding: 8px 10px;
 }
+#requestForm .request-form-table .request-category-chkbox {
+  display: flex;
+  flex-wrap: wrap;
+}
 #requestForm .request-form-table .request-category-chkbox label {
   margin-right: 8px;
 }
