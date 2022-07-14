@@ -8,7 +8,7 @@ const NoticeInquiry = ({ title, sub }) => {
     <div>
       <NoticeHeader title={title} sub={sub} />
       <div id='SubInner'>
-        <h2 className='notice-detail-title'>문의하기</h2>
+        <h2 className='detail-title'>문의하기</h2>
       </div>
       <DetailFooter />
     </div>

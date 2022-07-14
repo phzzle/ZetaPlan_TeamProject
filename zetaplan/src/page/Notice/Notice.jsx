@@ -8,7 +8,7 @@ const Notice = ({ title, sub }) => {
     <div>
       <NoticeHeader title={title} sub={sub} />
       <div id='SubInner'>
-        <h2 className='notice-detail-title'>공지사항</h2>
+        <h2 className='detail-title'>공지사항</h2>
       </div>
       <DetailFooter />
     </div>
