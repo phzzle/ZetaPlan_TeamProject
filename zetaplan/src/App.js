@@ -1,4 +1,5 @@
 import './App.css';
+import React, { useState } from 'react';
 import {Routes,Route, BrowserRouter} from 'react-router-dom';
 import Fullpage from './component/Fullpage/Fullpage';
 import CompanyInfo from './page/Company/CompanyInfo';
@@ -35,9 +36,11 @@ import NoticeInfo from './page/Notice/NoticeInfo';
 import NoticeInquiry from './page/Notice/NoticeInquiry';
 import NoticeRequest from './page/Notice/NoticeRequest';
 import InvestBusiness from './page/Invest/InvestBusiness';
-import IndustryConfirmContent1 from './page/Indusrty/IndustryConfrim/IndustryConfirmContent1';
+import confirmList from './component/Industry/IndustryConfirm/industry_confirm.json';
+import IndustryConfirmContent from './page/Indusrty/IndustryConfrim/IndustryConfirmContent';
 
 function App() {
+  let [items, setItems] = useState(confirmList);
   return (
     <div className='App'>
       <BrowserRouter>
@@ -67,7 +70,7 @@ function App() {
             <Route path='/industry' element={<IndustryIssue title="Industry" sub="산업 별 이슈" />} />
             <Route path='/industry/support' element={<IndustrySupport title="Industry" sub="지원 사업" />} />
             <Route path='/industry/confirm' element={<IndustryConfirm title="Industry" sub="기업/기술 인증" />} />
-            <Route path="/industry/confirm/1" component={<IndustryConfirmContent1 title="Industry" sub="기업/기술 인증" />}/>
+            <Route path="/industry/confirm/detail/:id" component={<IndustryConfirmContent title="Industry" sub="기업/기술 인증" data={items} />}/>
             <Route path='/industry/transfer' element={<IndustryTransfer title="Industry" sub="기술 이전" />} />
             <Route path='/industry/trade' element={<IndustryTrade title="Industry" sub="기술 거래" />} />
             <Route path='/industry/value' element={<IndustryValue title="Industry" sub="가치 평가" />} />

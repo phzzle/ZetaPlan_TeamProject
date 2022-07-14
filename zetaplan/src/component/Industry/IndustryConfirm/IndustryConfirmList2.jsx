@@ -8,7 +8,7 @@ const IndustryConfirmList2 = () => {
   
   return (
     <div id='IndustryConfirmList2'>
-      <h4 className='industry-confirm-sub'>기술 / 제품 인증 목록</h4>
+      <h4 className='company-road-part'>기술 / 제품 인증 목록</h4>
       <div className='industry-confirm-list'>
       {
         list.map((ele) => <IndustryConfirmItem key={ele.id} data={ele} />)
