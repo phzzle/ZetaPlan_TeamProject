@@ -54,8 +54,24 @@
   border: 2px solid #2c3540;
 }
 #iposummary table th {
+  text-align: center;
+  background-color: rgba(59, 75, 89, 0.8);
+  color: #efefef;
+  font-size: 16px;
+  padding: 20px;
+}
+#iposummary table td {
+  padding: 10px 20px 10px;
 }
 
+#iposummary table dt {
+  font-weight: bold;
+}
+#iposummary table dd {
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
 /* =========================================== */
 
 #iposummary .iposummary-effect dt {
