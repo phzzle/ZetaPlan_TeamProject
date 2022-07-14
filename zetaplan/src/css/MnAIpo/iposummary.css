@@ -50,7 +50,7 @@
   border-collapse: collapse;
 }
 #iposummary table th,
-td {
+#iposummary table td {
   border: 2px solid #2c3540;
 }
 #iposummary table th {
