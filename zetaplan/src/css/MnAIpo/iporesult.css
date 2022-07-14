@@ -1,0 +1,14 @@
+#iporesult .mnaipo-iporesult-section1 .mnaipo-iporesult-title-container {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#iporesult .mnaipo-iporesult-section1 .mnaipo-iporesult-title-container .mnaipo-iporesult-title {
+  font-weight: 700;
+  font-size: 24px;
+  color: #2c3540;
+  margin-bottom: 24px;
+}
+
+/* ============================================== */
