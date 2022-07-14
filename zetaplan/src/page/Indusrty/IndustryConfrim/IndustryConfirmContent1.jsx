@@ -1,12 +1,12 @@
-import React, {useState} from 'react';
-import DetailFooter from '../../component/Detail/DetailFooter';
-import IndustryHeader from '../../component/Detail/IndustryHeader';
-import IndustryConfirmList1 from '../../component/Industry/IndustryConfirm/IndustryConfirmList1';
-import { MAP_DATA_CONFIRM } from './../../component/Industry/IndustryConfirm/MapDataConfirm';
-import IndustryConfirmList0 from './../../component/Industry/IndustryConfirm/IndustryConfirmList0';
-import IndustryConfirmList2 from './../../component/Industry/IndustryConfirm/IndustryConfirmList2';
+import React, { useState } from 'react';
+import IndustryHeader from '../../../component/Detail/IndustryHeader';
+import DetailFooter from '../../../component/Detail/DetailFooter';
+import IndustryConfirmList1 from '../../../component/Industry/IndustryConfirm/IndustryConfirmList1';
+import { MAP_DATA_CONFIRM } from './../../../component/Industry/IndustryConfirm/MapDataConfirm';
+import IndustryConfirmList0 from './../../../component/Industry/IndustryConfirm/IndustryConfirmList0';
+import IndustryConfirmList2 from './../../../component/Industry/IndustryConfirm/IndustryConfirmList2';
 
-const IndustryConfirm = ({title, sub}) => {
+const IndustryConfirmContent1 = ({title, sub}) => {
   const [content, setContent] = useState('first');
 
   const buttonValueSetting = e => {
@@ -21,8 +21,8 @@ const IndustryConfirm = ({title, sub}) => {
   };
 
   return (
-    <div id='IndustryConfirm'>
-      <IndustryHeader title={title} sub={sub} />
+    <div id='IndustryConfirmContent'>
+      <IndustryHeader title={title} sub={sub}/>
       <div id='SubInner'>
         <h2 className='detail-title'>지원 사업</h2>
         <nav className='detail-tab-lists'>
@@ -36,9 +36,8 @@ const IndustryConfirm = ({title, sub}) => {
       </nav>
       {content && <div className='detail-tab-content'>{selectComponent[content]}</div>}
       </div>
-      <DetailFooter />
     </div>
   );
 };
 
-export default IndustryConfirm;
+export default IndustryConfirmContent1;

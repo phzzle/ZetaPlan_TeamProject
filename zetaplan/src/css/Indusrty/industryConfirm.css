@@ -10,7 +10,7 @@
 .industry-confirm-sub {
     width: 400px;
     text-align: center;
-    margin: 0 auto;
+    margin: 20px auto;
     font: 18px;
 }
 
@@ -18,6 +18,55 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+}
+
+#IndustryConfirmList0 {
+    color: #2c3540;
+    width: 1200px;
+    padding: 20px 20px;
+    box-sizing: border-box;
+}
+
+#IndustryConfirmList0>p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 10px 0;
+    color: #2c3540;
+}
+
+#IndustryConfirmList0>p strong {
+    color: #BF0628;
+    font-weight: bold;
+}
+
+#IndustryConfirmList0>span {
+    display: block;
+    font-size: 14px;
+    color: #2c3540;
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+#IndustryConfirmList0>h5 {
+    font-size: 18px;
+    color: #F27B35;
+    margin: 15px 0;
+}
+
+#IndustryConfirmList0>h6 {
+    text-align: center;
+    font-size: 14px;
+    color: #BF0628;
+    margin: 20px 0;
+}
+
+#IndustryConfirmList0 .industry-confirm0-img {
+    width: 1000px;
+    margin-bottom: 20px;
+}
+
+#IndustryConfirmList0 .industry-confirm0-img img {
+    width: 100%;
 }
 
 #IndustryConfirmItem {

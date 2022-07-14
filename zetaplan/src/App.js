@@ -35,6 +35,7 @@ import NoticeInfo from './page/Notice/NoticeInfo';
 import NoticeInquiry from './page/Notice/NoticeInquiry';
 import NoticeRequest from './page/Notice/NoticeRequest';
 import InvestBusiness from './page/Invest/InvestBusiness';
+import IndustryConfirmContent1 from './page/Indusrty/IndustryConfrim/IndustryConfirmContent1';
 
 function App() {
   return (
@@ -66,6 +67,7 @@ function App() {
             <Route path='/industry' element={<IndustryIssue title="Industry" sub="산업 별 이슈" />} />
             <Route path='/industry/support' element={<IndustrySupport title="Industry" sub="지원 사업" />} />
             <Route path='/industry/confirm' element={<IndustryConfirm title="Industry" sub="기업/기술 인증" />} />
+            <Route path="/industry/confirm/1" component={<IndustryConfirmContent1 title="Industry" sub="기업/기술 인증" />}/>
             <Route path='/industry/transfer' element={<IndustryTransfer title="Industry" sub="기술 이전" />} />
             <Route path='/industry/trade' element={<IndustryTrade title="Industry" sub="기술 거래" />} />
             <Route path='/industry/value' element={<IndustryValue title="Industry" sub="가치 평가" />} />
