@@ -7,10 +7,13 @@ const CompanyManpower = ({ title, sub }) => {
   return (
     <div>
       <CompanyHeader title={title} sub={sub} />
-      <div id='ManPowerSubInner' className='company-manpower-container'>
-        <h1 className='manpower-title'>
-          제타플랜 인베스트의 얼굴들을 소개합니다.
-        </h1>
+      <div id='SubInner'>
+        <div className='company-title-container'>
+          <h1 className='company-title'>
+            제타플랜 인베스트의 얼굴들을 소개합니다.
+          </h1>
+          <div className='company-title-line'></div>
+        </div>
         <ul className='manpower-box'>
           <a href='#'>
             <li className='manpower-image'>
@@ -55,6 +58,11 @@ const CompanyManpower = ({ title, sub }) => {
             <div className='manpower-image-cover'></div>
           </li>
           <li className='manpower-image'>
+            <span>조영성</span>
+            <span>책임 컨설턴트 / 이사</span>
+            <div className='manpower-image-cover'></div>
+          </li>
+          <li className='manpower-image'>
             <span>최근영</span>
             <span>책임 컨설턴트</span>
             <div className='manpower-image-cover'></div>
@@ -66,6 +74,11 @@ const CompanyManpower = ({ title, sub }) => {
           </li>
           <li className='manpower-image'>
             <span>편은범</span>
+            <span>수석 컨설턴트</span>
+            <div className='manpower-image-cover'></div>
+          </li>
+          <li className='manpower-image'>
+            <span>이경진</span>
             <span>수석 컨설턴트</span>
             <div className='manpower-image-cover'></div>
           </li>
@@ -82,16 +95,6 @@ const CompanyManpower = ({ title, sub }) => {
           <li className='manpower-image'>
             <span>엄성식</span>
             <span>수석 컨설턴트 / 이사</span>
-            <div className='manpower-image-cover'></div>
-          </li>
-          <li className='manpower-image'>
-            <span>이경진</span>
-            <span>수석 컨설턴트</span>
-            <div className='manpower-image-cover'></div>
-          </li>
-          <li className='manpower-image'>
-            <span>조영성</span>
-            <span>책임 컨설턴트 / 이사</span>
             <div className='manpower-image-cover'></div>
           </li>
           <li className='manpower-image'>
