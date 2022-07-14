@@ -31,7 +31,7 @@ const IndustrySupport = ({title, sub}) => {
         <nav className='industry-support-lists'>
           {MAP_DATA.map(data => {
           return (
-            <button className='industry-support-list' onClick={buttonValueSetting} name={data.name} key={data.id}>
+            <button className={content === data.name? 'industry-support-list active' : 'industry-support-list'} onClick={buttonValueSetting} name={data.name} key={data.id}>
               {data.text}
             </button>
           );

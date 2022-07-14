@@ -1,7 +1,7 @@
 /* Industry 지원 사업 CSS */
 
 .detail-title {
-    width: 100px;
+    width: 400px;
     height: 180px;
     line-height: 180px;
     margin-top: 25px;
@@ -24,6 +24,11 @@
     color: #2c3540;
     border-top: 1px solid rgba(44, 53, 64, 0.4);
     border-left: 1px solid rgba(44, 53, 64, 0.4);
+}
+
+#IndustrySupport .industry-support-lists .industry-support-list.active {
+    background-color: rgba(44, 53, 64, 0.1);
+    font-weight: bold;
 }
 
 #IndustrySupport .industry-support-lists .industry-support-list:last-child {

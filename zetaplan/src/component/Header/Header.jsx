@@ -120,7 +120,6 @@ const Header = () => {
               <li>KOR</li>
               <li>ENG</li>
               <li>CH</li>
-              <li>JP</li>
             </ul>
           </button>
           <div className='search-box'>
