@@ -16,3 +16,31 @@
   color: #2c3540;
   margin-bottom: 24px;
 }
+
+/* ========================= */
+
+#maresult .mnaipo-maresult-lists {
+  display: flex;
+  border-bottom: 1px solid rgba(44, 53, 64, 0.4);
+}
+
+#MaResult1,
+#MaResult2 {
+  color: #2c3540;
+  width: 1200px;
+  padding: 20px 20px;
+  box-sizing: border-box;
+}
+
+.mnaipo-maresult-sub {
+  width: 400px;
+  text-align: center;
+  margin: 0 auto;
+  font: 18px;
+}
+
+.mnaipo-maresult-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
