@@ -4,7 +4,7 @@ import DetailFooter from '../../component/Detail/DetailFooter';
 import NoticeHeader from '../../component/Detail/NoticeHeader';
 
 const NoticeRequest = ({title, sub}) => {
-  const [categoryNum, setCategoryNum] = useState();
+  const [categoryNum, setCategoryNum] = useState(0);
   const category = [
     {
       id: 1,
@@ -40,7 +40,6 @@ const NoticeRequest = ({title, sub}) => {
   const handleCategoryFnc = (e) => {
     let currentCategory = e.target.value;
     let select = category.filter((item)=>{return item.category === currentCategory});
-    console.log(select[0])
     setCategoryNum(select[0] !== undefined ? select[0].id : 0);
     // e.target.value가 category.category 와 같다면 그에 해당하는 id를 state로 설정한다.
   }
@@ -75,15 +74,15 @@ const NoticeRequest = ({title, sub}) => {
                   <div className='request-category-chkbox'>
                     {
                       categoryNum
-                      ? category[categoryNum].detail.map((ele)=>{
+                      ? category[categoryNum-1].detail.map((ele, idx)=>{
                         return (
-                          <span className='category-chkbox-item'>
-                            <input type="checkbox" value="기업매도" id='category1' />
-                            <label htmlFor="category1">{ele}</label>
+                          <span className='category-chkbox-item' key={idx}>
+                            <input type="checkbox" value={ele} id={'category' + idx} />
+                            <label htmlFor={"category" + idx}>{ele}</label>
                           </span>
                         )
                       })
-                      : null
+                      : console.log('categoryNum이 없음')
                     }
                   </div>
                 </td>
