@@ -20,7 +20,7 @@ const IpoSummary = ({title, sub}) => {
             IPO(Initial Public Offering)란 비상장기업이 정해진 절차에 따라 일반 불특정 다수의 투자자들에게 새로 주식을
             발행하거나 기존 주식을 매출하여 유가증권시장 또는 코스닥시장에 상장하는 행위를 말합니다.
           </div>
-        </section>{" "}
+        </section>
         <section className="mnaipo-iposummary-section">
           <span className="mnaipo-iposummary-part">IPO의 효과</span>
           <div className="iposummary-effect">
