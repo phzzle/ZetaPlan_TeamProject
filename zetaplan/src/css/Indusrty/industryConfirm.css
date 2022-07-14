@@ -1,0 +1,62 @@
+#IndustryConfirmList0,
+#IndustryConfirmList1,
+#IndustryConfirmList2 {
+    color: #2c3540;
+    width: 1200px;
+    padding: 20px 20px;
+    box-sizing: border-box;
+}
+
+.industry-confirm-sub {
+    width: 400px;
+    text-align: center;
+    margin: 0 auto;
+    font: 18px;
+}
+
+.industry-confirm-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#IndustryConfirmItem {
+    width: 200px;
+    height: 80px;
+    margin: 40px;
+    position: relative;
+    border: 1px solid rgba(44, 53, 64, 0.1);
+    overflow: hidden;
+}
+
+#IndustryConfirmItem .industry-confirm-list-img {
+    width: 200px;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+}
+
+#IndustryConfirmItem .industry-confirm-list-img img {
+    width: 180px;
+    height: auto;
+    max-height: 100%;
+}
+
+#IndustryConfirmItem .industry-confirm-list-title {
+    display: block;
+    width: 200px;
+    height: 80px;
+    line-height: 80px;
+    font-size: 14px;
+    text-align: center;
+    color: #efefef;
+    background-color: rgba(44, 53, 64, 0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+#IndustryConfirmItem:hover .industry-confirm-list-title {
+    display: block;
+}

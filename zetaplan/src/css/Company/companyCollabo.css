@@ -6,25 +6,6 @@
 
 #CompanyCollabo #sub-inner {
     width: 1200px;
-    margin: 0 auto;
-
-}
-
-#CompanyCollabo #sub-inner h1 {
-    color: #2C3540;
-    font-size: 24px;
-    margin-top: 25px;
-    height: 180px;
-    line-height: 180px;
-}
-
-#CompanyCollabo #sub-inner .company-info-title-line {
-    width: 3px;
-    height: 50px;
-    background-color: #3B4B59;
-    margin: 0 0 60px 50%;
-
-
 }
 
 #CompanyCollabo #sub-inner .company_list {
@@ -40,9 +21,6 @@
     width: 200px;
     height: 130px;
     position: relative;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
 }
 
 #CompanyCollabo #sub-inner .company_list a {

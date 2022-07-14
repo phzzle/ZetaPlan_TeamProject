@@ -9,8 +9,10 @@ const CompanyCollabo = ({ title, sub }) => {
     <div id='CompanyCollabo'>
       <CompanyHeader title={title} sub={sub} />
       <div id='sub-inner'>
-        <h1>협력기관</h1>
-        <div className='company-info-title-line'></div>
+        <div className="company-title-container">
+          <h2 className='company-title'>기업소개</h2>
+          <div className='company-title-line'></div>
+        </div>
         <ul className='company_list'>
           <li><img src="/img/mainFullpage/mainFullpageFooter/FooterCompanyList/list01.png" alt="협력기관 IPA" />
             <a href="https://investvietnam.vn/" target="blank">IPA </a>
