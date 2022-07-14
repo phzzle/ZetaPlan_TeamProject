@@ -19,28 +19,30 @@
 
 /* ========================= */
 
-#maresult .mnaipo-maresult-lists {
+.detail-tab-lists {
   display: flex;
   border-bottom: 1px solid rgba(44, 53, 64, 0.4);
 }
 
-#MaResult1,
-#MaResult2 {
-  color: #2c3540;
-  width: 1200px;
-  padding: 20px 20px;
-  box-sizing: border-box;
-}
-
-.mnaipo-maresult-sub {
-  width: 400px;
+.detail-tab-lists .detail-tab-list {
+  width: 140px;
+  height: 40px;
+  line-height: 40px;
   text-align: center;
-  margin: 0 auto;
-  font: 18px;
+  color: #2c3540;
+  border-top: 1px solid rgba(44, 53, 64, 0.4);
+  border-left: 1px solid rgba(44, 53, 64, 0.4);
 }
 
-.mnaipo-maresult-list {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+.detail-tab-lists .detail-tab-list.active {
+  background-color: rgba(44, 53, 64, 0.1);
+  font-weight: bold;
+}
+
+.detail-tab-lists .detail-tab-list:last-child {
+  border-right: 1px solid rgba(44, 53, 64, 0.4);
+}
+
+.detail-tab-content {
+  width: 1200px;
 }

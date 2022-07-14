@@ -31,11 +31,11 @@ const MAResult = ({title, sub}) => {
         </section>
         <section className="mnaipo-maresult-section">
           <div>
-            <nav className="mnaipo-maresult-lists">
+            <nav className="detail-tab-lists">
               {RESULT_DATA.map(data => {
                 return (
                   <button
-                    className={content === data.name ? "mna-result-list active" : "mna-result-list"}
+                    className={content === data.name ? "detail-tab-list active" : "detail-tab-list"}
                     onClick={buttonValueSetting}
                     name={data.name}
                     key={data.id}
@@ -45,7 +45,7 @@ const MAResult = ({title, sub}) => {
                 );
               })}
             </nav>
-            {content && <div className="mnaipo-maresult-content">{selectComponent[content]}</div>}
+            {content && <div className="detail-tab-content ">{selectComponent[content]}</div>}
           </div>
         </section>
       </div>
