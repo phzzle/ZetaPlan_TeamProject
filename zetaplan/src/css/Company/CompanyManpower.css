@@ -1,0 +1,61 @@
+/* ManPower 인력 CSS */
+
+#SubInner {
+  width: 1200px;
+  max-width: 1200px;
+  margin: 0 auto;
+} /* 건들면 안돼 */
+
+.manpower-image {
+  position: relative;
+  background-image: url(../../../public/img/Company/CompanyManpower/people.png);
+  width: 279px;
+  height: 320px;
+  background-size: cover;
+}
+
+/* .manpower-image-cover {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+} */
+
+.manpower-image span:nth-child(1) {
+  width: 300px;
+  position: absolute;
+  /*   top: 86%;
+  left: 73%; */
+  top: 87%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.5em;
+  z-index: 2;
+  text-align: center;
+  color: #3b4b59;
+}
+.manpower-image span:nth-child(2) {
+  width: 200px;
+  position: absolute;
+  /*   top: 95%;
+  left: 73%; */
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1rem;
+  font-weight: 400;
+  z-index: 2;
+  text-align: center;
+  color: #3b4b59;
+}
+
+.manpower-box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 55px;
+  column-gap: 28px;
+  justify-items: center;
+}

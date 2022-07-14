@@ -22,7 +22,7 @@ const MainFullpageInfo = () => {
                 국,내외 투자기관 네트워크로 최적의 IR 지원
               </p>
               <div className='detail-box'>
-                <a href='#'>
+                <a href='/invest/result'>
                   <p>
                     <ImArrowRight2 /> 자세히보기
                   </p>
@@ -37,7 +37,7 @@ const MainFullpageInfo = () => {
                 팀
               </p>
               <div className='detail-box'>
-                <a href='#'>
+                <a href='/mna'>
                   <p>
                     {' '}
                     <ImArrowRight2 fill='rgb(43, 53, 64)' /> 자세히보기{' '}
@@ -51,7 +51,7 @@ const MainFullpageInfo = () => {
                 체계적인 분석으로 최적의 IPO 절차 컨설팅 제공{' '}
               </p>
               <div className='detail-box'>
-                <a href='#'>
+                <a href='/ipo'>
                   <p>
                     <ImArrowRight2 /> 자세히보기
                   </p>
@@ -62,7 +62,7 @@ const MainFullpageInfo = () => {
               <h2>해외진출</h2>
               <p className='info-detail'>단계별 KEY Module 해법제공</p>
               <div className='detail-box'>
-                <a href='#'>
+                <a href='/abroad/process'>
                   <p>
                     <ImArrowRight2 fill='rgb(43, 53, 64)' /> 자세히보기
                   </p>
@@ -76,7 +76,7 @@ const MainFullpageInfo = () => {
                 서비스 컨설팅{' '}
               </p>
               <div className='detail-box'>
-                <a href='#'>
+                <a href='/invest'>
                   <p>
                     <ImArrowRight2 /> 자세히보기
                   </p>

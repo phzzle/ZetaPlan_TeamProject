@@ -57,11 +57,12 @@ const Header = () => {
                 </div>
               </li>
               <li className="main-nav-list">
-                <Link to='/invest'>Invest</Link>
+                <Link to='/invest'>투자/경영</Link>
                 <div className='main-sub-nav'>
                   <ul className='main-sub-nav-ul'>
                     <li className="sub-nav-star"><div className='navStar'></div></li>
-                    <li><Link to='/invest'>투자 개요/사례</Link></li>
+                    <li><Link to='/invest'>경영 컨설팅</Link></li>
+                    <li><Link to='/invest/result'>투자 개요/사례</Link></li>
                     <li><Link to='/invest/plan'>사업계획서/IR</Link></li>
                     <li><Link to='/invest/strategy'>전략수립</Link></li>
                     <li><Link to='/invest/empowerment'>역량강화</Link></li>
@@ -119,7 +120,6 @@ const Header = () => {
               <li>KOR</li>
               <li>ENG</li>
               <li>CH</li>
-              <li>JP</li>
             </ul>
           </button>
           <div className='search-box'>
