@@ -27,7 +27,7 @@ const IndustrySupport = ({title, sub}) => {
     <div id='IndustrySupport'>
       <IndustryHeader title={title} sub={sub} />
       <div id='SubInner'>
-        <h2 className='industry-support-title'>지원 사업</h2>
+        <h2 className='detail-title'>지원 사업</h2>
         <nav className='industry-support-lists'>
           {MAP_DATA.map(data => {
           return (

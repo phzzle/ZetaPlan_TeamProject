@@ -25,7 +25,10 @@ const CompanyRoad = ({title, sub}) => {
     <div id='CompanyRoad'>
       <CompanyHeader title={title} sub={sub}/>
       <div id="SubInner">
-        <h2 className="company-road-title">오시는 길</h2>
+        <div className="company-title-container">
+          <h2 className="company-title">오시는 길</h2>
+          <div className="company-title-line"></div>
+        </div>
         <div className="company-road-wrap">
           <span className='company-road-part'>서울본사</span>
           <p className='company-road-address'>주소 : 서울특별시 금천구 디지털로 130 남성프라자 1210호</p>

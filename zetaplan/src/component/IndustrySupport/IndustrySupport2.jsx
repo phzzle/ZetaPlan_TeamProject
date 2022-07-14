@@ -34,14 +34,12 @@ const IndustrySupport2 = () => {
       <p className='industry-support2-des'>&#183; 출원서 : 출원인, 대리인 및 발명(고안)의 명칭 등</p>
       <p className='industry-support2-des'>&#183; 명세서<br /> &#45; 발명의 상세한 설명 : 지식경재부령이 정하는 기재방법에 따라 명확하고 상세하게 기재<br /> &#45; 청구범위 : 특허발명의 보호범위<br /> &#45; 도면 : 필요한 경우 기술구성을 도시하여 발명을 명확히 표현<br /> &#45; 요약서 : 발명을 요약정리 (기술정보로 활용)</p>
       <h6 className='industry-support2-sub-detail'>특허심사 관련 안내</h6>
-      <p className='industry-support2-des'>&#183; 특허출원 및 심사절차 흐름도</p>
-      <img src="/img/Industry/IndustrySupport/IndustrySupport20.gif" alt="특허출원 및 심사절차 흐름도" />
-      <img src="/img/Industry/IndustrySupport/IndustrySupport21.gif" alt="특허출원 및 심사절차 흐름도" />
+      <div className="industry-support-img"><img src="/img/Industry/IndustrySupport/IndustrySupport20.png" alt="특허출원 심사절차" /></div>
 
       <h4 className='industry-support2-sub'>주요절차 설명</h4>
       <h6 className='industry-support2-sub-detail'>방식심사</h6>
       <p className='industry-support2-des'>서식의 필수사항 기재 여부, 기간의 준수여부, 증명서 첨부 여부, 수수료 납부 여부 등 절 차상의 흠결을 점검하는 심사</p>
-      <img src="/img/Industry/IndustrySupport/IndustrySupport22.gif" alt="방식심사" />
+      <div className="industry-support-img"><img src="/img/Industry/IndustrySupport/IndustrySupport21.png" alt="방식심사" /></div>
       <h6 className='industry-support2-sub-detail'>심사청구</h6>
       <p className='industry-support2-des'>심사업무를 경감하기 위하여 모든 출원을 심사하는 대신 출원인이 심사를 청구한 출원에 대해서만 심사하는 제도 특허출원에 대하여 출원 후 5년간 심사청구를 하지 않으면 출원 이 없었던 것으로 간주(실용신안등록출원의 심사청구기간은 3년)</p>
       <span className='industry-support2-refer'>&#42; 방어출원 : 특허권을 얻기보다는 타인의 권리 획득을 막기 위한 출원</span>
@@ -52,8 +50,8 @@ const IndustrySupport2 = () => {
       <h6 className='industry-support2-sub-detail'>실체심사</h6>
       <p className='industry-support2-des'> &#183; 특허요건, 즉 산업상 이용가능성, 신규성 및 진보성을 판단하는 심사</p>
       <p className='industry-support2-des'> &#183; 이와 함께 공개의 대가로 특허를 부여하게 되므로 일반인이 쉽게 실시할 수 있도록 기 재하고 있는가를 동시에 심사(기재요건)</p>
-      <img src="/img/Industry/IndustrySupport/IndustrySupport23.gif" alt="방식심사" />
-      <img src="/img/Industry/IndustrySupport/IndustrySupport24.gif" alt="방식심사" />
+      <div className="industry-support-img"><img src="/img/Industry/IndustrySupport/IndustrySupport22.png" alt="실체심사" /></div>
+      <div className="industry-support-img"><img src="/img/Industry/IndustrySupport/IndustrySupport23.png" alt="실체심사 거절이유" /></div>
       <span className='industry-support2-refer'>&#42; 최초/최후 거절이유 통지와 보정각하<br />심사관은 심사에 착수하여 거절이유를 발견하면 최초거절이유를 통지하고 심사 착수후 보정서가 제출되어 다시 심사한 결과 보정에 의해 발생한 거절이유를 발견하면 최후거절이유를 통지, 심사관은 최후거절이유를 통지한 후 보정에 보정각하 사유를 발견하면 결정으로 보정을 각하하고 이전 명세서로 심사</span>
       <h6 className='industry-support2-sub-detail'>특허결정</h6>
       <p className='industry-support2-des'>해당 출원이 특허요건을 충족하는 경우, 심사관이 특허를 부여하는 처분</p>
@@ -102,7 +100,7 @@ const IndustrySupport2 = () => {
       <h6 className='industry-support2-sub-detail'>국제특허분류의 구조</h6>
       <p className='industry-support2-des'> &#183; 섹션, 클래스, 서브클래스 및 메인그룹 또는 서브그룹의 계층구조로 이루어짐<br />&lt;예&gt; F16K 1/00(or 1/02)의 경우</p>
       <p className='industry-support2-des'> &#183; 섹션별 구분 (섹션 타이틀)<br />A 섹션 &#45; 생활필수품<br />B 섹션 &#45; 처리조작, 운수<br />C 섹션 &#45; 화학, 야금<br />D 섹션 &#45; 섬유, 종이<br />E 섹션 &#45; 고정구조물<br />F 섹션 &#45; 기계공학, 조명, 가열, 무기, 폭파<br />G 섹션 &#45; 물리학<br />H 섹션 &#45; 전기</p>
-      <img src="/img/Industry/IndustrySupport/IndustrySupport25.gif" alt="방식심사" />
+      <img src="/img/Industry/IndustrySupport/IndustrySupport24.gif" alt="방식심사" />
 
       <h4 className='industry-support2-sub'>PCT 국제출원</h4>
       <h6 className='industry-support2-sub-detail'>PCT 국제출원의 개요</h6>
@@ -117,7 +115,7 @@ const IndustrySupport2 = () => {
       <h6 className='industry-support2-sub-detail'> PCT 국제출원에 필요한 서류</h6>
       <p className='industry-support2-des'> &#183; PCT 국제출원을 하기 위해서는 Request(국제출원서), 명세서, 청구범위, 요약서, 도면 (있는 경우), 서열목록(해당하는 경우)으로 이루어진 국제출원 관련 서류를 별도로 제출 해야합니다. 국내출원시 제출한 서류를 그대로 제출하는 것이 아님에 유의하여야 합니다.</p>
       <p className='industry-support2-des'> &#183; 명세서도 국내출원과 달리 PCT규칙에서 규정하는 기술순서에 따라 작성하여야 하며, 국내 출원과 달리 명세서와 청구범위를 구분하여 별도로 작성하여야 합니다. 국제출원 서 (Request)는 반드시 영어 또는 일본어(일본어 출원의 경우)로 작성하여야 합니다.</p>
-      <div className='industry-support2-img'><img src="/img/Industry/IndustrySupport/IndustrySupport26.gif" alt="방식심사" /></div>
+      <div className='industry-support2-img'><img src="/img/Industry/IndustrySupport/IndustrySupport25.gif" alt="방식심사" /></div>
     </div>
   );
 };

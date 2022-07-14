@@ -1,6 +1,6 @@
 /* Industry 지원 사업 CSS */
 
-#IndustrySupport .industry-support-title {
+.detail-title {
     width: 100px;
     height: 180px;
     line-height: 180px;
@@ -34,13 +34,23 @@
     width: 1200px;
 }
 
-#IndustrySupport1 {
+#IndustrySupport1,
+#IndustrySupport2,
+#IndustrySupport3,
+#IndustrySupport4 {
     color: #2c3540;
+    width: 1200px;
+    padding: 20px 20px;
+    box-sizing: border-box;
 }
 
-#IndustrySupport1 .industry-support1-sub {
+#IndustrySupport1 .industry-support1-sub,
+#IndustrySupport2 .industry-support2-sub,
+#IndustrySupport3 .industry-support3-sub,
+#IndustrySupport4 .industry-support4-sub {
     font-size: 18px;
-    margin: 25px 0 15px;
+    font-weight: bold;
+    margin: 25px 0 20px;
 }
 
 #IndustrySupport1 .industry-support1-des {
@@ -49,14 +59,22 @@
     line-height: 1.4;
 }
 
+#IndustrySupport1 .industry-support1-des strong {
+    font-weight: bold;
+}
+
+.industry-support-img {
+    width: 1000px;
+}
+
+.industry-support-img img {
+    width: 100%;
+}
+
 #IndustrySupport1 .industry-support1-refer {
     display: block;
     margin: 15px 0;
     font-size: 14px;
-}
-
-#IndustrySupport1 .last-des {
-    margin-bottom: 30px;
 }
 
 #IndustrySupport2 {
@@ -77,12 +95,12 @@
 #IndustrySupport2 .industry-support2-des {
     font-size: 14px;
     margin: 0 10px;
-    line-height: 1.4;
+    line-height: 1.8;
 }
 
 #IndustrySupport2 .industry-support2-refer {
     display: block;
-    margin: 15px 0;
+    margin: 15px;
     font-size: 14px;
     line-height: 1.4;
 }
@@ -113,10 +131,6 @@
     margin-top: 15px;
 }
 
-#IndustrySupport3 .industry-support3-img {
-    margin-bottom: 20px;
-}
-
 #IndustrySupport4 .industry-support4-sub {
     font-size: 18px;
     margin: 25px 0 15px;
@@ -126,8 +140,4 @@
     font-size: 14px;
     margin: 0 10px;
     line-height: 1.4;
-}
-
-#IndustrySupport4 .industry-support4-img {
-    margin-bottom: 20px;
 }
