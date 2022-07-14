@@ -3,6 +3,11 @@ import DetailFooter from '../../component/Detail/DetailFooter';
 import IndustryHeader from '../../component/Detail/IndustryHeader';
 import './../../css/Indusrty/industryTrade.css'
 import IndustryTrade1 from '../../component/Industry/Trade/IndustryTrade1';
+import IndustryTrade2 from '../../component/Industry/Trade/IndustryTrade2';
+import IndustryTrade3 from '../../component/Industry/Trade/IndustryTrade3';
+import IndustryTrade4 from '../../component/Industry/Trade/IndustryTrade4';
+
+
 
 
 const IndustryTrade = ({title, sub}) => {
@@ -17,7 +22,9 @@ const IndustryTrade = ({title, sub}) => {
             </div>
         </section>
         <IndustryTrade1 />
-
+        <IndustryTrade2 />
+        <IndustryTrade3 />
+        <IndustryTrade4 />
       </div>
       <DetailFooter />
     </div>

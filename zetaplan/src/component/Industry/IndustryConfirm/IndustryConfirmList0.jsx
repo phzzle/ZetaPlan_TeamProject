@@ -4,7 +4,7 @@ import './../../../css/Indusrty/industryConfirm.css';
 const IndustryConfirmList0 = () => {
   return (
     <div id='IndustryConfirmList0'>
-      <h4 className='industry-confirm-sub'>제타플랜 인증지원 차별점</h4>
+      <h4 className='company-road-part'>제타플랜 인증지원 차별점</h4>
       <p>제타플랜은 2006년부터 현재까지 국내 2,500여 개사의 기업 인증을 지원하고 있으며, 인증기업의 성장을 위한 <strong>기업금융</strong>, <strong>기술금융</strong>, <strong>투자유치</strong>, <strong>기술거래</strong>, <strong>M&A</strong>, <strong>해외 진출</strong> 등의 업무를 체계적으로 지원하여 고객사의 글로벌 기업의 성장을 위한 노력을 기울이고 있습니다.</p>
       <p>제타플랜은 <strong>이노비즈기업협회</strong>, <strong>벤처기업협회</strong>, <strong>경영혁신형중소기업협회</strong> 등의 <strong>3대 혁신형 기업</strong>을 지원하는 협회와 지원 업무를 공유하고 있으며, 녹색인증을 위한 녹색기술센터, 서울 산업진흥원, 경기테크노파크와도 협력하여 업무를 지원하고 있습니다. 그리고 한국발명진흥회, 신용보증기금, 한국산업은행, 한국 벤처캐피털협회, 중소기업진흥공단, 농업기술실용화 재단, 농수산식품유통공사, 한국 소재부품투자기관협의회, 국제기술교류재단, 한국산업기술진흥원 등과 협업하여 기업의 성공을 위한 지원 업무에 최선을 다하고 있습니다.</p>
       <h5>지난 14년 동안 2,500개 이상의 기업이 왜 제타플랜을 선택했을까?</h5>
@@ -24,12 +24,12 @@ const IndustryConfirmList0 = () => {
       <span>&#183; 제타플랜 컨설팅의 높은 인지도와 고객만족율</span>
       <span>&#183; 인증만료 안내 및 인증 변경관련 무료 상담 제공</span>
       <span>&#183; 전분야 상담가능한 고급컨설턴트의 1:1 업체 전담 배정 및 지원</span>
-      <h6>제타플랜 컨설팅 고객사</h6>
+      <h4 className='company-road-part'>제타플랜 컨설팅 고객사</h4>
       <div className='industry-confirm0-img'><img src="/img/Industry/IndustryConfirm/confirm_info1.png" alt="" /></div>
       <h6>상기 기업 포함 2,500개사 인증 진행</h6>
-      <h5>기업인증을 통한 성장 Road Map 제공</h5>
+      <h4 className='company-road-part'>기업인증을 통한 성장 Road Map 제공</h4>
       <div className='industry-confirm0-img'><img src="/img/Industry/IndustryConfirm/confirm_info2.png" alt="" /></div>
-      <h6>기업·제품·기술인증 Road Map 제공</h6>
+      <h4 className='company-road-part'>기업·제품·기술인증 Road Map 제공</h4>
       <div className='industry-confirm0-img'><img src="/img/Industry/IndustryConfirm/confirm_info3.png" alt="" /></div>
     </div>
   );

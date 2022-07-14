@@ -27,7 +27,7 @@
     border-left: 1px solid rgba(44, 53, 64, 0.4);
 }
 
-.detail-tab-lists detail-tab-list.active {
+.detail-tab-lists .detail-tab-list.active {
     background-color: rgba(44, 53, 64, 0.1);
     font-weight: bold;
 }
@@ -46,8 +46,8 @@
 #IndustrySupport4 {
     color: #2c3540;
     width: 1200px;
-    padding: 20px 20px;
     box-sizing: border-box;
+    padding: 20px 0;
 }
 
 #IndustrySupport1 .industry-support1-sub,

@@ -5,11 +5,12 @@ import { Autoplay } from "swiper";
 const IndustryTrade1 = () => {
     return (
         <div>
-            <div id='IndustryTrade1'>
+            <div id='IndustryTrade'>
                 <section className='industry-trade-section'>
                 <span className="industry-trade-part">기술거래란?</span>
                 <p className='industry-trade-part-txt'>
-                기술거래란 기술이 양도, 실시권(License) 허여, 기술지도(지원), 공동연구개발, 합작투자(Joint Venture) 또는 인수·합병(M&A) 등의 방법을 통하여 기술보유자(공급자)로부터 기술수요자에게 이전되는 것으로, 여기서 기술이란 특허권, 실용신안권 등의 지적재산권, 기술 관련 노하우, 영업비밀 등의 정보, 기술 집적자본 등을 말합니다. 이러한 기술거래의 유형은 ①특허권 등 지적재산권 및 기술 관련 노하우, 영업비밀 등의 양도, ②특허권 등 지적재산권 및 기술 관련 노하우, 영업비밀 등의 실시권 허여, ③교차 실시권 허여(Cross License), ④기술지도(지원)(Technical Assistance), ⑤공동연구개발, ⑥기술 집약 기업의 합작법인 설립, 입수·합병을 포함하고 있습니다.  </p>
+                기술거래란 기술이 양도, 실시권(License) 허여, 기술지도(지원), 공동연구개발, 합작투자(Joint Venture) 또는 인수·합병(M&A) 등의 방법을 통하여 기술보유자(공급자)로부터 기술수요자에게 이전되는 것으로, 여기서 기술이란 특허권, 실용신안권 등의 지적재산권, 기술 관련 노하우, 영업비밀 등의 정보, 기술 집적자본 등을 말합니다. 
+                <br /> 기술거래의 유형은 ①특허권 등 지적재산권 및 기술 관련 노하우, 영업비밀 등의 양도, ②특허권 등 지적재산권 및 기술 관련 노하우, 영업비밀 등의 실시권 허여, ③교차 실시권 허여(Cross License), ④기술지도(지원)(Technical Assistance), ⑤공동연구개발, ⑥기술 집약 기업의 합작법인 설립, 입수·합병을 포함하고 있습니다.  </p><br />
                 <p className='industry-trade-part-txt'>
                     특히 저희 제타플랜에서는 중국 및 동남아국가에 기술이전, 기술제휴 및 기술투자는 물론 현지국가 투지기업과 합작법인 설립을 희망하는 국내 특허기술 공급자를 대상으로 기술이전 컨설팅을 진행하고 있습니다. 현재 중국은 다양한 산업분야에서 현지 중소기업이 필요로 하는 많은 기술을 흡수하고 있는 상황이며 특히 친환경, 바이오(의료·건강), 첨단기술에 대한 수요가 증가하고 있습니다. 이러한 상황을 감안하여 본 제타플랜은 기술공급 기업의 현지 인큐베이팅은 물론 기술투자, 기술 M&A 등 기술거래 관련 다양한 컨설팅 업무를 수행하고 있습니다.
                 </p>
@@ -33,9 +34,11 @@ const IndustryTrade1 = () => {
                    <li className='industry-trade-part-txt'>기술거래 사후적 관리방안 : 기술이전 후 Tech-offer와 Tech-order간에 발생하는 분쟁 해결 컨설팅</li>
                </ul>
              </section>
-             
+
              <section className='industry-trade-section'>
                 <span className="industry-trade-part"> 국내외 기술거래 </span>
+                <p className='industry-trade-part-txt'>
+                저희 제타플랜은 정부산하기관 기술개발조직, 기업 및 개인을 통해 기술거래를 진행하고 있으며, 세계 경제대국으로 부상한 중국과 동남아 거점인 베트남과 협력해오고 있습니다. </p>
                 <Swiper
               autoplay={{
                 delay: 1800,
@@ -65,7 +68,7 @@ const IndustryTrade1 = () => {
              <section className='industry-trade-section'>
                 <span className="industry-trade-part">제타플랜 국내외 협력기관  </span>
                 <p className='industry-trade-part-txt'>
-                저희 제타플랜의 해외 공급기술 발굴은 정부산하기관 기술개발조직, 기업 및 개인을 통해 진행하고 있으며, 세계 경제대국으로 부상한 중국과 동남아 거점으로 베트남에 특화 현지 사무실을 두고 협력관계를 유지하고 있습니다. 특히 중국 주요도시인 베이징, 상하이, 텐진, 산동성, 절강성, 강소성, 복건성, 광동성 등의 정부 과학기술국 및 기술교역소와 MOU를 유지하고 있고, 베트남 정부기관인 IPA VIETNAM 및 산하협력기관 FIA VIETNAM 등과도 긴밀한 협력관계를 유지하고 있습니다. 그 밖에도 전세계 국가의 기술관련 기관 및 단체와 협력을 유지하면서 해외기술거래 채널로서 역할을 다하고 있습니다.
+                저희 제타플랜의 해외 공급기술 발굴은 국내 뿐만 아니라, 중국과 동남아 거점으로 베트남에 특화 현지 사무실을 두고 협력관계를 유지하고 있습니다. 특히 중국 주요도시인 베이징, 상하이, 텐진, 산동성, 절강성, 강소성, 복건성, 광동성 등의 정부 과학기술국 및 기술교역소와 MOU를 유지하고 있고, 베트남 정부기관인 IPA VIETNAM 및 산하협력기관 FIA VIETNAM 등과도 긴밀한 협력관계를 유지하고 있습니다. 그 밖에도 전세계 국가의 기술관련 기관 및 단체와 협력을 유지하면서 해외기술거래 채널로서 역할을 다하고 있습니다.
                  </p>
              </section>
 

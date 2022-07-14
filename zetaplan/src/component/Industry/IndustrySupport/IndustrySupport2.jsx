@@ -4,7 +4,7 @@ import './../../../css/Indusrty/industrySupport.css';
 const IndustrySupport2 = () => {
   return (
     <div id='IndustrySupport2'>
-      <h4 className='industry-support2-sub'>특허제도 개요</h4>
+      <h4 className='company-road-part'>특허제도 개요</h4>
       <h6 className='industry-support2-sub-detail'>특허제도의 목적</h6>
       <p className='industry-support2-des'>특허제도는 발명을 보호·장려함으로써 국가산업의 발전을 도모하기 위한 제도이며 (특허 법 제1조) 이를 달성하기 위하여 「기술공개의 대가로 특허권을 부여」하는 것을 구체적인 수단으로 사용</p>
       <span className='industry-support2-refer'>&#183; 기술공개 &rarr; 기술축적, 공개기술 활용 &rarr; 산업발전</span>
@@ -17,7 +17,7 @@ const IndustrySupport2 = () => {
       <h6 className='industry-support2-sub-detail'>특허권의 효력</h6>
       <p className='industry-support2-des'>&#183; 특허권은 설정등록을 통해 효력 발생하며 존속기간은 출원일로부터 20년(실용신안권 10년)</p>
 
-      <h4 className='industry-support2-sub'>특허출원 관련안내</h4>
+      <h4 className='company-road-part'>특허출원 관련안내</h4>
       <h6 className='industry-support2-sub-detail'>선출원주의와 선발명주의</h6>
       <p className='industry-support2-des'>&#183; 동일한 발명이 2 이상 출원되었을 때 어느 출원인에게 권리를 부여할 것인가를 결정 하는 기준으로서 선출원주의와 선발명주의가 있으며 우리나라는 선출원주의를 채택하고 있음</p>
       <p className='industry-support2-des'>&#183; 선출원주의 <br /> &#45; 발명이 이루어진 시기에 관계없이 특허청에 먼저 출원한 발명에 귄리를 부여<br /> &#45; 기술의 공개에 대한 대가로 권리를 부여한다는 의미에서 합리적이며 신속한 발명의 공개를 유도할 수 있음<br /> &#45; 발명의 조속한 공개로 산업발전을 도모하려는 특허제도의 취지에 부합</p>
@@ -36,7 +36,7 @@ const IndustrySupport2 = () => {
       <h6 className='industry-support2-sub-detail'>특허심사 관련 안내</h6>
       <div className="industry-support-img"><img src="/img/Industry/IndustrySupport/IndustrySupport20.png" alt="특허출원 심사절차" /></div>
 
-      <h4 className='industry-support2-sub'>주요절차 설명</h4>
+      <h4 className='company-road-part'>주요절차 설명</h4>
       <h6 className='industry-support2-sub-detail'>방식심사</h6>
       <p className='industry-support2-des'>서식의 필수사항 기재 여부, 기간의 준수여부, 증명서 첨부 여부, 수수료 납부 여부 등 절 차상의 흠결을 점검하는 심사</p>
       <div className="industry-support-img"><img src="/img/Industry/IndustrySupport/IndustrySupport21.png" alt="방식심사" /></div>
@@ -66,7 +66,7 @@ const IndustrySupport2 = () => {
       <p className='industry-support2-des'>심사관 또는 이해관계인(다만, 특허권의 설정등록이 있는 날부터 등록공고일 후 3월 이내에는 누구든지)이 특허에 대하여 무효사유(특허요건, 기재불비, 모인출원 등)가 있 음을 이유로 그 특허권을 무효시켜 줄 것을 요구하는 심판절차</p>
       <span className='industry-support2-refer'>&#42; 무효심결이 확정되면 그 특허권은 처음부터 없었던 것으로 간주</span>
 
-      <h4 className='industry-support2-sub'>특허심사 주요제도 안내</h4>
+      <h4 className='company-road-part'>특허심사 주요제도 안내</h4>
       <h6 className='industry-support2-sub-detail'>우선심사제도</h6>
       <p className='industry-support2-des'>특허출원은 심사청구 순서에 따라 심사하는 것이 원칙이나, 모든 출원에 대해서 예외 없이 이러한 원칙을 적용하다 보면 공익이나 출원인의 권리를 적절하게 보호할 수 없 는 면이 있어 일정한 요건을 만족하는 출원에 대해서는 심사청구 순위에 관계없이 다 른 출원보다 먼저 심사하는 제도</p>
       <h6 className='industry-support2-sub-detail'>특허청구범위제출 유예제도</h6>
@@ -89,7 +89,7 @@ const IndustrySupport2 = () => {
       <h6 className='industry-support2-sub-detail'>재심사청구(심사전치) 제도</h6>
       <p className='industry-support2-des'>심사후 거절결정된 경우 거절결정불복심판을 청구한 후 명세서를 보정한 건에 대해 다 시 심사를 하였으나(심사전치제도) 개정 특허법에 따라 거절결정후 심판청구를 하지 않더라도 보정과 동시에 재심사를 청구하면 심사관에게 다시 심사받을 수 있음(재심사 청구제도)</p>
 
-      <h4 className='industry-support2-sub'>국제특허분류</h4>
+      <h4 className='company-road-part'>국제특허분류</h4>
       <h6 className='industry-support2-sub-detail'>국제특허분류의 성립배경</h6>
       <p className='industry-support2-des'>미국(USPC), 일본(JPC), 유럽(ECLA) 등 각국마다 다른 분류체계를 사용하여 왔으나, 국제 적으로 통일된 특허 분류체계가 필요함에 따라 1968년에 국제특허분류(IPC)가 도입됨</p>
       <h6 className='industry-support2-sub-detail'>국제특허분류의 목적</h6>
@@ -102,7 +102,7 @@ const IndustrySupport2 = () => {
       <p className='industry-support2-des'> &#183; 섹션별 구분 (섹션 타이틀)<br />A 섹션 &#45; 생활필수품<br />B 섹션 &#45; 처리조작, 운수<br />C 섹션 &#45; 화학, 야금<br />D 섹션 &#45; 섬유, 종이<br />E 섹션 &#45; 고정구조물<br />F 섹션 &#45; 기계공학, 조명, 가열, 무기, 폭파<br />G 섹션 &#45; 물리학<br />H 섹션 &#45; 전기</p>
       <img src="/img/Industry/IndustrySupport/IndustrySupport24.gif" alt="방식심사" />
 
-      <h4 className='industry-support2-sub'>PCT 국제출원</h4>
+      <h4 className='company-road-part'>PCT 국제출원</h4>
       <h6 className='industry-support2-sub-detail'>PCT 국제출원의 개요</h6>
       <p className='industry-support2-des'>특허협력조약(Patent Cooperation Treaty; PCT)에 의한 국제출원은 출원인이 자국 특허 청(수리관청)에 특허를 받고자 하는 국가를 지정하여 PCT 국제출원서를 제출하면 각 지정국에서 정규의 국내출원으로 인정해 주는 제도로서, 2008.10.1 현재 139개국이 가 입되어 있습니다.</p>
       <h6 className='industry-support2-sub-detail'>PCT 국제출원의 절차</h6>

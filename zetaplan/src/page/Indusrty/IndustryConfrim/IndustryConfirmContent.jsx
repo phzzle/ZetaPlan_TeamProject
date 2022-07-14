@@ -1,13 +1,18 @@
 import React, { useState } from 'react';
+import { useParams } from 'react-router-dom';
 import IndustryHeader from '../../../component/Detail/IndustryHeader';
-import DetailFooter from '../../../component/Detail/DetailFooter';
-import IndustryConfirmList1 from '../../../component/Industry/IndustryConfirm/IndustryConfirmList1';
-import { MAP_DATA_CONFIRM } from './../../../component/Industry/IndustryConfirm/MapDataConfirm';
 import IndustryConfirmList0 from './../../../component/Industry/IndustryConfirm/IndustryConfirmList0';
+import IndustryConfirmList1 from './../../../component/Industry/IndustryConfirm/IndustryConfirmList1';
 import IndustryConfirmList2 from './../../../component/Industry/IndustryConfirm/IndustryConfirmList2';
+import { MAP_DATA_CONFIRM } from './../../../component/Industry/IndustryConfirm/MapDataConfirm';
 
-const IndustryConfirmContent1 = ({title, sub}) => {
-  const [content, setContent] = useState('first');
+const IndustryConfirmContent = (props) => {
+  let { id } = useParams(); 
+  let matchedItem = props.data.find(function(item){
+        return item.id === id;
+    });
+
+  const [content, setContent] = useState('second');
 
   const buttonValueSetting = e => {
     const { name } = e.target;
@@ -22,7 +27,7 @@ const IndustryConfirmContent1 = ({title, sub}) => {
 
   return (
     <div id='IndustryConfirmContent'>
-      <IndustryHeader title={title} sub={sub}/>
+      <IndustryHeader title={props.title} sub={props.sub} />
       <div id='SubInner'>
         <h2 className='detail-title'>지원 사업</h2>
         <nav className='detail-tab-lists'>
@@ -35,9 +40,12 @@ const IndustryConfirmContent1 = ({title, sub}) => {
         })}
       </nav>
       {content && <div className='detail-tab-content'>{selectComponent[content]}</div>}
+
+      <h1>{matchedItem.name}</h1>
+      <img src={matchedItem.img} alt="" />
       </div>
     </div>
   );
 };
 
-export default IndustryConfirmContent1;
+export default IndustryConfirmContent;
