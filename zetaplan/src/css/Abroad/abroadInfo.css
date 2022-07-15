@@ -23,6 +23,12 @@
   color: #BF0628;
   margin: 15px 5px;
 }
+.abroad-info-img {
+  max-width: 800px;
+}
+.abroad-network-section {
+  margin-bottom: 32px;
+}
 .abroad-network {
   margin-bottom: 52px;
 }

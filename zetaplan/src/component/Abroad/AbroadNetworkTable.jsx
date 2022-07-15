@@ -23,7 +23,11 @@ const AbroadNetworkTable = ({num}) => {
               <tr key={idx}>
                 <td>
                   {item.name}
-                  <img src={item.img} alt={item.name} className="network-img" />
+                  {
+                    item.img
+                    ? <img src={item.img} alt={item.name} className="network-img" />
+                    : null
+                  }
                 </td>
                 <td>
                   <ul>

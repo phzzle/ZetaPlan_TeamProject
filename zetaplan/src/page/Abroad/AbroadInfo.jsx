@@ -20,6 +20,7 @@ const AbroadInfo = ({title, sub}) => {
         <div className='abroad-info'>
           <h4 className='abroad-title'>해외진출 사업 분야</h4>
           <h6 className='abroad-sub-title'>해외사업진출 단계별 Key Module에 대한 최적해법 제공</h6>
+          <img src="/img/Abroad/AbroadNetwork/abroad.png" alt="해외진출 사업" className='abroad-info-img' />
           <img src="" alt="" />
           <h6 className='abroad-sub-title'>기술거래 · 기술이전컨설팅</h6>
           <p className='abroad-desc'>· 해외기술 이전사업 진출 이후 베이징 기술교역촉진 중심, Transpacific IP, IPA VIETNAM, 주한영국상공회의소(BCCK), 이스라엘 ABG 등과 기술이전 네트워크 구축</p>
@@ -34,7 +35,7 @@ const AbroadInfo = ({title, sub}) => {
           {
             networkTitle.map(ele => {
               return (
-                <section key={ele.id}>
+                <section key={ele.id} className="abroad-network-section">
                   <h6 className='abroad-sub-title'>{ele.title}</h6>
                   <AbroadNetworkTable num={ele.id}/>
                 </section>
