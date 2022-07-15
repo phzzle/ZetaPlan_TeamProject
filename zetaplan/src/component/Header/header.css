@@ -24,7 +24,6 @@ a {
     max-width: 1440px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -68,19 +67,33 @@ a {
     position: absolute;
     top: 80px;
     left: 0;
-    display: none;
+}
+
+.main-sub-box {
+    width: 1440px;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.main-sub-nav-left {
+    width: 240px;
+    height: 100%;
+}
+
+.main-sub-nav-right {
+    width: 300px;
+    height: 100%;
 }
 
 #Header .header-nav-wrap .main-nav .main-nav-list .main-sub-nav-wrap {
     display: flex;
     width: 870px;
-    margin: 0 60px 0 300px;
-    justify-content: space-between;
 }
 
 #Header .header-nav-wrap .main-nav .main-nav-list .main-sub-nav-wrap ul {
     width: 145px;
-    text-align: center;
 }
 
 #Header .header-nav-wrap .main-nav:hover .main-sub-nav {

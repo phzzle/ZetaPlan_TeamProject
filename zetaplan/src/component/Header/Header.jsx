@@ -17,11 +17,13 @@ const Header = () => {
         <div className='header-left'><a href='/'>LOGO</a></div>
         <div className='header-nav-wrap'>
           <nav className='header-nav'>
-          <ul className='main-nav'>
+            <ul className='main-nav'>
               <li className="main-nav-list">
                 <Link to='/company'>Company</Link>
                 <div className='main-sub-nav'>
-                  <div className='main-sub-nav-wrap'>
+                  <div  className='main-sub-box'>
+                    <div className='main-sub-nav-left'></div>
+                    <div className='main-sub-nav-wrap'>
                     <ul className='main-sub-nav-ul'>
                       <li className="sub-nav-star"><div className='navStar'></div></li>
                       <li><Link to='/company'>기업소개</Link></li>
@@ -84,13 +86,17 @@ const Header = () => {
                         <li><Link to='/notice/inquiry'>문의하기</Link></li>
                         <li><Link to='/notice/request'>상담신청</Link></li>
                     </ul>
+                    </div>
+                    <div className='main-sub-nav-left'></div>
                   </div>
                 </div>
               </li>
               <li className="main-nav-list">
                 <Link to='/mna'>M&A/IPO</Link>
                 <div className='main-sub-nav'>
-                  <div className='main-sub-nav-wrap'>
+                  <div  className='main-sub-box'>
+                    <div className='main-sub-nav-left'></div>
+                    <div className='main-sub-nav-wrap'>
                     <ul className='main-sub-nav-ul'>
                       <li className="sub-nav-star"><div className='navStar'></div></li>
                       <li><Link to='/company'>기업소개</Link></li>
@@ -153,13 +159,17 @@ const Header = () => {
                         <li><Link to='/notice/inquiry'>문의하기</Link></li>
                         <li><Link to='/notice/request'>상담신청</Link></li>
                     </ul>
+                    </div>
+                    <div className='main-sub-nav-left'></div>
                   </div>
                 </div>
               </li>
               <li className="main-nav-list">
                 <Link to='/invest'>투자/경영</Link>
                 <div className='main-sub-nav'>
-                  <div className='main-sub-nav-wrap'>
+                  <div  className='main-sub-box'>
+                    <div className='main-sub-nav-left'></div>
+                    <div className='main-sub-nav-wrap'>
                     <ul className='main-sub-nav-ul'>
                       <li className="sub-nav-star"><div className='navStar'></div></li>
                       <li><Link to='/company'>기업소개</Link></li>
@@ -222,13 +232,17 @@ const Header = () => {
                         <li><Link to='/notice/inquiry'>문의하기</Link></li>
                         <li><Link to='/notice/request'>상담신청</Link></li>
                     </ul>
+                    </div>
+                    <div className='main-sub-nav-left'></div>
                   </div>
                 </div>
               </li>
               <li className="main-nav-list">
                 <Link to='/abroad'>Abroad</Link>
                 <div className='main-sub-nav'>
-                  <div className='main-sub-nav-wrap'>
+                  <div  className='main-sub-box'>
+                    <div className='main-sub-nav-left'></div>
+                    <div className='main-sub-nav-wrap'>
                     <ul className='main-sub-nav-ul'>
                       <li className="sub-nav-star"><div className='navStar'></div></li>
                       <li><Link to='/company'>기업소개</Link></li>
@@ -291,13 +305,17 @@ const Header = () => {
                         <li><Link to='/notice/inquiry'>문의하기</Link></li>
                         <li><Link to='/notice/request'>상담신청</Link></li>
                     </ul>
+                    </div>
+                    <div className='main-sub-nav-left'></div>
                   </div>
                 </div>
               </li>
               <li className="main-nav-list">
                 <Link to='/industry'>Industry</Link>
                 <div className='main-sub-nav'>
-                  <div className='main-sub-nav-wrap'>
+                  <div  className='main-sub-box'>
+                    <div className='main-sub-nav-left'></div>
+                    <div className='main-sub-nav-wrap'>
                     <ul className='main-sub-nav-ul'>
                       <li className="sub-nav-star"><div className='navStar'></div></li>
                       <li><Link to='/company'>기업소개</Link></li>
@@ -360,13 +378,17 @@ const Header = () => {
                         <li><Link to='/notice/inquiry'>문의하기</Link></li>
                         <li><Link to='/notice/request'>상담신청</Link></li>
                     </ul>
+                    </div>
+                    <div className='main-sub-nav-left'></div>
                   </div>
                 </div>
               </li>
               <li className="main-nav-list">
                 <Link to='/notice'>Notice</Link>
                 <div className='main-sub-nav'>
-                  <div className='main-sub-nav-wrap'>
+                  <div  className='main-sub-box'>
+                    <div className='main-sub-nav-left'></div>
+                    <div className='main-sub-nav-wrap'>
                     <ul className='main-sub-nav-ul'>
                       <li className="sub-nav-star"><div className='navStar'></div></li>
                       <li><Link to='/company'>기업소개</Link></li>
@@ -429,6 +451,8 @@ const Header = () => {
                         <li><Link to='/notice/inquiry'>문의하기</Link></li>
                         <li><Link to='/notice/request'>상담신청</Link></li>
                     </ul>
+                    </div>
+                    <div className='main-sub-nav-left'></div>
                   </div>
                 </div>
               </li>
