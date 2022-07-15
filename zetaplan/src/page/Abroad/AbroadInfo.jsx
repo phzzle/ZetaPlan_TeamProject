@@ -1,5 +1,5 @@
 import React from 'react';
-import AbroadNetworkTable from '../../component/Abroad/AbroadNetworkTable';
+import AbroadNetworkTable from '../../component/Abroad/AbroadInfo/AbroadNetworkTable';
 import AbroadHeader from '../../component/Detail/AbroadHeader';
 import DetailFooter from '../../component/Detail/DetailFooter';
 import '../../css/Abroad/abroadInfo.css';
@@ -42,12 +42,6 @@ const AbroadInfo = ({title, sub}) => {
               )
             })
           }
-
-          {/* <h6>CHINA NETWORK</h6>
-          <AbroadNetworkTable num={0}/>
-          <h6>ASIA NETWORK</h6>
-          <AbroadNetworkTable num={1}/>
-          <h6>EU&amp;USA NETWORK</h6> */}
         </div>
       </div>
       
