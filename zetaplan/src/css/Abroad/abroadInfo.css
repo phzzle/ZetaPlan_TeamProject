@@ -6,6 +6,7 @@
   font-size: 18px;
   font-weight: bold;
   margin: 40px 0;
+  color: #2c3540;
 }
 .abroad-title::after {
   position: absolute;
@@ -23,6 +24,15 @@
   color: #BF0628;
   margin: 15px 5px;
 }
+.abroad-content-box {
+  margin-bottom: 28px;
+}
+.abroad-desc {
+  color: #2c3540;
+  font-size: 14px;
+  line-height: 160%;
+  margin: 0 10px;
+}
 .abroad-info-img {
   max-width: 800px;
 }
@@ -35,6 +45,7 @@
 .network-table {
   border: 1px solid #ddd;
   font-size: 14px;
+  color: #2c3540;
 }
 .network-table thead {
   border-bottom: 1px solid #ddd;
@@ -53,13 +64,14 @@
   border-right: 1px solid #ddd;
   text-align: center;
   font-weight: bold;
-  padding: 0 20px;
+  padding: 18px;
 }
 .network-table tbody tr td:last-child {
-  padding-left: 20px;
+  padding: 20px;
 }
 .network-table tbody tr td ul {
   list-style: disc;
+  list-style-position: inside;
 }
 .network-table .network-img {
   width: 145px;

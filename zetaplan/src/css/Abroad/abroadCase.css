@@ -11,12 +11,14 @@
 .support-card-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .support-card-box {
   margin: 40px;
 }
 .abroad-support-card {
   position: relative;
+  border-radius: 4px;
 }
 .abroad-support-card:hover>.abroad-support-card-title-hover {
   opacity: 1;
@@ -28,5 +30,31 @@
   width: 200px;
   height: 80px;
   line-height: 80px;
-  background-color: #efefef;
+  background-color: rgba(44, 53, 64, 0.9);
+  color: #efefef;
+  font-weight: bold;
+  border-radius: 4px;
+}
+.abroad-support-card-title {
+  font-size: 14px;
+}
+
+.abroad-desc-list {
+  font-size: 14px;
+  margin-left: 10px;
+}
+.abroad-desc-list li {
+  margin-bottom: 12px;
+  line-height: 160%;
+}
+.abroad-desc-list dt {
+  color: #BF0628;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.abroad-desc-list dd {
+  color: #2C3540;
+  line-height: 160%;
+  margin-bottom: 8px;
+  margin-left: 8px;
 }

@@ -7,20 +7,20 @@ const AbroadSupport8 = () => {
         환경산업 해외진출 지원사업 
       </h2>
       
-      <div>
+      <section>
         <h4 className="abroad-title">
           개도국 환경개선 마스터플랜 수립
         </h4>
         <h6 className="abroad-sub-title">
           사업 개요
         </h6>
-        <p>
+        <p className='abroad-desc'>
           · 전략적인 해외 환경시장 개척을 위해 개도국 마스터플랜수립을 지원함으로써 對 개도국 협력네트워크 구축 및 국내 환경산업 진출 가능 후속 협력사업을 발굴·촉진합니다.
         </p>
         <h6 className="abroad-sub-title">
           사업 내용
         </h6>
-        <ul>
+        <ul className='abroad-desc-list'>
           <li>
             · 환경분야 기초자료 조사·분석 – 환경산업 전망 및 환경관리 수요도출 (환경산업, 정책, 기술 및 기초시설)
           </li>
@@ -37,25 +37,25 @@ const AbroadSupport8 = () => {
         <h6 className="abroad-sub-title">
           지원 조건
         </h6>
-        <p>
+        <p className='abroad-desc'>
         국가당 약 7~8억원 지원(전액 정부지원) / 사업기간 14개월 이내 <br/> ※ 정부간 협의를 통해 사업 세부범위 확정, 매년 초 사업공고를 통해 사업수행기관 선정
         </p>
-      </div>
+      </section>
 
-      <div>
+      <section>
         <h4 className="abroad-title">
           해외 환경프로젝트 타당성조사 지원
         </h4>
         <h6 className="abroad-sub-title">
           사업 개요
         </h6>
-        <p>
+        <p className='abroad-desc'>
           · 국내 환경 분야 기업들의 해외사업 참여에 따른 경제적 부담을 완화하고, 해외 유망 플랜트 개발 초기단계에 우리기업의 참여를 촉진함으로써 프로젝트 수주가능성을 제고합니다.
         </p>
         <h6 className="abroad-sub-title">
           사업 목적
         </h6>
-        <ul>
+        <ul className='abroad-desc-list'>
           <li>
             · 해외 유망 플랜트 개발 초기단계에 국내 환경산업체의 참여를 지원함으로써 수익성 높은 해외 환경프로젝트의 수주기회 확대 및 해외진출 촉진
           </li>
@@ -66,10 +66,10 @@ const AbroadSupport8 = () => {
         <h6 className="abroad-sub-title">
           지원 금액
         </h6>
-        <p>
+        <p className='abroad-desc'>
         프로젝트당 최대 3억원 이내, 총 사업비의 30~80%
         </p>
-        <ul>
+        <ul className='abroad-desc-list'>
           <li>
             · 중소기업은 80%이내
           </li>
@@ -80,22 +80,22 @@ const AbroadSupport8 = () => {
             · 대기업은 30%이내 ( ※ 중소 중견 컨소시엄 신청시에 한함, 단독 신청 불가)
           </li>
         </ul>
-      </div>
+      </section>
 
-      <div>
+      <section>
         <h4 className="abroad-title">
           환경기술 국제공동 현지 사업화 지원
         </h4>
         <h6 className="abroad-sub-title">
           사업 개요
         </h6>
-        <p>
+        <p className='abroad-desc'>
           · 국내 유망 환경기술을 해외 환경규제와 현지여건에 맞도록 변형·개조하는 기술실증화 지원을 통하여, 해당국가의 환경현안을 해결할 수있는 환경기술을 공급함과 동시에 사업성과물의 현지수출 연계
         </p>
         <h6 className="abroad-sub-title">
           지원 조건
         </h6>
-        <ul>
+        <ul className='abroad-desc-list'>
           <li>
             · 지원기간 : 최대 2년
           </li>
@@ -103,34 +103,34 @@ const AbroadSupport8 = () => {
             · 정부지원금 : 전체 사업비 범위내에서 개별과제 성격 및 규모에 따라 지원 <br/> ※ 수출유망(초보)과제(1억원 미만), 수출선도과제(1억원 이상)
           </li>
         </ul>
-      </div>
+      </section>
 
-      <div>
+      <section>
         <h4 className="abroad-title">
           환경산업 해외진출 컨설팅지원사업
         </h4>
         <h6 className="abroad-sub-title">
           사업 개요
         </h6>
-        <p>
+        <p className='abroad-desc'>
           · 환경기업의 해외 진출시 발생하는 제반 애로사항을 해소를 위한 내외부 전문가의 해외진출 자문을 통해 환경기업의 성공적인 해외진출 지원
         </p>
         <h6 className="abroad-sub-title">
           자문 분야
         </h6>
-        <p>
+        <p className='abroad-desc'>
           · 해외시장개척, 무역실무, 통관·관세·환급, 계약서 검토, 기술도입·이전, 외환무역금융, 해외투자, 국제입찰 등
         </p>
-      </div>
+      </section>
 
-      <div>
+      <section>
         <h4 className="abroad-title">
           해외 환경산업협력센터 운영
         </h4>
         <h6 className="abroad-sub-title">
           사업 목적
         </h6>
-        <p>
+        <p className='abroad-desc'>
           · 해외 환경산업협력센터 설치 국가를 대상으로 환경산업체의 수출활동 현지 밀착 지원 및 국가간 협력사업 수행
           <br/>
           ※ 설치 국가 : 중국, 베트남, 인도네시아, 콜롬비아, 알제리
@@ -138,26 +138,26 @@ const AbroadSupport8 = () => {
         <h6 className="abroad-sub-title">
           지원 내용
         </h6>
-        <p>
+        <p className='abroad-desc'>
           · 정부간 네트워크 구축, 현지 기술정보수집 및 협력사업 발굴, 동반 수주협상등 환경사업에 특화된 기업밀착형 수주지원 종합컨설팅 서비스 제공
         </p>
         <img src="/img/Abroad/AbroadSupport/환경산업해외진출지원사업1.jpg" alt="해외 환경산업협력센터 운영 지원내용" />
-      </div>
+      </section>
 
-      <div>
+      <section>
         <h4 className="abroad-title">
           글로벌 그린비즈니스 파트너십 구축
         </h4>
         <h6 className="abroad-sub-title">
           사업 개요
         </h6>
-        <p>
+        <p className="abroad-desc">
           · 전 세계 유망 환경시장을 보유한 국가의 의사결정자와 환경산업의 유력 발주처를 초청하여 수주 유망 프로젝트를 발굴하고 국내 환경기업과 1:1 비즈니스 상담 등 글로벌 비즈니스 네트워킹 구축을 지원
         </p>
         <h6 className="abroad-sub-title">
           지원 내용
         </h6>
-        <ul>
+        <ul className="abroad-desc-list">
           <li>
             · 수출 희망국가의 발주처 바이어 초청 (1기관 1인 왕복항공임, 숙박비, 현장견학 등 지원)을 통한 1:1 비즈니스 상담지원
           </li>
@@ -165,22 +165,22 @@ const AbroadSupport8 = () => {
             · 권역별 유망 프로젝트 및 해외진출 관련 설명회 개최
           </li>
         </ul>
-      </div>
+      </section>
 
-      <div>
+      <section>
         <h4 className="abroad-title">
           해외정보제공
         </h4>
         <h6 className="abroad-sub-title">
           사업 개요
         </h6>
-        <p>
+        <p className="abroad-desc">
           · 정보제공부터 무역거래 지원까지의 원스톱 서비스를 통해 국내 환경산업체의 해외 진출을 지원
         </p>
         <h6 className="abroad-sub-title">
           지원 내용
         </h6>
-        <ul>
+        <ul className="abroad-desc-list">
           <li>
             · 의견 수렴 및 해외환경 정보 제공 <br/>
             – 상시 의견수렴 및 수요조사 결과를 반영한 해외환경 정보 통합 제공
@@ -201,38 +201,38 @@ const AbroadSupport8 = () => {
             – 에코트레이드 사이트 내 제품 등록 및 홍보
           </li>
         </ul>
-      </div>
+      </section>
 
-      <div>
+      <section>
         <h4 className="abroad-title">
           우수환경기업 해외수출기업화 지원사업
         </h4>
         <h6 className="abroad-sub-title">
           사업 개요
         </h6>
-        <p>
+        <p className="abroad-desc">
           · 우수 환경 중소기업을 글로벌 수출기업으로 육성하기 위해 해외사업 전문 컨설팅기관과 연계, 현지기술 실적강화, 시장확장, 현지 구조장벽 해소 분야 등 전 과정을 맞춤 지원하는 사업
         </p>
         <h6 className="abroad-sub-title">
           사업 내용
         </h6>
         <img src="/img/Abroad/AbroadSupport/환경산업해외진출지원사업2.jpg" alt="우수환경기업 해외수출기업화 지원사업 내용" />
-      </div>
+      </section>
 
-      <div>
+      <section>
         <h4 className="abroad-title">
           환경산업 시장개척단 파견사업
         </h4>
         <h6 className="abroad-sub-title">
           사업 개요
         </h6>
-        <p>
+        <p className="abroad-desc">
           · 진출 유망국을 대상으로 민·관 합동 시장개척단을 파견하여 국내 기업의 해외 환경사업 발굴, 수주 활동 지원
         </p>
         <h6 className="abroad-sub-title">
           사업 내용
         </h6>
-        <ul>
+        <ul className="abroad-desc-list">
           <li>
             · 유망 전시회 단체관 구성, 1:1 상담 등을 통한 기업체 홍보·수주지원, 협력회의·포럼 개최를 통한 정부간 네트워크 강화·프로젝트 발굴 지원
           </li>
@@ -240,7 +240,7 @@ const AbroadSupport8 = () => {
             · 파견기간 행사비용 전반 지원(각종 임차료, 통역비, 비즈니스 비용(바이어 발굴 등)), 전시회 참가시 부스 지원 등 (※여비 전액 기업부담)
           </li>
         </ul>
-      </div>
+      </section>
     </div>
   );
 };
