@@ -2,7 +2,7 @@ import React, { useLayoutEffect } from 'react';
 import '../../css/Company/CompanyManpower.css';
 import { VscClose } from 'react-icons/vsc';
 const ManPowerItem = ({ item }) => {
-  console.log(item);
+  /* console.log(item); */
   return (
     <ul className='manpower-box'>
       <li className='manpower-image'>
