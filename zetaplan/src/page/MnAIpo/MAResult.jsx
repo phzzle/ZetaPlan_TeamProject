@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import MAHeader from "../../component/Detail/MAHeader";
 import DetailFooter from "./../../component/Detail/DetailFooter";
 import "./../../css/MnAIpo/mnaresult.css";
-import MaResult1 from "../../component/MnaIpo/MaResult/MaResult2";
+import MaResult1 from "../../component/MnaIpo/MaResult/MaResult1";
 import MaResult2 from "../../component/MnaIpo/MaResult/MaResult2";
 import {RESULT_DATA} from "../../component/MnaIpo/MaResult/ResultData";
 

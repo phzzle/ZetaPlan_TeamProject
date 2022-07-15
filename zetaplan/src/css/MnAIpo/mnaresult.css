@@ -17,6 +17,26 @@
   margin-bottom: 24px;
 }
 
+#maresult .mnaipo-ma-part {
+  display: inline-block;
+  font-size: 18px;
+  margin-bottom: 10px;
+  position: relative;
+  font-weight: bold;
+}
+
+#maresult .mnaipo-ma-part::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 1.8px;
+  background-color: rgba(44, 53, 64, 0.5);
+  border-radius: 16px;
+  position: absolute;
+  right: -70px;
+  top: 50%;
+}
+
 /* ========================= */
 
 .detail-tab-lists {
@@ -45,4 +65,13 @@
 
 .detail-tab-content {
   width: 1200px;
+}
+
+/* ================================ */
+
+.mnaipo-maresult-part-img {
+  background: url(/public/img/MnaIpo/MnaResult/mna\ result.png) no-repeat;
+  width: 900px;
+  height: 600px;
+  margin: auto;
 }
