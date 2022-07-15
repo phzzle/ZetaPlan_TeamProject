@@ -26,15 +26,15 @@
 }
 
 #companyCi .company-ci-section2 .logo {
-  width: 419px;
-  height: 135px;
+  width: 260px;
+  height: 110px;
   background: url(./.././../../public/img/common/logo.png) no-repeat center / cover;
   position: relative;
   left: 50%;
-  transform: translateX(-210px);
+  transform: translateX(-130px);
 }
 #companyCi .company-ci-section2 .logo-content {
-  margin-top: px;
+  margin-top: 50px;
 }
 #companyCi .company-ci-section2 .logo-content .logo-content-top {
   font-size: 1.4rem;
@@ -83,13 +83,13 @@
 }
 
 #companyCi .company-ci-section3 .company-ci-section-right .company-ci-logo-black {
-  background: url(/public/img/common/logo.png) center;
-  width: 419px;
-  height: 135px;
+  background: url(/public/img/common/logo.png) no-repeat center / cover;
+  width: 260px;
+  height: 110px;
 }
 
 #companyCi .company-ci-section3 .company-ci-section-right .company-ci-logo-white {
-  background: url(/public/img/common/logo_white.png) center;
-  width: 419px;
-  height: 135px;
+  background: url(/public/img/common/logo_white.png) center center / cover;
+  width: 260px;
+  height: 110px;
 }
