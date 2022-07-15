@@ -47,7 +47,7 @@
     color: #2c3540;
     width: 1200px;
     box-sizing: border-box;
-    padding: 20px 0;
+    padding: 20px 0 50px;
 }
 
 #IndustrySupport1 .industry-support1-sub,
@@ -62,7 +62,7 @@
 #IndustrySupport1 .industry-support1-des {
     font-size: 14px;
     margin: 0 10px;
-    line-height: 1.4;
+    line-height: 1.6;
 }
 
 #IndustrySupport1 .industry-support1-des strong {
@@ -70,7 +70,7 @@
 }
 
 .industry-support-img {
-    width: 1000px;
+    width: 800px;
 }
 
 .industry-support-img img {
@@ -79,7 +79,7 @@
 
 #IndustrySupport1 .industry-support1-refer {
     display: block;
-    margin: 15px 0;
+    margin: 10px 0;
     font-size: 14px;
 }
 
@@ -94,21 +94,21 @@
 
 #IndustrySupport2 .industry-support2-sub-detail {
     font-size: 14px;
-    color: #BF0628;
+    font-weight: bold;
     margin: 15px 5px;
 }
 
 #IndustrySupport2 .industry-support2-des {
     font-size: 14px;
-    margin: 0 10px;
+    margin: 8px;
     line-height: 1.8;
 }
 
 #IndustrySupport2 .industry-support2-refer {
     display: block;
-    margin: 15px;
+    margin: 10px;
     font-size: 14px;
-    line-height: 1.4;
+    line-height: 1.6;
 }
 
 #IndustrySupport2 .industry-support2-img {
@@ -122,15 +122,15 @@
 
 #IndustrySupport3 .industry-support3-des {
     font-size: 14px;
-    margin: 0 10px;
-    line-height: 1.4;
+    margin: 8px;
+    line-height: 1.6;
 }
 
 #IndustrySupport3 .industry-support3-refer {
     display: block;
     margin: 15px 0;
     font-size: 14px;
-    line-height: 1.4;
+    line-height: 1.6;
 }
 
 #IndustrySupport3 .last-des {

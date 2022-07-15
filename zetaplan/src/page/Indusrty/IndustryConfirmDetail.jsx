@@ -17,7 +17,7 @@ const IndustryConfirmDetail = ({data}) => {
           <div className="company-title-line"></div>
         </div>
         <IndustryConfirmHistory id={data[id].id} />
-      <div className='industry-confirm-content'>
+        <div className='industry-confirm-content'>
         <h4 className='company-road-part'>{data[id].name}</h4>
         <div className='industry-confirm-content-logo'>
           <img src={data[id].img} alt="logo" />
@@ -48,8 +48,7 @@ const IndustryConfirmDetail = ({data}) => {
         <div className='industry-confirm-content-img'>
           <img src={data[id].step} alt="절차" />
         </div>
-        
-      </div>
+        </div>
       </div>
       <DetailFooter />
     </div>

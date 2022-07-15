@@ -100,7 +100,7 @@ const IndustrySupport2 = () => {
       <h6 className='industry-support2-sub-detail'>국제특허분류의 구조</h6>
       <p className='industry-support2-des'> &#183; 섹션, 클래스, 서브클래스 및 메인그룹 또는 서브그룹의 계층구조로 이루어짐<br />&lt;예&gt; F16K 1/00(or 1/02)의 경우</p>
       <p className='industry-support2-des'> &#183; 섹션별 구분 (섹션 타이틀)<br />A 섹션 &#45; 생활필수품<br />B 섹션 &#45; 처리조작, 운수<br />C 섹션 &#45; 화학, 야금<br />D 섹션 &#45; 섬유, 종이<br />E 섹션 &#45; 고정구조물<br />F 섹션 &#45; 기계공학, 조명, 가열, 무기, 폭파<br />G 섹션 &#45; 물리학<br />H 섹션 &#45; 전기</p>
-      <img src="/img/Industry/IndustrySupport/IndustrySupport24.gif" alt="방식심사" />
+      <div className="industry-support-img"><img src="/img/Industry/IndustrySupport/IndustrySupport24.jpg" alt="방식심사" /></div>
 
       <h4 className='company-road-part'>PCT 국제출원</h4>
       <h6 className='industry-support2-sub-detail'>PCT 국제출원의 개요</h6>
@@ -115,7 +115,7 @@ const IndustrySupport2 = () => {
       <h6 className='industry-support2-sub-detail'> PCT 국제출원에 필요한 서류</h6>
       <p className='industry-support2-des'> &#183; PCT 국제출원을 하기 위해서는 Request(국제출원서), 명세서, 청구범위, 요약서, 도면 (있는 경우), 서열목록(해당하는 경우)으로 이루어진 국제출원 관련 서류를 별도로 제출 해야합니다. 국내출원시 제출한 서류를 그대로 제출하는 것이 아님에 유의하여야 합니다.</p>
       <p className='industry-support2-des'> &#183; 명세서도 국내출원과 달리 PCT규칙에서 규정하는 기술순서에 따라 작성하여야 하며, 국내 출원과 달리 명세서와 청구범위를 구분하여 별도로 작성하여야 합니다. 국제출원 서 (Request)는 반드시 영어 또는 일본어(일본어 출원의 경우)로 작성하여야 합니다.</p>
-      <div className='industry-support2-img'><img src="/img/Industry/IndustrySupport/IndustrySupport25.gif" alt="방식심사" /></div>
+      <div className='industry-support-img'><img src="/img/Industry/IndustrySupport/IndustrySupport25.png" alt="국제출원" /></div>
     </div>
   );
 };

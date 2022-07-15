@@ -36,7 +36,6 @@
 }
 
 #IndustryConfirmList0>p strong {
-    color: #BF0628;
     font-weight: bold;
 }
 
@@ -50,7 +49,7 @@
 
 #IndustryConfirmList0>h5 {
     font-size: 18px;
-    color: #F27B35;
+    font-weight: bold;
     margin: 15px 0;
 }
 
@@ -132,4 +131,20 @@
 #IndustryConfirmHistory svg {
     padding-top: 3px;
     margin: 0 5px;
+}
+
+#IndustryConfirmDetail p {
+    font-size: 14px;
+}
+
+#IndustryConfirmDetail .industry-confirm-content-img {
+    max-width: 700px;
+}
+
+#IndustryConfirmDetail .industry-confirm-content-img img {
+    width: 100%;
+}
+
+#IndustryConfirmDetail .industry-confirm-content {
+    margin-bottom: 50px;
 }
