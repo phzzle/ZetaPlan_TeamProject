@@ -6,12 +6,12 @@ export const MAP_DATA_TRADE = [
   },
   {
   id: 2,
-  text: '기술구매',
+  text: '기술판매',
   name: 'second',
   },
   {
     id: 3,
-    text: '기술판매',
+    text: '기술구매',
     name: 'third',
   },
   {
