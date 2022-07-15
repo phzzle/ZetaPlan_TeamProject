@@ -17,12 +17,12 @@
     font-size: 1.2rem;
     font-weight: bold;
     color: #efefef;
-    margin: 14px 0 8px;
+    margin: 12px 0 4px;
 }
 
 #ChatBox .chatbox-content {
     text-align: left;
-    margin: 0 16px;
+    margin: 0 24px;
 }
 
 #ChatBox .chatbox-content .chatbox-subtitle {
@@ -33,6 +33,7 @@
     margin: 8px 0;
     position: relative;
     padding-left: 20px;
+    letter-spacing: 1.2;
 }
 
 #ChatBox .chatbox-content .chatbox-subtitle svg {
@@ -45,7 +46,8 @@
     font-size: 0.8rem;
     font-weight: normal;
     color: #efefef;
-    margin: 4px 0;
+    margin: 6px 0;
+    letter-spacing: 1.2;
 }
 
 #ChatBox .chatbox-btn {
