@@ -11,6 +11,38 @@
   margin-bottom: 24px;
 }
 
+#iporesult .mnaipo-iporesult-section1 .mnaipo-iporesult-title-container .mnaipo-iporesult-title-line {
+  width: 3px;
+  height: 50px;
+  background-color: #3b4b59;
+  margin-bottom: 60px;
+}
+
+#IpoResult1 .mnaipo-ma-part,
+#IpoResult2 .mnaipo-ma-part,
+#IpoResult3 .mnaipo-ma-part,
+#IpoResult4 .mnaipo-ma-part {
+  display: inline-block;
+  font-size: 18px;
+  margin-bottom: 10px;
+  position: relative;
+  font-weight: bold;
+}
+
+#IpoResult1 .mnaipo-ma-part::after,
+#IpoResult2 .mnaipo-ma-part::after,
+#IpoResult3 .mnaipo-ma-part::after,
+#IpoResult4 .mnaipo-ma-part::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 1.8px;
+  background-color: rgba(44, 53, 64, 0.5);
+  border-radius: 16px;
+  position: absolute;
+  right: -70px;
+  top: 50%;
+}
 /* ============================================== */
 
 .detail-tab-lists {
@@ -68,4 +100,36 @@
   margin-top: 30px;
   font-size: 14px;
   line-height: 1.7;
+}
+
+/* ========================================spac 우회상장 */
+
+#iporesult table {
+  width: 100%;
+  border: 2px solid #2c3540;
+  text-align: left;
+  border-collapse: collapse;
+}
+#iporesult table th,
+#iporesult table td {
+  border: 2px solid #2c3540;
+}
+#iporesult table th {
+  text-align: center;
+  background-color: rgba(59, 75, 89, 0.8);
+  color: #efefef;
+  font-size: 16px;
+  padding: 10px;
+}
+#iporesult table td {
+  padding: 10px 20px 10px;
+}
+
+#iporesult table dt {
+  font-weight: bold;
+}
+#iporesult table dd {
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }

@@ -11,6 +11,13 @@
   margin-bottom: 24px;
 }
 
+#iposummary .mnaipo-iposummary-section1 .mnaipo-iposummary-title-container .mnaipo-iposummary-title-line {
+  width: 3px;
+  height: 50px;
+  background-color: #3b4b59;
+  margin-bottom: 60px;
+}
+
 #iposummary .mnaipo-iposummary-part {
   display: inline-block;
   font-size: 18px;
