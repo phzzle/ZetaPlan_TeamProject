@@ -89,3 +89,12 @@
   padding-left: 10px;
   /* object-fit: cover; */
 }
+
+#Trade img{
+  width: 1000px;
+  height: 300px;
+}
+
+#Trade #img4{
+  height: 400px;
+}
