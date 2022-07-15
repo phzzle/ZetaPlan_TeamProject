@@ -75,9 +75,9 @@ const Header = () => {
                 <div className='main-sub-nav'>
                   <ul className='main-sub-nav-ul'>
                     <li className="sub-nav-star"><div className='navStar'></div></li>
-                    <li><Link to='/abroad'>해외 지사 소개</Link></li>
-                    <li><Link to='/abroad/case'>해외 진출 사례</Link></li>
-                    <li><Link to='/abroad/process'>해외진출 컨설팅</Link></li>
+                    <li><Link to='/abroad'>해외 진출 사업</Link></li>
+                    <li><Link to='/abroad/case'>해외 진출 지원</Link></li>
+                    <li><Link to='/abroad/process'>해외 지사 사업</Link></li>
                   </ul>
                 </div>
               </li>
@@ -116,11 +116,11 @@ const Header = () => {
         <div className='header-right'>
           <button className='lang-box'>
             <IoEarth size="1rem" fill='#efefef' />KOR
-            <ul>
-              <li>KOR</li>
-              <li>ENG</li>
-              <li>CH</li>
-            </ul>
+            <div className='lang-list'>
+              <Link to='/' className='lang'>KOR</Link>
+              <Link to='/english' className='lang'>ENG</Link>
+              <Link to='/china' className='lang'>CH</Link>
+            </div>
           </button>
           <div className='search-box'>
             <input type="text" placeholder='검색어를 입력하세요.'/>

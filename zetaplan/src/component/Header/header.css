@@ -144,7 +144,7 @@ a {
     color: #efefef;
 }
 
-#Header .header-right .lang-box ul {
+#Header .header-right .lang-box .lang-list {
     position: absolute;
     left: 2px;
     top: 30px;
@@ -152,12 +152,12 @@ a {
     display: none;
 }
 
-#Header .header-right .lang-box:hover ul {
+#Header .header-right .lang-box:hover .lang-list {
     display: block;
     animation: navPop 0.4s ease-in-out;
 }
 
-#Header .header-right .lang-box ul li {
+#Header .header-right .lang-box .lang-list .lang {
     margin: 10px 14px;
     color: #2c3540;
 }

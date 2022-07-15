@@ -27,9 +27,9 @@ const AbroadHeader = ({title, sub}) => {
           </span>
           <span className='sub-nav-depth2-sub'>{sub}<AiOutlineDown />
             <ul className='sub-nav-depth2'>
-              <li><a href="/abroad">해외 지사 소개</a></li>
-              <li><a href="/abroad/case">해외 진출 사례</a></li>
-              <li><a href="/abroad/process">해외진출 컨설팅</a></li>
+              <li><a href="/abroad">해외 진출 사업</a></li>
+              <li><a href="/abroad/case">해외 진출 지원</a></li>
+              <li><a href="/abroad/process">해외 지사 사업</a></li>
             </ul>
           </span>
         </nav>

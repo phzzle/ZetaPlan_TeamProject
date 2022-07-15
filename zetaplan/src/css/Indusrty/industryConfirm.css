@@ -115,3 +115,21 @@
     font-size: 14px;
     line-height: 1.6;
 }
+
+#IndustryConfirmHistory {
+    width: 1200px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(44, 53, 64, 0.4);
+    text-align: right;
+}
+
+#IndustryConfirmHistory button {
+    font-size: 14px;
+    color: #2c3540;
+    margin: 0 20px;
+}
+
+#IndustryConfirmHistory svg {
+    padding-top: 3px;
+    margin: 0 5px;
+}

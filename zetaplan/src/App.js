@@ -38,6 +38,10 @@ import NoticeRequest from './page/Notice/NoticeRequest';
 import InvestBusiness from './page/Invest/InvestBusiness';
 import confirmList from './component/Industry/IndustryConfirm/industry_confirm.json';
 import IndustryConfirmDetail from './page/Indusrty/IndustryConfirmDetail';
+import Login from './page/Common/Login';
+import Search from './page/Common/Search';
+import ChinaInfo from './page/Common/ChinaInfo';
+import EnglishInfo from './page/Common/EnglishInfo';
 
 function App() {
   let [items, setItems] = useState(confirmList);
@@ -65,9 +69,9 @@ function App() {
             <Route path='/invest/strategy' element={<InvestStrategy title="투자/경영" sub="전략수립" />} />
             <Route path='/invest/empowerment' element={<InvestEmpowerment title="투자/경영" sub="역량강화" />} />
             <Route path='/invest/process' element={<InvestProcess title="투자/경영" sub="투자 컨설팅 과정" />} />
-            <Route path='/abroad' element={<AbroadInfo title="Abroad" sub="해외 지사 소개" />} />
-            <Route path='/abroad/case' element={<AbroadCase title="Abroad" sub="해외 진출 사례" />} />
-            <Route path='/abroad/process' element={<AbroadProcess title="Abroad" sub="해외진출 컨설팅" />} />
+            <Route path='/abroad' element={<AbroadInfo title="Abroad" sub="해외 진출 사업" />} />
+            <Route path='/abroad/case' element={<AbroadCase title="Abroad" sub="해외 진출 지원" />} />
+            <Route path='/abroad/process' element={<AbroadProcess title="Abroad" sub="해외 지사 사업" />} />
             <Route path='/industry' element={<IndustryIssue title="Industry" sub="산업 별 이슈" />} />
             <Route path='/industry/support' element={<IndustrySupport title="Industry" sub="지원 사업" />} />
             <Route path='/industry/confirm' element={<IndustryConfirm title="Industry" sub="기업/기술 인증" />} />
@@ -82,6 +86,10 @@ function App() {
             <Route path='/notice/info' element={<NoticeInfo title="Notice" sub="컨설팅 실적" />} />
             <Route path='/notice/inquiry' element={<NoticeInquiry title="Notice" sub="문의하기" />} />
             <Route path='/notice/request' element={<NoticeRequest title="Notice" sub="상담신청" />} />
+            <Route path='/login' element={<Login />} />
+            <Route path='/search/:word' element={<Search />} />
+            <Route path='/china' element={<ChinaInfo />} />
+            <Route path='/english' element={<EnglishInfo />} />
           </Routes>
         </BrowserRouter>
     </div>

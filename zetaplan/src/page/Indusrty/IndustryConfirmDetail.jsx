@@ -1,43 +1,19 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useParams } from 'react-router-dom';
 import DetailFooter from '../../component/Detail/DetailFooter';
 import IndustryHeader from '../../component/Detail/IndustryHeader';
-import IndustryConfirmList1 from '../../component/Industry/IndustryConfirm/IndustryConfirmList1';
-import { MAP_DATA_CONFIRM } from './../../component/Industry/IndustryConfirm/MapDataConfirm';
-import IndustryConfirmList0 from './../../component/Industry/IndustryConfirm/IndustryConfirmList0';
-import IndustryConfirmList2 from './../../component/Industry/IndustryConfirm/IndustryConfirmList2';
+import IndustryConfirmHistory from '../../component/Industry/IndustryConfirm/IndustryConfirmHistory';
 
 
 const IndustryConfirmDetail = ({data}) => {
   let {id} = useParams();
-  const [content, setContent] = useState('');
-
-  const buttonValueSetting = e => {
-    const { name } = e.target;
-    setContent(name);
-  };
-
-  const selectComponent = {
-    first: <IndustryConfirmList0 />,
-    second: <IndustryConfirmList1 />,
-    third: <IndustryConfirmList2 />
-  };
 
   return (
     <div id='IndustryConfirmDetail'>
       <IndustryHeader title="Industry" sub="기업/기술 인증" />
       <div id='SubInner'>
         <h2 className='detail-title'>지원 사업</h2>
-        <nav className='detail-tab-lists'>
-          {MAP_DATA_CONFIRM.map(data => {
-          return (
-            <button className={content === data.name? 'detail-tab-list active' : 'detail-tab-list'} onClick={buttonValueSetting} name={data.name} key={data.id}>
-              {data.text}
-            </button>
-          );
-        })}
-      </nav>
-      {content && <div className='detail-tab-content'>{selectComponent[content]}</div>}
+        <IndustryConfirmHistory id={data[id].id} />
       <div className='industry-confirm-content'>
         <h4 className='company-road-part'>{data[id].name}</h4>
         <div className='industry-confirm-content-logo'>
