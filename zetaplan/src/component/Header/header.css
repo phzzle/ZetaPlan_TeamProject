@@ -63,10 +63,11 @@ a {
     font-size: 13px;
     font-weight: normal;
     background-color: #efefef;
-    box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0.1px 0.1px 10px 0px rgba(0, 0, 0, 0.1);
     position: absolute;
     top: 80px;
     left: 0;
+    display: none;
 }
 
 .main-sub-box {
