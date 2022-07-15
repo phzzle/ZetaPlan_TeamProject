@@ -14,7 +14,7 @@ const ChatBox = () => {
         <p>02) 561 - 6698</p>
         <p>070) 8129-5884, 5885</p>
         <span className='chatbox-subtitle'><HiMail size='1rem' /> E-mail</span>
-        <p>zetabiz@zetaplan.com</p>
+        <p className='chatbox-subtitle-paragraph'>zetabiz@zetaplan.com</p>
       </div>
       <a href="/notice/request" className='chatbox-btn'>상담신청하기 <BiRightArrowAlt size='1.5rem' fill='#efefef' /></a>
     </div>

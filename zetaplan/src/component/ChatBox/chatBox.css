@@ -17,7 +17,7 @@
     font-size: 1.2rem;
     font-weight: bold;
     color: #efefef;
-    margin: 12px 0 4px;
+    margin: 14px 0 12px;
 }
 
 #ChatBox .chatbox-content {
@@ -30,7 +30,7 @@
     font-size: 1rem;
     font-weight: bold;
     color: #efefef;
-    margin: 8px 0;
+    margin: 2px 0;
     position: relative;
     padding-left: 20px;
     letter-spacing: 1.2;
@@ -46,8 +46,12 @@
     font-size: 0.8rem;
     font-weight: normal;
     color: #efefef;
-    margin: 6px 0;
+    margin: 8px 0;
     letter-spacing: 1.2;
+}
+
+#ChatBox .chatbox-content .chatbox-subtitle-paragraph {
+    margin-top: 2px;
 }
 
 #ChatBox .chatbox-btn {
@@ -60,7 +64,7 @@
     background-color: #F27B35;
     border: 2px solid #efefef;
     border-radius: 2rem;
-    margin: 10px auto;
+    margin: 18px auto 10px;
     padding-right: 14px;
     box-sizing: border-box;
     position: relative;
