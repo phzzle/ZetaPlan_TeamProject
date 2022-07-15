@@ -42,10 +42,11 @@ import Login from './page/Common/Login';
 import Search from './page/Common/Search';
 import ChinaInfo from './page/Common/ChinaInfo';
 import EnglishInfo from './page/Common/EnglishInfo';
+import AbroadCaseDetail from './page/Abroad/AbroadCaseDetail';
 
 function App() {
   let [items, setItems] = useState(confirmList);
-  console.log(items);
+  
   return (
     <div className='App'>
       <BrowserRouter>
@@ -90,6 +91,7 @@ function App() {
             <Route path='/search/:word' element={<Search />} />
             <Route path='/china' element={<ChinaInfo />} />
             <Route path='/english' element={<EnglishInfo />} />
+            <Route path='/abroad/case/detail/:id' element={<AbroadCaseDetail />} />
           </Routes>
         </BrowserRouter>
     </div>
