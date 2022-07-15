@@ -20,7 +20,7 @@ const CompanyManpower = ({ title, sub }) => {
       <CompanyHeader title={title} sub={sub} />
       <div id='SubInner'>
         <div className='company-title-container'>
-          <h1 className='company-title'>Manpower</h1>
+          <h2 className='company-title'>Manpower</h2>
           <div className='company-title-line'></div>
         </div>
         {manPower} {/* manPower.js 파일 삽입 */}

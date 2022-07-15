@@ -4,7 +4,6 @@ import { FaBullhorn } from 'react-icons/fa';
 import { GrDocumentPerformance } from 'react-icons/gr';
 import { BsPlusLg } from 'react-icons/bs';
 import { IoBusinessSharp, IoNewspaperSharp } from 'react-icons/io5';
-
 import NewsItem from './NewsItem';
 import InvestItem from './InvestItem';
 import PolicyInfoItem from './PolicyInfoItem';
