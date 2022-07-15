@@ -22,15 +22,7 @@ const IpoResult1 = () => {
         </div>
         <div>★ KOSPI = 비교시점의 시가총액 / 기준시점의 시가총액 × 100</div>
       </section>
-      <section className="mnaipo-ma-section">
-        <span className="mnaipo-ma-part"> 상장 요건</span>
-        <div>
-          코스피란 증권거래소에 유가증권시장에 상장된 기업종목을 대상으로 산출되며, 산출방 법은 1980년 1월 4일을
-          기준으로 이날 종합주가지수를 100으로 정하고, 개별종목의 주가에 상장주식수를 가중한 기준시점의 시가총액과
-          비교시점의 시가총액을 대비하여 산출합니다.
-        </div>
-        <div>★ KOSPI = 비교시점의 시가총액 / 기준시점의 시가총액 × 100</div>
-      </section>
+      <section className="mnaipo-ma-section"></section>
     </div>
   );
 };
