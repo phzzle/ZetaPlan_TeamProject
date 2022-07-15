@@ -6,6 +6,12 @@ const AbroadCase = ({title, sub}) => {
   return (
     <div>
       <AbroadHeader title={title} sub={sub} />
+
+      <div id='SubInner'>
+        <h2 className="detail-title">해외진출 지원</h2>
+        
+      </div>
+
       <DetailFooter />
     </div>
   );
