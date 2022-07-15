@@ -1,0 +1,95 @@
+#Search .search-header {
+    width: 100%;
+    height: 200px;
+    margin-top: 78px;
+    z-index: 999;
+}
+
+#Search .search-header .search-header-banner {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: relative;
+    box-sizing: border-box;
+    z-index: 999;
+    background: url(./../../../public/img/common/Subbanner/sub_banner1.png) no-repeat center / cover;
+    line-height: 200px;
+    font-weight: bold;
+    font-size: 32px;
+    color: #fff;
+}
+
+#Search .inner-search-head,
+#Search .search-list {
+    display: flex;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#Search .inner-search-head span {
+    border-left: 1px solid #2c3540;
+    border-top: 1px solid #2c3540;
+    border-bottom: 1px solid #2c3540;
+    height: 30px;
+    font-size: 18px;
+    background-color: rgba(44, 53, 64, 0.1);
+    text-align: center;
+    line-height: 30px;
+    display: block;
+}
+
+#Search .inner-search-head span:last-child {
+    border-right: 1px solid #2c3540;
+}
+
+.inner-search-sub {
+    width: 100px;
+}
+
+.inner-search-num {
+    width: 100px;
+}
+
+.inner-search-title {
+    width: 598px;
+    padding-left: 10px;
+}
+
+.inner-search-date {
+    width: 200px;
+}
+
+#Search .search-lists {
+    display: flex;
+}
+
+#Search .search-list {
+    width: 1000px;
+    height: 30px;
+}
+
+#Search .search-list a {
+    width: 100%;
+    height: 100%;
+}
+
+#Search .search-list span {
+    display: inline-block;
+    text-align: center;
+    font-size: 14px;
+    height: 30px;
+    line-height: 25px;
+    border: 1px solid rgba(44, 53, 64, 0.1);
+}
+
+#Search .search-list .inner-search-title {
+    text-align: left;
+}
+
+#Search .search-list .inner-search-date {
+    width: 200px;
+}
+
+#Search .inner-search-result {
+    margin-bottom: 80px;
+}

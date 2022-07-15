@@ -159,3 +159,12 @@ a:active {
 .App {
     font-family: 'Noto Sans KR', sans-serif;
 }
+
+input:focus {
+    background-color: transparent;
+    outline: none;
+}
+
+input {
+    outline: none;
+}

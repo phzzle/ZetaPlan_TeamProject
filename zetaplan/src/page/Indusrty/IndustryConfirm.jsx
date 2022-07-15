@@ -5,6 +5,7 @@ import IndustryConfirmList1 from '../../component/Industry/IndustryConfirm/Indus
 import { MAP_DATA_CONFIRM } from './../../component/Industry/IndustryConfirm/MapDataConfirm';
 import IndustryConfirmList0 from './../../component/Industry/IndustryConfirm/IndustryConfirmList0';
 import IndustryConfirmList2 from './../../component/Industry/IndustryConfirm/IndustryConfirmList2';
+import './../../css/Company/companyInfo.css'
 
 const IndustryConfirm = ({title, sub}) => {
   const [content, setContent] = useState('first');
@@ -24,7 +25,10 @@ const IndustryConfirm = ({title, sub}) => {
     <div id='IndustryConfirm'>
       <IndustryHeader title={title} sub={sub} />
       <div id='SubInner'>
-        <h2 className='detail-title'>지원 사업</h2>
+        <div className="company-title-container">
+          <h2 className="company-title">기업/기술 인증</h2>
+          <div className="company-title-line"></div>
+        </div>
         <nav className='detail-tab-lists'>
           {MAP_DATA_CONFIRM.map(data => {
           return (

@@ -1,10 +1,10 @@
 import React from 'react';
-import { FaSearch } from "react-icons/fa";
 import { TiThMenu } from "react-icons/ti";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { IoEarth } from "react-icons/io5";
 import { Link, useNavigate } from 'react-router-dom';
 import './header.css';
+import SearchForm from './../Search/SearchForm';
 
 const Header = () => {
   const navigate = useNavigate();
@@ -122,10 +122,7 @@ const Header = () => {
               <Link to='/china' className='lang'>CH</Link>
             </div>
           </button>
-          <div className='search-box'>
-            <input type="text" placeholder='검색어를 입력하세요.'/>
-            <button onClick={() => goToSearch()}><FaSearch size="1.2rem" fill='#2c3540'/></button>
-          </div>
+          <SearchForm />
           <button><TiThMenu size="2rem" fill='#efefef' /></button>
         </div>
       </div>

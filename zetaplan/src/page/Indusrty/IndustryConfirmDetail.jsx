@@ -12,7 +12,10 @@ const IndustryConfirmDetail = ({data}) => {
     <div id='IndustryConfirmDetail'>
       <IndustryHeader title="Industry" sub="기업/기술 인증" />
       <div id='SubInner'>
-        <h2 className='detail-title'>지원 사업</h2>
+        <div className="company-title-container">
+          <h2 className="company-title">기업/기술 인증</h2>
+          <div className="company-title-line"></div>
+        </div>
         <IndustryConfirmHistory id={data[id].id} />
       <div className='industry-confirm-content'>
         <h4 className='company-road-part'>{data[id].name}</h4>

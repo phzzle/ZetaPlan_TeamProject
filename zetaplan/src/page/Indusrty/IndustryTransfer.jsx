@@ -6,6 +6,12 @@ const IndustryTransfer = ({title, sub}) => {
   return (
     <div>
       <IndustryHeader title={title} sub={sub} />
+      <div id='SubInner'>
+        <div className="company-title-container">
+          <h2 className="company-title">기술이전</h2>
+          <div className="company-title-line"></div>
+        </div>
+      </div>
       <DetailFooter />
     </div>
   );

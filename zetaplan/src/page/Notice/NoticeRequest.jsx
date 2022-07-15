@@ -54,7 +54,10 @@ const NoticeRequest = ({title, sub}) => {
       <NoticeHeader title={title} sub={sub}/>
 
       <div id="SubInner">
-        <h2 className='detail-title'>컨설팅 신청</h2>
+        <div className="company-title-container">
+          <h2 className="company-title">컨설팅신청</h2>
+          <div className="company-title-line"></div>
+        </div>
         <form action="" id='requestForm'>
           <table className='request-form-table'>
             <colgroup>
