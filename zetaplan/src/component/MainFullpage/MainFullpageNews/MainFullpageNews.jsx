@@ -90,12 +90,10 @@ const MainFullpageNews = () => {
                 <p>뉴스</p>
               </h3>
               <div className='board-list'>{newsList}</div>
-
               <a href='http://zetaplan.com/category/news/'>
                 <BsPlusLg className='more-icon' />
               </a>
             </div>
-
             <div className='board'>
               <h3 className='news-title'>
                 {/* <IoBusinessSharp
