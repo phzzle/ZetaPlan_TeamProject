@@ -1,8 +1,8 @@
 import React from "react";
 
-const IpoResult1 = () => {
+const IpoProcess1 = () => {
   return (
-    <div id="IpoResult1">
+    <div className="IpoProcess1">
       <div id="SubInner">
         <section className="mnaipo-ma-section">
           <span className="mnaipo-ma-part">IPO 컨설팅 절차</span>
@@ -72,4 +72,4 @@ const IpoResult1 = () => {
   );
 };
 
-export default IpoResult1;
+export default IpoProcess1;
