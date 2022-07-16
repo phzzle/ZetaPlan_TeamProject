@@ -51,14 +51,14 @@
     color: #2c3540;
 }
 
-#Hamburger .hamburger-list .hamburger-title-menu .hamburger-sub-menu:hover {
-    color: #F27B35;
-}
-
 #Hamburger .hamburger-list .hamburger-title-menu .hamburger-sub-menu li {
     padding: 15px;
     font-size: 14px;
     cursor: pointer;
+}
+
+#Hamburger .hamburger-list .hamburger-title-menu .hamburger-sub-menu li:hover {
+    color: #F27B35;
 }
 
 @keyframes HamburgerOpen {
