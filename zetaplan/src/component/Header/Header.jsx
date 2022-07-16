@@ -40,7 +40,7 @@ const Header = () => {
                           <ul className='main-sub-detail-nav'>
                             <li><Link to='/mna'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />M&A 개요</Link></li>
                             <li><Link to='/mna/result'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />M&A 성과</Link></li>
-                            <li><Link to='/mna/process'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />M&A 컨설팅 과정</Link></li>
+                            <li><Link to='/mna/process'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />M&A 프로세스</Link></li>
                           </ul>
                         </li>
                         <li>
@@ -48,7 +48,7 @@ const Header = () => {
                             <ul className='main-sub-detail-nav'>
                               <li><Link to='/ipo'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />IPO 개요</Link></li>
                               <li><Link to='/ipo/result'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />IPO 성과</Link></li>
-                              <li><Link to='/ipo/process'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />IPO 컨설팅 과정</Link></li>
+                              <li><Link to='/ipo/process'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />IPO 프로세스</Link></li>
                             </ul>
                         </li>
                     </ul>
@@ -70,12 +70,12 @@ const Header = () => {
                     <ul className='main-sub-nav-ul'>
                         <li className="sub-nav-star"><div className='navStar'></div></li>
                         <li><Link to='/industry'>산업 별 이슈</Link></li>
-                        <li><Link to='/industry/support'>지원 사업</Link></li>
                         <li><Link to='/industry/confirm'>기업/기술 인증</Link></li>
                         <li><Link to='/industry/transfer'>기술 이전</Link></li>
                         <li><Link to='/industry/trade'>기술 거래</Link></li>
                         <li><Link to='/industry/value'>가치 평가</Link></li>
                         <li><Link to='/industry/credit'>신용 평가</Link></li>
+                        <li><Link to='/industry/support'>지원 사업</Link></li>
                     </ul>
                     <ul className='main-sub-nav-ul'>
                         <li className="sub-nav-star"><div className='navStar'></div></li>
@@ -113,7 +113,7 @@ const Header = () => {
                           <ul className='main-sub-detail-nav'>
                             <li><Link to='/mna'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />M&A 개요</Link></li>
                             <li><Link to='/mna/result'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />M&A 성과</Link></li>
-                            <li><Link to='/mna/process'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />M&A 컨설팅 과정</Link></li>
+                            <li><Link to='/mna/process'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />M&A 프로세스</Link></li>
                           </ul>
                         </li>
                         <li>
@@ -121,7 +121,7 @@ const Header = () => {
                             <ul className='main-sub-detail-nav'>
                               <li><Link to='/ipo'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />IPO 개요</Link></li>
                               <li><Link to='/ipo/result'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />IPO 성과</Link></li>
-                              <li><Link to='/ipo/process'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />IPO 컨설팅 과정</Link></li>
+                              <li><Link to='/ipo/process'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />IPO 프로세스</Link></li>
                             </ul>
                         </li>
                     </ul>
@@ -143,12 +143,12 @@ const Header = () => {
                     <ul className='main-sub-nav-ul'>
                         <li className="sub-nav-star"><div className='navStar'></div></li>
                         <li><Link to='/industry'>산업 별 이슈</Link></li>
-                        <li><Link to='/industry/support'>지원 사업</Link></li>
                         <li><Link to='/industry/confirm'>기업/기술 인증</Link></li>
                         <li><Link to='/industry/transfer'>기술 이전</Link></li>
                         <li><Link to='/industry/trade'>기술 거래</Link></li>
                         <li><Link to='/industry/value'>가치 평가</Link></li>
                         <li><Link to='/industry/credit'>신용 평가</Link></li>
+                        <li><Link to='/industry/support'>지원 사업</Link></li>
                     </ul>
                     <ul className='main-sub-nav-ul'>
                         <li className="sub-nav-star"><div className='navStar'></div></li>
@@ -186,7 +186,7 @@ const Header = () => {
                           <ul className='main-sub-detail-nav'>
                             <li><Link to='/mna'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />M&A 개요</Link></li>
                             <li><Link to='/mna/result'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />M&A 성과</Link></li>
-                            <li><Link to='/mna/process'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />M&A 컨설팅 과정</Link></li>
+                            <li><Link to='/mna/process'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />M&A 프로세스</Link></li>
                           </ul>
                         </li>
                         <li>
@@ -194,7 +194,7 @@ const Header = () => {
                             <ul className='main-sub-detail-nav'>
                               <li><Link to='/ipo'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />IPO 개요</Link></li>
                               <li><Link to='/ipo/result'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />IPO 성과</Link></li>
-                              <li><Link to='/ipo/process'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />IPO 컨설팅 과정</Link></li>
+                              <li><Link to='/ipo/process'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />IPO 프로세스</Link></li>
                             </ul>
                         </li>
                     </ul>
@@ -216,12 +216,12 @@ const Header = () => {
                     <ul className='main-sub-nav-ul'>
                         <li className="sub-nav-star"><div className='navStar'></div></li>
                         <li><Link to='/industry'>산업 별 이슈</Link></li>
-                        <li><Link to='/industry/support'>지원 사업</Link></li>
                         <li><Link to='/industry/confirm'>기업/기술 인증</Link></li>
                         <li><Link to='/industry/transfer'>기술 이전</Link></li>
                         <li><Link to='/industry/trade'>기술 거래</Link></li>
                         <li><Link to='/industry/value'>가치 평가</Link></li>
                         <li><Link to='/industry/credit'>신용 평가</Link></li>
+                        <li><Link to='/industry/support'>지원 사업</Link></li>
                     </ul>
                     <ul className='main-sub-nav-ul'>
                         <li className="sub-nav-star"><div className='navStar'></div></li>
@@ -259,7 +259,7 @@ const Header = () => {
                           <ul className='main-sub-detail-nav'>
                             <li><Link to='/mna'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />M&A 개요</Link></li>
                             <li><Link to='/mna/result'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />M&A 성과</Link></li>
-                            <li><Link to='/mna/process'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />M&A 컨설팅 과정</Link></li>
+                            <li><Link to='/mna/process'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />M&A 프로세스</Link></li>
                           </ul>
                         </li>
                         <li>
@@ -267,7 +267,7 @@ const Header = () => {
                             <ul className='main-sub-detail-nav'>
                               <li><Link to='/ipo'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />IPO 개요</Link></li>
                               <li><Link to='/ipo/result'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />IPO 성과</Link></li>
-                              <li><Link to='/ipo/process'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />IPO 컨설팅 과정</Link></li>
+                              <li><Link to='/ipo/process'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />IPO 프로세스</Link></li>
                             </ul>
                         </li>
                     </ul>
@@ -289,12 +289,12 @@ const Header = () => {
                     <ul className='main-sub-nav-ul'>
                         <li className="sub-nav-star"><div className='navStar'></div></li>
                         <li><Link to='/industry'>산업 별 이슈</Link></li>
-                        <li><Link to='/industry/support'>지원 사업</Link></li>
                         <li><Link to='/industry/confirm'>기업/기술 인증</Link></li>
                         <li><Link to='/industry/transfer'>기술 이전</Link></li>
                         <li><Link to='/industry/trade'>기술 거래</Link></li>
                         <li><Link to='/industry/value'>가치 평가</Link></li>
                         <li><Link to='/industry/credit'>신용 평가</Link></li>
+                        <li><Link to='/industry/support'>지원 사업</Link></li>
                     </ul>
                     <ul className='main-sub-nav-ul'>
                         <li className="sub-nav-star"><div className='navStar'></div></li>
@@ -332,7 +332,7 @@ const Header = () => {
                           <ul className='main-sub-detail-nav'>
                             <li><Link to='/mna'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />M&A 개요</Link></li>
                             <li><Link to='/mna/result'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />M&A 성과</Link></li>
-                            <li><Link to='/mna/process'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />M&A 컨설팅 과정</Link></li>
+                            <li><Link to='/mna/process'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />M&A 프로세스</Link></li>
                           </ul>
                         </li>
                         <li>
@@ -340,7 +340,7 @@ const Header = () => {
                             <ul className='main-sub-detail-nav'>
                               <li><Link to='/ipo'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />IPO 개요</Link></li>
                               <li><Link to='/ipo/result'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />IPO 성과</Link></li>
-                              <li><Link to='/ipo/process'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />IPO 컨설팅 과정</Link></li>
+                              <li><Link to='/ipo/process'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />IPO 프로세스</Link></li>
                             </ul>
                         </li>
                     </ul>
@@ -362,12 +362,12 @@ const Header = () => {
                     <ul className='main-sub-nav-ul'>
                         <li className="sub-nav-star"><div className='navStar'></div></li>
                         <li><Link to='/industry'>산업 별 이슈</Link></li>
-                        <li><Link to='/industry/support'>지원 사업</Link></li>
                         <li><Link to='/industry/confirm'>기업/기술 인증</Link></li>
                         <li><Link to='/industry/transfer'>기술 이전</Link></li>
                         <li><Link to='/industry/trade'>기술 거래</Link></li>
                         <li><Link to='/industry/value'>가치 평가</Link></li>
                         <li><Link to='/industry/credit'>신용 평가</Link></li>
+                        <li><Link to='/industry/support'>지원 사업</Link></li>
                     </ul>
                     <ul className='main-sub-nav-ul'>
                         <li className="sub-nav-star"><div className='navStar'></div></li>
@@ -405,7 +405,7 @@ const Header = () => {
                           <ul className='main-sub-detail-nav'>
                             <li><Link to='/mna'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />M&A 개요</Link></li>
                             <li><Link to='/mna/result'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />M&A 성과</Link></li>
-                            <li><Link to='/mna/process'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />M&A 컨설팅 과정</Link></li>
+                            <li><Link to='/mna/process'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />M&A 프로세스</Link></li>
                           </ul>
                         </li>
                         <li>
@@ -413,7 +413,7 @@ const Header = () => {
                             <ul className='main-sub-detail-nav'>
                               <li><Link to='/ipo'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />IPO 개요</Link></li>
                               <li><Link to='/ipo/result'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />IPO 성과</Link></li>
-                              <li><Link to='/ipo/process'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />IPO 컨설팅 과정</Link></li>
+                              <li><Link to='/ipo/process'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />IPO 프로세스</Link></li>
                             </ul>
                         </li>
                     </ul>
@@ -435,12 +435,12 @@ const Header = () => {
                     <ul className='main-sub-nav-ul'>
                         <li className="sub-nav-star"><div className='navStar'></div></li>
                         <li><Link to='/industry'>산업 별 이슈</Link></li>
-                        <li><Link to='/industry/support'>지원 사업</Link></li>
                         <li><Link to='/industry/confirm'>기업/기술 인증</Link></li>
                         <li><Link to='/industry/transfer'>기술 이전</Link></li>
                         <li><Link to='/industry/trade'>기술 거래</Link></li>
                         <li><Link to='/industry/value'>가치 평가</Link></li>
                         <li><Link to='/industry/credit'>신용 평가</Link></li>
+                        <li><Link to='/industry/support'>지원 사업</Link></li>
                     </ul>
                     <ul className='main-sub-nav-ul'>
                         <li className="sub-nav-star"><div className='navStar'></div></li>

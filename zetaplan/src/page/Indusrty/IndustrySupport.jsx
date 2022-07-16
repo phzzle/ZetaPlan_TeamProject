@@ -17,10 +17,8 @@ const IndustrySupport = ({title, sub}) => {
   };
 
   const selectComponent = {
-    first: <IndustrySupport1 />,
-    second: <IndustrySupport2 />,
-    third: <IndustrySupport3 />,
-    fourth: <IndustrySupport4 />
+    first: <IndustrySupport2 />,
+    second: <IndustrySupport4 />
   };
 
   return (

@@ -43,7 +43,7 @@
 }
 
 .inner-search-sub {
-    width: 100px;
+    width: 140px;
 }
 
 .inner-search-num {
@@ -51,12 +51,15 @@
 }
 
 .inner-search-title {
-    width: 598px;
-    padding-left: 10px;
+    width: 618px;
+    padding: 0 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .inner-search-date {
-    width: 200px;
+    width: 140px;
 }
 
 #Search .search-lists {
@@ -87,7 +90,7 @@
 }
 
 #Search .search-list .inner-search-date {
-    width: 200px;
+    width: 140px;
 }
 
 #Search .inner-search-result {
