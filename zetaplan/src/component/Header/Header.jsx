@@ -70,12 +70,12 @@ const Header = () => {
                     <ul className='main-sub-nav-ul'>
                         <li className="sub-nav-star"><div className='navStar'></div></li>
                         <li><Link to='/industry'>산업 별 이슈</Link></li>
-                        <li><Link to='/industry/support'>지원 사업</Link></li>
                         <li><Link to='/industry/confirm'>기업/기술 인증</Link></li>
                         <li><Link to='/industry/transfer'>기술 이전</Link></li>
                         <li><Link to='/industry/trade'>기술 거래</Link></li>
                         <li><Link to='/industry/value'>가치 평가</Link></li>
                         <li><Link to='/industry/credit'>신용 평가</Link></li>
+                        <li><Link to='/industry/support'>지원 사업</Link></li>
                     </ul>
                     <ul className='main-sub-nav-ul'>
                         <li className="sub-nav-star"><div className='navStar'></div></li>
@@ -143,12 +143,12 @@ const Header = () => {
                     <ul className='main-sub-nav-ul'>
                         <li className="sub-nav-star"><div className='navStar'></div></li>
                         <li><Link to='/industry'>산업 별 이슈</Link></li>
-                        <li><Link to='/industry/support'>지원 사업</Link></li>
                         <li><Link to='/industry/confirm'>기업/기술 인증</Link></li>
                         <li><Link to='/industry/transfer'>기술 이전</Link></li>
                         <li><Link to='/industry/trade'>기술 거래</Link></li>
                         <li><Link to='/industry/value'>가치 평가</Link></li>
                         <li><Link to='/industry/credit'>신용 평가</Link></li>
+                        <li><Link to='/industry/support'>지원 사업</Link></li>
                     </ul>
                     <ul className='main-sub-nav-ul'>
                         <li className="sub-nav-star"><div className='navStar'></div></li>
@@ -216,12 +216,12 @@ const Header = () => {
                     <ul className='main-sub-nav-ul'>
                         <li className="sub-nav-star"><div className='navStar'></div></li>
                         <li><Link to='/industry'>산업 별 이슈</Link></li>
-                        <li><Link to='/industry/support'>지원 사업</Link></li>
                         <li><Link to='/industry/confirm'>기업/기술 인증</Link></li>
                         <li><Link to='/industry/transfer'>기술 이전</Link></li>
                         <li><Link to='/industry/trade'>기술 거래</Link></li>
                         <li><Link to='/industry/value'>가치 평가</Link></li>
                         <li><Link to='/industry/credit'>신용 평가</Link></li>
+                        <li><Link to='/industry/support'>지원 사업</Link></li>
                     </ul>
                     <ul className='main-sub-nav-ul'>
                         <li className="sub-nav-star"><div className='navStar'></div></li>
@@ -289,12 +289,12 @@ const Header = () => {
                     <ul className='main-sub-nav-ul'>
                         <li className="sub-nav-star"><div className='navStar'></div></li>
                         <li><Link to='/industry'>산업 별 이슈</Link></li>
-                        <li><Link to='/industry/support'>지원 사업</Link></li>
                         <li><Link to='/industry/confirm'>기업/기술 인증</Link></li>
                         <li><Link to='/industry/transfer'>기술 이전</Link></li>
                         <li><Link to='/industry/trade'>기술 거래</Link></li>
                         <li><Link to='/industry/value'>가치 평가</Link></li>
                         <li><Link to='/industry/credit'>신용 평가</Link></li>
+                        <li><Link to='/industry/support'>지원 사업</Link></li>
                     </ul>
                     <ul className='main-sub-nav-ul'>
                         <li className="sub-nav-star"><div className='navStar'></div></li>
@@ -362,12 +362,12 @@ const Header = () => {
                     <ul className='main-sub-nav-ul'>
                         <li className="sub-nav-star"><div className='navStar'></div></li>
                         <li><Link to='/industry'>산업 별 이슈</Link></li>
-                        <li><Link to='/industry/support'>지원 사업</Link></li>
                         <li><Link to='/industry/confirm'>기업/기술 인증</Link></li>
                         <li><Link to='/industry/transfer'>기술 이전</Link></li>
                         <li><Link to='/industry/trade'>기술 거래</Link></li>
                         <li><Link to='/industry/value'>가치 평가</Link></li>
                         <li><Link to='/industry/credit'>신용 평가</Link></li>
+                        <li><Link to='/industry/support'>지원 사업</Link></li>
                     </ul>
                     <ul className='main-sub-nav-ul'>
                         <li className="sub-nav-star"><div className='navStar'></div></li>
@@ -435,12 +435,12 @@ const Header = () => {
                     <ul className='main-sub-nav-ul'>
                         <li className="sub-nav-star"><div className='navStar'></div></li>
                         <li><Link to='/industry'>산업 별 이슈</Link></li>
-                        <li><Link to='/industry/support'>지원 사업</Link></li>
                         <li><Link to='/industry/confirm'>기업/기술 인증</Link></li>
                         <li><Link to='/industry/transfer'>기술 이전</Link></li>
                         <li><Link to='/industry/trade'>기술 거래</Link></li>
                         <li><Link to='/industry/value'>가치 평가</Link></li>
                         <li><Link to='/industry/credit'>신용 평가</Link></li>
+                        <li><Link to='/industry/support'>지원 사업</Link></li>
                     </ul>
                     <ul className='main-sub-nav-ul'>
                         <li className="sub-nav-star"><div className='navStar'></div></li>

@@ -28,12 +28,12 @@ const IndustryHeader = ({title, sub}) => {
           <span className='sub-nav-depth2-sub'>{sub}<AiOutlineDown />
             <ul className='sub-nav-depth2'>
               <li><a href="/industry">산업 별 이슈</a></li>
-              <li><a href="/industry/support">지원 사업</a></li>
               <li><a href="/industry/confirm">기업/기술 인증</a></li>
               <li><a href="/industry/transfer">기술 이전</a></li>
               <li><a href="/industry/trade">기술 거래</a></li>
               <li><a href="/industry/value">가치 평가</a></li>
               <li><a href="/industry/credit">신용 평가</a></li>
+              <li><a href="/industry/support">지원 사업</a></li>
             </ul>
           </span>
         </nav>
