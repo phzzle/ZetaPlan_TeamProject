@@ -2,9 +2,7 @@ import React, { useState } from 'react';
 import DetailFooter from '../../component/Detail/DetailFooter';
 import IndustryHeader from '../../component/Detail/IndustryHeader';
 import './../../css/Indusrty/industrySupport.css';
-import IndustrySupport1 from './../../component/Industry/IndustrySupport/IndustrySupport1';
 import IndustrySupport2 from './../../component/Industry/IndustrySupport/IndustrySupport2';
-import IndustrySupport3 from './../../component/Industry/IndustrySupport/IndustrySupport3';
 import IndustrySupport4 from './../../component/Industry/IndustrySupport/IndustrySupport4';
 import { MAP_DATA } from './../../component/Industry/IndustrySupport/MapData';
 

@@ -3,11 +3,7 @@ import React from 'react';
 const AbroadSupport7 = () => {
   return (
     <div>
-      <h2 className='detail-title'>
-        해외바이어 발굴
-      </h2>
-      
-      <section>
+      <section className='abroad-content-box'>
         <h4 className="abroad-title">
           사업 안내
         </h4>
@@ -23,7 +19,7 @@ const AbroadSupport7 = () => {
           </li>
         </ul>
       </section>
-      <section>
+      <section className='abroad-content-box'>
         <h4 className="abroad-title">
           진행 절차
         </h4>

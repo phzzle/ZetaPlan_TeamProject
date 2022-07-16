@@ -5,7 +5,7 @@ const IpoProcess1 = () => {
     <div className="IpoProcess1">
       <div id="SubInner">
         <section className="mnaipo-ma-section">
-          <span className="mnaipo-ma-part">IPO 컨설팅 절차</span>
+          <span className="mnaipo-ma-part">IPO 절차</span>
           <div></div>
         </section>
         <section className="mnaipo-ipoprocess-section">

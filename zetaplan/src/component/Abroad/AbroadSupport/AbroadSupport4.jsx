@@ -3,11 +3,7 @@ import React from 'react';
 const AbroadSupport4 = () => {
   return (
     <div>
-      <h2 className='detail-title'>
-        해외 M&amp;A 지원사업 (KITIA) 
-      </h2>
-      
-      <section>
+      <section className='abroad-content-box'>
         <h4 className="abroad-title">
           사업 안내
         </h4>
@@ -21,14 +17,14 @@ const AbroadSupport4 = () => {
         </ul>
       </section>
 
-      <section>
+      <section className='abroad-content-box'>
         <h4 className="abroad-title">
           지원 서비스
         </h4>
         <h6 className="abroad-sub-title">
           M&amp;A 성사지원
         </h6>
-        <p>· 해외 핵심기술 보유기업·기술 수요기업(투자자) 발굴,협상·실사 등 해외 M&amp;A(M&amp;A, 투자, 투자유치) 전과정을 지원</p>
+        <p className='abroad-desc'>· 해외 핵심기술 보유기업·기술 수요기업(투자자) 발굴,협상·실사 등 해외 M&amp;A(M&amp;A, 투자, 투자유치) 전과정을 지원</p>
         <h6 className="abroad-sub-title">
           R&amp;D 지원
         </h6>
@@ -45,14 +41,14 @@ const AbroadSupport4 = () => {
         </ul>
       </section>
 
-      <section>
+      <section className='abroad-content-box'>
         <h4 className="abroad-title">
           지원 절차
         </h4>
-        <img src="/img/Abroad/AbroadSupport/해외M&A 추진절차.jpg" alt="해외M&A 추진절차" />
+        <img src="/img/Abroad/AbroadSupport/해외M&A 추진절차.png" alt="해외M&A 추진절차" />
       </section>
       
-      <section>
+      <section className='abroad-content-box'>
         <h4 className="abroad-title">
           신청·접수
         </h4>

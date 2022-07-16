@@ -3,11 +3,7 @@ import React from 'react';
 const AbroadSupport1 = () => {
   return (
     <div>
-      <h2 className='detail-title'>
-        글로벌 기술사업화
-      </h2>
-
-      <section>
+      <section className='abroad-content-box'>
         <h4 className='abroad-title'>
           GCC란?
         </h4>
@@ -27,7 +23,7 @@ const AbroadSupport1 = () => {
         </ul>
       </section>
 
-      <section>
+      <section className='abroad-content-box'>
         <h4 className="abroad-title">지원 서비스</h4>
         <dl className='abroad-desc-list'>
           <dt>상담 지원</dt>
@@ -49,10 +45,10 @@ const AbroadSupport1 = () => {
         {/* 이미지 추가 */}
       </section>
       
-      <section>
+      <section className='abroad-content-box'>
         <h4 className='abroad-title'>컨설팅 지원사업 프로세스</h4>
         {/* 이미지 추가 */}
-        <img src="/img/Abroad/AbroadSupport/글로벌기술사업화1.jpg" alt="글로벌기술사업화" />
+        <img src="/img/Abroad/AbroadSupport/글로벌기술사업화 프로세스.png" alt="글로벌기술사업화 프로세스" />
       </section>
     </div>
   );

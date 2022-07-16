@@ -3,20 +3,19 @@ import React from 'react';
 const AbroadSupport2 = () => {
   return (
     <div>
-      <h2 className='detail-title'>수출바우처 사업</h2>
-      <section>
+      <section className='abroad-content-box'>
         <h4 className='abroad-title'>사업 안내</h4>
         <p className='abroad-desc'>
           · 기업에 바우처를 부여하고, 바우처를 받은 기업은 다양한 수출활동 메뉴판에서 필요한 서비스, 원하는 서비스(수행)기관을 직접 선택해서 수출 마케팅을 진행하는 방식으로 지원되는 신개념 수출 지원 사업 플랫폼입니다.
         </p>
       </section>
 
-      <section>
+      <section className='abroad-content-box'>
         <h4 className='abroad-title'>지원대상</h4>
         <img src="/img/Abroad/AbroadSupport/수출바우처 지원대상.jpg" alt="수출바우처 지원대상" />
       </section>
 
-      <section>
+      <section className='abroad-content-box'>
         <h4 className='abroad-title'>지원내용</h4>
         <dl className='abroad-desc-list'>
           <dt>조사/일반 컨설팅</dt>
@@ -46,12 +45,12 @@ const AbroadSupport2 = () => {
         </dl>
       </section>
       
-      <section>
+      <section className='abroad-content-box'>
         <h4 className='abroad-title'>진행 절차</h4>
         <img src="/img/Abroad/AbroadSupport/수출바우처 진행절차.jpg" alt="수출바우처 진행절차" />
       </section>
 
-      <section>
+      <section className='abroad-content-box'>
         <h4 className='abroad-title'>신청·접수</h4>
         <h6 className='abroad-sub-title'>신청기간</h6>
         <p className='abroad-desc'>· 년 2~3회 모집</p>

@@ -64,3 +64,29 @@
   margin: auto;
   margin-bottom: 70px;
 }
+
+/* ============================================== */
+
+.IpoProcess2 .mnaipo-ipoprocess-ipoconsult-parts {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.IpoProcess2 .mnaipo-ipoprocess-ipoconsult-part {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 65px;
+  line-height: 65px;
+  background-color: rgb(44, 53, 64, 0.8);
+  color: white;
+  border-radius: 10px;
+}
+
+.IpoProcess2 .mnaipo-ipoprocess-advice-part {
+  background: url(/public/img/MnaIpo/IpoProcess/ipo\ process\ 2.png) no-repeat;
+  width: 1100px;
+  height: 600px;
+}

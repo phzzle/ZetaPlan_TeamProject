@@ -3,11 +3,7 @@ import React from 'react';
 const AbroadSupport8 = () => {
   return (
     <div>
-      <h2 className='detail-title'>
-        환경산업 해외진출 지원사업 
-      </h2>
-      
-      <section>
+      <section className='abroad-content-box'>
         <h4 className="abroad-title">
           개도국 환경개선 마스터플랜 수립
         </h4>
@@ -42,7 +38,7 @@ const AbroadSupport8 = () => {
         </p>
       </section>
 
-      <section>
+      <section className='abroad-content-box'>
         <h4 className="abroad-title">
           해외 환경프로젝트 타당성조사 지원
         </h4>
@@ -82,7 +78,7 @@ const AbroadSupport8 = () => {
         </ul>
       </section>
 
-      <section>
+      <section className='abroad-content-box'>
         <h4 className="abroad-title">
           환경기술 국제공동 현지 사업화 지원
         </h4>
@@ -105,7 +101,7 @@ const AbroadSupport8 = () => {
         </ul>
       </section>
 
-      <section>
+      <section className='abroad-content-box'>
         <h4 className="abroad-title">
           환경산업 해외진출 컨설팅지원사업
         </h4>
@@ -123,7 +119,7 @@ const AbroadSupport8 = () => {
         </p>
       </section>
 
-      <section>
+      <section className='abroad-content-box'>
         <h4 className="abroad-title">
           해외 환경산업협력센터 운영
         </h4>
@@ -144,7 +140,7 @@ const AbroadSupport8 = () => {
         <img src="/img/Abroad/AbroadSupport/환경산업해외진출지원사업1.jpg" alt="해외 환경산업협력센터 운영 지원내용" />
       </section>
 
-      <section>
+      <section className='abroad-content-box'>
         <h4 className="abroad-title">
           글로벌 그린비즈니스 파트너십 구축
         </h4>
@@ -167,7 +163,7 @@ const AbroadSupport8 = () => {
         </ul>
       </section>
 
-      <section>
+      <section className='abroad-content-box'>
         <h4 className="abroad-title">
           해외정보제공
         </h4>
@@ -203,7 +199,7 @@ const AbroadSupport8 = () => {
         </ul>
       </section>
 
-      <section>
+      <section className='abroad-content-box'>
         <h4 className="abroad-title">
           우수환경기업 해외수출기업화 지원사업
         </h4>
@@ -219,7 +215,7 @@ const AbroadSupport8 = () => {
         <img src="/img/Abroad/AbroadSupport/환경산업해외진출지원사업2.jpg" alt="우수환경기업 해외수출기업화 지원사업 내용" />
       </section>
 
-      <section>
+      <section className='abroad-content-box'>
         <h4 className="abroad-title">
           환경산업 시장개척단 파견사업
         </h4>
