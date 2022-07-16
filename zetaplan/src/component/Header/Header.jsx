@@ -40,7 +40,7 @@ const Header = () => {
                           <ul className='main-sub-detail-nav'>
                             <li><Link to='/mna'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />M&A 개요</Link></li>
                             <li><Link to='/mna/result'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />M&A 성과</Link></li>
-                            <li><Link to='/mna/process'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />M&A 컨설팅 과정</Link></li>
+                            <li><Link to='/mna/process'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />M&A 프로세스</Link></li>
                           </ul>
                         </li>
                         <li>
@@ -48,7 +48,7 @@ const Header = () => {
                             <ul className='main-sub-detail-nav'>
                               <li><Link to='/ipo'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />IPO 개요</Link></li>
                               <li><Link to='/ipo/result'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />IPO 성과</Link></li>
-                              <li><Link to='/ipo/process'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />IPO 컨설팅 과정</Link></li>
+                              <li><Link to='/ipo/process'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />IPO 프로세스</Link></li>
                             </ul>
                         </li>
                     </ul>
@@ -113,7 +113,7 @@ const Header = () => {
                           <ul className='main-sub-detail-nav'>
                             <li><Link to='/mna'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />M&A 개요</Link></li>
                             <li><Link to='/mna/result'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />M&A 성과</Link></li>
-                            <li><Link to='/mna/process'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />M&A 컨설팅 과정</Link></li>
+                            <li><Link to='/mna/process'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />M&A 프로세스</Link></li>
                           </ul>
                         </li>
                         <li>
@@ -121,7 +121,7 @@ const Header = () => {
                             <ul className='main-sub-detail-nav'>
                               <li><Link to='/ipo'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />IPO 개요</Link></li>
                               <li><Link to='/ipo/result'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />IPO 성과</Link></li>
-                              <li><Link to='/ipo/process'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />IPO 컨설팅 과정</Link></li>
+                              <li><Link to='/ipo/process'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />IPO 프로세스</Link></li>
                             </ul>
                         </li>
                     </ul>
@@ -186,7 +186,7 @@ const Header = () => {
                           <ul className='main-sub-detail-nav'>
                             <li><Link to='/mna'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />M&A 개요</Link></li>
                             <li><Link to='/mna/result'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />M&A 성과</Link></li>
-                            <li><Link to='/mna/process'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />M&A 컨설팅 과정</Link></li>
+                            <li><Link to='/mna/process'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />M&A 프로세스</Link></li>
                           </ul>
                         </li>
                         <li>
@@ -194,7 +194,7 @@ const Header = () => {
                             <ul className='main-sub-detail-nav'>
                               <li><Link to='/ipo'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />IPO 개요</Link></li>
                               <li><Link to='/ipo/result'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />IPO 성과</Link></li>
-                              <li><Link to='/ipo/process'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />IPO 컨설팅 과정</Link></li>
+                              <li><Link to='/ipo/process'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />IPO 프로세스</Link></li>
                             </ul>
                         </li>
                     </ul>
@@ -259,7 +259,7 @@ const Header = () => {
                           <ul className='main-sub-detail-nav'>
                             <li><Link to='/mna'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />M&A 개요</Link></li>
                             <li><Link to='/mna/result'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />M&A 성과</Link></li>
-                            <li><Link to='/mna/process'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />M&A 컨설팅 과정</Link></li>
+                            <li><Link to='/mna/process'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />M&A 프로세스</Link></li>
                           </ul>
                         </li>
                         <li>
@@ -267,7 +267,7 @@ const Header = () => {
                             <ul className='main-sub-detail-nav'>
                               <li><Link to='/ipo'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />IPO 개요</Link></li>
                               <li><Link to='/ipo/result'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />IPO 성과</Link></li>
-                              <li><Link to='/ipo/process'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />IPO 컨설팅 과정</Link></li>
+                              <li><Link to='/ipo/process'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />IPO 프로세스</Link></li>
                             </ul>
                         </li>
                     </ul>
@@ -332,7 +332,7 @@ const Header = () => {
                           <ul className='main-sub-detail-nav'>
                             <li><Link to='/mna'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />M&A 개요</Link></li>
                             <li><Link to='/mna/result'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />M&A 성과</Link></li>
-                            <li><Link to='/mna/process'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />M&A 컨설팅 과정</Link></li>
+                            <li><Link to='/mna/process'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />M&A 프로세스</Link></li>
                           </ul>
                         </li>
                         <li>
@@ -340,7 +340,7 @@ const Header = () => {
                             <ul className='main-sub-detail-nav'>
                               <li><Link to='/ipo'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />IPO 개요</Link></li>
                               <li><Link to='/ipo/result'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />IPO 성과</Link></li>
-                              <li><Link to='/ipo/process'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />IPO 컨설팅 과정</Link></li>
+                              <li><Link to='/ipo/process'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />IPO 프로세스</Link></li>
                             </ul>
                         </li>
                     </ul>
@@ -405,7 +405,7 @@ const Header = () => {
                           <ul className='main-sub-detail-nav'>
                             <li><Link to='/mna'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />M&A 개요</Link></li>
                             <li><Link to='/mna/result'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />M&A 성과</Link></li>
-                            <li><Link to='/mna/process'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />M&A 컨설팅 과정</Link></li>
+                            <li><Link to='/mna/process'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />M&A 프로세스</Link></li>
                           </ul>
                         </li>
                         <li>
@@ -413,7 +413,7 @@ const Header = () => {
                             <ul className='main-sub-detail-nav'>
                               <li><Link to='/ipo'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />IPO 개요</Link></li>
                               <li><Link to='/ipo/result'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />IPO 성과</Link></li>
-                              <li><Link to='/ipo/process'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />IPO 컨설팅 과정</Link></li>
+                              <li><Link to='/ipo/process'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />IPO 프로세스</Link></li>
                             </ul>
                         </li>
                     </ul>

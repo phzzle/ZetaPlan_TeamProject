@@ -60,10 +60,10 @@ function App() {
             <Route path='/company/road' element={<CompanyRoad title="Company" sub="오시는길" />} />
             <Route path='/mna' element={<MASummary title="M&A" sub="M&A 개요" />} />
             <Route path='/mna/result' element={<MAResult title="M&A" sub="M&A 성과" />} />
-            <Route path='/mna/process' element={<MAProcess title="M&A" sub="M&A 컨설팅 과정" />} />
+            <Route path='/mna/process' element={<MAProcess title="M&A" sub="M&A 프로세스" />} />
             <Route path='/ipo' element={<IpoSummary title="IPO" sub="IPO 개요" />} />
             <Route path='/ipo/result' element={<IpoResult title="IPO" sub="IPO 성과" />} />
-            <Route path='/ipo/process' element={<IpoProcess title="IPO" sub="IPO 컨설팅 과정" />} />
+            <Route path='/ipo/process' element={<IpoProcess title="IPO" sub="IPO 프로세스" />} />
             <Route path='/invest/result' element={<InvestSummary title="투자/경영" sub="투자개요/사례" />} />
             <Route path='/invest' element={<InvestBusiness title="투자/경영" sub="경영컨설팅" />} />
             <Route path='/invest/plan' element={<InvestPlan title="투자/경영" sub="사업계획서/IR" />} />
