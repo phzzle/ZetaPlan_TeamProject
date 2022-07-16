@@ -6,7 +6,7 @@ export const IPO_PROCESS_DATA = [
   },
   {
     id: 2,
-    text: "IPO 컨설팅 절차",
+    text: "IPO 컨설팅 과정",
     name: "second",
   },
 ];

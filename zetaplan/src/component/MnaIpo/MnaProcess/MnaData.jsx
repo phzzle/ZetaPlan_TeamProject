@@ -6,7 +6,7 @@ export const MNA_PROCESS_DATA = [
   },
   {
     id: 2,
-    text: "M&A 컨설팅 절차",
+    text: "M&A 컨설팅 과정",
     name: "second",
   },
 ];
