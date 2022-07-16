@@ -1,4 +1,4 @@
-export const IPO_RESULT_DATA = [
+export const IPO_PROCESS_DATA = [
   {
     id: 1,
     text: "IPO 절차",
@@ -6,7 +6,7 @@ export const IPO_RESULT_DATA = [
   },
   {
     id: 2,
-    text: "IPO 성과",
+    text: "IPO 컨설팅 절차",
     name: "second",
   },
 ];

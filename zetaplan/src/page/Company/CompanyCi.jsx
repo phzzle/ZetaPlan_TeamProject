@@ -30,7 +30,7 @@ const CompanyCi = ({title, sub}) => {
         <section className="company-ci-section3">
           <div className="company-ci-section-left">로고</div>
           <div className="company-ci-section-right">
-            <ul>
+            <ul className="company-ci-logo-black-ul">
               <li className="company-ci-logo-black"></li>
               <li>
                 <a href="/public/img/common/logo_white.png" download>
@@ -38,7 +38,7 @@ const CompanyCi = ({title, sub}) => {
                 </a>
               </li>
             </ul>
-            <ul>
+            <ul className="company-ci-logo-white-ul">
               <li className="company-ci-logo-white"></li>
               <li>
                 <a href="/public/img/common/logo_white.png" download>
