@@ -7,7 +7,7 @@ const AbroadSupport5 = () => {
         해외진출 전략수립
       </h2>
       
-      <section>
+      <section className='abroad-content-box'>
         <h4 className="abroad-title">
           사업 안내
         </h4>
@@ -23,7 +23,7 @@ const AbroadSupport5 = () => {
           </li>
         </ul>
       </section>
-      <section>
+      <section className='abroad-content-box'>
         <h4 className="abroad-title">
           진행 절차
         </h4>

@@ -5,7 +5,8 @@
   display: inline-block;
   font-size: 18px;
   font-weight: bold;
-  margin: 40px 0;
+  /* margin: 40px 0; */
+  margin-bottom: 26px;
   color: #2c3540;
 }
 .abroad-title::after {
@@ -22,16 +23,19 @@
 .abroad-sub-title {
   font-size: 14px;
   color: #BF0628;
-  margin: 15px 5px;
+  margin: 0 5px 11px 5px;
 }
 .abroad-content-box {
-  margin-bottom: 28px;
+  margin: 38px 0 56px;
+}
+.abroad-content-box img {
+  max-width: 1200px;
 }
 .abroad-desc {
   color: #2c3540;
   font-size: 14px;
   line-height: 160%;
-  margin: 0 10px;
+  margin: 0 10px 19px 10px;
 }
 .abroad-info-img {
   max-width: 800px;

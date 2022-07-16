@@ -6,7 +6,7 @@ const AbroadSupport3 = () => {
       <h2 className='detail-title'>
         해외지사화 사업
       </h2>
-      <section>
+      <section className='abroad-content-box'>
         <h4 className='abroad-title'>
           사업 안내
         </h4>
@@ -15,7 +15,7 @@ const AbroadSupport3 = () => {
         </p>
       </section>
 
-      <section>
+      <section className='abroad-content-box'>
         <h4 className="abroad-title">
           지원 서비스
         </h4>
@@ -31,7 +31,7 @@ const AbroadSupport3 = () => {
         <img src="/img/Abroad/AbroadSupport/해외지사화 지원내용.jpg" alt="해외지사화 지원내용" />
       </section>
 
-      <section>
+      <section className='abroad-content-box'>
         <h4 className="abroad-title">
           신청·접수
         </h4>
