@@ -3,10 +3,6 @@ import React from 'react';
 const AbroadSupport8 = () => {
   return (
     <div>
-      <h2 className='detail-title'>
-        환경산업 해외진출 지원사업 
-      </h2>
-      
       <section className='abroad-content-box'>
         <h4 className="abroad-title">
           개도국 환경개선 마스터플랜 수립

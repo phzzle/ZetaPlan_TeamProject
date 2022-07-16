@@ -3,9 +3,6 @@ import React from 'react';
 const AbroadSupport3 = () => {
   return (
     <div>
-      <h2 className='detail-title'>
-        해외지사화 사업
-      </h2>
       <section className='abroad-content-box'>
         <h4 className='abroad-title'>
           사업 안내

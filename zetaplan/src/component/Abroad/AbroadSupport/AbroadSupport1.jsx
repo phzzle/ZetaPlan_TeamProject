@@ -3,10 +3,6 @@ import React from 'react';
 const AbroadSupport1 = () => {
   return (
     <div>
-      <h2 className='detail-title'>
-        글로벌 기술사업화
-      </h2>
-
       <section className='abroad-content-box'>
         <h4 className='abroad-title'>
           GCC란?

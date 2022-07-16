@@ -3,10 +3,6 @@ import React from 'react';
 const AbroadSupport4 = () => {
   return (
     <div>
-      <h2 className='detail-title'>
-        해외 M&amp;A 지원사업 (KITIA) 
-      </h2>
-      
       <section className='abroad-content-box'>
         <h4 className="abroad-title">
           사업 안내
