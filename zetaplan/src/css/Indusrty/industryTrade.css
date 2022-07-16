@@ -26,6 +26,26 @@
   
 
   /* =================== */
+  #Trade .industry-trade-part1{
+    display: inline-block;
+    position: relative;
+
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  #Trade .industry-trade-part1::after {
+    content: "";
+    display: block;
+    width: 2px;
+    height:26px;
+    background-color: rgba(44, 53, 64, 0.5);
+    border-radius: 16px;
+    position: absolute;
+    left: -10px;
+    top:0;
+  }
+  
 
   #Trade .industry-trade-part {
     display: inline-block;
@@ -34,7 +54,7 @@
     position: relative;
     font-weight: bold;
   }
-  
+
   #Trade .industry-trade-part::after {
     content: "";
     display: block;
@@ -47,6 +67,13 @@
     top: 50%;
   }
   
+  #Trade .industry-trade-table-title{
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
   #Trade .industry-trade-part-txt {
       font-size: 14px;
       line-height: 1.7;
@@ -58,7 +85,7 @@
     padding-left: 30px;
   }
 
-  /* ====================== */
+  /* ============ trade slider && img ========== */
 
 
 #Trade .swiper-slide {
@@ -97,7 +124,41 @@
 #Trade #img0{
   width: 1000px;
   height: 400px;
+  margin: 30px 0;
 }
 #Trade #img4{
   height: 400px;
+}
+
+
+/* ========table======= */
+
+#Trade table {
+  width: 100%;
+  border: 2px solid #2c3540;
+  text-align: left;
+  border-collapse: collapse;
+}
+#Trade table th,
+#Trade table td {
+  border: 2px solid #2c3540;
+}
+#Trade table th {
+  text-align: center;
+  background-color: rgba(59, 75, 89, 0.8);
+  color: #efefef;
+  font-size: 16px;
+  padding: 20px;
+}
+#Trade table td {
+  padding: 10px 20px 10px;
+}
+
+#Trade table dt {
+  font-weight: bold;
+}
+#Trade table dd {
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
