@@ -8,6 +8,8 @@ import IndustryCredit4 from '../../component/Industry/IndustryCredit/IndustryCre
 import { useState } from 'react';
 import { MAP_DATA_CREDIT } from '../../component/Industry/IndustryCredit/MapDataCredit';
 import IndustryCredit5 from '../../component/Industry/IndustryCredit/IndustryCredit5';
+import './../../css/Indusrty/industryCredit.css';
+
 
 
 const IndustryCredit = ({title, sub}) => {
