@@ -223,6 +223,30 @@ a {
     right: 6px;
 }
 
+#Header .header-hamburger-btn {
+    visibility: hidden;
+}
+
+@media (max-width: 720px) {
+    #Header #MainInner {
+        max-width: 720px;
+        justify-content: space-between;
+    }
+    #Header .header-nav-wrap .main-nav {
+        display: none;
+    }
+    #Header .header-right .lang-box {
+        display: none;
+    }
+    #Header .header-right .search-box {
+        display: none;
+    }
+    #Header .header-hamburger-btn {
+        visibility: visible;
+        float: right;
+    }
+}
+
 @keyframes navPop {
     from {
         opacity: 0;

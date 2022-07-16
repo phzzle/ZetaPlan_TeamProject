@@ -1,16 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { TiThMenu } from "react-icons/ti";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { IoEarth } from "react-icons/io5";
 import { Link, useNavigate } from 'react-router-dom';
 import './header.css';
 import SearchForm from './../Search/SearchForm';
+import Hamburger from '../Hamburger/Hamburger';
 
 const Header = () => {
   const navigate = useNavigate();
-  const goToSearch = () => {
-    navigate('/search');
+  const [active, setActive] = useState(false);
+  const activeMenu = () => {
+    active === false ? setActive(true) : setActive(false);
   }
+
   return (
     <header id='Header'>
       <div id='MainInner'>
@@ -469,7 +472,8 @@ const Header = () => {
             </div>
           </button>
           <SearchForm />
-          <button><TiThMenu size="2rem" fill='#efefef' /></button>
+          <button onClick={activeMenu} className='header-hamburger-btn'><TiThMenu size="2rem" fill='#efefef' /></button>
+          <Hamburger state={active} />
         </div>
       </div>
     </header>
