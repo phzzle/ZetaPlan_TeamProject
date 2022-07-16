@@ -1,14 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import './MainFullpageNews.css';
-import { FaBullhorn } from 'react-icons/fa';
-import { GrDocumentPerformance } from 'react-icons/gr';
+/* import { FaBullhorn } from 'react-icons/fa';
+import { GrDocumentPerformance } from 'react-icons/gr'; */
 import { BsPlusLg } from 'react-icons/bs';
-import { IoBusinessSharp, IoNewspaperSharp } from 'react-icons/io5';
+/* import { IoBusinessSharp, IoNewspaperSharp } from 'react-icons/io5'; */
 import NewsItem from './NewsItem';
 import InvestItem from './InvestItem';
 import PolicyInfoItem from './PolicyInfoItem';
 import ConsultingItem from './ConsultingItem';
-
 const MainFullpageNews = () => {
   const [list1, setList1] = useState([]);
   const [list2, setList2] = useState([]);
@@ -18,25 +17,25 @@ const MainFullpageNews = () => {
   useEffect(() => {
     fetch('/data/newsList.json')
       .then((response) => response.json())
-      .then((response) => setList1(response.newsList));
+      .then((response) => setList1(response));
   }, []);
 
   useEffect(() => {
     fetch('/data/tradeInformation.json')
       .then((response) => response.json())
-      .then((response) => setList2(response.tradeInformation));
+      .then((response) => setList2(response));
   }, []);
 
   useEffect(() => {
     fetch('/data/policyinfo.json')
       .then((response) => response.json())
-      .then((response) => setList3(response.policyinfo));
+      .then((response) => setList3(response));
   }, []);
 
   useEffect(() => {
     fetch('/data/consulting.json')
       .then((response) => response.json())
-      .then((response) => setList4(response.consulting));
+      .then((response) => setList4(response));
   }, []);
 
   const newsListData = list1.filter(
@@ -75,8 +74,9 @@ const MainFullpageNews = () => {
                 <p>공지사항</p>
               </h3>
               <div className='board-list'>{InvestList}</div>
-              <a href='http://zetaplan.com/ma/ma-deal-info/'>
+              <a className='more-btn' href='/notice'>
                 <BsPlusLg className='more-icon' />
+                <div className='more-text'>더보기</div>
               </a>
             </div>
             <div className='board'>
@@ -89,8 +89,9 @@ const MainFullpageNews = () => {
                 <p>뉴스</p>
               </h3>
               <div className='board-list'>{newsList}</div>
-              <a href='http://zetaplan.com/category/news/'>
+              <a className='more-btn' href='/notice/news'>
                 <BsPlusLg className='more-icon' />
+                <div className='more-text'>더보기</div>
               </a>
             </div>
             <div className='board'>
@@ -103,8 +104,9 @@ const MainFullpageNews = () => {
                 <p>기업지원정보</p>
               </h3>
               <div className='board-list'>{PolicyinfoList}</div>
-              <a href='http://zetaplan.com/business-support-information/'>
+              <a className='more-btn' href='/notice/support'>
                 <BsPlusLg className='more-icon' />
+                <div className='more-text'>더보기</div>
               </a>
             </div>
 
@@ -118,8 +120,9 @@ const MainFullpageNews = () => {
                 <p>컨설팅 실적</p>
               </h3>
               <div className='board-list'>{ConsultingList}</div>
-              <a href='http://zetaplan.com/performance-consulting/'>
+              <a className='more-btn' href='/notice/info'>
                 <BsPlusLg className='more-icon' />
+                <div className='more-text'>더보기</div>
               </a>
             </div>
           </div>

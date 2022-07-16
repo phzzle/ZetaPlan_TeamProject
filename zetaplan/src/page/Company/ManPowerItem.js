@@ -1,4 +1,4 @@
-import React, { useLayoutEffect } from 'react';
+import React from 'react';
 import '../../css/Company/CompanyManpower.css';
 import { VscClose } from 'react-icons/vsc';
 const ManPowerItem = ({ item }) => {
