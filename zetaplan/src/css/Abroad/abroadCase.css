@@ -63,8 +63,9 @@
   width: 1200px;
   border-bottom: 1px solid #2C3540;
   text-align: right;
-  padding-bottom: 20px;
+  padding-bottom: 16px;
 }
 #AbroadSupportHistory button {
-  padding-right: 30px;
+  margin-right: 30px;
+  padding: 3px;
 }
