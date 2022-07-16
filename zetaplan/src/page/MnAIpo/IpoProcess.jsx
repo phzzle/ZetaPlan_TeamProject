@@ -25,7 +25,7 @@ const IpoProcess = ({title, sub}) => {
       <div id="SubInner">
         <section className="mnaipo-ipoprocess-section1">
           <div className="mnaipo-ipoprocess-title-container">
-            <h2 className="mnaipo-ipoprocess-title">IPO 절차 및 컨설팅 과정</h2>
+            <h2 className="mnaipo-ipoprocess-title">IPO 프로세스</h2>
             <div className="mnaipo-ipoprocess-title-line"></div>
           </div>
         </section>
