@@ -6,6 +6,21 @@ import NoticeHeader from '../../component/Detail/NoticeHeader';
 
 const NoticeRequest = ({title, sub}) => {
   const navigate = useNavigate();
+  const [input, setInput] = useState({
+    category: '',
+    categoryDetail: [],
+    title: '',
+    name: '',
+    tel: '',
+    position: '',
+    companyName: '',
+    companyGroup: '',
+    companyType: '',
+    companyAddr: '',
+    currentSale: '',
+    projectionSale: '',
+    contents: ''
+  });
   const [categoryNum, setCategoryNum] = useState(0);
   const category = [
     {
@@ -40,10 +55,31 @@ const NoticeRequest = ({title, sub}) => {
     }
   ];
   const handleCategoryFnc = (e) => {
+    // 컨설팅 분야 handle 함수
     let currentCategory = e.target.value;
     let select = category.filter((item)=>{return item.category === currentCategory});
     setCategoryNum(select[0] !== undefined ? select[0].id : 0);
     // e.target.value가 category.category 와 같다면 그에 해당하는 id를 state로 설정한다.
+  }
+  const handleInputFnc = (e) => {
+    // input 입력걊을 저장하는 함수
+    // checkbox는 array로 저장하기 때문에 spread연산자를 이용하여 기존배열에 추가
+    e.target.name === 'categoryDetail' 
+    ? setInput({
+      ...input,
+      [e.target.name]: [...input.categoryDetail, e.target.value]
+    })
+    : setInput({
+        ...input,
+        [e.target.name]: e.target.value
+      });
+  }
+  const submitFnc = (e) => {
+    // form 제출 함수
+    e.preventDefault();
+    alert('작성하신 컨설팅요청이 전송되었습니다. 메인페이지로 이동합니다.');
+    // 이메일로? 암튼 컨설팅 form이 처리되는 로직 추가
+    navigate('/'); 
   }
   const goBack = () => {
     navigate(-1);
@@ -58,8 +94,8 @@ const NoticeRequest = ({title, sub}) => {
           <h2 className="company-title">컨설팅신청</h2>
           <div className="company-title-line"></div>
         </div>
-        <span className='notice-request-refer'>&#42;는 필수 작성</span>
-        <form action="" id='requestForm'>
+        <span className='notice-request-refer'>&#42; 는 필수 작성</span>
+        <form action="" id='requestForm' onSubmit={submitFnc}>
           <table className='request-form-table'>
             <colgroup>
               <col style={{width: '28%'}} />
@@ -68,10 +104,13 @@ const NoticeRequest = ({title, sub}) => {
             <tbody>
               <tr>
                 <th>
-                  컨설팅 분야
+                  컨설팅 분야 *
                 </th>
                 <td>
-                  <select name="category" className='consulting-category' onChange={handleCategoryFnc}>
+                  <select name="category" className='consulting-category' required onChange={(e)=>{
+                    handleCategoryFnc(e);
+                    handleInputFnc(e);
+                  }}>
                     <option value="none">-- 컨설팅 분야를 선택해주세요. --</option>
                     <option value="M&amp;A구조조정">M&amp;A구조조정</option>
                     <option value="기업공개(IPO)">기업공개(IPO)</option>
@@ -86,7 +125,7 @@ const NoticeRequest = ({title, sub}) => {
                       ? category[categoryNum-1].detail.map((ele, idx)=>{
                         return (
                           <span className='category-chkbox-item' key={idx}>
-                            <input type="checkbox" value={ele} id={'category' + idx} />
+                            <input type="checkbox" value={ele} id={'category' + idx} name="categoryDetail" onChange={handleInputFnc} />
                             <label htmlFor={"category" + idx}>{ele}</label>
                           </span>
                         )
@@ -98,40 +137,40 @@ const NoticeRequest = ({title, sub}) => {
               </tr>
               <tr>
                 <th>
-                  <label htmlFor="FormTitle">제목</label>
+                  <label htmlFor="FormTitle">제목 *</label>
                 </th>
-                <td><input type="text" id='FormTitle' className='full-input' /></td>
+                <td><input type="text" id='FormTitle' className='full-input' name='title' required onChange={handleInputFnc} /></td>
               </tr>
               <tr>
                 <th>
-                  <label htmlFor="userName">성명</label>
+                  <label htmlFor="userName">성명 *</label>
                 </th>
-                <td><input type="text" id='userName' /></td>
+                <td><input type="text" id='userName' name='name' required onChange={handleInputFnc} /></td>
               </tr>
               <tr>
                 <th>
-                  <label htmlFor="userTel">연락처</label>
+                  <label htmlFor="userTel">연락처 *</label>
                 </th>
-                <td><input type="text" id='userTel' /></td>
+                <td><input type="text" id='userTel' name='tel' required onChange={handleInputFnc} /></td>
               </tr>
               <tr>
                 <th>
-                  <label htmlFor="userPos">직책</label>
+                  <label htmlFor="userPos">직책 *</label>
                 </th>
-                <td><input type="text" id='userPos' /></td>
+                <td><input type="text" id='userPos' name='position' required onChange={handleInputFnc} /></td>
               </tr>
               <tr>
                 <th>
-                  <label htmlFor="companyName">회사명</label>
+                  <label htmlFor="companyName">회사명 *</label>
                 </th>
-                <td><input type="text" id='companyName' className='full-input' /></td>
+                <td><input type="text" id='companyName' className='full-input' name='companyName' required onChange={handleInputFnc} /></td>
               </tr>
               <tr>
                 <th>
                   회사 분류
                 </th>
                 <td>
-                  <select name="companyGroup">
+                  <select name="companyGroup" onChange={handleInputFnc}>
                     <option value="">--분류를 선택해주세요. --</option>
                     <option value="거래소기업">거래소기업</option>
                     <option value="코스닥기업">코스닥기업</option>
@@ -149,7 +188,7 @@ const NoticeRequest = ({title, sub}) => {
                   회사 업종
                 </th>
                 <td>
-                  <select name="companyType">
+                  <select name="companyType" onChange={handleInputFnc}>
                     <option value="">-- 업종을 선택해주세요. --</option>
                     <option value="농림수산업/광업">농림수산업/광업</option>
                     <option value="식품/생활용품">식품/생활용품</option>
@@ -176,27 +215,27 @@ const NoticeRequest = ({title, sub}) => {
               </tr>
               <tr>
                 <th>
-                  <label htmlFor="companyAddr">회사 주소</label>
+                  <label htmlFor="companyAddr">회사 주소 *</label>
                 </th>
-                <td><input type="text" id='companyAddr' /></td>
+                <td><input type="text" id='companyAddr' name='companyAddr' required onChange={handleInputFnc} /></td>
               </tr>
               <tr>
                 <th>
                   <label htmlFor="currentSale">당기 매출</label>
                 </th>
-                <td><input type="text" id='currentSale' /></td>
+                <td><input type="text" id='currentSale' name='currentSale' onChange={handleInputFnc} /></td>
               </tr>
               <tr>
                 <th>
                   <label htmlFor="projectionSale">예상 매출</label>
                 </th>
-                <td><input type="text" id='projectionSale' /></td>
+                <td><input type="text" id='projectionSale' name='projectionSale' onChange={handleInputFnc} /></td>
               </tr>
               <tr>
                 <th>
                   <label htmlFor="contents">상담신청 내용</label>
                 </th>
-                <td><textarea id='contents' /></td>
+                <td><textarea id='contents' name='contents' required onChange={handleInputFnc} /></td>
               </tr>
               <tr>
                 <th>
