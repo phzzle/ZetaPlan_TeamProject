@@ -8,6 +8,10 @@ const IndustryIssue = ({title, sub}) => {
     <div id = 'IndustryIssue'>
       <IndustryHeader title={title} sub={sub} />
       <div className="sub-inner">
+      <div className="company-title-container">
+          <h2 className='company-title'>산업별이슈</h2>
+          <div className='company-title-line'></div>
+        </div>
         <IssueList />
       </div>
       <DetailFooter />

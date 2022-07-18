@@ -1,9 +1,46 @@
-#history1, #history2, #history3{
-
+#history1, 
+#history2, 
+#history3 {
+    color:#2c3540e6;
+    margin: 50px 30px;
+}
+#history1 .history, 
+#history2 .history, 
+#history3 .history {
+    position: relative;
+}
+#history1 .history-year, 
+#history2 .history-year,
+#history3 .history-year{
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 50px;
 }
 
-#history1, #history2, #history3 h2{
-    font-size: 16px;
+#history1 .history-month,
+#history2 .history-month,
+#history3 .history-month{
+    font-size: 25px;
     font-weight: bold;
-    
+    margin-left: 170px;
+    line-height: 50px;
+}
+
+
+#history1 .history-des, 
+#history2 .history-des,
+#history3 .history-des{
+    font-size: 25px;
+    margin-left: 20px;
+    margin-top: 5px;
+    line-height: 30px;
+}
+
+#history .history-line {
+    position: absolute;
+    left:-35px;
+    top:15px;
+    width: 1px;
+    height: calc(100% + 20px);
+    background-color: rgb(153, 153, 153);
 }

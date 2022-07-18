@@ -26,7 +26,11 @@ const CompanyHistory = ({title, sub}) => {
     <div>
       <CompanyHeader title={title} sub={sub}/>
       <div id='SubInner'>
-      <h2 className='detail-title'>연혁</h2>
+      <div className="company-title-container">
+          <h2 className='company-title'>연혁</h2>
+          <div className='company-title-line'></div>
+        </div>
+
         <nav className='detail-tab-lists'>
           {MAP_DATA_HISTORY.map(data => {
           return (

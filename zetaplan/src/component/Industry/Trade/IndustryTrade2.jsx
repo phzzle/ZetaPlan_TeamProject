@@ -4,9 +4,13 @@ const IndustryTrade2 = () => {
     return (
             <div id='IndustryTrade'>
              <section className='industry-trade-section'>
-                <span className="industry-trade-part1"> 기술판매 컨설팅</span>
+                <span className="industry-trade-part"> 기술판매 컨설팅</span>
                 <br />
                 <br />
+                <p className='industry-trade-part-txt' id='industry-trade-sellbuy'>
+                  기술거래 대상 중 국내외 기술공급을 희망하는 국내외 특허 기술을 보유한 기업 또는 특허가 없는 경우에는 차별화된 노하우를 보유한 기업에게 <br />제타플랜의 다양한 서비스를 통해 기술판매 컨설팅을 제공하고 있습니다.
+                <br />   </p><br />
+
                 <span className="industry-trade-part">기술수요자조사</span>
                 <div>
              <table>

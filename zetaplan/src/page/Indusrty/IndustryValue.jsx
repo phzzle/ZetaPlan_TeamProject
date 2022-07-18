@@ -8,7 +8,7 @@ import IndustryValue4 from '../../component/Industry/IndustryValue/IndustryValue
 import IndustryValue2 from '../../component/Industry/IndustryValue/IndustryValue2';
 import IndustryValue3 from '../../component/Industry/IndustryValue/IndustryValue3';
 import { MAP_DATA_VALUE } from '../../component/Industry/IndustryValue/MapDataValue';
-
+import './../../css/Indusrty/industryValue.css'
 
 const IndustryValue = ({title, sub}) => {
   const [content, setContent] = useState('first');
@@ -31,7 +31,10 @@ const IndustryValue = ({title, sub}) => {
     <div>
       <IndustryHeader title={title} sub={sub} />
       <div id='SubInner'>
-      <h2 className='detail-title'>가치 평가</h2>
+      <div className="company-title-container">
+          <h2 className='company-title'>가치평가</h2>
+          <div className='company-title-line'></div>
+        </div>
         <nav className='detail-tab-lists'>
           {MAP_DATA_VALUE.map(data => {
           return (

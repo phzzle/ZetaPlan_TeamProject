@@ -26,10 +26,9 @@
   
 
   /* =================== */
-  #Trade .industry-trade-part1{
+/*   #Trade .industry-trade-part1{
     display: inline-block;
     position: relative;
-
     font-size: 24px;
     margin-bottom: 10px;
     font-weight: bold;
@@ -44,7 +43,7 @@
     position: absolute;
     left: -10px;
     top:0;
-  }
+  } */
   
 
   #Trade .industry-trade-part {
@@ -78,7 +77,10 @@
       font-size: 14px;
       line-height: 1.7;
   }
-
+  #Trade #industry-trade-sellbuy{
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
   #Trade .industry-trade-list{
     list-style-type: disc;
     box-sizing: border-box;

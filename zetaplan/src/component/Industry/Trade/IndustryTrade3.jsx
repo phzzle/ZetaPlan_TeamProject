@@ -5,9 +5,12 @@ const IndustryTrade3 = () => {
         <div>
             <div id='IndustryTrade'>
          <section className='industry-trade-section'>
-         <span className="industry-trade-part1"> 기술구매 컨설팅</span>
+         <span className="industry-trade-part"> 기술구매 컨설팅</span>
                 <br />
                 <br />
+                <p className='industry-trade-part-txt' id='industry-trade-sellbuy'>
+                기술공급 기업으로 부터 기술을 도입할 수 있는 자금력과 도입기술 활용능력을 갖추고 있는 기술수요기업에게 <br /> 제타플랜의 차별화된 서비스를 통해 기술구매 컨설팅을 제공하고 있습니다.  </p><br />
+
           <span className="industry-trade-part">기술공급자 조사</span>
           <br />
           <p className="industry-trade-table-title"> | 보유기술 매칭서비스(Technology Request Search Service)</p> 
