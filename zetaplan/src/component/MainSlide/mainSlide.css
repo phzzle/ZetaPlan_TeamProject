@@ -45,7 +45,7 @@
 
 .swiper-slide-active .main-slide-by {
     opacity: 1;
-    animation: slideBy 0.5s linear 0.1s;
+    animation: slideBy 0.6s linear 0.2s;
 }
 
 .main-slide-title {
@@ -72,25 +72,25 @@
 
 .swiper-slide-active .main-slide-title {
     opacity: 1;
-    animation: slideTitle 0.5s linear 0.1s;
+    animation: slideTitle 0.7s linear 0.1s;
     text-shadow: #2c3540 1px 1px, #2c3540 2px 2px, #2c3540 3px 3px, #2c3540 4px 4px;
 }
 
 .swiper-slide-active #MainSlide2 .main-slide-title {
     opacity: 1;
-    animation: slideTitle2 0.5s linear 0.1s;
+    animation: slideTitle2 0.7s linear 0.1s;
     text-shadow: #2c3540 1px 1px, #2c3540 2px 2px, #2c3540 3px 3px, #2c3540 4px 4px;
 }
 
 .swiper-slide-active #MainSlide3 .main-slide-title {
     opacity: 1;
-    animation: slideTitle3 0.5s linear 0.1s;
+    animation: slideTitle3 0.7s linear 0.1s;
     text-shadow: #2c3540 1px 1px, #2c3540 2px 2px, #2c3540 3px 3px, #2c3540 4px 4px;
 }
 
 .swiper-slide-active #MainSlide4 .main-slide-title {
     opacity: 1;
-    animation: slideTitle4 0.5s linear 0.1s;
+    animation: slideTitle4 0.7s linear 0.1s;
     text-shadow: #2c3540 1px 1px, #2c3540 2px 2px, #2c3540 3px 3px, #2c3540 4px 4px;
 }
 

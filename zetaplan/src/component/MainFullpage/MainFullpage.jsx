@@ -25,7 +25,7 @@ const MainFullpage = () => {
         slidesPerView={1} // 한 번에 보여지는 슬라이더
         loop={true} // 반복
         autoplay={{
-          delay: 3000,
+          delay: 3500,
           disableOnInteraction: false,
         }}
         pagination={{ clickable: true }}
