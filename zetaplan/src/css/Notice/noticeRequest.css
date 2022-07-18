@@ -1,3 +1,8 @@
+.notice-request-refer {
+  color: #BF0628;
+  font-size: 14px;
+  text-align: right;
+}
 #requestForm {
   width: 1200px;
   margin-bottom: 44px;

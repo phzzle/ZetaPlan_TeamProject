@@ -53,6 +53,7 @@ const AbroadInfo = ({title, sub}) => {
           </div>
           <div className='abroad-content-box'>
             <h6 className='abroad-sub-title'>전문분야 강점</h6>
+            <img src="/img/Abroad/AbroadNetwork/해외진출사업 전문분야강점.png" alt="해외진출사업 전문분야 강점" />
           </div>
         </section>
         <section className='abroad-network'>
