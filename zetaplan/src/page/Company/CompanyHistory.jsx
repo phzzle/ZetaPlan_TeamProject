@@ -6,7 +6,7 @@ import { MAP_DATA_HISTORY } from '../../component/Company/MapDataHistory';
 import CompanyHistory1 from '../../component/Company/CompanyHistory1';
 import CompanyHistory2 from '../../component/Company/CompanyHistory2';
 import CompanyHistory3 from '../../component/Company/CompanyHistory3';
-
+import './../../css/Company/companyHistory.css';
 
 const CompanyHistory = ({title, sub}) => {
   const [content, setContent] = useState('first');

@@ -3,30 +3,40 @@
 
 
 #Industrycredit1,
-#Industrycredit3 {
+#Industrycredit2,
+#Industrycredit3,
+#Industrycredit4,
+#Industrycredit5
+ {
     color: #2c3540;
     width: 1200px;
     box-sizing: border-box;
     padding: 20px 0 50px;
 }
 
-#Industrycredit1 .industry-credit1-sub,
-#Industrycredit2 .industry-credit2-sub,
-#Industrycredit3 .industry-credit3-sub,
-#Industrycredit4 .industry-credit4-sub {
+#Industrycredit1 .industry-credit-sub,
+#Industrycredit2 .industry-credit-sub,
+#Industrycredit3 .industry-credit-sub,
+#Industrycredit4 .industry-credit-sub,
+#Industrycredit5 .industry-credit-sub{
     font-size: 18px;
     font-weight: bold;
     margin: 25px 0 20px;
 }
 
-#Industrycredit1 .industry-credit1-des {
+#Industrycredit1 .industry-credit-des,
+#Industrycredit2 .industry-credit-des,
+#Industrycredit3 .industry-credit-des, 
+#Industrycredit4 .industry-credit-des,
+#Industrycredit5 .industry-credit-des {
     font-size: 14px;
-    margin: 0 10px;
+    margin: 8px;
     line-height: 1.6;
 }
 
-#Industrycredit1 .industry-credit1-des strong {
+#Industrycredit4 .industry-credit-des .strong {
     font-weight: bold;
+    line-height: 20px;
 }
 
 .industry-credit-img {
@@ -37,7 +47,7 @@
     width: 100%;
 }
 
-#Industrycredit1 .industry-credit1-refer {
+/* #Industrycredit1 .industry-credit1-refer {
     display: block;
     margin: 10px 0;
     font-size: 14px;
@@ -73,27 +83,33 @@
 
 #Industrycredit2 .industry-credit2-img {
     margin-bottom: 20px;
-}
+} 
 
 #Industrycredit3 .industry-credit3-sub {
     font-size: 18px;
     margin: 25px 0 15px;
 }
+*/
 
-#Industrycredit3 .industry-credit3-des {
-    font-size: 14px;
-    margin: 8px;
-    line-height: 1.6;
-}
-
-#Industrycredit3 .industry-credit3-refer {
+#Industrycredit .industry-credit-refer {
     display: block;
     margin: 15px 0;
     font-size: 14px;
     line-height: 1.6;
 }
 
-#Industrycredit3 .last-des {
+#Industrycredit1,
+#Industrycredit2,
+#Industrycredit3, 
+#Industrycredit4, 
+#Industrycredit5 .last-des {
     margin-top: 15px;
 }
 
+/* #Industrycredit1 #credit-btn,
+#Industrycredit2 #credit-btn,
+#Industrycredit3 #credit-btn,
+#Industrycredit4 #credit-btn,
+#Industrycredit5 #credit-btn{
+    margin: auto;
+} */
