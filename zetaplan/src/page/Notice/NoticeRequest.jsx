@@ -139,7 +139,7 @@ const NoticeRequest = ({title, sub}) => {
                 <th>
                   <label htmlFor="FormTitle">제목 *</label>
                 </th>
-                <td><input type="text" id='FormTitle' className='full-input' name='title' required onChange={handleInputFnc} /></td>
+                <td><input type="text" id='FormTitle' name='title' required onChange={handleInputFnc} /></td>
               </tr>
               <tr>
                 <th>
@@ -163,7 +163,7 @@ const NoticeRequest = ({title, sub}) => {
                 <th>
                   <label htmlFor="companyName">회사명 *</label>
                 </th>
-                <td><input type="text" id='companyName' className='full-input' name='companyName' required onChange={handleInputFnc} /></td>
+                <td><input type="text" id='companyName' name='companyName' required onChange={handleInputFnc} /></td>
               </tr>
               <tr>
                 <th>
@@ -233,7 +233,7 @@ const NoticeRequest = ({title, sub}) => {
               </tr>
               <tr>
                 <th>
-                  <label htmlFor="contents">상담신청 내용</label>
+                  <label htmlFor="contents" className='contents-title'>상담신청 내용</label>
                 </th>
                 <td><textarea id='contents' name='contents' required onChange={handleInputFnc} /></td>
               </tr>

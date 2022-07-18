@@ -18,10 +18,13 @@
 }
 #requestForm .request-form-table #FormTitle, 
 #requestForm .request-form-table #companyAddr, 
-#requestForm .request-form-table #contents {
+#requestForm .request-form-table #inquiryTitle, 
+#requestForm .request-form-table #contents, 
+#requestForm .request-form-table #inquiryContents  {
   width: 85%;
 }
-#requestForm .request-form-table input[type="text"] {
+#requestForm .request-form-table input[type="text"],
+#requestForm .request-form-table input[type="password"] {
   width: 390px;
   border-radius: 0;
   border: 1px solid #2C3540;
@@ -59,8 +62,17 @@
   padding-left: 20px;
 }
 #requestForm .request-form-table th {
+  position: relative;
   background-color: rgba(59, 75, 89, .8);
   color: #efefef;
+}
+#requestForm .request-form-table .contents-title {
+  width: 100%;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
 }
 .submit-btn-group {
   text-align: right;
