@@ -5,6 +5,7 @@ import './../../css/Indusrty/industrySupport.css';
 import IndustrySupport2 from './../../component/Industry/IndustrySupport/IndustrySupport2';
 import IndustrySupport4 from './../../component/Industry/IndustrySupport/IndustrySupport4';
 import { MAP_DATA } from './../../component/Industry/IndustrySupport/MapData';
+import './../../css/Indusrty/industrySupport.css';
 
 const IndustrySupport = ({title, sub}) => {
   const [content, setContent] = useState('first');

@@ -147,3 +147,27 @@
     margin: 0 10px;
     line-height: 1.4;
 }
+
+@media (max-width: 765px) {
+    .detail-tab-lists {
+        padding-left: 20px;
+    }
+    .detail-tab-lists .detail-tab-list {
+        width: 100px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 12px;
+    }
+    .detail-tab-content {
+        width: 640px;
+    }
+    #IndustrySupport2,
+    #IndustrySupport4 {
+        color: #2c3540;
+        width: 640px;
+        padding-left: 20px;
+    }
+    .industry-support-img {
+        width: 500px;
+    }
+}

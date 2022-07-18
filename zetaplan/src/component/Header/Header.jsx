@@ -6,6 +6,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import './header.css';
 import SearchForm from './../Search/SearchForm';
 import Hamburger from '../Hamburger/Hamburger';
+import { IoClose } from "react-icons/io5";
 
 const Header = () => {
   const navigate = useNavigate();
@@ -472,7 +473,10 @@ const Header = () => {
             </div>
           </button>
           <SearchForm />
-          <button onClick={activeMenu} className='header-hamburger-btn'><TiThMenu size="2rem" fill='#efefef' /></button>
+          <button onClick={activeMenu} className={active === false ? 'header-hamburger-btn' : 'header-hamburger-btn active'}>
+            <TiThMenu size="2rem" fill='#efefef' className='header-hamburger-open-btn' />
+            <IoClose size="3rem" fill='#efefef' className='header-hamburger-close-btn' />
+          </button>
           <Hamburger state={active} />
         </div>
       </div>

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { AiFillCaretDown } from "react-icons/ai";
 import './hamburger.css'
 
 const Hamburger = ({state}) => {

@@ -76,3 +76,23 @@
     top: 4px;
     right: 4px;
 }
+
+@media (max-width: 765px) {
+    #ChatBox {
+        width: 120px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        background-color: transparent;
+        box-shadow: none;
+    }
+    #ChatBox .chatbox-title {
+        display: none;
+    }
+    #ChatBox .chatbox-content {
+        display: none;
+    }
+    #ChatBox .chatbox-btn {
+        box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.4);
+    }
+}

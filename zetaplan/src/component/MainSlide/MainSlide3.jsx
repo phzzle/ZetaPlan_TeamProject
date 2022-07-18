@@ -7,7 +7,7 @@ const MainSlide3 = () => {
     <div id='MainSlide3'>
       <div className='main-slide-wrap'></div>
       <span className='main-slide-by'>ZetaPlanInvestment</span>
-      <h2 className='main-slide-title'>약 2,600개사 컨설팅 진행</h2>
+      <div className='main-slide-title'>약 2,600개사 컨설팅 진행</div>
       <Link to='/notice/info' className='main-slide-btn'><GrNext size='30px' />More</Link>
     </div>
   );

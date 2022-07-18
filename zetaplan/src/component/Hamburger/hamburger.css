@@ -30,6 +30,10 @@
     cursor: pointer;
 }
 
+.hamburger-title-menu:target .hamburger-sub-menu {
+    max-height: 10em;
+}
+
 #Hamburger .hamburger-list .hamburger-title-menu:hover {
     color: #F27B35;
 }
@@ -42,12 +46,15 @@
     display: none;
     animation: MenuSlide 0.3s linear;
     padding: 10px;
+    overflow: hidden;
+    transition: all 0.7s;
 }
 
 #Hamburger .hamburger-list .hamburger-title-menu .hamburger-sub-menu.open {
     display: block;
     transform-origin: 50% 50%;
     color: #2c3540;
+    transition: all 0.3s;
 }
 
 #Hamburger .hamburger-list .hamburger-title-menu .hamburger-sub-menu li {
