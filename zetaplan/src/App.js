@@ -93,7 +93,7 @@ function App() {
             <Route path='/china' element={<ChinaInfo />} />
             <Route path='/english' element={<EnglishInfo />} />
             <Route path='/abroad/case/detail/:id' element={<AbroadCaseDetail />} />
-            <Route paht='/notice/inquiryForm' element={<NoticeInquiryForm title="Notice" sub="문의하기" />} />
+            <Route path='/notice/inquiryForm' element={<NoticeInquiryForm title="Notice" sub="문의하기" />} />
           </Routes>
         </BrowserRouter>
     </div>

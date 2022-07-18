@@ -11,7 +11,7 @@ const SearchForm = () => {
 
   const onKeyPress = (e) => {
     if(e.key === "Enter") {
-      onSubmit();
+      
     }
   }
 
