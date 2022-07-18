@@ -8,6 +8,10 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import './mainFullpage.css';
 import ChatBox from '../ChatBox/ChatBox';
+import MainSlide1 from './../MainSlide/MainSlide1';
+import MainSlide2 from './../MainSlide/MainSlide2';
+import MainSlide3 from './../MainSlide/MainSlide3';
+import MainSlide4 from './../MainSlide/MainSlide4';
 
 const MainFullpage = () => {
   return (
@@ -21,17 +25,17 @@ const MainFullpage = () => {
         slidesPerView={1} // 한 번에 보여지는 슬라이더
         loop={true} // 반복
         autoplay={{
-          delay: 2500,
+          delay: 3000,
           disableOnInteraction: false,
         }}
         pagination={{ clickable: true }}
         onSlideChange={() => console.log('slide change')} // 슬라이더를 넘길때 마다 호출
         onSwiper={(swiper) => console.log(swiper)}
         className="mySwiper">
-          <SwiperSlide className='swiper-slide'><img src="./img/mainFullpage/mainFullpageMain/mainbanner0.png" alt="메인 슬라이드 1" /></SwiperSlide>
-          <SwiperSlide className='swiper-slide'><img src="./img/mainFullpage/mainFullpageMain/mainbanner1.png" alt="메인 슬라이드 2" /></SwiperSlide>
-          <SwiperSlide className='swiper-slide'><img src="./img/mainFullpage/mainFullpageMain/mainbanner2.png" alt="메인 슬라이드 3" /></SwiperSlide>
-          <SwiperSlide className='swiper-slide'><img src="./img/mainFullpage/mainFullpageMain/mainbanner3.png" alt="메인 슬라이드 4" /></SwiperSlide>
+          <SwiperSlide className='swiper-slide'><MainSlide1 /></SwiperSlide>
+          <SwiperSlide className='swiper-slide'><MainSlide2 /></SwiperSlide>
+          <SwiperSlide className='swiper-slide'><MainSlide3 /></SwiperSlide>
+          <SwiperSlide className='swiper-slide'><MainSlide4 /></SwiperSlide>
         </Swiper>
         <ChatBox />
       </div>

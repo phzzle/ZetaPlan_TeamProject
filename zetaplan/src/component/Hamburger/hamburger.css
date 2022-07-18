@@ -16,8 +16,7 @@
 }
 
 #Hamburger.closed {
-    animation: HamburgerClose 0.3s linear;
-    right: -240px;
+    display: none;
 }
 
 #Hamburger .hamburger-list {

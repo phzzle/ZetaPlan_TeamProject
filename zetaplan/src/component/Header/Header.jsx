@@ -22,7 +22,7 @@ const Header = () => {
           <nav className='header-nav'>
             <ul className='main-nav'>
               <li className="main-nav-list">
-                <Link to='/company'>Company</Link>
+                <Link to='/company' className='main-nav-list-li'>Company</Link>
                 <div className='main-sub-nav'>
                   <div  className='main-sub-box'>
                     <div className='main-sub-nav-left'></div>
@@ -95,7 +95,7 @@ const Header = () => {
                 </div>
               </li>
               <li className="main-nav-list">
-                <Link to='/mna'>M&A/IPO</Link>
+                <Link to='/mna' className='main-nav-list-li'>M&A/IPO</Link>
                 <div className='main-sub-nav'>
                   <div  className='main-sub-box'>
                     <div className='main-sub-nav-left'></div>
@@ -168,7 +168,7 @@ const Header = () => {
                 </div>
               </li>
               <li className="main-nav-list">
-                <Link to='/invest'>투자/경영</Link>
+                <Link to='/invest' className='main-nav-list-li'>투자/경영</Link>
                 <div className='main-sub-nav'>
                   <div  className='main-sub-box'>
                     <div className='main-sub-nav-left'></div>
@@ -241,7 +241,7 @@ const Header = () => {
                 </div>
               </li>
               <li className="main-nav-list">
-                <Link to='/abroad'>Abroad</Link>
+                <Link to='/abroad' className='main-nav-list-li'>Abroad</Link>
                 <div className='main-sub-nav'>
                   <div  className='main-sub-box'>
                     <div className='main-sub-nav-left'></div>
@@ -314,7 +314,7 @@ const Header = () => {
                 </div>
               </li>
               <li className="main-nav-list">
-                <Link to='/industry'>Industry</Link>
+                <Link to='/industry' className='main-nav-list-li'>Industry</Link>
                 <div className='main-sub-nav'>
                   <div  className='main-sub-box'>
                     <div className='main-sub-nav-left'></div>
@@ -387,7 +387,7 @@ const Header = () => {
                 </div>
               </li>
               <li className="main-nav-list">
-                <Link to='/notice'>Notice</Link>
+                <Link to='/notice' className='main-nav-list-li'>Notice</Link>
                 <div className='main-sub-nav'>
                   <div  className='main-sub-box'>
                     <div className='main-sub-nav-left'></div>

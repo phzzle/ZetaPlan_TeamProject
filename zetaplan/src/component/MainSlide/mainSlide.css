@@ -1,0 +1,213 @@
+#MainSlide1,
+#MainSlide2,
+#MainSlide3,
+#MainSlide4 {
+    width: 100vw;
+    height: 100vh;
+}
+
+#MainSlide1 .main-slide-wrap {
+    width: 100%;
+    height: 100%;
+    background: url(./../../../public/img/mainFullpage/mainFullpageMain/MainSlide2.png) no-repeat center / cover;
+    position: relative;
+}
+
+#MainSlide2 .main-slide-wrap {
+    width: 100%;
+    height: 100%;
+    background: url(./../../../public/img/mainFullpage/mainFullpageMain/MainSlide1.png) no-repeat center / cover;
+    position: relative;
+}
+
+#MainSlide3 .main-slide-wrap {
+    width: 100%;
+    height: 100%;
+    background: url(./../../../public/img/mainFullpage/mainFullpageMain/MainSlide3.png) no-repeat center / cover;
+    position: relative;
+}
+
+#MainSlide4 .main-slide-wrap {
+    width: 100%;
+    height: 100%;
+    background: url(./../../../public/img/mainFullpage/mainFullpageMain/MainSlide4.png) no-repeat center / cover;
+    position: relative;
+}
+
+.main-slide-by {
+    display: block;
+    position: absolute;
+    top: 35%;
+    left: 690px;
+    color: #efefef;
+    font-size: 20px;
+}
+
+.swiper-slide-active .main-slide-by {
+    opacity: 1;
+    animation: slideBy 0.5s linear 0.1s;
+}
+
+.main-slide-title {
+    position: absolute;
+    top: 40%;
+    left: 620px;
+    font-size: 60px;
+    font-weight: bold;
+    opacity: 0;
+    color: #fff;
+}
+
+#MainSlide2 .main-slide-title {
+    left: 530px;
+}
+
+#MainSlide3 .main-slide-title {
+    left: 470px;
+}
+
+#MainSlide4 .main-slide-title {
+    left: 420px;
+}
+
+.swiper-slide-active .main-slide-title {
+    opacity: 1;
+    animation: slideTitle 0.5s linear 0.1s;
+    text-shadow: #2c3540 1px 1px, #2c3540 2px 2px, #2c3540 3px 3px, #2c3540 4px 4px;
+}
+
+.swiper-slide-active #MainSlide2 .main-slide-title {
+    opacity: 1;
+    animation: slideTitle2 0.5s linear 0.1s;
+    text-shadow: #2c3540 1px 1px, #2c3540 2px 2px, #2c3540 3px 3px, #2c3540 4px 4px;
+}
+
+.swiper-slide-active #MainSlide3 .main-slide-title {
+    opacity: 1;
+    animation: slideTitle3 0.5s linear 0.1s;
+    text-shadow: #2c3540 1px 1px, #2c3540 2px 2px, #2c3540 3px 3px, #2c3540 4px 4px;
+}
+
+.swiper-slide-active #MainSlide4 .main-slide-title {
+    opacity: 1;
+    animation: slideTitle4 0.5s linear 0.1s;
+    text-shadow: #2c3540 1px 1px, #2c3540 2px 2px, #2c3540 3px 3px, #2c3540 4px 4px;
+}
+
+.main-slide-btn {
+    position: absolute;
+    top: 55%;
+    left: 760px;
+    color: #fff;
+    font-size: 30px;
+    opacity: 0;
+}
+
+.main-slide-btn svg {
+    position: absolute;
+    top: 2px;
+    left: -40px;
+    border: 3px solid #000;
+    border-radius: 50%;
+    padding: 2px;
+    filter: invert(100%) sepia(0%) saturate(7492%) hue-rotate(329deg) brightness(98%) contrast(107%);
+}
+
+.swiper-slide-active .main-slide-btn {
+    animation: slideBtn 0.5s linear;
+    animation-delay: 0.2s;
+    opacity: 1;
+}
+
+.main-slide-btn:hover {
+    color: #2c3540;
+    text-decoration: underline;
+}
+
+.main-slide-btn:hover svg {
+    filter: invert(18%) sepia(14%) saturate(879%) hue-rotate(173deg) brightness(91%) contrast(89%);
+}
+
+@keyframes slideBy {
+    from {
+        opacity: 0;
+        top: 30%;
+    }
+    to {
+        opacity: 1;
+        top: 35%;
+    }
+}
+
+@keyframes slideTitle {
+    0% {
+        visibility: 'hidden';
+        opacity: 0;
+        left: -10%;
+    }
+    50% {
+        left: 700px;
+    }
+    100% {
+        opacity: 1;
+        text-shadow: #2c3540 1px 1px, #2c3540 2px 2px, #2c3540 3px 3px, #2c3540 4px 4px;
+        left: 630px;
+    }
+}
+
+@keyframes slideTitle2 {
+    0% {
+        visibility: 'hidden';
+        opacity: 0;
+        left: -10%;
+    }
+    50% {
+        left: 600px;
+    }
+    100% {
+        opacity: 1;
+        text-shadow: #2c3540 1px 1px, #2c3540 2px 2px, #2c3540 3px 3px, #2c3540 4px 4px;
+        left: 530px;
+    }
+}
+
+@keyframes slideTitle3 {
+    0% {
+        visibility: 'hidden';
+        opacity: 0;
+        left: -10%;
+    }
+    50% {
+        left: 550px;
+    }
+    100% {
+        opacity: 1;
+        text-shadow: #2c3540 1px 1px, #2c3540 2px 2px, #2c3540 3px 3px, #2c3540 4px 4px;
+        left: 470px;
+    }
+}
+
+@keyframes slideTitle4 {
+    0% {
+        visibility: 'hidden';
+        opacity: 0;
+        left: -10%;
+    }
+    50% {
+        left: 500px;
+    }
+    100% {
+        opacity: 1;
+        text-shadow: #2c3540 1px 1px, #2c3540 2px 2px, #2c3540 3px 3px, #2c3540 4px 4px;
+        left: 420px;
+    }
+}
+
+@keyframes slideBtn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
