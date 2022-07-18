@@ -82,7 +82,9 @@ const NoticeInquiry = ({ title, sub }) => {
                   );
                 })}
             </ul>
-            <button className='inquire-button'>문의하기</button>
+            <a href='/notice/inquiryform'>
+              <button className='inquire-button'>문의하기</button>
+            </a>
             <Pagination
               total={lists.length}
               page={page}
