@@ -24,7 +24,7 @@ const IpoSummary = ({title, sub}) => {
         <section className="mnaipo-iposummary-section">
           <span className="mnaipo-iposummary-part">IPO 의 종류</span>
           <div>
-            <dl>
+            <dl className="mnaipo-iposummary-part-dl">
               <dt>신규상장</dt>
               <dd>
                 기업이 발행한 주권을 증권시장에 처음으로 상장시키는 것을 말합니다. 신규상장은 상장예비심사청구후

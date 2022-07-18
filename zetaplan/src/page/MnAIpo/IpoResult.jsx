@@ -14,8 +14,8 @@ const IpoResult = ({title, sub}) => {
             <div className="mnaipo-iporesult-title-line"></div>
           </div>
         </section>
-        <section className="mnaipo-iposummary-section">
-          <span className="mnaipo-iposummary-part">IPO의 효과</span>
+        <section className="mnaipo-iporesult-section">
+          <span className="mnaipo-iporesult-part">IPO의 효과</span>
           <div className="iposummary-effect">
             <dl>
               <dt>1. 필요자금 조달의 용이</dt>
@@ -37,8 +37,8 @@ const IpoResult = ({title, sub}) => {
             </dl>
           </div>
         </section>
-        <section className="mnaipo-iposummary-section">
-          <span className="mnaipo-iposummary-part">IPO의 혜택</span>
+        <section className="mnaipo-iporesult-section">
+          <span className="mnaipo-iporesult-part">IPO의 혜택</span>
           <div>
             <table>
               <colgroup>

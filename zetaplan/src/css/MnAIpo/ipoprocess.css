@@ -71,6 +71,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
+  margin-bottom: 100px;
 }
 
 .IpoProcess2 .mnaipo-ipoprocess-ipoconsult-part {
@@ -87,6 +88,13 @@
 
 .IpoProcess2 .mnaipo-ipoprocess-advice-part {
   background: url(/public/img/MnaIpo/IpoProcess/ipo\ process\ 2.png) no-repeat;
-  width: 1100px;
+  width: 1200px;
   height: 600px;
+  margin: auto;
+}
+
+/* =============================================== */
+
+.ipoprocess-step {
+  width: 300px;
 }

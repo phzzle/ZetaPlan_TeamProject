@@ -4,8 +4,8 @@ const IpoProcess1 = () => {
   return (
     <div className="IpoProcess1">
       <div id="SubInner">
-        <section className="mnaipo-ma-section">
-          <span className="mnaipo-ma-part">IPO 절차</span>
+        <section className="mnaipo-ipoprocess-section">
+          <span className="mnaipo-ipoprocess-part">IPO 절차</span>
           <div></div>
         </section>
         <section className="mnaipo-ipoprocess-section">
@@ -13,7 +13,7 @@ const IpoProcess1 = () => {
         </section>
         <div className="flex">
           <section className="mnaipo-ipoprocess-section">
-            <div>
+            <div className="ipoprocess-step">
               <h1 className="mnaipo-ipoprocess-part">STEP 1. 사전준비</h1>
               <ul>
                 <li>기업공개 및 상장시기결정 </li>
@@ -30,7 +30,7 @@ const IpoProcess1 = () => {
             </div>
           </section>
           <section className="mnaipo-ipoprocess-section">
-            <div>
+            <div className="ipoprocess-step">
               <h1 className="mnaipo-ipoprocess-part">STEP 2. 상장예비심사</h1>
               <ul>
                 <li>상장예비심사 청구</li>
@@ -45,7 +45,7 @@ const IpoProcess1 = () => {
             </div>
           </section>
           <section className="mnaipo-ipoprocess-section">
-            <div>
+            <div className="ipoprocess-step">
               <h1 className="mnaipo-ipoprocess-part">STEP 3. 공모</h1>
               <ul>
                 <li>유가증권신고서 제출</li>
@@ -58,7 +58,7 @@ const IpoProcess1 = () => {
             </div>
           </section>
           <section className="mnaipo-ipoprocess-section">
-            <div>
+            <div className="ipoprocess-step">
               <h1 className="mnaipo-ipoprocess-part">STEP 4. 상장 및 매매</h1>
               <ul>
                 <li>상장신청서 제출 및 상장승인 통보</li>

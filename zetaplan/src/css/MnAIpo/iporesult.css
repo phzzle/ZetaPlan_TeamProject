@@ -18,10 +18,18 @@
   margin-bottom: 60px;
 }
 
-#IpoResult1 .mnaipo-ma-part,
-#IpoResult2 .mnaipo-ma-part,
-#IpoResult3 .mnaipo-ma-part,
-#IpoResult4 .mnaipo-ma-part {
+.mnaipo-iporesult-section {
+  margin: 70px 0 0 0;
+}
+
+#iporesult .mnaipo-iporesult-section div {
+  margin-left: 10px;
+  margin-top: 30px;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+#iporesult .mnaipo-iporesult-part {
   display: inline-block;
   font-size: 18px;
   margin-bottom: 10px;
@@ -29,10 +37,7 @@
   font-weight: bold;
 }
 
-#IpoResult1 .mnaipo-ma-part::after,
-#IpoResult2 .mnaipo-ma-part::after,
-#IpoResult3 .mnaipo-ma-part::after,
-#IpoResult4 .mnaipo-ma-part::after {
+#iporesult .mnaipo-iporesult-part::after {
   content: "";
   display: block;
   width: 60px;
@@ -42,64 +47,6 @@
   position: absolute;
   right: -70px;
   top: 50%;
-}
-/* ============================================== */
-
-.detail-tab-lists {
-  display: flex;
-  border-bottom: 1px solid rgba(44, 53, 64, 0.4);
-}
-
-.detail-tab-lists .detail-tab-list {
-  width: 200px;
-  height: 40px;
-  line-height: 40px;
-  text-align: center;
-  color: #2c3540;
-  border-top: 1px solid rgba(44, 53, 64, 0.4);
-  border-left: 1px solid rgba(44, 53, 64, 0.4);
-}
-
-.detail-tab-lists .detail-tab-list.active {
-  background-color: rgba(44, 53, 64, 0.1);
-  font-weight: bold;
-}
-
-.detail-tab-lists .detail-tab-list:last-child {
-  border-right: 1px solid rgba(44, 53, 64, 0.4);
-}
-
-.detail-tab-content {
-  width: 1200px;
-}
-
-#IpoResult1,
-#IpoResult2,
-#IpoResult3,
-#IpoResult4 {
-  color: #2c3540;
-  width: 1200px;
-  padding: 20px 20px;
-  box-sizing: border-box;
-}
-
-#IpoResult1 .industry-support1-sub,
-#IpoResult2 .industry-support2-sub,
-#IpoResult3 .industry-support3-sub,
-#IpoResult4 .industry-support4-sub {
-  font-size: 18px;
-  font-weight: bold;
-  margin: 25px 0 20px;
-}
-
-.mnaipo-iporesult-section {
-  margin: 70px 0;
-}
-#IpoResult1.mnaipo-iporesult-section div {
-  margin-left: 10px;
-  margin-top: 30px;
-  font-size: 14px;
-  line-height: 1.7;
 }
 
 /* ========================================spac 우회상장 */
