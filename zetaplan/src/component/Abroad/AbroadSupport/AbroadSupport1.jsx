@@ -47,8 +47,9 @@ const AbroadSupport1 = () => {
       
       <section className='abroad-content-box'>
         <h4 className='abroad-title'>컨설팅 지원사업 프로세스</h4>
-        {/* 이미지 추가 */}
-        <img src="/img/Abroad/AbroadSupport/글로벌기술사업화 프로세스.png" alt="글로벌기술사업화 프로세스" />
+        <div className="abroad-content-img">
+          <img src="/img/Abroad/AbroadSupport/글로벌기술사업화 프로세스.png" alt="글로벌기술사업화 프로세스" />
+        </div>
       </section>
     </div>
   );

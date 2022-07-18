@@ -58,7 +58,27 @@
   margin-bottom: 8px;
   margin-left: 8px;
 }
-
+.abroad-desc-table {
+  width: 900px;
+  border: 1px solid #2C3540;
+  font-size: 14px;
+}
+.abroad-desc-table th, .abroad-desc-table td {
+  border: 1px solid #2C3540;
+  padding: 8px;
+}
+.abroad-desc-table td {
+  padding: 12px;
+}
+.abroad-desc-table thead {
+  background-color: #2C3540;
+  color: #efefef;
+}
+.abroad-desc-table ul {
+  list-style: disc;
+  list-style-position: inside;
+  line-height: 150%;
+}
 #AbroadSupportHistory {
   width: 1200px;
   border-bottom: 1px solid #2C3540;

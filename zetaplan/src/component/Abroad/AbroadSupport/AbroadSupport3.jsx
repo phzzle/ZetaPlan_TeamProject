@@ -25,7 +25,9 @@ const AbroadSupport3 = () => {
           </li>
         </ul>
         <h6 className='abroad-sub-title'>지원 내용</h6>
-        <img src="/img/Abroad/AbroadSupport/해외지사화 지원내용.jpg" alt="해외지사화 지원내용" />
+        <div className="abroad-content-img">
+          <img src="/img/Abroad/AbroadSupport/해외지사화 지원내용.jpg" alt="해외지사화 지원내용" />
+        </div>
       </section>
 
       <section className='abroad-content-box'>

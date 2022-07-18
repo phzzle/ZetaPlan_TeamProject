@@ -1,7 +1,8 @@
+/* 공지사항 */
+
 import React from 'react';
 import DetailFooter from '../../component/Detail/DetailFooter';
 import NoticeHeader from '../../component/Detail/NoticeHeader';
-import '../../css/Notice/noticeNotice.css';
 import { useState, useEffect } from 'react';
 import Pagination from './Pagination';
 import './NoticeList.css';

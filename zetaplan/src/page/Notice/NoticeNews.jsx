@@ -27,18 +27,27 @@ const NoticeNews = ({ title, sub }) => {
           <h2 className='company-title'>뉴스</h2>
           <div className='company-title-line'></div>
           <div className='list-box'>
+            <div className='board-lists title'>
+              <span className='id-name'>번호</span>
+              <span className='list-title'>제목</span>
+              <span className='list-author'>작성자</span>
+              <span className='list-date'>날짜</span>
+              <span className='list-view'>조회수</span>
+            </div>
             <ul className='notice-list'>
-              {/*     {noticeList} */}
               {[...lists]
                 .reverse()
                 .slice(startNum, endNum)
                 .reverse()
-                .map(({ num, title, link }) => {
+                .map(({ num, title, author, date, view, link }) => {
                   return (
-                    <li key={num}>
+                    <li className='board-lists' key={num}>
                       <a href={link}>
                         <span className='id-name'>{num}</span>
-                        <span className='list-body'>{title}</span>
+                        <span className='list-title'>{title}</span>
+                        <span className='list-author'>{author}</span>
+                        <span className='list-date'>{date}</span>
+                        <span className='list-view'>{view}</span>
                       </a>
                     </li>
                   );

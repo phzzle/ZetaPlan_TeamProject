@@ -27,7 +27,9 @@ const AbroadProcessTab1 = () => {
         <h6 className='abroad-sub-title'>
           실적 및 활동
         </h6>
-        <img src="/img/Abroad/AbroadProcess/중국지사 실적및활동.jpg" alt="중국지사 실적 및 활동" />
+        <div className="abroad-content-img">
+          <img src="/img/Abroad/AbroadProcess/중국지사 실적및활동.jpg" alt="중국지사 실적 및 활동" />
+        </div>
       </section>
     </div>
   );
