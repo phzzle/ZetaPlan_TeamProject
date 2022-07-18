@@ -1,0 +1,76 @@
+/* InvestPlan */
+.image-container h2 {
+    font-weight: 700;
+    font-size: 20px;
+    color: #2C3540;
+    margin: 40px 0;
+}
+
+.analysis {
+    margin: 0 auto;
+    width: 1100px;
+}
+
+.analysis h2 {
+    font-weight: 700;
+    font-size: 20px;
+    color: #2C3540;
+    margin-top: 150px;
+    position: relative;
+}
+
+.analysis h3 {
+    font-weight: 700;
+    font-size: 16px;
+    color: #2C3540;
+    position: relative;
+}
+
+.analysis h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 2px;
+    background-color: rgba(44, 53, 64, 0.5);
+    border-radius: 16px;
+    position: absolute;
+    left: 7%;
+    top: 50%;
+}
+
+
+.analysis section h3::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 1.8px;
+    background-color: rgba(44, 53, 64, 0.5);
+    border-radius: 16px;
+    position: absolute;
+    left: 6%;
+    top: 50%;
+
+}
+
+.analysis section {
+    line-height: 1.7;
+    margin: 30px 0 80px 0;
+}
+
+.analysis section {
+    line-height: 1.7;
+    margin: 30px 0 80px 0;
+
+}
+
+.analysis .s4 {
+    display: flex;
+}
+
+.analysis .s4 ul {
+    padding: 0 40px 0 0;
+}
+
+.analysis .s4 ul span {
+    font-weight: 700;
+}
