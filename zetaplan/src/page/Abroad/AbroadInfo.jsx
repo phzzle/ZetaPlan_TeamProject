@@ -27,7 +27,11 @@ const AbroadInfo = ({title, sub}) => {
             <h6 className='abroad-sub-title'>
               해외사업진출 단계별 Key Module에 대한 최적해법 제공
             </h6>
-            <img src="/img/Abroad/AbroadNetwork/abroad.png" alt="해외진출 사업" className='abroad-info-img' />
+            <div className='abroad-content-img'>
+              <div className="abroad-content-img">
+                <img src="/img/Abroad/AbroadNetwork/abroad.png" alt="해외진출 사업" className='abroad-info-img' />
+              </div>
+            </div>
           </div>
           <div className='abroad-content-box'>
             <h6 className='abroad-sub-title'>
@@ -53,7 +57,9 @@ const AbroadInfo = ({title, sub}) => {
           </div>
           <div className='abroad-content-box'>
             <h6 className='abroad-sub-title'>전문분야 강점</h6>
-            <img src="/img/Abroad/AbroadNetwork/해외진출사업 전문분야강점.png" alt="해외진출사업 전문분야 강점" />
+            <div className="abroad-content-img">
+              <img src="/img/Abroad/AbroadNetwork/해외진출사업 전문분야강점.png" alt="해외진출사업 전문분야 강점" />
+            </div>
           </div>
         </section>
         <section className='abroad-network'>

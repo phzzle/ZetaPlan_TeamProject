@@ -28,8 +28,8 @@
 .abroad-content-box {
   margin: 38px 0 56px;
 }
-.abroad-content-box img {
-  max-width: 1200px;
+.abroad-content-img img {
+  max-width: 1000px;
 }
 .abroad-desc {
   color: #2c3540;
@@ -65,7 +65,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-right: 1px solid #ddd;
+  /* border-right: 1px solid #ddd; */
   text-align: center;
   font-weight: bold;
   padding: 18px;

@@ -26,7 +26,9 @@ const AbroadSupport6 = () => {
         <h4 className="abroad-title">
           진행 절차
         </h4>
-        <img src="/img/Abroad/AbroadSupport/해외시장조사 진행절차.jpg" alt="해외시장조사 진행절차" />
+        <div className="abroad-content-img">
+          <img src="/img/Abroad/AbroadSupport/해외시장조사 진행절차.jpg" alt="해외시장조사 진행절차" />
+        </div>
       </section>
     </div>
   );

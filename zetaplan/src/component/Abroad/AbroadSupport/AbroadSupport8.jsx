@@ -137,7 +137,43 @@ const AbroadSupport8 = () => {
         <p className='abroad-desc'>
           · 정부간 네트워크 구축, 현지 기술정보수집 및 협력사업 발굴, 동반 수주협상등 환경사업에 특화된 기업밀착형 수주지원 종합컨설팅 서비스 제공
         </p>
-        <img src="/img/Abroad/AbroadSupport/환경산업해외진출지원사업1.jpg" alt="해외 환경산업협력센터 운영 지원내용" />
+        <table className='abroad-desc-table'>
+          <thead>
+            <tr>
+              <td>주요업무</td>
+              <td>세부업무</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>협력사업 발굴</td>
+              <td>
+                <ul>
+                  <li>국가간 정책 협력, 주요 발굴처 발굴</li>
+                  <li>발주 관계자 및 기관 DB 구축</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>대외행사 개최</td>
+              <td>
+                <ul>
+                  <li>수출지원 및 국가간 협력행사 (교육연수, 포럼, 상담회)</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>기업서비스 제공</td>
+              <td>
+                <ul>
+                  <li>고객맞춤형 정보조사</li>
+                  <li>우수기술 현지마케팅 및 수요처 발굴</li>
+                  <li>수주협상지원 및 전문 컨설팅 제공</li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </section>
 
       <section className='abroad-content-box'>
@@ -212,7 +248,46 @@ const AbroadSupport8 = () => {
         <h6 className="abroad-sub-title">
           사업 내용
         </h6>
-        <img src="/img/Abroad/AbroadSupport/환경산업해외진출지원사업2.jpg" alt="우수환경기업 해외수출기업화 지원사업 내용" />
+        <table className='abroad-desc-table'>
+          <thead>
+            <tr>
+              <td>분야</td>
+              <td>내용</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>해외진출 인프라 구축</td>
+              <td>
+                <ul>
+                  <li>현지 성능평가 및 제품 시연을 위한 시제품, 모형, 테스트베드 등 제작</li>
+                  <li>보유 제품 및 기술에 대한 기술성적서 발급 등 성능평가 비용 지원</li>
+                  <li>특허출원, 인증취득 절차 제반 비용 지원 등</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>시장확장 지원</td>
+              <td>
+                <ul>
+                  <li>해외 마케팅을 위한 홍보 자료 구축(목표국가 언어별 홈페이지, 브로셔, 홍보 동영상 제작 등)</li>
+                  <li>환경산업체 기업 및 제품 홍보를 위한 국내·외 박람회 참가</li>
+                  <li>바이어 네트워크 구축을 위한 현지 출장, 바이어 국내 초청</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>현지 진입장벽 해소</td>
+              <td>
+                <ul>
+                  <li>해외진출 전문 컨설팅, 현지시장 심층조사 등 시장조사</li>
+                  <li>목표국 진출 관련 (무역, 금융, 마케팅, 법률, 회계, 세무) 제반 컨설팅</li>
+                  <li>현지 전문가(지역별 전문가, 현지 에이전트 등) 활용 비용 지원</li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </section>
 
       <section className='abroad-content-box'>

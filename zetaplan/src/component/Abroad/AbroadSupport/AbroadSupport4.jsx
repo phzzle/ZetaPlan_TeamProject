@@ -45,7 +45,9 @@ const AbroadSupport4 = () => {
         <h4 className="abroad-title">
           지원 절차
         </h4>
-        <img src="/img/Abroad/AbroadSupport/해외M&A 추진절차.png" alt="해외M&A 추진절차" />
+        <div className="abroad-content-img">
+          <img src="/img/Abroad/AbroadSupport/해외M&A 추진절차.png" alt="해외M&A 추진절차" />
+        </div>
       </section>
       
       <section className='abroad-content-box'>

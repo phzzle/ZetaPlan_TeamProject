@@ -34,14 +34,18 @@ const AbroadProcessTab3 = () => {
         <h6 className="abroad-sub-title">
           분야별 주요 실적
         </h6>
-        <img src="/img/Abroad/AbroadProcess/해외진출 실적.jpg" alt="해외진출 주요 실적" />
+        <div className="abroad-content-img">
+          <img src="/img/Abroad/AbroadProcess/해외진출 실적.jpg" alt="해외진출 주요 실적" />
+        </div>
       </section>
       
       <section className='abroad-content-box'>
         <h4 className="abroad-title">
           해외법인 설립 절차
         </h4>
-        <img src="/img/Abroad/AbroadProcess/해외법인설립 진행절차.jpg" alt="해외법인설립 진행절차" />
+        <div className="abroad-content-img">
+          <img src="/img/Abroad/AbroadProcess/해외법인설립 진행절차.jpg" alt="해외법인설립 진행절차" />
+        </div>
       </section>
     </div>
   );

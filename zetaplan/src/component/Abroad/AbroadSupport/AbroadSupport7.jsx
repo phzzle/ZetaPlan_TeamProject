@@ -23,7 +23,9 @@ const AbroadSupport7 = () => {
         <h4 className="abroad-title">
           진행 절차
         </h4>
-        <img src="/img/Abroad/AbroadSupport/해외바이어발굴 진행절차.jpg" alt="해외바이어발굴 진행절차" />
+        <div className="abroad-content-img">
+          <img src="/img/Abroad/AbroadSupport/해외바이어발굴 진행절차.jpg" alt="해외바이어발굴 진행절차" />
+        </div>
       </section>
     </div>
   );
