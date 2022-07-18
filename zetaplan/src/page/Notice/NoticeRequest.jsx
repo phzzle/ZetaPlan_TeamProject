@@ -58,6 +58,7 @@ const NoticeRequest = ({title, sub}) => {
           <h2 className="company-title">컨설팅신청</h2>
           <div className="company-title-line"></div>
         </div>
+        <span className='notice-request-refer'>&#42;는 필수 작성</span>
         <form action="" id='requestForm'>
           <table className='request-form-table'>
             <colgroup>

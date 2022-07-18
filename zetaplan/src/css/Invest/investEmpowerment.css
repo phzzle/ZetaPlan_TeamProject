@@ -23,6 +23,13 @@
     height: 100%;
 }
 
+.invest-title-line {
+    width: 3px;
+    height: 50px;
+    background-color: #3B4B59;
+
+}
+
 .network-consulting h2 {
     display: flex;
     flex-direction: column;
@@ -37,10 +44,23 @@
     font-size: 18px;
     font-weight: 500;
     margin-bottom: 20px;
+    position: relative;
+}
+
+.network-consulting-info h3::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 2px;
+    background-color: rgba(44, 53, 64, 0.5);
+    border-radius: 16px;
+    position: absolute;
+    left: 20%;
+    top: 50%;
 }
 
 .network-consulting-info {
-    margin-bottom: 50px;
+    margin: 30px 0 80px 0;
     line-height: 1.5;
     color: #2C3540;
 }
