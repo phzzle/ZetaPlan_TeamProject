@@ -55,6 +55,7 @@ const Notice = ({ title, sub }) => {
                     );
                   })}
               </ul>
+              <button className='login-button'>Login</button>
               <Pagination
                 total={lists.length}
                 page={page}

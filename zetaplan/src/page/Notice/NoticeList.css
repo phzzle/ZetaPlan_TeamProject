@@ -21,6 +21,7 @@
 .list-box {
   width: 1200px;
   margin: 0 auto;
+  position: relative;
 }
 
 .board-lists {
@@ -82,4 +83,28 @@
 .listtitle:hover:hover {
   background: rgba(0, 0, 0, 0.1);
   cursor: pointer;
+}
+
+.inquire-button {
+  right: 0;
+  bottom: 7%;
+  padding: 5px;
+  position: absolute;
+  border-radius: 0.25rem;
+  color: #fff;
+  background: #3b4b59;
+  font-size: 1.1rem;
+  margin-right: 0;
+}
+
+.login-button {
+  right: 0;
+  bottom: 7%;
+  padding: 5px;
+  position: absolute;
+  border-radius: 0.25rem;
+  color: #fff;
+  background: #3b4b59;
+  font-size: 1.3rem;
+  margin-right: 0;
 }

@@ -53,7 +53,7 @@ const NoticeInquiry = ({ title, sub }) => {
                   );
                 })}
             </ul>
-            {/* 글쓰기 버튼 만들기 */}
+            <button className='inquire-button'>문의하기</button>
             <Pagination
               total={lists.length}
               page={page}
