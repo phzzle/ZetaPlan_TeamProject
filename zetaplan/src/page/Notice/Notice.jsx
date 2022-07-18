@@ -6,7 +6,7 @@ import NoticeHeader from '../../component/Detail/NoticeHeader';
 import { useState, useEffect } from 'react';
 import Pagination from './Pagination';
 import './NoticeList.css';
-
+import { IoIosSearch } from 'react-icons/io';
 const Notice = ({ title, sub }) => {
   const [lists, setLists] = useState([]);
   const LIST_PER_PAGE = 20; // 한장에 보여질 리스트 수
@@ -28,6 +28,34 @@ const Notice = ({ title, sub }) => {
           <div className='company-title-container'>
             <h2 className='company-title'>공지사항</h2>
             <div className='company-title-line'></div>
+            <div class='board-search-container'>
+              <form method='post' name='search' action='/notice'>
+                <table class='pull-right'>
+                  <tr>
+                    <td>
+                      <select class='board-search-selector' name='searchField'>
+                        <option value='0'>전체</option>
+                        <option value='bbs-title'>제목</option>
+                        <option value='bbs-content'>내용</option>
+                      </select>
+                    </td>
+                    <td>
+                      <input
+                        type='text'
+                        class='input-box'
+                        placeholder='검색어를 입력하세요.'
+                        name='searchText'
+                        maxlength='100'
+                      />
+                      <button type='submit' class='btn btn-success'>
+                        <IoIosSearch size={'25px'} />
+                      </button>
+                    </td>
+                    <td></td>
+                  </tr>
+                </table>
+              </form>
+            </div>
             <div className='list-box'>
               <div className='board-lists title'>
                 <span className='id-name'>번호</span>
@@ -55,7 +83,9 @@ const Notice = ({ title, sub }) => {
                     );
                   })}
               </ul>
-              <button className='login-button'>Login</button>
+              <a href='/login'>
+                <button className='login-button'>LogIn</button>
+              </a>
               <Pagination
                 total={lists.length}
                 page={page}
