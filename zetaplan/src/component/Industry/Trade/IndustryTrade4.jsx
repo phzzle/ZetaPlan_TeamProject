@@ -3,9 +3,8 @@
 import React from "react";
 import {useState, useEffect} from "react";
 import {IoIosSearch} from "react-icons/io";
-import "./../../../css/Indusrty/industryTrade.css";
-import "./../../../css/Notice/noticeNotice.css";
-import Pagination from "../../../page/Notice/Pagination";
+import Pagination from "./Pagination";
+import "./IndustryTrade4.css";
 
 const IndustryTrade4 = () => {
   const [lists, setLists] = useState([]);
@@ -17,7 +16,7 @@ const IndustryTrade4 = () => {
   useEffect(() => {
     fetch("/data/techTrade.json")
       .then(res => res.json())
-      .then(res => setLists(res));
+      .then(data => setLists(data));
   }, []);
 
   return (

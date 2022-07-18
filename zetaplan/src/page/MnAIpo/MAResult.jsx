@@ -14,7 +14,7 @@ const MAResult = ({title, sub}) => {
             <div className="mnaipo-maresult-title-line"></div>
           </div>
           <section className="mnaipo-maresult-section">
-            <span className="mnaipo-maresult-part">M&A 기법 및 성과</span>
+            <span className="mnaipo-maresult-part">M&A 성과 결정 요인 및 성과</span>
             <div className="mnaipo-maresult-part-img"></div>
           </section>
         </section>
