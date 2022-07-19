@@ -30,7 +30,7 @@ const SearchIndustry1 = () => {
         </div>
         </div>
         <div className='board-search-header'>
-          <h2>`${word} 검색결과`</h2>
+          <h2>'<em>{word}</em>' 검색결과입니다.</h2>
           <div className='inner-search-box'>
             <BoardSearch1 />
           </div>

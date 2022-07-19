@@ -10,7 +10,7 @@ const SearchIndustry2 = () => {
   const { word } = useParams();
 
   useEffect(() => {
-    fetch('/data/tradeInformation.json')
+    fetch('/data/techTrade.json')
       .then((response) => response.json())
       .then((response) => setData(response));
   }, []);
@@ -30,7 +30,7 @@ const SearchIndustry2 = () => {
         </div>
         </div>
         <div className='board-search-header'>
-          <h2>`{word} 검색결과`</h2>
+          <h2>'<em>{word}</em>' 검색결과입니다.</h2>
           <div className='inner-search-box'>
             <BoardSearch1 />
           </div>
