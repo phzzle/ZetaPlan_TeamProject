@@ -61,9 +61,9 @@
 }
 
 .mnaprocess1 .mnaipo-maprocess-section .mnaipo-maprocess-part-general {
-  background: url(/public/img/MnaIpo/MnaProcess/mna\ process\ 1.png);
-  width: 0px;
-  height: 1100px;
+  background: url(/public/img/MnaIpo/MnaProcess/mna\ process\ 1.png) no-repeat;
+  width: 600px;
+  height: 1200px;
 }
 
 /* ======================================mnaprocess2 table*/

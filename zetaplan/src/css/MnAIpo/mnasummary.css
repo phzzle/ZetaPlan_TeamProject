@@ -1,6 +1,10 @@
 .mnaipo-ma-section {
   margin: 70px 0;
 }
+
+.mnaipo-ma-section:first-child {
+  margin: 0;
+}
 #ma .mnaipo-ma-section div {
   margin-left: 10px;
   margin-top: 30px;
@@ -18,13 +22,6 @@
   font-size: 24px;
   color: #2c3540;
   margin-bottom: 24px;
-}
-
-#ma .mnaipo-ma-section1 .mnaipo-ma-title-container .mnaipo-ma-title-line {
-  width: 3px;
-  height: 50px;
-  background-color: #3b4b59;
-  margin-bottom: 60px;
 }
 
 /* =========================================== */
