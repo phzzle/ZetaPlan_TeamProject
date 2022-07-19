@@ -13,7 +13,19 @@ const IndustryIssue = ({title, sub}) => {
           <h2 className='company-title'>산업별이슈</h2>
           <div className='company-title-line'></div>
         </div>
-        <BoardSearch6 />
+        <div class='board-search-container'>
+            <form method='post' name='search' action='/notice'>
+              <table class='pull-right'>
+                <tr>
+                  <td></td>
+                  <td>
+                    <BoardSearch6 />
+                  </td>
+                  <td></td>
+                </tr>
+              </table>
+            </form>
+          </div>
         <IssueList />
       </div>
       <DetailFooter />
