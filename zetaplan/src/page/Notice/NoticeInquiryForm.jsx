@@ -26,11 +26,9 @@ const NoticeInquiryForm = ({ title, sub }) => {
     :setInput({...input, lock: '비밀글 해제'})
   }
   const handleInputFnc = (e) => {
-    console.log(e.target.type)
     setInput(e.target.type==='file' 
     ? {...input, [e.target.name]: e.target.files} 
     : {...input, [e.target.name]: e.target.value})
-    console.log(input)
   }
   const handleSubmitFnc = (e) => {
     // 문의 글 제출 함수

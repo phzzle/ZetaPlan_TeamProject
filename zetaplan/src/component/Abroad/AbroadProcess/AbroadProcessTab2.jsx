@@ -45,20 +45,6 @@ const AbroadProcessTab2 = () => {
           <li>베트남 마케팅관련 광고매체교섭알선</li>
         </ul>
       </section>
-
-      <section className='abroad-content-box'>
-        <h4 className="abroad-title">
-          컨설팅 실적
-        </h4>
-        <ul className='abroad-desc-list'>
-          <li>
-            베트남 현지법인설립 컨설팅
-          </li>
-          <li>
-            
-          </li>
-        </ul>
-      </section>
     </div>
 
   );

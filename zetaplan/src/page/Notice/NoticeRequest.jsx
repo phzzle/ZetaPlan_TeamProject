@@ -6,6 +6,7 @@ import NoticeHeader from '../../component/Detail/NoticeHeader';
 
 const NoticeRequest = ({title, sub}) => {
   const navigate = useNavigate();
+  const [checked, setChecked] = useState({});
   const [input, setInput] = useState({
     category: '',
     categoryDetail: [],
@@ -56,25 +57,41 @@ const NoticeRequest = ({title, sub}) => {
   ];
   const handleCategoryFnc = (e) => {
     // 컨설팅 분야 handle 함수
+    // e.target.value가 category.category 와 같다면 그에 해당하는 id를 state로 설정한다.
     let currentCategory = e.target.value;
     let select = category.filter((item)=>{return item.category === currentCategory});
     setCategoryNum(select[0] !== undefined ? select[0].id : 0);
-    // e.target.value가 category.category 와 같다면 그에 해당하는 id를 state로 설정한다.
+
+    // categoryNum이 바뀌면 checked를 false로 설정
+    const checkedArr = [];
+    category[categoryNum].detail.map((ele)=>checkedArr.push(false))
+    setChecked(checkedArr);
   }
   const handleInputFnc = (e) => {
     // input 입력걊을 저장하는 함수
     // checkbox는 array로 저장하기 때문에 spread연산자를 이용하여 기존배열에 추가
-    e.target.name === 'categoryDetail' 
-    ? setInput({
-      ...input,
-      [e.target.name]: [...input.categoryDetail, e.target.value]
-    })
-    : setInput({
-        ...input,
-        [e.target.name]: e.target.value
-      });
+    setInput(e.target.name === 'categoryDetail' 
+    ? { ...input, [e.target.name]: [...input.categoryDetail, e.target.value] } 
+    : { ...input, [e.target.name]: e.target.value })
+  }
+  const handleChkBoxFnc = (e, idx) => {
+    // 컨설팅 분야 checkbox 관리 함수
+    const chkArr = [...checked];
+    chkArr[idx] = !chkArr[idx];
+    setChecked(chkArr);
+    setInput({...input, categoryDetail: []});
 
-    console.log(input)
+    e.target.checked
+    ? setInput({...input, categoryDetail: [...input.categoryDetail, e.target.value]})
+    : chkDeleteFnc(e.target.value, idx)
+  }
+  const chkDeleteFnc = (value, idx)=> {
+    // 내가 체크를 푼 항목과 같은 이름의 값을 array에서 제거
+    // 내가 체크를 푼 항목의 값과 같은 이름을 가진 요소의 인덱스 번호를 찾아서 splice
+    const chkboxArr = [...input.categoryDetail];
+    let deleteNum = chkboxArr.indexOf(`${value}`);
+    chkboxArr.splice(deleteNum, 1);
+    setInput({...input, categoryDetail: chkboxArr})
   }
   const submitFnc = (e) => {
     // form 제출 함수
@@ -127,7 +144,9 @@ const NoticeRequest = ({title, sub}) => {
                       ? category[categoryNum-1].detail.map((ele, idx)=>{
                         return (
                           <span className='category-chkbox-item' key={idx}>
-                            <input type="checkbox" value={ele} id={'category' + idx} name="categoryDetail" onChange={handleInputFnc} />
+                            <input type="checkbox" value={ele} id={'category' + idx} name="categoryDetail" checked={checked[idx]} onChange={(e)=>{
+                              handleChkBoxFnc(e, idx)
+                          }}/>
                             <label htmlFor={"category" + idx}>{ele}</label>
                           </span>
                         )
