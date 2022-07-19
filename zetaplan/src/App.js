@@ -1,5 +1,5 @@
 import './App.css';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {Routes,Route, BrowserRouter} from 'react-router-dom';
 import Fullpage from './component/Fullpage/Fullpage';
 import CompanyInfo from './page/Company/CompanyInfo';
@@ -52,9 +52,14 @@ import SearchNotice5 from './page/Common/Search/SearchNotice5';
 import SearchIndustry1 from './page/Common/Search/SearchIndustry1';
 import SearchIndustry2 from './page/Common/Search/SearchIndustry2';
 import IndustryDetail from './component/Industry/IndustryDetail/IndustryDetail';
+import LoginRedirect from './route/LoginRedirect';
 
 function App() {
   let [items, setItems] = useState(confirmList);
+  const [auth, setAuth] = useState(false);
+  useEffect(() => {
+    console.log('로그인인증값', auth)
+  }, [auth])
   
   return (
     <div className='App'>
@@ -90,7 +95,7 @@ function App() {
             <Route path='/industry/trade' element={<IndustryTrade title="Industry" sub="기술 거래" />} />
             <Route path='/industry/value' element={<IndustryValue title="Industry" sub="가치 평가" />} />
             <Route path='/industry/credit' element={<IndustryCredit title="Industry" sub="신용 평가" />} />
-            <Route path='/notice' element={<Notice title="Notice" sub="공지사항" />} />
+            <Route path='/notice' element={<Notice title="Notice" sub="공지사항" auth={auth} />} />
             <Route path='/notice/news' element={<NoticeNews title="Notice" sub="뉴스" />} />
             <Route path='/notice/support' element={<NoticeColumn title="Notice" sub="기업지원정보" />} />
             <Route path='/notice/info' element={<NoticeInfo title="Notice" sub="컨설팅 실적" />} />
@@ -110,6 +115,7 @@ function App() {
             <Route path='/industry/:word' element={<SearchIndustry1 />} />
             <Route path='/industry/trade/:word' element={<SearchIndustry2 />} />
             <Route path='/industry/trade/detail/:id' element={<IndustryDetail />} />
+            <Route path='/notice/editor/:id' element={<LoginRedirect auth={auth} />} />
           </Routes>
         </BrowserRouter>
     </div>

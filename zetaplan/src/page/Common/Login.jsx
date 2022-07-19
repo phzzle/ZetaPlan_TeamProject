@@ -1,49 +1,80 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Header from '../../component/Header/Header';
 import DetailFooter from '../../component/Detail/DetailFooter';
 import '../../css/Common/login.css';
 import { useNavigate } from 'react-router-dom';
+import { GrFormNext } from "react-icons/gr";
 
 const Login = ({ setAuth }) => {
-  const [inputId, setInputId] = useState('')
-  const [inputPw, setInputPw] = useState('')
+  const navigate = useNavigate();
+  const [account, setAccount] = useState({
+    id: "",
+    password: "",
+  });
+  const [adminID, setAdminID] = useState('');
+  const [adminPW, setAdminPW] = useState(false);
+  const [adminPassword, setAdminPassword] = useState('');
 
-  const handleInputId = (e) => {
-    setInputId(e.target.value)
-}
+  const onChangeAccount = (e) => {
+    setAccount({
+      ...account,
+      [e.target.name]: e.target.value,
+    });
+    setAdminID(e.target.value);
+    setAdminPassword(e.target.value);
+  };
 
-const handleInputPw = (e) => {
-    setInputPw(e.target.value)
-}
+  const checkID = async () => {
+    const res = await fetch("http://localhost:8000/admin");
+    const adminAccount =  await res.json();
+    
+    if ( adminID === adminAccount[0].id ) {
+      setAdminPW(true);
+    } else {
+      alert("아이디가 틀렸습니다.")
+    }
+  }
 
-// login 버튼 클릭 이벤트
-const onClickLogin = () => {
-    console.log('click login')
-}
+  const checkPW = async () => {
+    const res = await fetch("http://localhost:8000/admin");
+    const adminAccount =  await res.json();
 
-// 페이지 렌더링 후 가장 처음 호출되는 함수
-useEffect(() => {
-    fetch('/user_inform/login')
-    .catch()
-}, [])
+    console.log(adminPassword)
+    console.log(adminAccount[0].password)
+    
+    if ( adminPassword === adminAccount[0].password) {
+      alert("로그인되었습니다.")
+      setAuth(true);
+      navigate('/')
+    } else {
+      alert("비밀번호가 틀렸습니다.")
+    }
+  }
 
   return (
     <div>
       <Header />
       <div id='SubInner'>
+        <div className="company-title-container">
+          <h2 className='company-title'>로그인</h2>
+          <div className='company-title-line'></div>9
+        </div>
         <div className='login'>
-          <span>관리자 로그인 페이지</span>
-          <div>
-            <label htmlFor='admin_id'>ID : </label>
-            <input type='text' name='admin_id' value={inputId} onChange={handleInputId} />
-          </div>
-          <div>
-            <label htmlFor='admin_pw'>PW : </label>
-            <input type='password' name='admin_pw' value={inputPw} onChange={handleInputPw} />
-          </div>
-          <div>
-            <button type='button' onClick={onClickLogin}>Login</button>
-          </div>
+          <span className='company-road-part'>관리자 로그인 페이지</span>
+          <form className='login-box'>
+            <div className='login-id'>
+              <label htmlFor='admin_id'>ID : </label>
+              <input type='text' name='admin_id' onChange={onChangeAccount} />
+              <button type='button' className='login-check-id-btn' onClick={checkID}><GrFormNext size="26px" /></button>
+            </div>
+            <div className={adminPW === true ? 'login-password on' : 'login-password'}>
+              <label htmlFor='admin_pw'>PW : </label>
+              <input type='password' name='admin_pw' onChange={onChangeAccount} />
+            </div>
+            <div>
+              <button type='button' onClick={checkPW}>Login</button>
+            </div>
+          </form>
         </div>
       </div>
       <DetailFooter />

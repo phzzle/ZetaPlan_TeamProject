@@ -5,7 +5,8 @@
     height: 180px;
     line-height: 180px;
     margin-top: 25px;
-    font-size: 24px;
+    margin-bottom: 40px;
+    font-size: 36px;
     font-weight: bold;
     text-align: center;
     margin: 0 auto;
@@ -18,9 +19,10 @@
 }
 
 .detail-tab-lists .detail-tab-list {
-    width: 180px;
+    width: 200px;
     height: 40px;
     line-height: 40px;
+    font-size: 17px;
     text-align: center;
     color: #2c3540;
     border-top: 1px solid rgba(44, 53, 64, 0.4);
