@@ -28,28 +28,29 @@ const Notice = ({ title, sub }) => {
           <div className='company-title-container'>
             <h2 className='company-title'>공지사항</h2>
             <div className='company-title-line'></div>
-            <div class='board-search-container'>
-              <form method='post' name='search' action='/notice'>
-                <table class='pull-right'>
-                  <tr>
-                    <td>
-                      <select class='board-search-selector' name='searchField'>
-                        <option value='0'>전체</option>
-                        <option value='bbs-title'>제목</option>
-                        <option value='bbs-content'>내용</option>
-                      </select>
-                    </td>
-                    <td>
-                      <input
-                        type='text'
-                        class='input-box'
-                        placeholder='검색어를 입력하세요.'
-                        name='searchText'
-                        maxlength='100'
-                      />
-                      <button type='submit' class='btn btn-success'>
-                        <IoIosSearch size={'25px'} />
-                      </button>
+          </div>
+          <div class='board-search-container'>
+            <form method='post' name='search' action='/notice'>
+              <table class='pull-right'>
+                <tr>
+                  <td>
+                    <select class='board-search-selector' name='searchField'>
+                      <option value='0'>전체</option>
+                      <option value='bbs-title'>제목</option>
+                      <option value='bbs-content'>내용</option>
+                    </select>
+                  </td>
+                  <td>
+                    <input
+                      type='text'
+                      class='input-box'
+                      placeholder='검색어를 입력하세요.'
+                      name='searchText'
+                      maxlength='100'
+                    />
+                    <button type='submit' class='btn btn-success'>
+                      <IoIosSearch size={'25px'} />
+                    </button>
                     </td>
                     <td></td>
                   </tr>
@@ -93,7 +94,6 @@ const Notice = ({ title, sub }) => {
                 LIST_PER_PAGE={LIST_PER_PAGE}
               />
             </div>
-          </div>
         </div>
         <DetailFooter />
       </div>

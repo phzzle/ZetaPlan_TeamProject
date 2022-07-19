@@ -44,6 +44,13 @@ import ChinaInfo from './page/Common/ChinaInfo';
 import EnglishInfo from './page/Common/EnglishInfo';
 import AbroadCaseDetail from './page/Abroad/AbroadCaseDetail';
 import NoticeInquiryForm from './page/Notice/NoticeInquiryForm';
+import SearchNotice1 from './page/Common/Search/SearchNotice1';
+import SearchNotice2 from './page/Common/Search/SearchNotice2';
+import SearchNotice3 from './page/Common/Search/SearchNotice3';
+import SearchNotice4 from './page/Common/Search/SearchNotice4';
+import SearchNotice5 from './page/Common/Search/SearchNotice5';
+import SearchIndustry1 from './page/Common/Search/SearchIndustry1';
+import SearchIndustry2 from './page/Common/Search/SearchIndustry2';
 
 function App() {
   let [items, setItems] = useState(confirmList);
@@ -94,6 +101,13 @@ function App() {
             <Route path='/english' element={<EnglishInfo />} />
             <Route path='/abroad/case/detail/:id' element={<AbroadCaseDetail />} />
             <Route path='/notice/inquiryForm' element={<NoticeInquiryForm title="Notice" sub="문의하기" />} />
+            <Route path='/notice/:word' element={<SearchNotice1 />} />
+            <Route path='/notice/news/:word' element={<SearchNotice2 />} />
+            <Route path='/notice/support/:word' element={<SearchNotice3 />} />
+            <Route path='/notice/info/:word' element={<SearchNotice4 />} />
+            <Route path='/notice/inquiry/:word' element={<SearchNotice5 />} />
+            <Route path='/industry/:word' element={<SearchIndustry1 />} />
+            <Route path='/industry/trade/:word' element={<SearchIndustry2 />} />
           </Routes>
         </BrowserRouter>
     </div>

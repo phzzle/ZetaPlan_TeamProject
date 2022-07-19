@@ -1,6 +1,6 @@
 import React from 'react';
 
-const BoardSearch = () => {
+const SearchNotice3 = () => {
   return (
     <div>
       
@@ -8,4 +8,4 @@ const BoardSearch = () => {
   );
 };
 
-export default BoardSearch;
+export default SearchNotice3;
