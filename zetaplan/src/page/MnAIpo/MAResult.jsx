@@ -11,7 +11,6 @@ const MAResult = ({title, sub}) => {
         <section className="mnaipo-maresult-section1">
           <div className="mnaipo-maresult-title-container">
             <h2 className="mnaipo-maresult-title">M&A 성과</h2>
-            <div className="mnaipo-maresult-title-line"></div>
           </div>
           <section className="mnaipo-maresult-section">
             <span className="mnaipo-maresult-part">M&A 성과 결정 요인 및 성과</span>

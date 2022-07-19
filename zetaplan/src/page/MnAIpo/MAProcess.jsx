@@ -26,7 +26,6 @@ const MAProcess = ({title, sub}) => {
         <section className="mnaipo-maprocess-section1">
           <div className="mnaipo-maprocess-title-container">
             <h2 className="mnaipo-maprocess-title">M&A 프로세스</h2>
-            <div className="mnaipo-maprocess-title-line"></div>
           </div>
         </section>
         <section className="mnaipo-iporesult-section">

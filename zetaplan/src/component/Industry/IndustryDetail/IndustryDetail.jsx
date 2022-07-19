@@ -14,7 +14,7 @@ const IndustryDetail = ({title, sub}) => {
       .then(data => setLists(data));
   });
 
-  let {num} = useParams;
+  let {id} = useParams;
 
   return (
     <div id="IndustryDetail">
@@ -24,11 +24,7 @@ const IndustryDetail = ({title, sub}) => {
           <h2 className="company-title">거래정보</h2>
           <div className="company-title-line"></div>
         </div>
-        <div className="detail-container">
-          {[...lists].map(({num, title, author, date, view, content}) => {
-            return <div className="detail-container-header"></div>;
-          })}
-        </div>
+        <div className="detail-container"></div>
       </div>
       <DetailFooter />
     </div>

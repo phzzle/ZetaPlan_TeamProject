@@ -11,7 +11,6 @@ const IpoSummary = ({title, sub}) => {
         <section className="mnaipo-iposummary-section1">
           <div className="mnaipo-iposummary-title-container">
             <h2 className="mnaipo-iposummary-title">IPO 개요</h2>
-            <div className="mnaipo-iposummary-title-line"></div>
           </div>
         </section>
         <section className="mnaipo-iposummary-section">

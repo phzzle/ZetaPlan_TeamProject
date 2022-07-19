@@ -11,7 +11,6 @@ const MASummary = ({title, sub}) => {
         <section className="mnaipo-ma-section1">
           <div className="mnaipo-ma-title-container">
             <h2 className="mnaipo-ma-title">M&A</h2>
-            <div className="mnaipo-ma-title-line"></div>
           </div>
         </section>
         <section className="mnaipo-ma-section">

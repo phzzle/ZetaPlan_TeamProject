@@ -22,8 +22,6 @@ const IndustryTrade4 = () => {
 
   /* =================================== */
 
-  const navigate = useNavigate();
-
   return (
     <div>
       <div id="IndustryTrade">
@@ -73,19 +71,16 @@ const IndustryTrade4 = () => {
                 .reverse()
                 .slice(startNum, endNum)
                 .reverse()
-                .map(({num, title, author, date, view}) => {
-                  const goToDetail = () => {
-                    navigate(`/industry/trade/detail/:${num}`);
-                  };
+                .map(({id, num, title, author, date, view}) => {
                   return (
-                    <li className="board-lists" key={num}>
-                      <span className="id-name">{num}</span>
-                      <span className="list-title" onClick={goToDetail}>
-                        {title}
-                      </span>
-                      <span className="list-author">{author}</span>
-                      <span className="list-date">{date}</span>
-                      <span className="list-view">{view}</span>
+                    <li className="board-lists" key={id}>
+                      <a href="">
+                        <span className="id-name">{num}</span>
+                        <span className="list-title">{title}</span>
+                        <span className="list-author">{author}</span>
+                        <span className="list-date">{date}</span>
+                        <span className="list-view">{view}</span>
+                      </a>
                     </li>
                   );
                 })}

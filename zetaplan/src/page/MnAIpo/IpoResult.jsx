@@ -11,7 +11,6 @@ const IpoResult = ({title, sub}) => {
         <section className="mnaipo-iporesult-section1">
           <div className="mnaipo-iporesult-title-container">
             <h2 className="mnaipo-iporesult-title">IPO 성과</h2>
-            <div className="mnaipo-iporesult-title-line"></div>
           </div>
         </section>
         <section className="mnaipo-iporesult-section">
