@@ -26,7 +26,7 @@ const BoardSearch6 = () => {
   }
 
   useEffect(() => {
-    fetch('/data/tradeInformation.json')
+    fetch('/data/government.json')
       .then((response) => response.json())
       .then((response) => setData(response));
   }, []);
