@@ -108,6 +108,7 @@ const NoticeInquiryForm = ({ title, sub }) => {
                       ]}
                       useCommandShortcut={false}
                       language="ko-KR"
+                      hideModeSwitch={true}
                       ref={editorRef}
                       onChange={()=>{
                         const contentsData = editorRef.current.getInstance().getHTML()
