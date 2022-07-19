@@ -5,6 +5,7 @@ import {useState, useEffect} from "react";
 import {IoIosSearch} from "react-icons/io";
 import Pagination from "./Pagination";
 import "./IndustryTrade4.css";
+import {useNavigate} from "react-router-dom";
 
 const IndustryTrade4 = () => {
   const [lists, setLists] = useState([]);
@@ -18,6 +19,10 @@ const IndustryTrade4 = () => {
       .then(res => res.json())
       .then(data => setLists(data));
   }, []);
+
+  /* =================================== */
+
+  const navigate = useNavigate();
 
   return (
     <div>
@@ -68,16 +73,19 @@ const IndustryTrade4 = () => {
                 .reverse()
                 .slice(startNum, endNum)
                 .reverse()
-                .map(({num, title, author, date, view, link}) => {
+                .map(({num, title, author, date, view}) => {
+                  const goToDetail = () => {
+                    navigate(`/industry/trade/detail/:${num}`);
+                  };
                   return (
                     <li className="board-lists" key={num}>
-                      <a href={link}>
-                        <span className="id-name">{num}</span>
-                        <span className="list-title">{title}</span>
-                        <span className="list-author">{author}</span>
-                        <span className="list-date">{date}</span>
-                        <span className="list-view">{view}</span>
-                      </a>
+                      <span className="id-name">{num}</span>
+                      <span className="list-title" onClick={goToDetail}>
+                        {title}
+                      </span>
+                      <span className="list-author">{author}</span>
+                      <span className="list-date">{date}</span>
+                      <span className="list-view">{view}</span>
                     </li>
                   );
                 })}

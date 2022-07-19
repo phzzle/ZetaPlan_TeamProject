@@ -2,16 +2,19 @@ import React from "react";
 import "./IndustryDetail.css";
 import DetailFooter from "../../Detail/DetailFooter";
 import IndustryHeader from "../../Detail/IndustryHeader";
+import {useParams} from "react-router-dom";
 import {useState, useEffect} from "react";
 
 const IndustryDetail = ({title, sub}) => {
-  const [details, setDetails] = useState([]);
+  const [lists, setLists] = useState([]);
 
   useEffect(() => {
     fetch("/data/techTrade_detail.json")
       .then(res => res.json())
-      .then(res => setDetails(res));
-  }, []);
+      .then(data => setLists(data));
+  });
+
+  let {num} = useParams;
 
   return (
     <div id="IndustryDetail">
@@ -22,15 +25,9 @@ const IndustryDetail = ({title, sub}) => {
           <div className="company-title-line"></div>
         </div>
         <div className="detail-container">
-          <div className="detail-container-header">
-            {[...details].map(({id, title, author, date, view, content}) => {
-              return (
-                <h1 className="detail-container-title" key={id}>
-                  {title}
-                </h1>
-              );
-            })}
-          </div>
+          {[...lists].map(({num, title, author, date, view, content}) => {
+            return <div className="detail-container-header"></div>;
+          })}
         </div>
       </div>
       <DetailFooter />
