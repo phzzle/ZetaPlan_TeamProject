@@ -1,4 +1,5 @@
 /* 문의하기 */
+
 import React from 'react';
 import DetailFooter from '../../component/Detail/DetailFooter';
 import NoticeHeader from '../../component/Detail/NoticeHeader';
@@ -73,7 +74,7 @@ const NoticeInquiry = ({ title, sub }) => {
               <button className='inquireBtn'>문의하기</button>
             </a>
             <a href='/login'>
-              <button className='loginBtn'>LogIn</button>
+              <button className='loginBtn'>로그인</button>
             </a>
             <Pagination
               total={lists.length}

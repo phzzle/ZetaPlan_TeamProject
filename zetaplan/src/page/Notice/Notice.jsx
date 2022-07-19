@@ -8,6 +8,7 @@ import Pagination from './Pagination';
 import './NoticeList.css';
 import BoardSearch1 from './../../component/Search/BoardSearch1';
 import { useNavigate } from 'react-router-dom';
+
 const Notice = ({ title, sub, auth, setAuth }) => {
   const [lists, setLists] = useState([]);
   const LIST_PER_PAGE = 20; // 한장에 보여질 리스트 수
@@ -24,7 +25,7 @@ const Notice = ({ title, sub, auth, setAuth }) => {
 
   const goToLogin = () => {
     navigate('/login');
-  }
+  };
 
   return (
     <div>
@@ -75,11 +76,23 @@ const Notice = ({ title, sub, auth, setAuth }) => {
                   );
                 })}
             </ul>
-              {
-                  auth ? 
-                  <button type='button' className='loginBtn' onClick={() => setAuth(false)}>로그아웃</button> :
-                  <button type='button' className='loginBtn' onClick={() => goToLogin()}>로그인</button>
-              }
+            {auth ? (
+              <button
+                type='button'
+                className='loginBtn'
+                onClick={() => setAuth(false)}
+              >
+                로그아웃
+              </button>
+            ) : (
+              <button
+                type='button'
+                className='loginBtn'
+                onClick={() => goToLogin()}
+              >
+                로그인
+              </button>
+            )}
             <a href='/notice/inquiryform'>
               <button className='writeBtn'>글쓰기</button>
             </a>
