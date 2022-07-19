@@ -12,7 +12,6 @@
   color: #3b4b59;
   width: 40px;
   height: 24px;
-/*   background: #3b4b59; */
   font-size: 1.5rem;
 }
 
@@ -21,13 +20,8 @@
   background: #e0e0e0;
 }
 
-/* .PrevButton:disabled {
-  background: #e0e0e0;
-  color: #fff;
-} */
-
 .PrevButton:active {
-   border: solid 1px #3b4b59;
+  border: solid 1px #3b4b59;
 }
 
 .NextButton {
@@ -35,7 +29,6 @@
   color: #3b4b59;
   width: 40px;
   height: 24px;
-/*   background: #3b4b59; */
   font-size: 1.5rem;
 }
 
@@ -44,13 +37,8 @@
   background: #e0e0e0;
 }
 
-/* .NextButton:disabled {
-  background: #e0e0e0;
-  color: #fff;
-}
- */
 .NextButton:active {
-   border: solid 1px #3b4b59;
+  border: solid 1px #3b4b59;
 }
 
 .PageNumButton {
@@ -62,7 +50,6 @@
   height: 24px;
   background: #fff;
   font-size: 1rem;
-  
 }
 
 .PageNumButton:hover {
@@ -71,5 +58,5 @@
 }
 
 .PageNumButton:active {
-border: solid 1px #3b4b59;
+  border: solid 1px #3b4b59;
 }
