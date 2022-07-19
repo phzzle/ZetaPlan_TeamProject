@@ -30,16 +30,17 @@ const SearchNotice1 = () => {
         </div>
         </div>
         <div className='board-search-header'>
-          <h2>`${word} 검색결과`</h2>
           <div className='inner-search-box'>
+            <h2>'<em>{word}</em>' 검색결과입니다.</h2>
             <BoardSearch1 />
           </div>
         </div>
-        <div className='inner-search-head'>
-          <span className='inner-search-sub'>분류</span>
-          <span className='inner-search-num'>번호</span>
-          <span className='inner-search-title'>제목</span>
-          <span className='inner-search-date'>날짜</span>
+        <div className='board-lists title'>
+          <span className='id-name'>번호</span>
+          <span className='list-title'>제목</span>
+          <span className='list-author'>작성자</span>
+          <span className='list-date'>날짜</span>
+          <span className='list-view'>조회수</span>
         </div>
         <ul className='inner-search-result'>
         {

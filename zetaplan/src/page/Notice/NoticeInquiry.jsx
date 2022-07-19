@@ -6,6 +6,7 @@ import { useState, useEffect } from 'react';
 import Pagination from './Pagination';
 import './NoticeList.css';
 import { IoIosSearch } from 'react-icons/io';
+import BoardSearch5 from '../../component/Search/BoardSearch5';
 
 const NoticeInquiry = ({ title, sub }) => {
   const [lists, setLists] = useState([]);
@@ -32,23 +33,9 @@ const NoticeInquiry = ({ title, sub }) => {
               <table class='pull-right'>
                 <tr>
                   <td>
-                    <select class='board-search-selector' name='searchField'>
-                      <option value='0'>전체</option>
-                      <option value='bbs-title'>제목</option>
-                      <option value='bbs-content'>내용</option>
-                    </select>
                   </td>
                   <td>
-                    <input
-                      type='text'
-                      class='input-box'
-                      placeholder='검색어를 입력하세요.'
-                      name='searchText'
-                      maxlength='100'
-                    />
-                    <button type='submit' class='btn btn-success'>
-                      <IoIosSearch size={'25px'} />
-                    </button>
+                    <BoardSearch5 />
                   </td>
                   <td></td>
                 </tr>

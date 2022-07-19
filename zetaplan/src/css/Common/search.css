@@ -100,13 +100,24 @@
 
 /* 게시판 검색 CSS */
 
+.inner-search-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.inner-search-box>h2 {
+    display: inline-block;
+    width: 400px;
+}
+
 .board-search-box {
     width: 100%;
     display: flex;
     justify-content: end;
 }
 
-.board-search-box form {
+.board-search-box .board-search-box-wrap {
     width: 300px;
     height: 40px;
     line-height: 40px;
@@ -114,22 +125,31 @@
     border-radius: 32px;
     margin-bottom: 20px;
     position: relative;
+    display: flex;
 }
 
-.board-search-box form svg {
+.board-search-box .board-search-box-wrap svg {
     position: absolute;
     top: 7px;
     left: 10px;
 }
 
 .board-search-box .search-input {
-    width: 180px;
+    width: 153px;
     height: 36px;
+    line-height: 36px;
     background-color: transparent;
     outline: none;
     border: none;
     font-size: 16px;
     margin: 0 20px 0 40px;
+}
+
+.board-search-box .delete-button {
+    color: #fff;
+    font: 12px;
+    text-align: center;
+    margin-right: 10px;
 }
 
 .board-search-box .search-submit-btn {
@@ -138,4 +158,52 @@
     border: 2px solid #2c3540;
     border-radius: 32px;
     padding: 7px 12px;
+}
+
+.auto-search-box {
+    position: absolute;
+    top: 40px;
+    left: 35px;
+    width: 210px;
+    max-height: 300px;
+    overflow-y: scroll;
+    background-color: #efefef;
+    z-index: 999;
+}
+
+.auto-search-lists {
+    padding: 0 4px;
+}
+
+.auto-search-list {
+    width: 100%;
+    color: #2c3540;
+    font-size: 12px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 4px 0;
+    border-bottom: 1px solid rgba(102, 102, 102, 0.1);
+}
+
+.auto-search-list.selected {
+    background-color: lightgray;
+}
+
+.auto-search-list:hover {
+    background-color: lightgray;
+}
+
+.board-search-selector {
+    border: 2px solid #2c3540;
+    border-radius: 32px;
+}
+
+.board-search-selector option {
+    text-align: center;
+    font-size: 16px;
+}
+
+.board-search-selector option:focus {
+    outline: none;
 }
