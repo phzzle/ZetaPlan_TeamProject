@@ -1,50 +1,74 @@
-#IndustryTrade.paginationBox {
+.paginationBox {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 1000px;
-  margin: auto;
+  margin: 1rem auto;
+  padding-top: 50px;
 }
 
-#IndustryTrade.PrevButton {
+.PrevButton {
   border-radius: 0.25rem;
-  padding: 0.25rem 0.375rem;
-  color: #fff;
+  color: #3b4b59;
   width: 40px;
   height: 24px;
-  background: #cda8a8;
-  font-size: 0.75rem;
+  /*   background: #3b4b59; */
+  font-size: 1.5rem;
 }
 
-#IndustryTrade.PrevButton:hover {
+.PrevButton:hover {
   cursor: pointer;
-  color: #f23;
+  background: #e0e0e0;
 }
-#IndustryTrade.disabled {
+
+/* .PrevButton:disabled {
+  background: #e0e0e0;
+  color: #fff;
+} */
+
+.PrevButton:active {
+  border: solid 1px #3b4b59;
+}
+
+.NextButton {
+  border-radius: 0.25rem;
+  color: #3b4b59;
+  width: 40px;
+  height: 24px;
+  /*   background: #3b4b59; */
+  font-size: 1.5rem;
+}
+
+.NextButton:hover {
+  cursor: pointer;
+  background: #e0e0e0;
+}
+
+/* .NextButton:disabled {
   background: #e0e0e0;
   color: #fff;
 }
-#IndustryTrade.PrevButton.active {
-  font-weight: bold;
-  color: #f93;
-  text-decoration: underline;
+ */
+.NextButton:active {
+  border: solid 1px #3b4b59;
 }
 
-#IndustryTrade.NextButton {
+.PageNumButton {
   border-radius: 0.25rem;
-  padding: 0.25rem 0.375rem;
-  color: #fff;
   width: 40px;
   height: 24px;
-  background: #cda8a8;
-  font-size: 0.75rem;
-}
-#IndustryTrade.PageNumButton {
-  border-radius: 0.25rem;
-  padding: 0.25rem 0.375rem;
+  color: #3b4b59;
   width: 40px;
   height: 24px;
-  background: none;
-  color: #666;
+  background: #fff;
   font-size: 1rem;
+}
+
+.PageNumButton:hover {
+  cursor: pointer;
+  background: #e0e0e0;
+}
+
+.PageNumButton:active {
+  border: solid 1px #3b4b59;
 }
