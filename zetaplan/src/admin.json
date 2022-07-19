@@ -1,0 +1,7 @@
+{
+    "admin": [{
+        "id": "admin",
+        "password": "zetaplan",
+        "name": "관리자"
+    }]
+}

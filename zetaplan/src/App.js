@@ -51,6 +51,7 @@ import SearchNotice4 from './page/Common/Search/SearchNotice4';
 import SearchNotice5 from './page/Common/Search/SearchNotice5';
 import SearchIndustry1 from './page/Common/Search/SearchIndustry1';
 import SearchIndustry2 from './page/Common/Search/SearchIndustry2';
+import IndustryDetail from './component/Industry/IndustryDetail/IndustryDetail';
 
 function App() {
   let [items, setItems] = useState(confirmList);
@@ -108,6 +109,7 @@ function App() {
             <Route path='/notice/inquiry/:word' element={<SearchNotice5 />} />
             <Route path='/industry/:word' element={<SearchIndustry1 />} />
             <Route path='/industry/trade/:word' element={<SearchIndustry2 />} />
+            <Route path='/industry/trade/detail/:id' element={<IndustryDetail />} />
           </Routes>
         </BrowserRouter>
     </div>

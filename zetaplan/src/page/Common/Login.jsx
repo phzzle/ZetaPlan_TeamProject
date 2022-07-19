@@ -1,48 +1,48 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Header from '../../component/Header/Header';
 import DetailFooter from '../../component/Detail/DetailFooter';
 import '../../css/Common/login.css';
 import { useNavigate } from 'react-router-dom';
 
 const Login = ({ setAuth }) => {
-  const navigate = useNavigate();
-  const login = (e) => {
-    e.preventDefault();
-    setAuth(true);
-    navigate('/');
-  };
+  const [inputId, setInputId] = useState('')
+  const [inputPw, setInputPw] = useState('')
+
+  const handleInputId = (e) => {
+    setInputId(e.target.value)
+}
+
+const handleInputPw = (e) => {
+    setInputPw(e.target.value)
+}
+
+// login 버튼 클릭 이벤트
+const onClickLogin = () => {
+    console.log('click login')
+}
+
+// 페이지 렌더링 후 가장 처음 호출되는 함수
+useEffect(() => {
+    fetch('/user_inform/login')
+    .catch()
+}, [])
+
   return (
     <div>
       <Header />
       <div id='SubInner'>
-        <div className='login-page'>
-          <h1 className='login-title'>관리자 로그인</h1>
-          <div className='login-box'>
-            <form
-              onSubmit={(e) => {
-                login(e);
-              }}
-            >
-              <div>
-                <div>
-                  <label htmlFor='userId'>아이디</label>
-                </div>
-                <div>
-                  <input type='text' id='userId' placeholder='admin' />
-                </div>
-              </div>
-              <div>
-                <div>
-                  <label htmlFor='userPass'>비밀번호</label>
-                </div>
-                <div>
-                  <input type='password' id='userPass' placeholder='passward' />
-                </div>
-              </div>
-              <div>
-                <input type='submit' value='로그인' />
-              </div>
-            </form>
+        <div className='login'>
+          <span>관리자 로그인 페이지</span>
+          <div>
+            <label htmlFor='admin_id'>ID : </label>
+            <input type='text' name='admin_id' value={inputId} onChange={handleInputId} />
+          </div>
+          <div>
+            <label htmlFor='admin_pw'>PW : </label>
+            <input type='password' name='admin_pw' value={inputPw} onChange={handleInputPw} />
+          </div>
+          <div>
+            <button type='button' onClick={onClickLogin}>Login</button>
           </div>
         </div>
       </div>
