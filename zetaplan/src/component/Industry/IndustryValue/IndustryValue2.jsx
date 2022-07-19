@@ -21,8 +21,30 @@ const IndustryValue2 = () => {
                 기술신용평가는 자금을 지원하는 금융기관에서 TCB기관으로 평가를 신청하고 금융기관과 TCB간의 평가를 상호협 완료 후, TCB가 기업에게 평가안내와 서류를 요청하고, 제출서류 확인과 현장실사 완료 후 기술신용평가를 완료한다.
                 <br />  
                  </p>
+                 <div className="process-box">
+                   <div className="process-circle">
+                     <h2 className="process-num">1</h2>
+                     <p className='pocess-des'>기술 신용평가 <br />신청</p>
+                   </div>
+                   <div className="process-circle">
+                     <h2 className="process-num">2</h2>
+                     <p className='pocess-des'>평가기업대상<br /> 서류제출</p>
+                   </div>
+                   <div className="process-circle">
+                     <h2 className="process-num">3</h2>
+                     <p className='pocess-des'>기술 신용평가 <br />실사</p>
+                   </div>
+                   <div className="process-circle">
+                     <h2 className="process-num">4</h2>
+                     <p className='pocess-des'>기술 신용평가<br /> 진행</p>
+                   </div>
+                   <div className="process-circle">
+                     <h2 className="process-num">5</h2>
+                     <p className='pocess-des'>기술 신용평가 <br />완료</p>
+                   </div>
+                 </div>
                  <br />
-                 <span className="industry-value-part">   지원내용</span>
+                 <span className="industry-value-part"> 지원내용</span>
                 <br />
                 <br />
                 <p className='industry-value-part-txt'>

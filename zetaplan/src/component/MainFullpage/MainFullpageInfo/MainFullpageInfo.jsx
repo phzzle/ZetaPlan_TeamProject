@@ -10,9 +10,8 @@ const MainFullpageInfo = () => {
         <div className='main-info-box'>
           <div className='main-info-title-box'>
             <h2 className='main-info-title'>
-             
-              <span>사업소개</span>
-              BUSINESS
+              <span> BUSINESS</span>
+              사업소개
             </h2>
           </div>
           <div className='fullpageInfo-boxs'>

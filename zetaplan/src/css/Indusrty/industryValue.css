@@ -105,3 +105,28 @@
   padding-top: 5px;
   padding-bottom: 5px;
 }
+
+.process-box{
+  display: flex;
+  align-items: center;
+  box-sizing:border-box;
+
+}
+.process-circle{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: rgba(59, 75, 89, 0.8);
+  color: #efefef;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 30px;
+}
+
+.process-num{
+  font-size: 24px;
+  font-weight: bold;
+  color: #ca5925;
+}
