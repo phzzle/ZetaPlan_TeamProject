@@ -73,6 +73,8 @@ const NoticeRequest = ({title, sub}) => {
         ...input,
         [e.target.name]: e.target.value
       });
+
+    console.log(input)
   }
   const submitFnc = (e) => {
     // form 제출 함수

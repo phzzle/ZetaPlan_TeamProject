@@ -93,3 +93,7 @@
 .submit-btn-group .request-cancel-btn {
   background-color: #efefef;
 }
+
+.ck.ck-editor__editable:not(.ck-editor__nested-editable) {
+  min-height: 500px;
+}
