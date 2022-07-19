@@ -1,13 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import DetailFooter from '../../component/Detail/DetailFooter';
 import NoticeHeader from '../../component/Detail/NoticeHeader';
-import { useNavigate } from 'react-router-dom';
-import { CKEditor } from "@ckeditor/ckeditor5-react";
-import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
-import { useState } from 'react';
+import { useNavigate } from 'react-router-dom'; 
+import { Editor } from '@toast-ui/react-editor';
+import '@toast-ui/editor/dist/i18n/ko-kr';
+import '@toast-ui/editor/dist/toastui-editor.css';
+import { useRef } from 'react';
 
 const NoticeInquiryForm = ({ title, sub }) => {
   const navigate = useNavigate();
+  const editorRef = useRef();
   const [input, setInput] = useState({
     title: '',
     author: '',
@@ -93,16 +95,25 @@ const NoticeInquiryForm = ({ title, sub }) => {
                   <label htmlFor='inquiryContents' className='contents-title'>문의 내용</label>
                 </th>
                 <td>
-                  <CKEditor 
-                    editor={ClassicEditor} 
-                    data=''
-                    onChange={(e, editor) => {
-                      const contentsData = editor.getData();
-                      setInput({
-                        ...input,
-                        contents: contentsData
-                      })
-                    }} />
+                    <Editor
+                      placeholder="내용을 입력해주세요."
+                      previewStyle="vertical" // 미리보기 스타일 지정
+                      height="500px" // 에디터 창 높이
+                      initialEditType="wysiwyg" // 초기 입력모드 설정(디폴트 markdown)
+                      toolbarItems={[
+                        // 툴바 옵션 설정
+                        ['heading', 'bold', 'italic', 'strike'],
+                        ['hr', 'quote'],
+                        ['ul', 'ol', 'task', 'indent', 'outdent'],
+                      ]}
+                      useCommandShortcut={false}
+                      language="ko-KR"
+                      ref={editorRef}
+                      onChange={()=>{
+                        const contentsData = editorRef.current.getInstance().getHTML()
+                        setInput({...input, contents: contentsData})
+                      }}
+                    ></Editor>
                 </td>
               </tr>
               <tr>
