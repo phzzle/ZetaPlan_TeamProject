@@ -6,7 +6,6 @@ import NoticeHeader from '../../component/Detail/NoticeHeader';
 import { useState, useEffect } from 'react';
 import Pagination from './Pagination';
 import './NoticeList.css';
-import { IoIosSearch } from 'react-icons/io';
 import BoardSearch3 from './../../component/Search/BoardSearch3';
 
 const NoticeColumn = ({ title, sub }) => {
@@ -25,16 +24,17 @@ const NoticeColumn = ({ title, sub }) => {
   return (
     <div>
       <NoticeHeader title={title} sub={sub} />
-      <div id='SubInner'>
-        <div className='company-title-container'>
-          <h2 className='company-title'>기업지원정보</h2>
-          <div className='company-title-line'></div>
+      <div id='NoticeColumn'>
+        <div id='SubInner'>
+          <div className='company-title-container'>
+            <h2 className='company-title'>기업지원정보</h2>
+            <div className='company-title-line'></div>
+          </div>
           <div class='board-search-container'>
             <form method='post' name='search' action='/notice'>
               <table class='pull-right'>
                 <tr>
-                  <td>
-                  </td>
+                  <td></td>
                   <td>
                     <BoardSearch3 />
                   </td>
@@ -70,6 +70,12 @@ const NoticeColumn = ({ title, sub }) => {
                   );
                 })}
             </ul>
+            <a href='/login'>
+              <button className='loginBtn'>LogIn</button>
+            </a>
+            <a href='/notice/inquiryform'>
+              <button className='writeBtn'>글쓰기</button>
+            </a>
             <Pagination
               total={lists.length}
               page={page}

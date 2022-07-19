@@ -86,27 +86,38 @@
   cursor: pointer;
 }
 
-.inquire-button {
-  right: 0;
-  bottom: 7%;
-  padding: 5px;
-  position: absolute;
-  border-radius: 0.25rem;
-  color: #fff;
-  background: #3b4b59;
-  font-size: 1.1rem;
-  margin-right: 0;
-}
-
-.login-button {
-  right: 0;
-  bottom: 7%;
+.inquireBtn {
+  right: 5%;
+  bottom: 5%;
   padding: 7px;
   position: absolute;
   border-radius: 0.25rem;
   color: #fff;
   background: #3b4b59;
-  font-size: 1.2rem;
+  font-size: 0.87rem;
+  margin-right: 0;
+}
+
+.loginBtn {
+  right: 0;
+  bottom: 5%;
+  padding: 7px;
+  position: absolute;
+  border-radius: 0.25rem;
+  color: #fff;
+  background: #3b4b59;
+  font-size: 1rem;
+  margin-right: 0;
+}
+.writeBtn {
+  right: 5%;
+  bottom: 5%;
+  padding: 7px;
+  position: absolute;
+  border-radius: 0.25rem;
+  color: #fff;
+  background: #3b4b59;
+  font-size: 0.87rem;
   margin-right: 0;
 }
 
@@ -132,7 +143,4 @@
   width: 250px;
   height: 40px;
   font-size: 1rem;
-}
-
-.btn-success {
 }

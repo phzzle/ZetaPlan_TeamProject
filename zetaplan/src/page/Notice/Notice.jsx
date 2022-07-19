@@ -6,7 +6,6 @@ import NoticeHeader from '../../component/Detail/NoticeHeader';
 import { useState, useEffect } from 'react';
 import Pagination from './Pagination';
 import './NoticeList.css';
-import { IoIosSearch } from 'react-icons/io';
 import BoardSearch1 from './../../component/Search/BoardSearch1';
 const Notice = ({ title, sub }) => {
   const [lists, setLists] = useState([]);
@@ -34,53 +33,55 @@ const Notice = ({ title, sub }) => {
             <form method='post' name='search' action='/notice'>
               <table class='pull-right'>
                 <tr>
-                  <td>
-                  </td>
+                  <td></td>
                   <td>
                     <BoardSearch1 />
-                    </td>
-                    <td></td>
-                  </tr>
-                </table>
-              </form>
+                  </td>
+                  <td></td>
+                </tr>
+              </table>
+            </form>
+          </div>
+          <div className='list-box'>
+            <div className='board-lists title'>
+              <span className='id-name'>번호</span>
+              <span className='list-title'>제목</span>
+              <span className='list-author'>작성자</span>
+              <span className='list-date'>날짜</span>
+              <span className='list-view'>조회수</span>
             </div>
-            <div className='list-box'>
-              <div className='board-lists title'>
-                <span className='id-name'>번호</span>
-                <span className='list-title'>제목</span>
-                <span className='list-author'>작성자</span>
-                <span className='list-date'>날짜</span>
-                <span className='list-view'>조회수</span>
-              </div>
-              <ul className='notice-list'>
-                {[...lists]
-                  .reverse()
-                  .slice(startNum, endNum)
-                  .reverse()
-                  .map(({ num, title, author, date, view, link }) => {
-                    return (
-                      <li className='board-lists' key={num}>
-                        <a href={link}>
-                          <span className='id-name'>{num}</span>
-                          <span className='list-title'>{title}</span>
-                          <span className='list-author'>{author}</span>
-                          <span className='list-date'>{date}</span>
-                          <span className='list-view'>{view}</span>
-                        </a>
-                      </li>
-                    );
-                  })}
-              </ul>
-              <a href='/login'>
-                <button className='login-button'>LogIn</button>
-              </a>
-              <Pagination
-                total={lists.length}
-                page={page}
-                setPage={setPage}
-                LIST_PER_PAGE={LIST_PER_PAGE}
-              />
-            </div>
+            <ul className='notice-list'>
+              {[...lists]
+                .reverse()
+                .slice(startNum, endNum)
+                .reverse()
+                .map(({ num, title, author, date, view, link }) => {
+                  return (
+                    <li className='board-lists' key={num}>
+                      <a href={link}>
+                        <span className='id-name'>{num}</span>
+                        <span className='list-title'>{title}</span>
+                        <span className='list-author'>{author}</span>
+                        <span className='list-date'>{date}</span>
+                        <span className='list-view'>{view}</span>
+                      </a>
+                    </li>
+                  );
+                })}
+            </ul>
+            <a href='/login'>
+              <button className='loginBtn'>LogIn</button>
+            </a>
+            <a href='/notice/inquiryform'>
+              <button className='writeBtn'>글쓰기</button>
+            </a>
+            <Pagination
+              total={lists.length}
+              page={page}
+              setPage={setPage}
+              LIST_PER_PAGE={LIST_PER_PAGE}
+            />
+          </div>
         </div>
       </div>
       <DetailFooter />

@@ -25,16 +25,17 @@ const NoticeInfo = ({ title, sub }) => {
   return (
     <div>
       <NoticeHeader title={title} sub={sub} />
-      <div id='SubInner'>
-        <div className='company-title-container'>
-          <h2 className='company-title'>컨설팅 실적</h2>
-          <div className='company-title-line'></div>
+      <div id='NoticeInfo'>
+        <div id='SubInner'>
+          <div className='company-title-container'>
+            <h2 className='company-title'>컨설팅 실적</h2>
+            <div className='company-title-line'></div>
+          </div>
           <div class='board-search-container'>
             <form method='post' name='search' action='/notice'>
               <table class='pull-right'>
                 <tr>
-                  <td>
-                  </td>
+                  <td></td>
                   <td>
                     <BoardSearch4 />
                   </td>
@@ -70,6 +71,12 @@ const NoticeInfo = ({ title, sub }) => {
                   );
                 })}
             </ul>
+            <a href='/login'>
+              <button className='loginBtn'>LogIn</button>
+            </a>
+            <a href='/notice/inquiryform'>
+              <button className='writeBtn'>글쓰기</button>
+            </a>
             <Pagination
               total={lists.length}
               page={page}
