@@ -12,10 +12,10 @@ const IndustryValue5 = () => {
           <br />  
            </p>
            <div>
-            <table>
+            <table id='value-table'>
               <colgroup>
-                <col style={{width: "15%"}} />
-                <col style={{width: "85%"}} />
+                <col style={{width: "50%"}} />
+                <col style={{width: "50%"}} />
               </colgroup>
               <th>현행</th>
               <th>개선</th>
@@ -35,7 +35,7 @@ const IndustryValue5 = () => {
             </div>
 
            <br />
-
+           <br />
            <span className="industry-value-part">  성장사다리펀드</span>
           <br />
           <br />

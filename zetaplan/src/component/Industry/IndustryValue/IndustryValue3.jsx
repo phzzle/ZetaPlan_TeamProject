@@ -64,19 +64,21 @@ const IndustryValue3 = () => {
                  </p>
 
                 <div>
-                  <table>
+                  <table id='value-table'>
                     <colgroup>
-                      <col style={{width: "15%"}} />
-                      <col style={{width: "85%"}} />
+                      <col style={{width: "25%"}} />
+                      <col style={{width: "25%"}} />
+                      <col style={{width: "25%"}} />
+                      <col style={{width: "25%"}} />
                     </colgroup>
                     <th> 구분 </th>
                     <th> 평가 총 비용 </th>
                     <th> 국고지원액 </th>
                     <th> 비고 </th>
-                    <tr>
+                    <tr >
                      <td>
                      <dl>
-                      <dd>심층평가</dd>
+                      <dd >심층평가</dd>
                      </dl>
                     </td>
                     <td>

@@ -1,4 +1,8 @@
 import React from 'react';
+import { TiArrowRightThick } from 'react-icons/ti';
+import {GoArrowRight } from 'react-icons/go';
+import {IoIosArrowForward} from 'react-icons/io';
+
 
 const IndustryValue2 = () => {
     return (
@@ -26,21 +30,26 @@ const IndustryValue2 = () => {
                      <h2 className="process-num">1</h2>
                      <p className='pocess-des'>기술 신용평가 <br />신청</p>
                    </div>
+                   <IoIosArrowForward id='process-arrow' /> 
                    <div className="process-circle">
                      <h2 className="process-num">2</h2>
                      <p className='pocess-des'>평가기업대상<br /> 서류제출</p>
                    </div>
+                   <IoIosArrowForward id='process-arrow' /> 
                    <div className="process-circle">
                      <h2 className="process-num">3</h2>
                      <p className='pocess-des'>기술 신용평가 <br />실사</p>
                    </div>
+                   <IoIosArrowForward id='process-arrow' /> 
                    <div className="process-circle">
                      <h2 className="process-num">4</h2>
                      <p className='pocess-des'>기술 신용평가<br /> 진행</p>
                    </div>
+                   <IoIosArrowForward id='process-arrow' /> 
                    <div className="process-circle">
                      <h2 className="process-num">5</h2>
                      <p className='pocess-des'>기술 신용평가 <br />완료</p>
+                     
                    </div>
                  </div>
                  <br />
