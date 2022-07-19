@@ -7,18 +7,24 @@ import { useState, useEffect } from 'react';
 import Pagination from './Pagination';
 import './NoticeList.css';
 import BoardSearch1 from './../../component/Search/BoardSearch1';
-const Notice = ({ title, sub, auth }) => {
+import { useNavigate } from 'react-router-dom';
+const Notice = ({ title, sub, auth, setAuth }) => {
   const [lists, setLists] = useState([]);
   const LIST_PER_PAGE = 20; // 한장에 보여질 리스트 수
   const [page, setPage] = useState(1); // 페이지
   const startNum = (page - 1) * LIST_PER_PAGE; // 0 10 20 30
   const endNum = startNum + LIST_PER_PAGE; // 10 20 30 40
+  const navigate = useNavigate();
 
   useEffect(() => {
     fetch('/data/tradeInformation.json')
       .then((response) => response.json())
       .then((response) => setLists(response));
   }, []);
+
+  const goToLogin = () => {
+    navigate('/login');
+  }
 
   return (
     <div>
@@ -71,10 +77,9 @@ const Notice = ({ title, sub, auth }) => {
             </ul>
               {
                   auth ? 
-                  <span onClick={() => setAuth(false)}>로그아웃</span> :
-                  <span onClick={() => goToLogin()}>로그인</span>
+                  <button type='button' className='loginBtn' onClick={() => setAuth(false)}>로그아웃</button> :
+                  <button type='button' className='loginBtn' onClick={() => goToLogin()}>로그인</button>
               }
-              <button className='loginBtn'>LogIn</button>
             <a href='/notice/inquiryform'>
               <button className='writeBtn'>글쓰기</button>
             </a>

@@ -57,7 +57,7 @@ const Login = ({ setAuth }) => {
       <div id='SubInner'>
         <div className="company-title-container">
           <h2 className='company-title'>로그인</h2>
-          <div className='company-title-line'></div>9
+          <div className='company-title-line'></div>
         </div>
         <div className='login'>
           <span className='company-road-part'>관리자 로그인 페이지</span>

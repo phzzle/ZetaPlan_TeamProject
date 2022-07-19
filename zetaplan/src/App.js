@@ -53,6 +53,11 @@ import SearchIndustry1 from './page/Common/Search/SearchIndustry1';
 import SearchIndustry2 from './page/Common/Search/SearchIndustry2';
 import IndustryDetail from './component/Industry/IndustryDetail/IndustryDetail';
 import LoginRedirect from './route/LoginRedirect';
+import NoticeDetail from './page/Notice/NoticeDetail/NoticeDetail';
+import NoticeColumnDetail from './page/Notice/NoticeDetail/NoticeColumnDetail';
+import NoticeInfoDetail from './page/Notice/NoticeDetail/NoticeInfoDetail';
+import NoticeInquiryDetail from './page/Notice/NoticeDetail/NoticeInquiryDetail';
+import NoticeNewsDetail from './page/Notice/NoticeDetail/NoticeNewsDetail';
 
 function App() {
   let [items, setItems] = useState(confirmList);
@@ -95,7 +100,7 @@ function App() {
             <Route path='/industry/trade' element={<IndustryTrade title="Industry" sub="기술 거래" />} />
             <Route path='/industry/value' element={<IndustryValue title="Industry" sub="가치 평가" />} />
             <Route path='/industry/credit' element={<IndustryCredit title="Industry" sub="신용 평가" />} />
-            <Route path='/notice' element={<Notice title="Notice" sub="공지사항" auth={auth} />} />
+            <Route path='/notice' element={<Notice title="Notice" sub="공지사항" auth={auth} setAuth={setAuth} />} />
             <Route path='/notice/news' element={<NoticeNews title="Notice" sub="뉴스" />} />
             <Route path='/notice/support' element={<NoticeColumn title="Notice" sub="기업지원정보" />} />
             <Route path='/notice/info' element={<NoticeInfo title="Notice" sub="컨설팅 실적" />} />
@@ -116,6 +121,11 @@ function App() {
             <Route path='/industry/trade/:word' element={<SearchIndustry2 />} />
             <Route path='/industry/trade/detail/:id' element={<IndustryDetail />} />
             <Route path='/notice/editor/:id' element={<LoginRedirect auth={auth} />} />
+            <Route path='/notice/detail/:id' element={<NoticeDetail />} />
+            <Route path='/notice/support/detail/:id' element={<NoticeColumnDetail />} />
+            <Route path='/notice/info/detail/:id' element={<NoticeInfoDetail />} />
+            <Route path='/notice/inquiry/detail/:id' element={<NoticeInquiryDetail />} />
+            <Route path='/notice/news/detail/:id' element={<NoticeNewsDetail />} />
           </Routes>
         </BrowserRouter>
     </div>

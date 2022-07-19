@@ -6,7 +6,7 @@ import NoticeHeader from '../../component/Detail/NoticeHeader';
 import { useState, useEffect } from 'react';
 import './NoticeList.css';
 
-const Notice = ({ title, sub }) => {
+const NoticeDetail = ({ title, sub }) => {
   const [lists, setLists] = useState([]);
 
   useEffect(() => {
@@ -68,4 +68,4 @@ const Notice = ({ title, sub }) => {
   );
 };
 
-export default Notice;
+export default NoticeDetail;
