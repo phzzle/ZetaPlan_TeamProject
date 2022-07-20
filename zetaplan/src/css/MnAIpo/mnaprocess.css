@@ -51,21 +51,54 @@
   top: 50%;
 }
 
-/* ======================================mnaprocess1 */
+/* ======================================mnaprocess1  general*/
 
 .mnaprocess1 {
   display: flex;
 }
 .mnaprocess1 .mnaipo-maprocess-section {
-  width: 600px;
+  width: 550px;
+  margin-right: 50px;
 }
 
-.mnaprocess1 .mnaipo-maprocess-section .mnaipo-maprocess-part-general {
-  background: url(/public/img/MnaIpo/MnaProcess/mna\ process\ 1.png) no-repeat;
-  width: 600px;
-  height: 1200px;
+.mnaprocess1 .mnaipo-maprocess-section .mnaipo-maprocess-part-general > div {
+  display: flex;
+  border: 1.5px solid #2c3540;
+  padding-bottom: 30px;
 }
 
+.mnaipo-maprocess-part-general-num {
+  font-weight: bold;
+  font-size: 16px;
+  padding-left: 10px;
+}
+.mnaipo-maprocess-part-general-content h1 {
+  font-weight: bold;
+  font-size: 16px;
+  padding-bottom: 5px;
+}
+
+/* ======================================mnaprocess1 broker */
+
+.mnaipo-maprocess-part-broker > div {
+  display: flex;
+  border: 1.5px solid #2c3540;
+  padding-bottom: 30px;
+}
+.mnaipo-maprocess-part-broker-num {
+  font-weight: bold;
+  font-size: 16px;
+  padding-left: 10px;
+}
+.mnaipo-maprocess-part-broker-content h1 {
+  font-weight: bold;
+  font-size: 16px;
+  padding-bottom: 5px;
+}
+.mnaipo-maprocess-part-broker-content h1 > span {
+  font-weight: 400;
+  font-size: 14px;
+}
 /* ======================================mnaprocess2 table*/
 
 .mnaprocess2 .mnaipo-maprocess-part-select-table {
