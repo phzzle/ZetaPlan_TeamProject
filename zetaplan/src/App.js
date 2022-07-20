@@ -131,7 +131,7 @@ function App() {
           <Route path="/notice/editor/" element={<LoginRedirect auth={auth} />} />
           <Route path="/notice/detail/:id" element={<NoticeDetail />} />
           <Route path="/notice/support/detail/:id" element={<NoticeColumnDetail />} />
-          <Route path="/notice/info/detail/:id" element={<NoticeInfoDetail />} />
+          <Route path="/notice/info/detail/:id" element={<NoticeInfoDetail infoData={infoData} />} />
           <Route path="/notice/inquiry/detail/:id" element={<NoticeInquiryDetail />} />
           <Route path="/notice/news/detail/:id" element={<NoticeNewsDetail />} />
         </Routes>

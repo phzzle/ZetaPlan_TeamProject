@@ -7,13 +7,17 @@ import NoticeHeader from '../../../component/Detail/NoticeHeader';
 import '../NoticeList.css';
 /* import { useNavigate } from 'react-router-dom'; */
 
-const NoticeInfoDetail = ({ title, sub }) => {
+const NoticeInfoDetail = ({ infodata }) => {
   return (
     <div>
-      <NoticeHeader title={title} sub={sub} />
+      <NoticeHeader title="Notice" sub="컨설팅 실적" />
       <div id='NoticeInfoDetail'>
         <div id='SubInner'>
-          <h2 className='notice-title'>컨설팅 실적 세부페이지</h2>
+          <div className='company-title-container'>
+            <h2 className='company-title'>컨설팅 실적 세부페이지</h2>
+            <div className='company-title-line'></div>
+            안녕
+          </div>
         </div>
         <DetailFooter />
       </div>
