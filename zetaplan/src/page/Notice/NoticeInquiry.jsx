@@ -31,9 +31,9 @@ const NoticeInquiry = ({ title, sub }) => {
             <h2 className='company-title'>문의하기</h2>
             <div className='company-title-line'></div>
           </div>
-          <div class='board-search-container'>
+          <div className='board-search-container'>
             <form method='post' name='search' action='/notice'>
-              <table class='pull-right'>
+              <table className='pull-right'>
                 <tr>
                   <td></td>
                   <td>
