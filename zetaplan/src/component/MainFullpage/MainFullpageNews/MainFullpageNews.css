@@ -11,7 +11,7 @@
     no-repeat center / cover;
 }
 
-#newsMainInner {
+#FullpageNews #MainInner {
   height: 100%;
   padding-top: 160px;
 }

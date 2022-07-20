@@ -62,7 +62,7 @@ const MainFullpageNews = () => {
 
   return (
     <div id='FullpageNews'>
-      <div id='newsMainInner'>
+      <div id='MainInner'>
         <div className='content-box'>
           <h2 className='section-title'>
             새소식<span>Notice</span>
