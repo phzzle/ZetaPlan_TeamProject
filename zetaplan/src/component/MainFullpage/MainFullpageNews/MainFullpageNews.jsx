@@ -65,7 +65,7 @@ const MainFullpageNews = () => {
       <div id='newsMainInner'>
         <div className='content-box'>
           <h2 className='section-title'>
-            새소식<span>News</span>
+            새소식<span>Notice</span>
           </h2>
           <div className='board-box'>
             <div className='board'>

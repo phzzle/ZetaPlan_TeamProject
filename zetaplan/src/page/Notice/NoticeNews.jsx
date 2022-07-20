@@ -26,10 +26,7 @@ const NoticeNews = ({ title, sub }) => {
       <NoticeHeader title={title} sub={sub} />
       <div id='NoticeNews'>
         <div id='SubInner'>
-          <div className='company-title-container'>
-            <h2 className='company-title'>뉴스</h2>
-            <div className='company-title-line'></div>
-          </div>
+          <h2 className='notice-title'>뉴스</h2>
           <div className='board-search-container'>
             <form method='post' name='search' action='/notice'>
               <table className='pull-right'>

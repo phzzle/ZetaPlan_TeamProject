@@ -1,9 +1,20 @@
-.list-name {
+.notice-title{    width: 400px;
+  height: 180px;
+  line-height: 180px;
+  margin-top: 25px;
+  margin-bottom: 40px;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 auto;
+  color: #2c3540;}
+
+/* .list-name {
     font-size: 1.5rem;
     text-align: center;
     margin-top: 2rem;
     color: #b66666;
-}
+} */
 
 .notice-list {
     font-size: 0.875rem;
