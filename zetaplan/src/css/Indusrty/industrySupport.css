@@ -28,6 +28,8 @@
     font-size: 16px;
     text-align: center;
     color: #2c3540;
+    border-bottom: 1px solid rgba(44, 53, 64, 0.4);
+    border-left: 1px solid rgba(44, 53, 64, 0.4);
 }
 
 .detail-tab-lists .detail-tab-list.active {
@@ -37,7 +39,9 @@
     border-color: rgba(242, 123, 53, 1);
 }
 
-.detail-tab-lists .detail-tab-list:last-child {}
+.detail-tab-lists .detail-tab-list:last-child {
+    border-right: 1px solid rgba(44, 53, 64, 0.4);
+}
 
 .detail-tab-content {
     width: 1200px;
