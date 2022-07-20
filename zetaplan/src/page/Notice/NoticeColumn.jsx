@@ -58,21 +58,16 @@ const NoticeColumn = ({ title, sub, id }) => {
                 .reverse()
                 .slice(startNum, endNum)
                 .reverse()
-                .map(({ num, title, author, date, view, link }) => {
+                .map(({ data }) => {
                   return (
-                    <li className='board-lists' key={num}>
-                      {/* <a href={link}> */}
-                      <span className='id-name'>{num}</span>
-                      <span
-                        className='list-title'
-                        onClick={() => goToNoticeColumnDetail(id)}
-                      >
-                        {title}
-                      </span>
-                      <span className='list-author'>{author}</span>
-                      <span className='list-date'>{date}</span>
-                      <span className='list-view'>{view}</span>
-                      {/* </a> */}
+                    <li className='board-lists' key={data.num}>
+                      <Link to={"/notice/support/detail/" + data.id}>
+                        <span className='id-name'>{data.num}</span>
+                        <span className='list-title'>{data.title}</span>
+                        <span className='list-author'>{data.author}</span>
+                        <span className='list-date'>{data.date}</span>
+                        <span className='list-view'>{data.view}</span>
+                      </Link>
                     </li>
                   );
                 })}
