@@ -1,4 +1,5 @@
 import React from 'react';
+import '../../css/Abroad/abroadProcess.css';
 import AbroadHeader from '../../component/Detail/AbroadHeader';
 import DetailFooter from '../../component/Detail/DetailFooter';
 import { MAP_DATA_ABROAD } from '../../component/Abroad/AbroadProcess/MapDataAbroad';
