@@ -42,13 +42,13 @@
 .abroad-desc-list {
   font-size: 14px;
   margin-left: 10px;
+  margin-bottom: 20px;
 }
 .abroad-desc-list li {
   margin-bottom: 12px;
   line-height: 160%;
 }
 .abroad-desc-list dt {
-  color: #BF0628;
   margin-bottom: 10px;
   font-weight: bold;
 }
