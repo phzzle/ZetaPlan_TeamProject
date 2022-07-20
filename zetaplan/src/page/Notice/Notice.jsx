@@ -10,7 +10,7 @@ import BoardSearch1 from './../../component/Search/BoardSearch1';
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
-const Notice = ({ title, sub, auth, setAuth, id }) => {
+const Notice = ({ title, sub, auth, setAuth }) => {
   const [lists, setLists] = useState([]);
   const LIST_PER_PAGE = 20; // 한장에 보여질 리스트 수
   const [page, setPage] = useState(1); // 페이지
@@ -20,16 +20,12 @@ const Notice = ({ title, sub, auth, setAuth, id }) => {
 
   useEffect(() => {
     fetch('/data/tradeInformation.json')
-      .then((response) => response.json())
-      .then((response) => setLists(response));
+      .then((res) => res.json())
+      .then((data) => setLists(data));
   }, []);
 
   const goToLogin = () => {
     navigate('/login');
-  };
-
-  const goToNoticeDetail = (id) => {
-    navigate(`/notice/detail/noticedetail/${id}`);
   };
 
   return (
@@ -58,21 +54,16 @@ const Notice = ({ title, sub, auth, setAuth, id }) => {
                 .reverse()
                 .slice(startNum, endNum)
                 .reverse()
-                .map(({ num, title, author, date, view, link, id }) => {
+                .map((item, idx) => {
                   return (
-                    <li className='board-lists' key={num}>
-                      {/* <a href={link}> */}
-                      <span className='id-name'>{num}</span>
-                      <span
-                        className='list-title'
-                        onClick={() => goToNoticeDetail({ id })}
-                      >
-                        {title}
-                      </span>
-                      <span className='list-author'>{author}</span>
-                      <span className='list-date'>{date}</span>
-                      <span className='list-view'>{view}</span>
-                      {/*  </a> */}
+                    <li className='board-lists' key={item.id} data={item}>
+                      <Link to={'/notice/detail/' + item.id}>
+                        <span className='id-name'>{item.num}</span>
+                        <span className='list-title'>{item.title}</span>
+                        <span className='list-author'>{item.author}</span>
+                        <span className='list-date'>{item.date}</span>
+                        <span className='list-view'>{item.view}</span>
+                      </Link>
                     </li>
                   );
                 })}

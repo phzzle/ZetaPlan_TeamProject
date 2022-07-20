@@ -5,29 +5,51 @@ import DetailFooter from '../../../component/Detail/DetailFooter';
 import NoticeHeader from '../../../component/Detail/NoticeHeader';
 import '../NoticeList.css';
 import { useParams } from 'react-router-dom';
-import { useEffect, useState } from 'react';
 
-const NoticeDetail = ({ title, sub }) => {
+const NoticeDetail = ({ title, sub, noticeData }) => {
   let { id } = useParams();
-  const [lists, setLists] = useState(null);
 
-  const getNoticeDetailData = async () => {
-    let url = `/data/tradeInformation.json/${id}`;
-    let res = await fetch(url);
-    let data = await res.json();
-    setLists(data);
-  };
-  useEffect(() => {
-    getNoticeDetailData();
-  }, []);
   return (
     <div>
       <NoticeHeader title={title} sub={sub} />
       <div id='NoticeDetail'>
         <div id='SubInner'>
           <h2 className='notice-title'>공지사항 세부페이지</h2>
-          <div>
-            <span>{title}</span>
+          <div className='detail-container'>
+            <table>
+              <thead>
+                <tr>
+                  <th>{noticeData[id - 1].title}</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td className='detail-container-header-content'>
+                    <div>
+                      <span className='detail-container-header-view'>
+                        조회수 :{noticeData[id - 1].view}
+                      </span>
+                      <span className='detail-container-header-author'>
+                        작성자 :{noticeData[id - 1].author}
+                      </span>
+                    </div>
+                    <div>
+                      <span className='detail-container-header-date'>
+                        {noticeData[id - 1].date}
+                      </span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <td>{noticeData[id - 1].content}</td>
+                  </td>
+                </tr>
+                <tr>
+                  <td>다음글</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
         <DetailFooter />
