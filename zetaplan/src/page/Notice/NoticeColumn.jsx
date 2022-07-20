@@ -34,15 +34,9 @@ const NoticeColumn = ({ title, sub, id }) => {
           <h2 className='notice-title'>기업지원정보</h2>
           <div className='board-search-container'>
             <form method='post' name='search' action='/notice'>
-              <table className='pull-right'>
-                <tr>
-                  <td></td>
-                  <td>
-                    <BoardSearch3 />
-                  </td>
-                  <td></td>
-                </tr>
-              </table>
+              <div className='pull-right'>
+                <BoardSearch3 />
+              </div>
             </form>
           </div>
           <div className='list-box'>
@@ -58,7 +52,7 @@ const NoticeColumn = ({ title, sub, id }) => {
                 .reverse()
                 .slice(startNum, endNum)
                 .reverse()
-                .map(({ data }) => {
+                .map((data) => {
                   return (
                     <li className='board-lists' key={data.num}>
                       <Link to={"/notice/support/detail/" + data.id}>

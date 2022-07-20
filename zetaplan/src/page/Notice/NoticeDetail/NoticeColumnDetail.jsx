@@ -11,7 +11,7 @@ const NoticeColumnDetail = ({ policyData }) => {
 
   const showContent = (data) => {
     if (data === "이미지") {
-      return <img src='http: //zetaplan.com/wp-content/uploads/kboard_attached/4/202206/202206240918131470599.png' alt='202206240918131470599.png'></img>
+      return <img className='detail-sample-img' src='/img/common/sample_img.jpg' alt="샘플 이미지" />
     } else {
       return data;
     }
