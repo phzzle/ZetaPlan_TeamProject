@@ -42,13 +42,10 @@ const Login = ({ setAuth }) => {
   }
 
   return (
-    <div>
+    <div className='login-page'>
       <Header />
       <div id='SubInner'>
-        <div className="company-title-container">
-          <h2 className='company-title'>로그인</h2>
-          <div className='company-title-line'></div>
-        </div>
+        <h2 className="detail-title">로그인</h2>
         <div className='login'>
           <span className='company-road-part'>관리자 로그인 페이지</span>
           <form className='login-box'>
@@ -62,7 +59,7 @@ const Login = ({ setAuth }) => {
               <input type='password' name='admin_pw' onChange={onChangeAccount} />
             </div>
             <div>
-              <button type='button' onClick={checkPW}>Login</button>
+              <button type='button' onClick={checkPW} className={ adminPW === true ? 'login-submit-btn on' : 'login-submit-btn' }>LOGIN</button>
             </div>
           </form>
         </div>
