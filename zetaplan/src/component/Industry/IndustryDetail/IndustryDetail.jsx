@@ -16,18 +16,32 @@ const IndustryDetail = ({data}) => {
           <div className="company-title-line"></div>
         </div>
         <div className="detail-container">
-          <div className="detail-container-header">
-            <div className="detail-container-header-title">{data[id].title}</div>
-            <div className="detail-container-header-content">
-              <div>
-                <span className="detail-container-header-view">조회수 : {data[id].view}</span>
-                <span className="detail-container-header-author">작성자 : {data[id].author}</span>
-              </div>
-              <div>
-                <span className="detail-container-header-date">{data[id].date}</span>
-              </div>
-            </div>
-          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>{data[id - 1].title}</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="detail-container-header-content">
+                  <div>
+                    <span className="detail-container-header-view">조회수 : {data[id - 1].view}</span>
+                    <span className="detail-container-header-author">작성자 : {data[id - 1].author}</span>
+                  </div>
+                  <div>
+                    <span className="detail-container-header-date">{data[id - 1].date}</span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>{data[id - 1].content}</td>
+              </tr>
+              <tr>
+                <td>다음글</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
       <DetailFooter />

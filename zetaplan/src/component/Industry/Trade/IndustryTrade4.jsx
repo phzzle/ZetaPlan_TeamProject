@@ -2,11 +2,9 @@
 
 import React from "react";
 import {useState, useEffect} from "react";
-import {IoIosSearch} from "react-icons/io";
 import Pagination from "./Pagination";
 import "./IndustryTrade4.css";
 import BoardSearch7 from "../../Search/BoardSearch7";
-import {useNavigate} from "react-router-dom";
 import {Link} from "react-router-dom";
 
 const IndustryTrade4 = () => {
