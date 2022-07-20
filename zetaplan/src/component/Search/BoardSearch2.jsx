@@ -85,7 +85,7 @@ const BoardSearch2 = () => {
           onKeyUp={handleInputChange}
           onKeyPress={onKeyPress} />
           <div className='delete-button' onClick={handleDeleteButtonClick}>&times;</div>
-          <button type="button" onClick={() => {onSubmit()}} className="search-submit-btn"><FaSearch size="1.5rem" fill='#2c3540'/></button>
+          <button type="button" onClick={() => {onSubmit()}} className="search-submit-btn"><FaSearch size="1.2rem" fill='#2c3540'/></button>
           <div className='auto-search-box'>
             {
             hasText ? <SearchDropDown
