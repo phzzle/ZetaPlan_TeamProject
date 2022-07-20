@@ -24,10 +24,7 @@ const Login = ({ setAuth }) => {
     setAdminPassword(e.target.value);
   };
 
-  const checkID = async () => {
-    const res = await fetch("http://localhost:8888/admin");
-    const adminAccount =  await res.json();
-    
+  const checkID = () => {
     if ( adminID === "admin" ) {
       setAdminPW(true);
     } else {
@@ -35,13 +32,7 @@ const Login = ({ setAuth }) => {
     }
   }
 
-  const checkPW = async () => {
-    const res = await fetch("http://localhost:8888/admin");
-    const adminAccount =  await res.json();
-
-    console.log(adminPassword)
-    console.log(adminAccount[0].password)
-    
+  const checkPW = () => {
     if ( adminPassword === "zetaplan") {
       setAuth(true);
       navigate('/')
