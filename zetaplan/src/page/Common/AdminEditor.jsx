@@ -22,12 +22,6 @@ const AdminEditor = ({admin}) => {
     file2: [],
     searchRange: ''
   })
-  const handelChkBox = (e) => {
-    // 비밀글 checkbox의 check여부에 따라 다른 값을 state에 저장
-    e.target.checked
-    ? setInput({...input, lock: '비밀글'})
-    :setInput({...input, lock: '비밀글 해제'})
-  }
   const handleInputFnc = (e) => {
     setInput(e.target.type==='file' 
     ? {...input, [e.target.name]: e.target.files} 
@@ -36,8 +30,8 @@ const AdminEditor = ({admin}) => {
   const handleSubmitFnc = (e) => {
     // 문의 글 제출 함수
     e.preventDefault();
-    alert('문의 글 작성이 완료되었습니다.');
-    navigate('/notice/inquiry');
+    alert('글 작성이 완료되었습니다.');
+    navigate('/notice/');
   }
   const goBack = ()=>{
     // 취소버튼 클릭시 이전페이지로 이동
@@ -60,7 +54,7 @@ const AdminEditor = ({admin}) => {
             <tbody>
               <tr>
                 <th>
-                  <label htmlFor="editorTitle">제목</label>
+                  <label htmlFor="editorTitle">분류</label>
                 </th>
                 <td>
                   <select name="boardGroup" onChange={handleInputFnc}>
