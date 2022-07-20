@@ -21,7 +21,7 @@ const IpoSummary = ({title, sub}) => {
           </div>
         </section>
         <section className="mnaipo-iposummary-section">
-          <span className="mnaipo-iposummary-part">IPO 의 종류</span>
+          <span className="mnaipo-iposummary-part">상장의 종류</span>
           <div>
             <dl className="mnaipo-iposummary-part-dl">
               <dt>신규상장</dt>
