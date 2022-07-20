@@ -66,7 +66,7 @@ function App() {
   const [auth, setAuth] = useState(false);
   const [infoData, setInfoData] = useState([])
   useEffect(() => {
-    fetch('/data/consulting_datail.json')
+    fetch('/data/consulting_Detail.json')
       .then((response) => response.json())
       .then((response) => setInfoData(response));
   }, []);
