@@ -25,10 +25,7 @@ const IndustryConfirm = ({title, sub}) => {
     <div id='IndustryConfirm'>
       <IndustryHeader title={title} sub={sub} />
       <div id='SubInner'>
-        <div className="company-title-container">
-          <h2 className="company-title">기업/기술 인증</h2>
-          <div className="company-title-line"></div>
-        </div>
+        <h2 className="detail-title">기업 / 기술 인증</h2>
         <nav className='detail-tab-lists'>
           {MAP_DATA_CONFIRM.map(data => {
           return (

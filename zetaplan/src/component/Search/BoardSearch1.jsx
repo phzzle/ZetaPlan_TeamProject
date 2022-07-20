@@ -78,15 +78,13 @@ const BoardSearch1 = () => {
   return (
     <div id="SearchForm" className='board-search-box'>
       <div className='board-search-box-wrap'>
-        <FaSearch size="1.5rem" fill='#fff'/>
         <input type='text' className='search-input' name='search' placeholder='검색어를 입력하세요.'
-          value={inputValue} 
           defaultValue={inputValue} 
           onChange={handleInputChange}
           onKeyUp={handleInputChange}
           onKeyPress={onKeyPress} />
           <div className='delete-button' onClick={handleDeleteButtonClick}>&times;</div>
-          <button type="button" onClick={() => {onSubmit()}} className="search-submit-btn">검색</button>
+          <button type="button" onClick={() => {onSubmit()}} className="search-submit-btn"><FaSearch size="1.5rem" fill='#fff'/></button>
           <div className='auto-search-box'>
             {
             hasText ? <SearchDropDown

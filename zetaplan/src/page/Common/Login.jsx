@@ -28,7 +28,7 @@ const Login = ({ setAuth }) => {
     const res = await fetch("http://localhost:8888/admin");
     const adminAccount =  await res.json();
     
-    if ( adminID === adminAccount[0].id ) {
+    if ( adminID === "admin" ) {
       setAdminPW(true);
     } else {
       alert("아이디가 틀렸습니다.")
@@ -42,7 +42,7 @@ const Login = ({ setAuth }) => {
     console.log(adminPassword)
     console.log(adminAccount[0].password)
     
-    if ( adminPassword === adminAccount[0].password) {
+    if ( adminPassword === "zetaplan") {
       setAuth(true);
       navigate('/')
     } else {
