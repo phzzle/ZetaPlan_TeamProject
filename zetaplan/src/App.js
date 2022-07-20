@@ -69,6 +69,7 @@ function App() {
   const [noticeData, setNoticeData] = useState([]);
   const [newsData, setNewsData] = useState([]);
   const [inquiryData, setInquiryData] = useState([]);
+  const [policyData, setPolicyData] = useState([]);
 
   useEffect(() => {
     fetch('/data/consulting_Detail.json')
@@ -95,6 +96,12 @@ function App() {
   }, []);
 
   useEffect(() => {
+    fetch('/data/policyInfo_detail.json')
+      .then((response) => response.json())
+      .then((response) => setPolicyData(response));
+  }, []);
+
+  useEffect(() => {
     console.log('로그인인증값', auth);
   }, [auth]);
 
@@ -103,165 +110,47 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Fullpage />} />
-          <Route
-            path='/company'
-            element={<CompanyInfo title='Company' sub='기업소개' />}
-          />
-          <Route
-            path='/company/ci'
-            element={<CompanyCi title='Company' sub='CI' />}
-          />
-          <Route
-            path='/company/manpower'
-            element={<CompanyManpower title='Company' sub='Manpower' />}
-          />
-          <Route
-            path='/company/collabo'
-            element={<CompanyCollabo title='Company' sub='협력기관' />}
-          />
-          <Route
-            path='/company/history'
-            element={<CompanyHistory title='Company' sub='연혁' />}
-          />
-          <Route
-            path='/company/road'
-            element={<CompanyRoad title='Company' sub='오시는길' />}
-          />
-          <Route
-            path='/mna'
-            element={<MASummary title='M&A' sub='M&A 개요' />}
-          />
-          <Route
-            path='/mna/result'
-            element={<MAResult title='M&A' sub='M&A 성과' />}
-          />
-          <Route
-            path='/mna/process'
-            element={<MAProcess title='M&A' sub='M&A 프로세스' />}
-          />
-          <Route
-            path='/ipo'
-            element={<IpoSummary title='IPO' sub='IPO 개요' />}
-          />
-          <Route
-            path='/ipo/result'
-            element={<IpoResult title='IPO' sub='IPO 성과' />}
-          />
-          <Route
-            path='/ipo/process'
-            element={<IpoProcess title='IPO' sub='IPO 프로세스' />}
-          />
-          <Route
-            path='/invest/result'
-            element={<InvestSummary title='투자/경영' sub='투자개요/사례' />}
-          />
-          <Route
-            path='/invest'
-            element={<InvestBusiness title='투자/경영' sub='경영컨설팅' />}
-          />
-          <Route
-            path='/invest/plan'
-            element={<InvestPlan title='투자/경영' sub='사업계획서/IR' />}
-          />
-          <Route
-            path='/invest/strategy'
-            element={<InvestStrategy title='투자/경영' sub='전략수립' />}
-          />
-          <Route
-            path='/invest/empowerment'
-            element={<InvestEmpowerment title='투자/경영' sub='역량강화' />}
-          />
-          <Route
-            path='/invest/process'
-            element={<InvestProcess title='투자/경영' sub='투자 컨설팅 과정' />}
-          />
-          <Route
-            path='/abroad'
-            element={<AbroadInfo title='Abroad' sub='해외 진출 사업' />}
-          />
-          <Route
-            path='/abroad/case'
-            element={<AbroadCase title='Abroad' sub='해외 진출 지원' />}
-          />
-          <Route
-            path='/abroad/process'
-            element={<AbroadProcess title='Abroad' sub='해외 지사 사업' />}
-          />
-          <Route
-            path='/industry'
-            element={<IndustryIssue title='Industry' sub='산업 별 이슈' />}
-          />
-          <Route
-            path='/industry/support'
-            element={<IndustrySupport title='Industry' sub='지원 사업' />}
-          />
-          <Route
-            path='/industry/confirm'
-            element={<IndustryConfirm title='Industry' sub='기업/기술 인증' />}
-          />
-          <Route
-            path='/industry/confirm/detail/:id'
-            element={<IndustryConfirmDetail data={items} />}
-          />
-          <Route
-            path='/industry/transfer'
-            element={<IndustryTransfer title='Industry' sub='기술 이전' />}
-          />
-          <Route
-            path='/industry/trade'
-            element={<IndustryTrade title='Industry' sub='기술 거래' />}
-          />
-          <Route
-            path='/industry/value'
-            element={<IndustryValue title='Industry' sub='가치 평가' />}
-          />
-          <Route
-            path='/industry/credit'
-            element={<IndustryCredit title='Industry' sub='신용 평가' />}
-          />
-          <Route
-            path='/notice'
-            element={
-              <Notice
-                title='Notice'
-                sub='공지사항'
-                auth={auth}
-                setAuth={setAuth}
-              />
-            }
-          />
-          <Route
-            path='/notice/news'
-            element={<NoticeNews title='Notice' sub='뉴스' />}
-          />
-          <Route
-            path='/notice/support'
-            element={<NoticeColumn title='Notice' sub='기업지원정보' />}
-          />
-          <Route
-            path='/notice/info'
-            element={<NoticeInfo title='Notice' sub='컨설팅 실적' />}
-          />
-          <Route
-            path='/notice/inquiry'
-            element={<NoticeInquiry title='Notice' sub='문의하기' />}
-          />
-          <Route
-            path='/notice/request'
-            element={<NoticeRequest title='Notice' sub='상담신청' />}
-          />
+          <Route path='/company' element={<CompanyInfo title='Company' sub='기업소개' />}/>
+          <Route path='/company/ci' element={<CompanyCi title='Company' sub='CI' />} />
+          <Route path='/company/manpower' element={<CompanyManpower title='Company' sub='Manpower' />} />
+          <Route path='/company/collabo' element={<CompanyCollabo title='Company' sub='협력기관' />} />
+          <Route path='/company/history' element={<CompanyHistory title='Company' sub='연혁' />} />
+          <Route path='/company/road' element={<CompanyRoad title='Company' sub='오시는길' />} />
+          <Route path='/mna' element={<MASummary title='M&A' sub='M&A 개요' />} />
+          <Route path='/mna/result' element={<MAResult title='M&A' sub='M&A 성과' />} />
+          <Route path='/mna/process' element={<MAProcess title='M&A' sub='M&A 프로세스' />} />
+          <Route path='/ipo' element={<IpoSummary title='IPO' sub='IPO 개요' />} />
+          <Route path='/ipo/result' element={<IpoResult title='IPO' sub='IPO 성과' />} />
+          <Route path='/ipo/process' element={<IpoProcess title='IPO' sub='IPO 프로세스' />} />
+          <Route path='/invest/result' element={<InvestSummary title='투자/경영' sub='투자개요/사례' />} />
+          <Route path='/invest' element={<InvestBusiness title='투자/경영' sub='경영컨설팅' />} />
+          <Route path='/invest/plan' element={<InvestPlan title='투자/경영' sub='사업계획서/IR' />} />
+          <Route path='/invest/strategy' element={<InvestStrategy title='투자/경영' sub='전략수립' />} />
+          <Route path='/invest/empowerment' element={<InvestEmpowerment title='투자/경영' sub='역량강화' />} />
+          <Route path='/invest/process' element={<InvestProcess title='투자/경영' sub='투자 컨설팅 과정' />} />
+          <Route path='/abroad' element={<AbroadInfo title='Abroad' sub='해외 진출 사업' />} />
+          <Route path='/abroad/case' element={<AbroadCase title='Abroad' sub='해외 진출 지원' />} />
+          <Route path='/abroad/process' element={<AbroadProcess title='Abroad' sub='해외 지사 사업' />} />
+          <Route path='/industry' element={<IndustryIssue title='Industry' sub='산업 별 이슈' />}/>
+          <Route path='/industry/support' element={<IndustrySupport title='Industry' sub='지원 사업' />} />
+          <Route path='/industry/confirm' element={<IndustryConfirm title='Industry' sub='기업/기술 인증' />} />
+          <Route path='/industry/confirm/detail/:id' element={<IndustryConfirmDetail data={items} />} />
+          <Route path='/industry/transfer' element={<IndustryTransfer title='Industry' sub='기술 이전' />} />
+          <Route path='/industry/trade' element={<IndustryTrade title='Industry' sub='기술 거래' />} />
+          <Route path='/industry/value' element={<IndustryValue title='Industry' sub='가치 평가' />} />
+          <Route path='/industry/credit' element={<IndustryCredit title='Industry' sub='신용 평가' />} />
+          <Route path='/notice' element={<Notice title='Notice' sub='공지사항' auth={auth} setAuth={setAuth}/>}/>
+          <Route path='/notice/news' element={<NoticeNews title='Notice' sub='뉴스' />}/>
+          <Route path='/notice/support' element={<NoticeColumn title='Notice' sub='기업지원정보' />}/>
+          <Route path='/notice/info' element={<NoticeInfo title='Notice' sub='컨설팅 실적' />}/>
+          <Route path='/notice/inquiry' element={<NoticeInquiry title='Notice' sub='문의하기' />}/>
+          <Route path='/notice/request' element={<NoticeRequest title='Notice' sub='상담신청' />}/>
           <Route path='/login' element={<Login setAuth={setAuth} />} />
           <Route path='/search/:word' element={<Search />} />
           <Route path='/china' element={<ChinaInfo />} />
           <Route path='/english' element={<EnglishInfo />} />
-          <Route
-            path='/abroad/case/detail/:id'
-            element={<AbroadCaseDetail />}
-          />
-          <Route
-            path='/notice/inquiryForm'
-            element={<NoticeInquiryForm title='Notice' sub='문의하기' />}
-          />
+          <Route path='/abroad/case/detail/:id' element={<AbroadCaseDetail />}/>
+          <Route path='/notice/inquiryForm' element={<NoticeInquiryForm title='Notice' sub='문의하기' />}/>
           <Route path='/notice/:word' element={<SearchNotice1 />} />
           <Route path='/notice/news/:word' element={<SearchNotice2 />} />
           <Route path='/notice/support/:word' element={<SearchNotice3 />} />
@@ -269,34 +158,13 @@ function App() {
           <Route path='/notice/inquiry/:word' element={<SearchNotice5 />} />
           <Route path='/industry/:word' element={<SearchIndustry1 />} />
           <Route path='/industry/trade/:word' element={<SearchIndustry2 />} />
-          <Route
-            path='/industry/trade/detail/:id'
-            element={<IndustryDetail data={data} />}
-          />
-          <Route
-            path='/notice/editor/'
-            element={<LoginRedirect auth={auth} />}
-          />
-          <Route
-            path='/notice/detail/:id'
-            element={<NoticeDetail noticeData={noticeData} />}
-          />
-          <Route
-            path='/notice/support/detail/:id'
-            element={<NoticeColumnDetail />}
-          />
-          <Route
-            path='/notice/info/detail/:id'
-            element={<NoticeInfoDetail infoData={infoData} />}
-          />
-          <Route
-            path='/notice/inquiry/detail/:id'
-            element={<NoticeInquiryDetail inquiryData={inquiryData} />}
-          />
-          <Route
-            path='/notice/news/detail/:id'
-            element={<NoticeNewsDetail newsData={newsData} />}
-          />
+          <Route path='/industry/trade/detail/:id' element={<IndustryDetail data={data} />}/>
+          <Route path='/notice/editor/' element={<LoginRedirect auth={auth} />}/>
+          <Route path='/notice/detail/:id' element={<NoticeDetail noticeData={noticeData} />}/>
+          <Route path='/notice/support/detail/:id' element={<NoticeColumnDetail policyData = {policyData} />}/>
+          <Route path='/notice/info/detail/:id' element={<NoticeInfoDetail infoData={infoData} />}/>
+          <Route path='/notice/inquiry/detail/:id' element={<NoticeInquiryDetail inquiryData={inquiryData} />}/>
+          <Route path='/notice/news/detail/:id' element={<NoticeNewsDetail newsData={newsData} />}/>
         </Routes>
       </BrowserRouter>
     </div>
