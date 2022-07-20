@@ -9,10 +9,12 @@ import './../../css/Indusrty/industrySupport.css';
 
 const IndustrySupport = ({title, sub}) => {
   const [content, setContent] = useState('first');
+  const [active, setActive] = useState('');
 
   const buttonValueSetting = e => {
     const { name } = e.target;
     setContent(name);
+    setActive(name)
   };
 
   const selectComponent = {
@@ -28,13 +30,13 @@ const IndustrySupport = ({title, sub}) => {
         <nav className='detail-tab-lists'>
           {MAP_DATA.map(data => {
           return (
-            <button className={content === data.name? 'detail-tab-list active' : 'detail-tab-list'} onClick={buttonValueSetting} name={data.name} key={data.id}>
+            <button type='button' className={content === data.name? 'detail-tab-list active' : 'detail-tab-list'} onClick={buttonValueSetting} name={data.name} key={data.id}>
               {data.text}
             </button>
           );
         })}
       </nav>
-      {content && <div className='detail-tab-content '>{selectComponent[content]}</div>}
+      {content && <div className={active === content ? 'detail-tab-content active' : 'detail-tab-content'}>{selectComponent[content]}</div>}
       </div>
       <DetailFooter />
     </div>

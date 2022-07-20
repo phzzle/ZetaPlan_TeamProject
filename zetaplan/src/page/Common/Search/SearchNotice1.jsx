@@ -26,10 +26,7 @@ const SearchNotice1 = () => {
       <NoticeHeader title="Notice" sub="공지사항"/>
       <div id='SubInner'>
         <div className='inner-search-title-wrap'>
-        <div className="company-title-container">
-          <h2 className="company-title">공지사항</h2>
-          <div className="company-title-line"></div>
-        </div>
+        <h2 className="detail-title">공지사항</h2>
         </div>
         <div className='board-search-header'>
           <div className='inner-search-box'>

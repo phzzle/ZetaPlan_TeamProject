@@ -199,6 +199,10 @@
     outline: none;
 }
 
+.board-lists {
+    cursor: pointer;
+}
+
 .board-lists:hover {
     background-color: rgba(102, 102, 102, 0.1);
 }

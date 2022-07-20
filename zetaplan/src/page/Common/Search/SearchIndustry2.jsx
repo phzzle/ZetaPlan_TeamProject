@@ -24,10 +24,7 @@ const SearchIndustry2 = () => {
       <NoticeHeader title="Notice" sub="공지사항"/>
       <div id='SubInner'>
         <div className='inner-search-title-wrap'>
-        <div className="company-title-container">
-          <h2 className="company-title">공지사항</h2>
-          <div className="company-title-line"></div>
-        </div>
+        <h2 className="detail-title">기술 거래</h2>
         </div>
         <div className='board-search-header'>
           <h2>'<em>{word}</em>' 검색결과입니다.</h2>
