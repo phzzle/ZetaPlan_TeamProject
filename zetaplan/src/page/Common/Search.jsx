@@ -5,6 +5,8 @@ import Header from '../../component/Header/Header';
 import SearchForm from '../../component/Search/SearchForm';
 import SearchList from '../../component/Search/SearchList';
 import './../../css/Common/search.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Search = () => {
   const [data, setData] = useState([]);
@@ -15,6 +17,12 @@ const Search = () => {
       .then((response) => response.json())
       .then((response) => setData(response));
   }, []);
+
+  useEffect(() => {
+    AOS.init({
+        duration : 1500
+    });
+  });
 
   const searchWord = data.filter((p) => {
     return p.title.includes(word)
@@ -28,12 +36,9 @@ const Search = () => {
       </header>
       <div id='SubInner'>
         <div className='inner-search-title-wrap'>
-        <div className="company-title-container">
-          <h2 className="company-title">'{word}' 검색결과</h2>
-          <div className="company-title-line"></div>
+        <h2 className="detail-title">'{word}' 검색결과</h2>
         </div>
-        </div>
-        <div className='inner-search-box'>
+        <div className='inner-search-box' data-aos="fade-up">
           <SearchForm />
         </div>
         <div className='inner-search-head'>
