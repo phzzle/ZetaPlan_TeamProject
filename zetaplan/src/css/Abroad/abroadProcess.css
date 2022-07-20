@@ -1,1 +1,5 @@
 /* Abroad 컨설팅 과정 CSS */
+.abroad-process-list {
+  list-style-type: disc;
+  list-style-position: inside;
+}

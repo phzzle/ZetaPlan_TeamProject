@@ -26,7 +26,7 @@ const AbroadProcessTab2 = () => {
         <h6 className="abroad-sub-title">
           컨설팅 업무
         </h6>
-        <ul className='abroad-desc-list'>
+        <ul className='abroad-desc-list abroad-process-list'>
           <li>베트남 기술 이전 매칭 상담회 개최</li>
           <li>베트남 바이어 발굴 수출 시장 조사</li>
           <li>베트남 공급기업 발굴 수입시장조사</li>
