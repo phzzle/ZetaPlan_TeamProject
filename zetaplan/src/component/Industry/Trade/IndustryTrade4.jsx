@@ -5,8 +5,9 @@ import {useState, useEffect} from "react";
 import {IoIosSearch} from "react-icons/io";
 import Pagination from "./Pagination";
 import "./IndustryTrade4.css";
-import {useNavigate} from "react-router-dom";
 import BoardSearch7 from "../../Search/BoardSearch7";
+import {useNavigate} from "react-router-dom";
+import {Link} from "react-router-dom";
 
 const IndustryTrade4 = () => {
   const [lists, setLists] = useState([]);
@@ -26,10 +27,7 @@ const IndustryTrade4 = () => {
   return (
     <div>
       <div id="IndustryTrade">
-        <section className="industry-trade-section">
-          <span className="industry-trade-part">거래정보</span>
-          <p className="industry-trade-part-txt"></p>
-        </section>
+        <section className="industry-trade-section"></section>
         <section>
           <div class="board-search-container">
             <form method="post" name="search" action="/notice">
@@ -52,16 +50,16 @@ const IndustryTrade4 = () => {
                 .reverse()
                 .slice(startNum, endNum)
                 .reverse()
-                .map(({id, num, title, author, date, view}) => {
+                .map((item, idx) => {
                   return (
-                    <li className="board-lists" key={id}>
-                      <a href="">
-                        <span className="id-name">{num}</span>
-                        <span className="list-title">{title}</span>
-                        <span className="list-author">{author}</span>
-                        <span className="list-date">{date}</span>
-                        <span className="list-view">{view}</span>
-                      </a>
+                    <li className="board-lists" key={item.id} data={item}>
+                      <Link to={"/industry/trade/detail/" + item.id}>
+                        <span className="id-name">{item.num}</span>
+                        <span className="list-title">{item.title}</span>
+                        <span className="list-author">{item.author}</span>
+                        <span className="list-date">{item.date}</span>
+                        <span className="list-view">{item.view}</span>
+                      </Link>
                     </li>
                   );
                 })}
