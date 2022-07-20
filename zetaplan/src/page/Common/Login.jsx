@@ -22,6 +22,9 @@ const Login = ({ setAuth }) => {
     });
     setAdminID(e.target.value);
     setAdminPassword(e.target.value);
+    if(e.key === "Enter") {
+      checkID(e);
+    }
   };
 
   const checkID = () => {
@@ -35,9 +38,21 @@ const Login = ({ setAuth }) => {
   const checkPW = () => {
     if ( adminPassword === "zetaplan") {
       setAuth(true);
-      navigate('/')
+      navigate('/notice/')
     } else {
       alert("비밀번호가 틀렸습니다.")
+    }
+  }
+
+  const onKeyPressID = (e) => {
+    if(e.key === "Enter") {
+      checkID();
+    }
+  }
+
+  const onKeyPressPW = (e) => {
+    if(e.key === "Enter") {
+      checkPW();
     }
   }
 
@@ -51,12 +66,12 @@ const Login = ({ setAuth }) => {
           <form className='login-box'>
             <div className='login-id'>
               <label htmlFor='admin_id'>ID : </label>
-              <input type='text' name='admin_id' onChange={onChangeAccount} />
+              <input type='text' name='admin_id' onKeyPress={onKeyPressID} onChange={onChangeAccount} />
               <button type='button' className='login-check-id-btn' onClick={checkID}><GrFormNext size="26px" /></button>
             </div>
             <div className={adminPW === true ? 'login-password on' : 'login-password'}>
               <label htmlFor='admin_pw'>PW : </label>
-              <input type='password' name='admin_pw' onChange={onChangeAccount} />
+              <input type='password' name='admin_pw' onKeyPress={onKeyPressPW} onChange={onChangeAccount} />
             </div>
             <div>
               <button type='button' onClick={checkPW} className={ adminPW === true ? 'login-submit-btn on' : 'login-submit-btn' }>LOGIN</button>

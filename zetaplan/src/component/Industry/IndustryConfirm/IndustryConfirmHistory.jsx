@@ -5,8 +5,24 @@ import './../../../css/Indusrty/industryConfirm.css';
 
 const IndustryConfirmHistory = ({id}) => {
   const navigate = useNavigate();
-  const plus = id + 1;
-  const minus = id - 1;
+  let plus = 0;
+  let minus = 0;
+  
+  if ( id === 0 ) {
+    minus = 17;
+  } else if ( id === 18 ) {
+    minus = 31;
+  } else {
+    minus = id - 1;
+  }
+
+  if ( id === 17) {
+    plus = 0;
+  } else if ( id === 31) {
+    plus = 18;
+  } else {
+    plus = id + 1;
+  }
 
 	// 뒤로가기
 	// 인덱스로 처리, 두번 뒤로 가고싶으면 -2

@@ -23,9 +23,9 @@
 .detail-tab-lists .detail-tab-list {
     display: block;
     width: 100%;
-    height: 40px;
+    height: 44px;
     line-height: 40px;
-    font-size: 17px;
+    font-size: 16px;
     text-align: center;
     color: #2c3540;
 }

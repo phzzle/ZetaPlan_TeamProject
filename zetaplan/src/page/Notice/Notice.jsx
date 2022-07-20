@@ -33,10 +33,7 @@ const Notice = ({ title, sub, auth, setAuth }) => {
       <NoticeHeader title={title} sub={sub} />
       <div id='Notice'>
         <div id='SubInner'>
-          <div className='company-title-container'>
-            <h2 className='company-title'>공지사항</h2>
-            <div className='company-title-line'></div>
-          </div>
+          <h2 className='notice-title'>공지사항</h2>
           <div className='board-search-container'>
             <form method='post' name='search' action='/notice'>
               <div className='pull-right'>
