@@ -10,7 +10,7 @@ import BoardSearch1 from './../../component/Search/BoardSearch1';
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
-const Notice = ({ title, sub, auth, setAuth }) => {
+const Notice = ({ title, sub, auth, setAuth, id }) => {
   const [lists, setLists] = useState([]);
   const LIST_PER_PAGE = 20; // 한장에 보여질 리스트 수
   const [page, setPage] = useState(1); // 페이지
@@ -26,6 +26,10 @@ const Notice = ({ title, sub, auth, setAuth }) => {
 
   const goToLogin = () => {
     navigate('/login');
+  };
+
+  const goToNoticeDetail = (id) => {
+    navigate(`/notice/detail/noticedetail/${id}`);
   };
 
   return (
@@ -54,16 +58,21 @@ const Notice = ({ title, sub, auth, setAuth }) => {
                 .reverse()
                 .slice(startNum, endNum)
                 .reverse()
-                .map(({ num, title, author, date, view, link }) => {
+                .map(({ num, title, author, date, view, link, id }) => {
                   return (
                     <li className='board-lists' key={num}>
-                      <a href={link}>
-                        <span className='id-name'>{num}</span>
-                        <span className='list-title'>{title}</span>
-                        <span className='list-author'>{author}</span>
-                        <span className='list-date'>{date}</span>
-                        <span className='list-view'>{view}</span>
-                      </a>
+                      {/* <a href={link}> */}
+                      <span className='id-name'>{num}</span>
+                      <span
+                        className='list-title'
+                        onClick={() => goToNoticeDetail({ id })}
+                      >
+                        {title}
+                      </span>
+                      <span className='list-author'>{author}</span>
+                      <span className='list-date'>{date}</span>
+                      <span className='list-view'>{view}</span>
+                      {/*  </a> */}
                     </li>
                   );
                 })}
