@@ -3,10 +3,17 @@ import '../../css/Notice/noticeRequest.css';
 import { useNavigate } from 'react-router-dom';
 import DetailFooter from '../../component/Detail/DetailFooter';
 import NoticeHeader from '../../component/Detail/NoticeHeader';
+import categoryData from '../../component/Notice/NoticeRequestCategoryData';
+import { handleCategoryFnc } from '../../component/Notice/noticeRequestFnc';
+import { handleInputFnc } from '../../component/Notice/noticeRequestFnc';
+import { handleChkBoxFnc } from '../../component/Notice/noticeRequestFnc';
+import { submitFnc } from '../../component/Notice/noticeRequestFnc';
+import { goBack } from '../../component/Notice/noticeRequestFnc';
 
 const NoticeRequest = ({title, sub}) => {
   const navigate = useNavigate();
   const [checked, setChecked] = useState({});
+  const [categoryNum, setCategoryNum] = useState(0);
   const [input, setInput] = useState({
     category: '',
     categoryDetail: [],
@@ -22,77 +29,48 @@ const NoticeRequest = ({title, sub}) => {
     projectionSale: '',
     contents: ''
   });
-  const [categoryNum, setCategoryNum] = useState(0);
-  const category = [
-    {
-      id: 1,
-      category: 'M&A구조조정',
-      detail: ['기업매도', '기업매수', '기업분할', '기업합병', '구조조정', '기업회생', '기타']
-    },
-    {
-      id: 2,
-      category: '기업공개(IPO)',
-      detail: ['코스닥', '코넥스상장', '유가증권', '주식공모', '우회상장', '해외상장', 'IR', '기타']
-    },
-    {
-      id: 3,
-      category: '기업인증',
-      detail: ['벤처기업', '이노비즈', '메인비즈', '연구소', '유망중소기업', '예비벤처', '기타']
-    },
-    {
-      id: 4,
-      category: '정책자금',
-      detail: ['운전자금', '시설자금', '기술금융', '창업자금', '출연자금', 'B2B 구매', 'P-CBO', '사업전환', '현동화', '협업화', '성장공유', '협업사업', '수출금융', '기타']
-    },
-    {
-      id: 5,
-      category: '경영자문',
-      detail: ['투자금융', 'PF 금융', '기업진단', '전략컨설팅', '재무자문', '계약자문', '법률자문', '기술/기업 가치평가', '학술용역', '세무회계', '인사/노무', '쿠폰제 컨설팅', '기타']
-    },
-    {
-      id: 6,
-      category: '품질/시스템',
-      detail: ['ISO', 'NET', 'NEP', 'GS', 'GD', 'KS', 'CE', 'UL', 'CCC', 'JJS', 'FDA', 'RoHS', 'K마크', 'HACCP', 'OHSAS', 'TS16949', 'TL9000', 'Q마크', 'S마크', 'KPS', '우수제품', '서비스품질우수기업', '국방품질경영시스템', 'IR52', '고효율기자재', '특허', '실용신안', '디자인', '성능인증', '친환경마크', '기타']
-    }
-  ];
-  const handleCategoryFnc = (e) => {
-    // 컨설팅 분야 handle 함수
-    // e.target.value가 category.category 와 같다면 그에 해당하는 id를 state로 설정한다.
-    let currentCategory = e.target.value;
-    let select = category.filter((item)=>{return item.category === currentCategory});
-    setCategoryNum(select[0] !== undefined ? select[0].id : 0);
+  // const handleCategoryFnc = (e) => {
+  //   // 컨설팅 분야 handle 함수
+  //   // e.target.value가 category.category 와 같다면 그에 해당하는 id를 state로 설정한다.
+  //   let currentCategory = e.target.value;
+  //   let select = categoryData.filter((item)=>{return item.category === currentCategory});
+  //   setCategoryNum(select[0] !== undefined ? select[0].id : 0);
 
-    // categoryNum이 바뀌면 checked를 false로 설정
-    const checkedArr = [];
-    category[categoryNum].detail.map((ele)=>checkedArr.push(false))
-    setChecked(checkedArr);
-  }
-  const handleInputFnc = (e) => {
-    // input 입력걊을 저장하는 함수
-    // checkbox는 array로 저장하기 때문에 spread연산자를 이용하여 기존배열에 추가
-    setInput(e.target.name === 'categoryDetail' 
-    ? { ...input, [e.target.name]: [...input.categoryDetail, e.target.value] } 
-    : { ...input, [e.target.name]: e.target.value })
-  }
-  const handleChkBoxFnc = (e, idx) => {
-    // 컨설팅 분야 checkbox 관리 함수
-    const chkArr = [...checked];
-    chkArr[idx] = !chkArr[idx];
-    setChecked(chkArr);
-    setInput({...input, categoryDetail: []});
+  //   // categoryNum이 바뀌면 checked를 false로 설정
+  //   const checkedArr = [];
+  //   categoryData[categoryNum].detail.map((ele)=>checkedArr.push(false))
+  //   // categoryNum이 바뀌면 categoryDetail을 빈 배열로 설정
+  //   setChecked(checkedArr);
+  //   setInput({...input, categoryDetail: []});
+  // }
+  // const handleInputFnc = (e) => {
+  //   // input 입력걊을 저장하는 함수
+  //   // checkbox는 array로 저장하기 때문에 spread연산자를 이용하여 기존배열에 추가
+  //   setInput(e.target.name === 'categoryDetail' 
+  //   ? { ...input, [e.target.name]: [...input.categoryDetail, e.target.value] } 
+  //   : { ...input, [e.target.name]: e.target.value })
+  // }
+  // const handleChkBoxFnc = (e, idx) => {
+  //   // 컨설팅 분야 checkbox 관리 함수
+  //   const chkArr = [...checked];
+  //   chkArr[idx] = !chkArr[idx];
+  //   setChecked(chkArr);
+  //   // setInput({...input, categoryDetail: []});
 
-    e.target.checked
-    ? setInput({...input, categoryDetail: [...input.categoryDetail, e.target.value]})
-    : chkDeleteFnc(e.target.value, idx)
-  }
-  const chkDeleteFnc = (value, idx)=> {
-    // 내가 체크를 푼 항목과 같은 이름의 값을 array에서 제거
-    // 내가 체크를 푼 항목의 값과 같은 이름을 가진 요소의 인덱스 번호를 찾아서 splice
-    const chkboxArr = [...input.categoryDetail];
-    let deleteNum = chkboxArr.indexOf(`${value}`);
-    chkboxArr.splice(deleteNum, 1);
-    setInput({...input, categoryDetail: chkboxArr})
-  }
+  //   e.target.checked
+  //   ? setInput({...input, categoryDetail: [...input.categoryDetail, e.target.value]})
+  //   : chkDeleteFnc(e.target.value, idx)
+
+  //   console.log(input)
+  // }
+  // const chkDeleteFnc = (value, idx)=> {
+  //   // 내가 체크를 푼 항목과 같은 이름의 값을 array에서 제거
+  //   // 내가 체크를 푼 항목의 값과 같은 이름을 가진 요소의 인덱스 번호를 찾아서 splice
+  //   const chkboxArr = [...input.categoryDetail];
+  //   let deleteNum = chkboxArr.indexOf(`${value}`);
+  //   chkboxArr.splice(deleteNum, 1);
+  //   setInput({...input, categoryDetail: chkboxArr})
+  // }
   const submitFnc = (e) => {
     // form 제출 함수
     e.preventDefault();
@@ -127,8 +105,8 @@ const NoticeRequest = ({title, sub}) => {
                 </th>
                 <td>
                   <select name="category" className='consulting-category' required onChange={(e)=>{
-                    handleCategoryFnc(e);
-                    handleInputFnc(e);
+                    handleInputFnc(e, input, setInput);
+                    handleCategoryFnc(e, input, setInput, categoryNum, setCategoryNum, setChecked, categoryData);
                   }}>
                     <option value="none">-- 컨설팅 분야를 선택해주세요. --</option>
                     <option value="M&amp;A구조조정">M&amp;A구조조정</option>
@@ -141,11 +119,11 @@ const NoticeRequest = ({title, sub}) => {
                   <div className='request-category-chkbox'>
                     {
                       categoryNum
-                      ? category[categoryNum-1].detail.map((ele, idx)=>{
+                      ? categoryData[categoryNum-1].detail.map((ele, idx)=>{
                         return (
                           <span className='category-chkbox-item' key={idx}>
-                            <input type="checkbox" value={ele} id={'category' + idx} name="categoryDetail" checked={checked[idx]} onChange={(e)=>{
-                              handleChkBoxFnc(e, idx)
+                            <input type="checkbox" value={ele || ''} id={'category' + idx} name="categoryDetail" checked={checked[idx]} onChange={(e)=>{
+                              handleChkBoxFnc(e, idx, checked, setChecked, input, setInput)
                           }}/>
                             <label htmlFor={"category" + idx}>{ele}</label>
                           </span>
