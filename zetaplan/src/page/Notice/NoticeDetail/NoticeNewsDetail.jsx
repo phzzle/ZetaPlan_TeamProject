@@ -13,11 +13,7 @@ const NoticeNewsDetail = ({ title, sub }) => {
       <NoticeHeader title={title} sub={sub} />
       <div id='NoticeNewsDetail'>
         <div id='SubInner'>
-          <div className='company-title-container'>
-            <h2 className='company-title'>뉴스 세부페이지</h2>
-            <div className='company-title-line'></div>
-            안녕
-          </div>
+          <h2 className='notice-title'>뉴스 세부페이지</h2>
         </div>
         <DetailFooter />
       </div>
