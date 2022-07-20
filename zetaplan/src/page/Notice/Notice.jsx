@@ -8,6 +8,7 @@ import Pagination from './Pagination';
 import './NoticeList.css';
 import BoardSearch1 from './../../component/Search/BoardSearch1';
 import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Notice = ({ title, sub, auth, setAuth }) => {
   const [lists, setLists] = useState([]);
@@ -36,17 +37,11 @@ const Notice = ({ title, sub, auth, setAuth }) => {
             <h2 className='company-title'>공지사항</h2>
             <div className='company-title-line'></div>
           </div>
-          <div class='board-search-container'>
+          <div className='board-search-container'>
             <form method='post' name='search' action='/notice'>
-              <table class='pull-right'>
-                <tr>
-                  <td></td>
-                  <td>
-                    <BoardSearch1 />
-                  </td>
-                  <td></td>
-                </tr>
-              </table>
+              <div className='pull-right'>
+                <BoardSearch1 />  
+              </div>
             </form>
           </div>
           <div className='list-box'>
@@ -77,9 +72,9 @@ const Notice = ({ title, sub, auth, setAuth }) => {
                 })}
             </ul>
             {auth ? (<button type='button'className='loginBtn'onClick={() => setAuth(false)}>로그아웃</button>) : (<button type='button' className='loginBtn' onClick={() => goToLogin()}>로그인</button>)}
-            <a href='/notice/editor/'>
+            <Link to='/notice/editor/'>
               <button className='writeBtn'>글쓰기</button>
-            </a>
+            </Link>
             <Pagination
               total={lists.length}
               page={page}

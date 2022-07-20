@@ -7,6 +7,7 @@ import { useState, useEffect } from 'react';
 import Pagination from './Pagination';
 import './NoticeList.css';
 import BoardSearch5 from '../../component/Search/BoardSearch5';
+import { Link } from 'react-router-dom';
 
 const NoticeInquiry = ({ title, sub }) => {
   const [lists, setLists] = useState([]);
@@ -70,9 +71,9 @@ const NoticeInquiry = ({ title, sub }) => {
                   );
                 })}
             </ul>
-            <a href='/notice/inquiryform'>
+            <Link to='/notice/inquiryform'>
               <button className='inquireBtn'>문의하기</button>
-            </a>
+            </Link>
             <Pagination
               total={lists.length}
               page={page}

@@ -7,6 +7,7 @@ import { useState, useEffect } from 'react';
 import Pagination from './Pagination';
 import './NoticeList.css';
 import BoardSearch3 from './../../component/Search/BoardSearch3';
+import { Link } from 'react-router-dom';
 
 const NoticeColumn = ({ title, sub }) => {
   const [lists, setLists] = useState([]);
@@ -70,9 +71,9 @@ const NoticeColumn = ({ title, sub }) => {
                   );
                 })}
             </ul>
-            <a href='/notice/editor/'>
+            <Link to='/notice/editor/'>
               <button className='writeBtn'>글쓰기</button>
-            </a>
+            </Link>
             <Pagination
               total={lists.length}
               page={page}
