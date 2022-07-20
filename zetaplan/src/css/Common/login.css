@@ -10,7 +10,7 @@
 
 .login {
     width: 1000px;
-    height: 500px;
+    height: 450px;
     margin: 0 auto;
     padding-bottom: 40px;
     text-align: center;
@@ -27,7 +27,7 @@
 
 .login .login-box input {
     width: 70%;
-    height: 30px;
+    height: 36px;
     margin-right: 10px;
     outline: none;
     background-color: transparent;
@@ -62,7 +62,7 @@
 .login-id {
     width: 350px;
     height: 40px;
-    line-height: 40px;
+    line-height: 36px;
     margin: 0 auto;
     background-color: #eee;
     border-radius: 32px;
@@ -75,7 +75,7 @@
 .login-password {
     width: 350px;
     height: 40px;
-    line-height: 40px;
+    line-height: 34px;
     margin: 0 auto;
     background-color: #eee;
     border-radius: 32px;
