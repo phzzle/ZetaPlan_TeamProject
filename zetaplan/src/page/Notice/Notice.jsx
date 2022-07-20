@@ -40,7 +40,7 @@ const Notice = ({ title, sub, auth, setAuth }) => {
           <div className='board-search-container'>
             <form method='post' name='search' action='/notice'>
               <div className='pull-right'>
-                <BoardSearch1 />  
+                <BoardSearch1 />
               </div>
             </form>
           </div>
@@ -71,7 +71,23 @@ const Notice = ({ title, sub, auth, setAuth }) => {
                   );
                 })}
             </ul>
-            {auth ? (<button type='button'className='loginBtn'onClick={() => setAuth(false)}>로그아웃</button>) : (<button type='button' className='loginBtn' onClick={() => goToLogin()}>로그인</button>)}
+            {auth ? (
+              <button
+                type='button'
+                className='loginBtn'
+                onClick={() => setAuth(false)}
+              >
+                로그아웃
+              </button>
+            ) : (
+              <button
+                type='button'
+                className='loginBtn'
+                onClick={() => goToLogin()}
+              >
+                로그인
+              </button>
+            )}
             <Link to='/notice/editor/'>
               <button className='writeBtn'>글쓰기</button>
             </Link>
