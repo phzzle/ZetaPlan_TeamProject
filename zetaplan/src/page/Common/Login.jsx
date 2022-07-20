@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Header from '../../component/Header/Header';
 import DetailFooter from '../../component/Detail/DetailFooter';
 import '../../css/Common/login.css';
@@ -7,6 +7,7 @@ import { GrFormNext } from "react-icons/gr";
 
 const Login = ({ setAuth }) => {
   const navigate = useNavigate();
+  const [adminAccount, setAdminAccount] = useState('');
   const [account, setAccount] = useState({
     id: "",
     password: "",
@@ -14,6 +15,12 @@ const Login = ({ setAuth }) => {
   const [adminID, setAdminID] = useState('');
   const [adminPW, setAdminPW] = useState(false);
   const [adminPassword, setAdminPassword] = useState('');
+
+  useEffect( () => {
+    fetch('/data/admin.json')
+      .then((response) => response.json())
+      .then((response) => setAdminAccount(response));
+  }, []);
 
   const onChangeAccount = (e) => {
     setAccount({
@@ -28,7 +35,8 @@ const Login = ({ setAuth }) => {
   };
 
   const checkID = () => {
-    if ( adminID === "admin" ) {
+    console.log(adminAccount[0].id)
+    if ( adminID === adminAccount[0].id ) {
       setAdminPW(true);
     } else {
       alert("아이디가 틀렸습니다.")
@@ -36,7 +44,7 @@ const Login = ({ setAuth }) => {
   }
 
   const checkPW = () => {
-    if ( adminPassword === "zetaplan") {
+    if ( adminPassword === adminAccount[0].password) {
       setAuth(true);
       navigate('/notice/')
     } else {

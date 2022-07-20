@@ -6,8 +6,13 @@ import './../../css/Indusrty/industryTransfer.css';
 
 const IndustryTransfer = ({title, sub}) => {
   const navigate = useNavigate();
+
   const goBack = () => {
     navigate(-1);
+  }
+  const submitConfirm = () => {
+    navigate('/')
+    alert("신청서가 접수되었습니다.")
   }
 
   return (
@@ -24,11 +29,9 @@ const IndustryTransfer = ({title, sub}) => {
             </colgroup>
             <tbody>
               <tr>
-                <th>
-                  기술 등록
-                </th>
+                <th>기술 등록</th>
                 <td>
-                  <select name="category" className='consulting-category'>
+                  <select name="category" className='skill-category'>
                     <option value="none">-- 기술등록을 선택해주세요. --</option>
                     <option value="도입희망기술등록">도입희망기술등록</option>
                     <option value="이전희망기술등록">이전희망기술등록</option>
@@ -460,7 +463,7 @@ const IndustryTransfer = ({title, sub}) => {
             </tbody>
           </table>
           <div className="submit-btn-group">
-            <button type="submit" className='request-submit-btn'>신청하기</button>
+            <button type="button" className='request-submit-btn' onClick={submitConfirm}>신청하기</button>
             <button type='button' className='request-cancel-btn' onClick={goBack}>취소</button>
           </div>
         </form>
