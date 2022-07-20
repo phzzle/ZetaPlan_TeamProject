@@ -73,9 +73,6 @@ const NoticeInquiry = ({ title, sub }) => {
             <a href='/notice/inquiryform'>
               <button className='inquireBtn'>문의하기</button>
             </a>
-            <a href='/login'>
-              <button className='loginBtn'>로그인</button>
-            </a>
             <Pagination
               total={lists.length}
               page={page}

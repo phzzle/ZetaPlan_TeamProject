@@ -106,7 +106,7 @@ function App() {
             <Route path='/notice/info' element={<NoticeInfo title="Notice" sub="컨설팅 실적" />} />
             <Route path='/notice/inquiry' element={<NoticeInquiry title="Notice" sub="문의하기" />} />
             <Route path='/notice/request' element={<NoticeRequest title="Notice" sub="상담신청" />} />
-            <Route path='/login' element={<Login />} />
+            <Route path='/login' element={<Login setAuth={setAuth} />} />
             <Route path='/search/:word' element={<Search />} />
             <Route path='/china' element={<ChinaInfo />} />
             <Route path='/english' element={<EnglishInfo />} />
@@ -120,7 +120,7 @@ function App() {
             <Route path='/industry/:word' element={<SearchIndustry1 />} />
             <Route path='/industry/trade/:word' element={<SearchIndustry2 />} />
             <Route path='/industry/trade/detail/:id' element={<IndustryDetail />} />
-            <Route path='/notice/editor/:id' element={<LoginRedirect auth={auth} />} />
+            <Route path='/notice/editor/' element={<LoginRedirect auth={auth} />} />
             <Route path='/notice/detail/:id' element={<NoticeDetail />} />
             <Route path='/notice/support/detail/:id' element={<NoticeColumnDetail />} />
             <Route path='/notice/info/detail/:id' element={<NoticeInfoDetail />} />

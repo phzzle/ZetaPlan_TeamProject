@@ -1,146 +1,149 @@
 .list-name {
-  font-size: 1.5rem;
-  text-align: center;
-  margin-top: 2rem;
-  color: #b66666;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 2rem;
+    color: #b66666;
 }
 
 .notice-list {
-  font-size: 0.875rem;
-  width: 1000px;
+    font-size: 0.875rem;
+    width: 1000px;
 }
 
-.notice-list > li {
-  border-bottom: 1px solid #ccc;
+.notice-list>li {
+    border-bottom: 1px solid #ccc;
 }
 
-.notice-list > li:first-child {
-  border-top: 1px solid #ccc;
+.notice-list>li:first-child {
+    border-top: 1px solid #ccc;
 }
 
 .list-box {
-  width: 1200px;
-  margin: 0 auto;
-  position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
 }
 
 .board-lists {
-  width: 1200px;
-  height: 35px;
-  line-height: 35px;
-  color: #2c3540;
-  text-align: center;
+    width: 1200px;
+    height: 35px;
+    line-height: 35px;
+    color: #2c3540;
+    text-align: center;
 }
 
 .board-lists a {
-  display: flex;
-  flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .board-lists.title {
-  display: flex;
-  flex-wrap: wrap;
-  border-top: 2px solid #2c3540;
-  font-size: 0.875rem;
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 2px solid #2c3540;
+    font-size: 0.875rem;
 }
 
 .board-lists span {
-  display: block;
-  /*   border-left: 1px solid #ccc; */
+    display: block;
+    /*   border-left: 1px solid #ccc; */
 }
+
 .board-lists.title .list-title {
-  text-align: center;
+    text-align: center;
 }
+
 .board-lists.title span {
-  background-color: #f9fafb;
-  border-bottom: 1px solid #ccc;
+    background-color: #f9fafb;
+    border-bottom: 1px solid #ccc;
 }
 
 .id-name {
-  width: 150px;
+    width: 150px;
 }
 
 .list-title {
-  width: 700px;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-  text-align: left;
-  padding: 0 20px;
+    width: 700px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: left;
+    padding: 0 20px;
 }
 
 .list-author {
-  width: 100px;
+    width: 100px;
 }
 
 .list-date {
-  width: 150px;
+    width: 150px;
 }
 
 .list-view {
-  width: 100px;
+    width: 100px;
 }
 
 .listtitle:hover:hover {
-  background: rgba(0, 0, 0, 0.1);
-  cursor: pointer;
+    background: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
 }
 
 .inquireBtn {
-  right: 5%;
-  bottom: 5%;
-  padding: 7px;
-  position: absolute;
-  border-radius: 0.25rem;
-  color: #fff;
-  background: #3b4b59;
-  font-size: 0.87rem;
-  margin-right: 0;
+    right: 5%;
+    bottom: 5%;
+    padding: 7px;
+    position: absolute;
+    border-radius: 0.25rem;
+    color: #fff;
+    background: #3b4b59;
+    font-size: 0.87rem;
+    margin-right: 0;
 }
 
 .loginBtn {
-  right: 0;
-  bottom: 5%;
-  padding: 7px;
-  position: absolute;
-  border-radius: 0.25rem;
-  color: #fff;
-  background: #3b4b59;
-  font-size: 0.85rem;
-  margin-right: 0;
+    display: block;
+    right: 5%;
+    bottom: 5%;
+    padding: 7px;
+    position: absolute;
+    border-radius: 0.25rem;
+    color: #fff;
+    background: #3b4b59;
+    font-size: 0.85rem;
 }
+
 .writeBtn {
-  right: 5%;
-  bottom: 5%;
-  padding: 7px;
-  position: absolute;
-  border-radius: 0.25rem;
-  color: #fff;
-  background: #3b4b59;
-  font-size: 0.87rem;
-  margin-right: 0;
+    right: 0;
+    bottom: 5%;
+    padding: 7px;
+    position: absolute;
+    border-radius: 0.25rem;
+    color: #fff;
+    background: #3b4b59;
+    font-size: 0.87rem;
 }
 
 .board-search-container {
-  width: 1200px;
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-  margin-bottom: 20px;
-  border-radius: 15px;
+    width: 1200px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+    border-radius: 15px;
 }
 
 .btn-success {
-  margin-left: -26px;
+    margin-left: -26px;
 }
 
 .board-search-selector {
-  width: 70px;
-  height: 40px;
-  margin-right: 10px;
+    width: 70px;
+    height: 40px;
+    margin-right: 10px;
 }
+
 .input-box {
-  width: 250px;
-  height: 40px;
-  font-size: 1rem;
+    width: 250px;
+    height: 40px;
+    font-size: 1rem;
 }

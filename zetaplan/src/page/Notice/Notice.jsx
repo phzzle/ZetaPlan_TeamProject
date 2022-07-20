@@ -76,24 +76,8 @@ const Notice = ({ title, sub, auth, setAuth }) => {
                   );
                 })}
             </ul>
-            {auth ? (
-              <button
-                type='button'
-                className='loginBtn'
-                onClick={() => setAuth(false)}
-              >
-                로그아웃
-              </button>
-            ) : (
-              <button
-                type='button'
-                className='loginBtn'
-                onClick={() => goToLogin()}
-              >
-                로그인
-              </button>
-            )}
-            <a href='/notice/inquiryform'>
+            {auth ? (<button type='button'className='loginBtn'onClick={() => setAuth(false)}>로그아웃</button>) : (<button type='button' className='loginBtn' onClick={() => goToLogin()}>로그인</button>)}
+            <a href='/notice/editor/'>
               <button className='writeBtn'>글쓰기</button>
             </a>
             <Pagination

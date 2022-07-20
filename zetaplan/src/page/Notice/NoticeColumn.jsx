@@ -70,10 +70,7 @@ const NoticeColumn = ({ title, sub }) => {
                   );
                 })}
             </ul>
-            <a href='/login'>
-              <button className='loginBtn'>로그인</button>
-            </a>
-            <a href='/notice/inquiryform'>
+            <a href='/notice/editor/'>
               <button className='writeBtn'>글쓰기</button>
             </a>
             <Pagination

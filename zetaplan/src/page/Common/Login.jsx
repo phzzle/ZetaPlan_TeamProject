@@ -25,7 +25,7 @@ const Login = ({ setAuth }) => {
   };
 
   const checkID = async () => {
-    const res = await fetch("http://localhost:8000/admin");
+    const res = await fetch("http://localhost:8888/admin");
     const adminAccount =  await res.json();
     
     if ( adminID === adminAccount[0].id ) {
@@ -36,14 +36,13 @@ const Login = ({ setAuth }) => {
   }
 
   const checkPW = async () => {
-    const res = await fetch("http://localhost:8000/admin");
+    const res = await fetch("http://localhost:8888/admin");
     const adminAccount =  await res.json();
 
     console.log(adminPassword)
     console.log(adminAccount[0].password)
     
     if ( adminPassword === adminAccount[0].password) {
-      alert("로그인되었습니다.")
       setAuth(true);
       navigate('/')
     } else {
