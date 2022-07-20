@@ -15,13 +15,13 @@ const BoardSearch3 = () => {
 
   const navigate = useNavigate();
 
-  const onSubmit = async () => {
-    window.location.href = "/notice/news/" + word;
+  const onSubmit = () => {
+    window.location.href = "/notice/support/" + word;
   };
 
   const onKeyPress = (e) => {
     if(e.key === "Enter") {
-      navigate(`/notice/news/${word}`);
+      navigate(`/notice/support/${word}`);
     }
   }
 
@@ -78,7 +78,6 @@ const BoardSearch3 = () => {
   return (
     <div id="SearchForm" className='board-search-box'>
       <div className='board-search-box-wrap'>
-        <FaSearch size="1.5rem" fill='#fff'/>
         <input type='text' className='search-input' name='search' placeholder='검색어를 입력하세요.'
           value={inputValue} 
           defaultValue={inputValue} 
@@ -86,7 +85,7 @@ const BoardSearch3 = () => {
           onKeyUp={handleInputChange}
           onKeyPress={onKeyPress} />
           <div className='delete-button' onClick={handleDeleteButtonClick}>&times;</div>
-          <button type="button" onClick={() => {onSubmit()}} className="search-submit-btn">검색</button>
+          <button type="button" onClick={() => {onSubmit()}} className="search-submit-btn"><FaSearch size="1.5rem" fill='#2c3540'/></button>
           <div className='auto-search-box'>
             {
             hasText ? <SearchDropDown

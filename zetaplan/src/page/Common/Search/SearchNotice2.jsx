@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import BoardSearch1 from '../../../component/Search/BoardSearch1';
+import BoardSearch2 from '../../../component/Search/BoardSearch2';
 import NoticeHeader from './../../../component/Detail/NoticeHeader';
 import DetailFooter from './../../../component/Detail/DetailFooter';
 import BoardSearchList from './../../../component/Search/BoardSearchList';
@@ -32,7 +32,7 @@ const SearchNotice2 = () => {
         <div className='board-search-header'>
           <h2>'<em>{word}</em>' 검색결과입니다.</h2>
           <div className='inner-search-box'>
-            <BoardSearch1 />
+            <BoardSearch2 />
           </div>
         </div>
         <div className='board-lists title'>

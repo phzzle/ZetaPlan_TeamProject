@@ -6,7 +6,7 @@ import DetailFooter from './../../../component/Detail/DetailFooter';
 import BoardSearchList from './../../../component/Search/BoardSearchList';
 
 const SearchNotice1 = () => {
-  const [data, setData] = useState();
+  const [data, setData] = useState([]);
   const { word } = useParams();
 
   console.log(word);

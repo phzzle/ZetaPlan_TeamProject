@@ -15,13 +15,13 @@ const BoardSearch1 = () => {
 
   const navigate = useNavigate();
 
-  const onSubmit = async () => {
-    window.location.href = "/notice/news/" + word;
+  const onSubmit = () => {
+    window.location.href = "/notice/" + word;
   };
 
   const onKeyPress = (e) => {
     if(e.key === "Enter") {
-      navigate(`/notice/news/${word}`);
+      navigate(`/notice/${word}`);
     }
   }
 
@@ -59,22 +59,6 @@ const BoardSearch1 = () => {
     setInputValue("");
   };
 
-  const handleKeyUp = (event) => {
-    if(hasText){
-      if(event.key === 'ArrowDown' && options.length - 1 > selected){ 
-        setSelected(selected + 1);
-      }
-
-      if(event.key === 'ArrowUp' && selected >= 0){
-        setSelected(selected - 1);
-      }
-      if(event.key === 'Enter' && selected >= 0){
-        handleDropDownClick(options[selected])
-        setSelected(-1);
-      }
-    }
-  }
-
   return (
     <div id="SearchForm" className='board-search-box'>
       <div className='board-search-box-wrap'>
@@ -84,7 +68,7 @@ const BoardSearch1 = () => {
           onKeyUp={handleInputChange}
           onKeyPress={onKeyPress} />
           <div className='delete-button' onClick={handleDeleteButtonClick}>&times;</div>
-          <button type="button" onClick={() => {onSubmit()}} className="search-submit-btn"><FaSearch size="1.5rem" fill='#fff'/></button>
+          <button type="button" onClick={onSubmit} className="search-submit-btn"><FaSearch size="1.5rem" fill='#2c3540'/></button>
           <div className='auto-search-box'>
             {
             hasText ? <SearchDropDown
