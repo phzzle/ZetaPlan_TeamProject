@@ -31,9 +31,10 @@
 }
 
 .detail-tab-lists .detail-tab-list.active {
-    background-color: rgba(242, 123, 53, 0.5);
+    background-color: rgba(242, 123, 53, 1);
     font-weight: bold;
     color: #fff;
+    border-color: rgba(242, 123, 53, 1);
 }
 
 .detail-tab-lists .detail-tab-list:last-child {}
