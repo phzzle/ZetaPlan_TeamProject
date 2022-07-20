@@ -15,12 +15,16 @@
 .image-container {
     margin: 0 auto;
     width: 1100px;
-    height: 700px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .image-container img {
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
 }
 
 .invest-title-line {
@@ -38,25 +42,6 @@
     font-size: 24px;
     color: #2C3540;
     margin-bottom: 80px;
-}
-
-.network-consulting-info h3 {
-    font-size: 18px;
-    font-weight: 500;
-    margin-bottom: 20px;
-    position: relative;
-}
-
-.network-consulting-info h3::after {
-    content: "";
-    display: block;
-    width: 60px;
-    height: 2px;
-    background-color: rgba(44, 53, 64, 0.5);
-    border-radius: 16px;
-    position: absolute;
-    left: 20%;
-    top: 50%;
 }
 
 .network-consulting-info {

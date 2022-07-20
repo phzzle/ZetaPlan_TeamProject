@@ -1,17 +1,48 @@
-#InvestStrategy #SubInner h3 {
-    font-size: 18px;
-    font-weight: 500;
-    margin-bottom: 20px;
-    position: relative;
+#InvestStrategy #SubInner .strategy-container1,
+#InvestStrategy #SubInner .strategy-container2 {
+    display: flex;
+    text-align: center;
+
 }
 
-.image-container-strategy {
-    margin: 0 auto;
-    width: 1100px;
-    height: 700px;
+.strategy-container1 .strategy-circle1 {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: rgba(59, 75, 89, 0.8);
+    color: #efefef;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 30px;
 }
 
-.image-container-strategy img {
-    width: 1100px;
-    height: 500px;
+
+#strategy-arrow {
+    width: 30px;
+    height: 30px;
+    margin-top: 60px;
+    margin-right: 10px;
+    color: rgba(59, 75, 89, 0.8);
+
+}
+
+
+
+.strategy-container2 .strategy-info {
+    width: 220px;
+    height: 30px;
+    background-color: rgb(36, 136, 223);
+    color: #efefef;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 30px;
+    margin-top: 20px;
+}
+
+.strategy1 {
+    margin-bottom: 60px;
 }

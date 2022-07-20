@@ -1,6 +1,6 @@
 import "./App.css";
-import React, {useState, useEffect} from "react";
-import {Routes, Route, BrowserRouter} from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Fullpage from "./component/Fullpage/Fullpage";
 import CompanyInfo from "./page/Company/CompanyInfo";
 import CompanyCi from "./page/Company/CompanyCi";
@@ -64,6 +64,12 @@ function App() {
   const [data, setData] = useState(tradeList);
   let [items, setItems] = useState(confirmList);
   const [auth, setAuth] = useState(false);
+  const [infoData, setInfoData] = useState([])
+  useEffect(() => {
+    fetch('/data/consulting_datail.json')
+      .then((response) => response.json())
+      .then((response) => setInfoData(response));
+  }, []);
   useEffect(() => {
     console.log("로그인인증값", auth);
   }, [auth]);

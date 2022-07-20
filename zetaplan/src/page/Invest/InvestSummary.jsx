@@ -10,30 +10,28 @@ const InvestSummary = ({ title, sub }) => {
       <div id='SubInner'>
         <section className="invest-title-container">
           <h2 className="invest-title">투자IR 컨설팅 개요</h2>
-          <div className="invest-title-line"></div>
         </section>
         <section className='summary'>
-          <h3>컨설팅 개요</h3>
+          <h3 className='company-road-part'>컨설팅 개요</h3>
           <span>우수한 기업의 투자IR 및 사업화 지원기관 네트워크를 통해 투자유치 희망기업의 요구에 부합하는 컨설팅 </span>
           <p>벤처캐피탈 등 당사의 국,내외 투자기관 네트워크를 통한 IR 지원과 1:1 투자유치 매칭 지원</p>
           <p>투자 유치 희망기업의 경영진단에서부터 사후관리까지 일관되고 체계적인 컨설팅 지원내용의 확보와 사업추진 계획</p>
           <p>컨설팅 진행기간 이후에도 희망기업이 지속적인 성장을 위한 투자유치 컨설팅 및 향후 기업공개에 이를 수 있도록 컨설팅 지원</p>
         </section>
         <section className='summary'>
-          <h3> 컨설팅 내용 </h3>
+          <h3 className='company-road-part'> 컨설팅 내용 </h3>
           <p>기업진단, 개선전략 수립 및 IR멘토링을 통해 기업역량강화 및 투자유치를 위한 신뢰성 있는 IR자료 작성</p>
           <p>투자유치전략 수립 및 투자성사 업무지원을 통하여 성장전략 지원</p>
-          <div className='image-container'>
+          <div className='investsummary-image-container'>
             <img src="/img/Invest/consulting_content.png" alt="" />
           </div>
         </section>
         <section className="invest-title-container-success">
           <h2 className="invest-title">투자유치 성공사례</h2>
-          <div className="invest-title-line"></div>
         </section>
         <section className='summary'>
-          <h3>성공사례</h3>
-          <span> (주)00일렉콤 전자파 차폐,그라운드 접지, 방열, 전자파 흡수용도 제품 기술보유기업 투자유치 및 성과</span>
+
+          <span > (주)00일렉콤 전자파 차폐,그라운드 접지, 방열, 전자파 흡수용도 제품 기술보유기업 투자유치 및 성과</span>
           <ul>
             <li>컨설팅 내용 : 전자파 차폐, 흡수 관련 제품 기술보유기업의 IR을 통한 투자</li>
             <li>투자 컨설팅 : 중국 신설법인 확대 및 기존 TV 등 대형 전자제품외 모바일 기기관련 제품으로 생산라인확대, 성장을 위한 로드맵 전략자문 및 투자자금지원을 위한 투자 IR 컨설팅</li>
