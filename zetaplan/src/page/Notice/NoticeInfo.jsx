@@ -21,9 +21,7 @@ const NoticeInfo = ({ title, sub, id }) => {
       .then((response) => response.json())
       .then((response) => setLists(response));
   }, []);
-  const goToNoticeInfoDetail = (id) => {
-    navigate(`/notice/info/detail/NoticeInfoDetail`);
-  };
+
   return (
     <div>
       <NoticeHeader title={title} sub={sub} />
@@ -56,21 +54,19 @@ const NoticeInfo = ({ title, sub, id }) => {
                 .reverse()
                 .slice(startNum, endNum)
                 .reverse()
-                .map(({ num, title, author, date, view, link }) => {
+                .map(({ num, title, author, date, view, id }) => {
                   return (
                     <li className='board-lists' key={num}>
-                      {/* <a href={link}> */}
-                      <span className='id-name'>{num}</span>
-                      <span
-                        className='list-title'
-                        onClick={() => goToNoticeInfoDetail(id)}
-                      >
-                        {title}
-                      </span>
-                      <span className='list-author'>{author}</span>
-                      <span className='list-date'>{date}</span>
-                      <span className='list-view'>{view}</span>
-                      {/* </a> */}
+                      <Link to={'/notice/info/detail/' + id}>
+                        <span className='id-name'>{num}</span>
+                        <span
+                          className='list-title'>
+                          {title}
+                        </span>
+                        <span className='list-author'>{author}</span>
+                        <span className='list-date'>{date}</span>
+                        <span className='list-view'>{view}</span>
+                      </Link>
                     </li>
                   );
                 })}
