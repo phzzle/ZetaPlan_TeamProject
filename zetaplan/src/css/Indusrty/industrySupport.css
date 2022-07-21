@@ -158,25 +158,19 @@
 
 @media (max-width: 765px) {
     .detail-tab-lists {
-        padding-left: 20px;
-    }
-    .detail-tab-lists .detail-tab-list {
-        width: 100px;
-        height: 40px;
-        line-height: 40px;
-        font-size: 12px;
+        max-width: 765px;
+        margin: auto;
     }
     .detail-tab-content {
-        width: 640px;
+        max-width: 600px;
     }
     #IndustrySupport2,
     #IndustrySupport4 {
         color: #2c3540;
-        width: 640px;
-        padding-left: 20px;
+        max-width: 600px;
     }
     .industry-support-img {
-        width: 500px;
+        max-width: 500px;
     }
 }
 

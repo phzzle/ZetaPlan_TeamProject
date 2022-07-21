@@ -60,4 +60,8 @@
         width: 50px;
         right: -60px;
     }
+    .company-road-map-wrap {
+        max-width: 400px;
+        max-height: 300px;
+    }
 }

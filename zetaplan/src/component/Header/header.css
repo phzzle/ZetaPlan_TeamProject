@@ -322,15 +322,19 @@ background-size .3s calc(.3s - var(--_s, 0s));
 
 @media (max-width: 765px) {
     #Header #MainInner {
-        width: 700px;
-        max-width: 765px;
+        width: 90%;
         justify-content: space-between;
+        align-items: center;
+    }
+    #Header .header-left {
+        width: 50%;
+        height: 100%;
     }
     #Header .header-nav-wrap .main-nav {
         display: none;
     }
     #Header .header-right {
-        justify-content: center;
+        width: 50%;
     }
     #Header .header-right .lang-box {
         display: none;
