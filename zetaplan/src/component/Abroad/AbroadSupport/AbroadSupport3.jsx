@@ -25,9 +25,51 @@ const AbroadSupport3 = () => {
           </li>
         </ul>
         <h6 className='abroad-sub-title'>지원 내용</h6>
-        <div className="abroad-content-img">
-          <img src="/img/Abroad/AbroadSupport/해외지사화 지원내용.jpg" alt="해외지사화 지원내용" />
-        </div>
+        <table className='abroad-desc-table abroad-desc-table-center'>
+          <colgroup>
+            <col style={{width: "10%"}} />
+            <col style={{width: "40%"}} />
+            <col style={{width: "10%"}} />
+            <col style={{width: "20%"}} />
+            <col style={{width: "20%"}} />
+          </colgroup>
+          <thead>
+            <tr>
+              <th>단계</th>
+              <th>주요 지원내용</th>
+              <th>기간</th>
+              <th>업체부담금 (총 사업비)</th>
+              <th>비고</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>진입</td>
+              <td>기초 마케팅 지원 : 시장조사, 바이어 발굴, 네트워크 교류(현지 유대감 형성), 기초홍보자료 현지화, 시장성 테스트</td>
+              <td>6개월</td>
+              <td>50만원(400만원)</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>발전</td>
+              <td>
+                마케팅 및 수출지원 : 수출성약 지원, 전시·상담회 참가 지원, 물류 통관자문, 출장지원, 기존 거래선 관리, 현지 유통망 입점, 인허가 취득지원, 브랜드 홍보, 프로젝트 참가, IP등록, 현지법인 설립지원
+              </td>
+              <td>1년</td>
+              <td>250만원~350만원(900만원)</td>
+              <td>지역별 차등</td>
+            </tr>
+            <tr>
+              <td>확장</td>
+              <td>
+                수출 및 현지화 지원 : 기술수출(제휴), 글로벌 벨류체인 진출, 해외투자 유치, 조달진출, 품목별 타겟진출, 인큐베이팅 서비스, 현지투자 지원(법인설립), 법률자문
+              </td>
+              <td>1년</td>
+              <td>700만원~1,050만원(2,000만원~3,000만원)</td>
+              <td>지역별 차등</td>
+            </tr>
+          </tbody>
+        </table>
       </section>
 
       <section className='abroad-content-box'>

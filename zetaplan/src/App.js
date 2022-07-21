@@ -59,23 +59,21 @@ import NoticeInfoDetail from './page/Notice/NoticeDetail/NoticeInfoDetail';
 import NoticeInquiryDetail from './page/Notice/NoticeDetail/NoticeInquiryDetail';
 import NoticeNewsDetail from './page/Notice/NoticeDetail/NoticeNewsDetail';
 import tradeList from './component/Industry/IndustryDetail/techTrade_detail.json';
+import infoList from './page/Notice/NoticeDetail/consulting_Detail.json'
 
 function App() {
   const [data, setData] = useState(tradeList);
   let [items, setItems] = useState(confirmList);
 
   const [auth, setAuth] = useState(false);
-  const [infoData, setInfoData] = useState([]);
+  const [infoData, setInfoData] = useState(infoList);
   const [noticeData, setNoticeData] = useState([]);
   const [newsData, setNewsData] = useState([]);
   const [inquiryData, setInquiryData] = useState([]);
   const [policyData, setPolicyData] = useState([]);
 
-  useEffect(() => {
-    fetch('/data/consulting_Detail.json')
-      .then((response) => response.json())
-      .then((response) => setInfoData(response));
-  }, []);
+
+
 
   useEffect(() => {
     fetch('/data/tradeInformation_detail.json')
@@ -110,7 +108,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Fullpage />} />
-          <Route path='/company' element={<CompanyInfo title='Company' sub='기업소개' />}/>
+          <Route path='/company' element={<CompanyInfo title='Company' sub='기업소개' />} />
           <Route path='/company/ci' element={<CompanyCi title='Company' sub='CI' />} />
           <Route path='/company/manpower' element={<CompanyManpower title='Company' sub='Manpower' />} />
           <Route path='/company/collabo' element={<CompanyCollabo title='Company' sub='협력기관' />} />
@@ -131,7 +129,7 @@ function App() {
           <Route path='/abroad' element={<AbroadInfo title='Abroad' sub='해외 진출 사업' />} />
           <Route path='/abroad/case' element={<AbroadCase title='Abroad' sub='해외 진출 지원' />} />
           <Route path='/abroad/process' element={<AbroadProcess title='Abroad' sub='해외 지사 사업' />} />
-          <Route path='/industry' element={<IndustryIssue title='Industry' sub='산업 별 이슈' />}/>
+          <Route path='/industry' element={<IndustryIssue title='Industry' sub='산업 별 이슈' />} />
           <Route path='/industry/support' element={<IndustrySupport title='Industry' sub='지원 사업' />} />
           <Route path='/industry/confirm' element={<IndustryConfirm title='Industry' sub='기업/기술 인증' />} />
           <Route path='/industry/confirm/detail/:id' element={<IndustryConfirmDetail data={items} />} />
@@ -139,18 +137,18 @@ function App() {
           <Route path='/industry/trade' element={<IndustryTrade title='Industry' sub='기술 거래' />} />
           <Route path='/industry/value' element={<IndustryValue title='Industry' sub='가치 평가' />} />
           <Route path='/industry/credit' element={<IndustryCredit title='Industry' sub='신용 평가' />} />
-          <Route path='/notice' element={<Notice title='Notice' sub='공지사항' auth={auth} setAuth={setAuth}/>}/>
-          <Route path='/notice/news' element={<NoticeNews title='Notice' sub='뉴스' />}/>
-          <Route path='/notice/support' element={<NoticeColumn title='Notice' sub='기업지원정보' />}/>
-          <Route path='/notice/info' element={<NoticeInfo title='Notice' sub='컨설팅 실적' />}/>
-          <Route path='/notice/inquiry' element={<NoticeInquiry title='Notice' sub='문의하기' />}/>
-          <Route path='/notice/request' element={<NoticeRequest title='Notice' sub='상담신청' />}/>
+          <Route path='/notice' element={<Notice title='Notice' sub='공지사항' auth={auth} setAuth={setAuth} />} />
+          <Route path='/notice/news' element={<NoticeNews title='Notice' sub='뉴스' />} />
+          <Route path='/notice/support' element={<NoticeColumn title='Notice' sub='기업지원정보' />} />
+          <Route path='/notice/info' element={<NoticeInfo title='Notice' sub='컨설팅 실적' />} />
+          <Route path='/notice/inquiry' element={<NoticeInquiry title='Notice' sub='문의하기' />} />
+          <Route path='/notice/request' element={<NoticeRequest title='Notice' sub='상담신청' />} />
           <Route path='/login' element={<Login setAuth={setAuth} />} />
           <Route path='/search/:word' element={<Search />} />
           <Route path='/china' element={<ChinaInfo />} />
           <Route path='/english' element={<EnglishInfo />} />
-          <Route path='/abroad/case/detail/:id' element={<AbroadCaseDetail />}/>
-          <Route path='/notice/inquiryForm' element={<NoticeInquiryForm title='Notice' sub='문의하기' />}/>
+          <Route path='/abroad/case/detail/:id' element={<AbroadCaseDetail />} />
+          <Route path='/notice/inquiryForm' element={<NoticeInquiryForm title='Notice' sub='문의하기' />} />
           <Route path='/notice/:word' element={<SearchNotice1 />} />
           <Route path='/notice/news/:word' element={<SearchNotice2 />} />
           <Route path='/notice/support/:word' element={<SearchNotice3 />} />
@@ -158,13 +156,13 @@ function App() {
           <Route path='/notice/inquiry/:word' element={<SearchNotice5 />} />
           <Route path='/industry/:word' element={<SearchIndustry1 />} />
           <Route path='/industry/trade/:word' element={<SearchIndustry2 />} />
-          <Route path='/industry/trade/detail/:id' element={<IndustryDetail data={data} />}/>
-          <Route path='/notice/editor/' element={<LoginRedirect auth={auth} />}/>
-          <Route path='/notice/detail/:id' element={<NoticeDetail noticeData={noticeData} />}/>
-          <Route path='/notice/support/detail/:id' element={<NoticeColumnDetail policyData = {policyData} />}/>
-          <Route path='/notice/info/detail/:id' element={<NoticeInfoDetail infoData={infoData} />}/>
-          <Route path='/notice/inquiry/detail/:id' element={<NoticeInquiryDetail inquiryData={inquiryData} />}/>
-          <Route path='/notice/news/detail/:id' element={<NoticeNewsDetail newsData={newsData} />}/>
+          <Route path='/industry/trade/detail/:id' element={<IndustryDetail data={data} />} />
+          <Route path='/notice/editor/' element={<LoginRedirect auth={auth} />} />
+          <Route path='/notice/detail/:id' element={<NoticeDetail noticeData={noticeData} />} />
+          <Route path='/notice/support/detail/:id' element={<NoticeColumnDetail policyData={policyData} />} />
+          <Route path='/notice/info/detail/:id' element={<NoticeInfoDetail infoData={infoData} />} />
+          <Route path='/notice/inquiry/detail/:id' element={<NoticeInquiryDetail inquiryData={inquiryData} />} />
+          <Route path='/notice/news/detail/:id' element={<NoticeNewsDetail newsData={newsData} />} />
         </Routes>
       </BrowserRouter>
     </div>
