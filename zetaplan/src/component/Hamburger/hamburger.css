@@ -94,3 +94,30 @@
         height: 100%;
     }
 }
+
+@media (max-width:765px) {
+    #Hamburger {
+        height: auto;
+        left: 12%;
+        color: #2c3540;
+        background-color: #efefef;
+        z-index: 9999;
+    }
+    #Hamburger .hamburger-list .hamburger-title-menu {
+        padding: 20px 0;
+        border-top: 1px solid rgba(44, 53, 64, 0.1);
+        font-size: 16px;
+        cursor: pointer;
+    }
+    .hamburger-title-menu:target .hamburger-sub-menu {
+        height: auto;
+    }
+    @keyframes HamburgerOpen {
+        from {
+            left: 30%;
+        }
+        to {
+            left: 12%;
+        }
+    }
+}

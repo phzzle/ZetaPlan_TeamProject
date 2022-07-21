@@ -157,20 +157,17 @@
 }
 
 @media (max-width: 765px) {
-    .detail-tab-lists {
-        max-width: 765px;
-        margin: auto;
-    }
     .detail-tab-content {
-        max-width: 600px;
+        width: 100%;
     }
+    #IndustrySupport1,
     #IndustrySupport2,
+    #IndustrySupport3,
     #IndustrySupport4 {
-        color: #2c3540;
-        max-width: 600px;
+        width: 100%;
     }
     .industry-support-img {
-        max-width: 500px;
+        width: 90%;
     }
 }
 

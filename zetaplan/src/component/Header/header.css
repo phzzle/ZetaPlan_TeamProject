@@ -21,7 +21,6 @@ a {
 
 #Header #MainInner {
     width: 1440px;
-    max-width: 1440px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -322,19 +321,14 @@ background-size .3s calc(.3s - var(--_s, 0s));
 
 @media (max-width: 765px) {
     #Header #MainInner {
-        width: 90%;
-        justify-content: space-between;
-        align-items: center;
+        width: 100%;
     }
     #Header .header-left {
-        width: 50%;
-        height: 100%;
+        display: flex;
+        justify-content: flex-start;
     }
     #Header .header-nav-wrap .main-nav {
         display: none;
-    }
-    #Header .header-right {
-        width: 50%;
     }
     #Header .header-right .lang-box {
         display: none;
@@ -344,6 +338,7 @@ background-size .3s calc(.3s - var(--_s, 0s));
     }
     #Header .header-hamburger-btn {
         visibility: visible;
+        margin-left: 30%;
     }
 }
 

@@ -877,16 +877,13 @@
 }
 
 @media (max-width: 765px) {
-    .main-slide-by {
-        font-size: 16px;
-    }
     .main-slide-title {
-        font-size: 24px;
+        width: 80%;
+        font-size: 40px;
     }
     .main-slide-btn {
-        font-size: 24px;
-    }
-    .main-slide-btn svg {
-        top: 0px;
+        top: 50%;
+        left: 55%;
+        position: relative;
     }
 }

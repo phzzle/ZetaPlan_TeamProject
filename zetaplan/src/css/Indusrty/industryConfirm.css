@@ -150,26 +150,15 @@
     #IndustryConfirmList1,
     #IndustryConfirmList2,
     .industry-confirm-content {
-        max-width: 640px;
+        width: 90%;
     }
     #IndustryConfirmList0 .industry-confirm0-img {
-        max-width: 500px;
-    }
-    #IndustryConfirmItem .industry-confirm-list-img img {
-        max-width: 180px;
-        height: auto;
-        max-height: 100%;
+        width: 90%;
     }
     #IndustryConfirmHistory {
-        max-width: 640px;
-        padding-bottom: 20px;
-        border-bottom: 1px solid rgba(44, 53, 64, 0.4);
-        text-align: right;
+        width: 100%;
     }
     #IndustryConfirmDetail .industry-confirm-content-img {
-        max-width: 500px;
-    }
-    #IndustryConfirmDetail .industry-confirm-content-img img {
-        width: 100%;
+        width: 90%;
     }
 }

@@ -47,3 +47,19 @@
 #Search .inner-search-box .search-submit-btn svg {
     display: none;
 }
+
+@media (max-width: 765px) {
+    #Search .inner-search-box {
+        width: 90%;
+    }
+    #Search .inner-search-box form {
+        height: 60px;
+        display: flex;
+        align-items: center;
+    }
+    #Search .inner-search-box .search-input {
+        width: 80%;
+        padding: 0 2%;
+        margin-left: 5%;
+    }
+}

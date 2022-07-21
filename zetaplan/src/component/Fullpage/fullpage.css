@@ -33,13 +33,11 @@
 
 #MainInner {
     width: 1440px;
-    max-width: 1440px;
     margin: 0 auto;
 }
 
 #SubInner {
     width: 1200px;
-    max-width: 1200px;
     margin: 0 auto;
     padding-bottom: 50px;
 }
@@ -49,13 +47,12 @@
         display: none;
     }
     #MainInner {
-        width: 90%;
+        width: 95%;
         margin: 0 auto;
     }
     #SubInner {
-        width: 70%;
-        margin: 0 auto;
-        padding: 0 5%;
+        width: 95%;
+        margin: auto;
         padding-bottom: 5%;
         box-sizing: border-box;
     }

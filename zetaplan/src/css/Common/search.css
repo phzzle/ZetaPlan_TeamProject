@@ -206,3 +206,42 @@
 .board-lists:hover {
     background-color: #f9fafb;
 }
+
+@media (max-width: 765px) {
+    #Search .inner-search-head {
+        width: 100%;
+    }
+    .inner-search-sub {
+        width: 20%;
+    }
+    .inner-search-num {
+        width: 10%;
+        overflow: hidden;
+    }
+    .inner-search-title {
+        width: 50%;
+    }
+    .inner-search-date {
+        width: 20%;
+    }
+    #Search .search-list {
+        width: 100%;
+    }
+    #Search .search-list .inner-search-date {
+        width: 20%;
+    }
+    #Search .inner-search-result {
+        margin-bottom: 80px;
+    }
+    /* 게시판 검색 CSS */
+    .inner-search-box>h2 {
+        width: 90%;
+    }
+    .board-search-box .board-search-box-wrap {
+        width: 50%;
+    }
+    .auto-search-box {
+        left: 16px;
+        width: 70%;
+    }
+}
