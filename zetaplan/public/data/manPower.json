@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "thumnail": "../../public/img/Company/CompanyManpower/male.png",
+    "thumnail": "/img/Company/CompanyManpower/female.png",
     "name": "김 미 나",
     "position": "대표 컨설턴트",
     "detail": "경영학박사 | 기술거래사 | ISO국제심사원 | 한국과학기술정보원 자문위원 | 한국발명진흥회 특허기술가치평가 위원",
@@ -9,7 +9,7 @@
   },
   {
     "id": 2,
-    "thumnail": "../../public/img/Company/CompanyManpower/male.png",
+    "thumnail": "/img/Company/CompanyManpower/male.png",
     "name": "홍 현 권",
     "position": "대표 컨설턴트",
     "detail": "경영학박사 | 기술거래사 | ISO국제심사원 | 국제공인경영컨설턴트(ICMCI CMC) | IMC Korea 이사 | 한국발명진흥회 특허기술가치평가 위원 | 중소기업진흥공단 M&A 자문위원 | 서울산업통상진흥원 자문위원 | 특허청 중앙심의위원회 자문위원 | 매경닷컴 칼럼리스트 및 자문위원 | 한국과학기술정보원 자문위원 | 미래창조타운 총괄멘토(CTO) | KIAT 대한민국 기술사업화 자문위원 | 중국 무역축진위원회-에코텍 한국대표",
@@ -17,7 +17,7 @@
   },
   {
     "id": 3,
-    "thumnail": "../../public/img/Company/CompanyManpower/male.png",
+    "thumnail": "/img/Company/CompanyManpower/male.png",
     "name": "임 용 택",
     "position": "책임 컨설턴트 / 이사",
     "detail": "경영학박사 | 기술거래사 | 기업가치평가사 | 한국정책 연구소 자문연구소 자문위원 | 한국금융공학연구원 국제금융 자문위원 | 마케팅연구소 객원연구원 | 한국발명진흥회 특허기술가치평가 위원 | (사)벤처기업협회 금융투자 자문위원 | 서울산업통상진흥원 자문위원 | 중국 북방기술교역소 한국대표 | 중국 절강성과학기술교류중심 한국대표 | 중국 강소성  하이먼시 과하기술국 한국대표",
@@ -25,7 +25,7 @@
   },
   {
     "id": 4,
-    "thumnail": "../../public/img/Company/CompanyManpower/male.png",
+    "thumnail": "/img/Company/CompanyManpower/male.png",
     "name": "송 성 호",
     "position": "책임 컨설턴트 / 이사",
     "detail": "경영지도사 | 기술거래사 | 환경표지심사위원 | M&A컨설팅 전문가 | QMS, EMS 심사원",
@@ -33,7 +33,7 @@
   },
   {
     "id": 5,
-    "thumnail": "../../public/img/Company/CompanyManpower/male.png",
+    "thumnail": "/img/Company/CompanyManpower/male.png",
     "name": "이 보 형",
     "position": "책임 컨설턴트 / 이사",
     "detail": "경영학박사 | 발명진흥회 특허기술가치평가위원",
@@ -41,7 +41,7 @@
   },
   {
     "id": 6,
-    "thumnail": "../../public/img/Company/CompanyManpower/male.png",
+    "thumnail": "/img/Company/CompanyManpower/male.png",
     "name": "기 철",
     "position": "책임 컨설턴트 / 이사",
     "detail": "기술거래사 | 국제공인경영컨설턴트(ICMCI CMC) | QMS, EMS 심사원",
@@ -49,7 +49,7 @@
   },
   {
     "id": 7,
-    "thumnail": "../../public/img/Company/CompanyManpower/male.png",
+    "thumnail": "/img/Company/CompanyManpower/male.png",
     "name": "권 혁 장",
     "position": "책임 컨설턴트 / 이사",
     "detail": "기술거래사 | 녹색기술센터 그린인포랩전문위원",
@@ -57,7 +57,7 @@
   },
   {
     "id": 8,
-    "thumnail": "../../public/img/Company/CompanyManpower/male.png",
+    "thumnail": "/img/Company/CompanyManpower/male.png",
     "name": "허 병 무",
     "position": "책임 컨설턴트 / 이사",
     "detail": "경영학 박사(수료) | 경기TP지도위원",
@@ -65,7 +65,7 @@
   },
   {
     "id": 9,
-    "thumnail": "../../public/img/Company/CompanyManpower/male.png",
+    "thumnail": "/img/Company/CompanyManpower/male.png",
     "name": "최 근 영",
     "position": "책임 컨설턴트 ",
     "detail": "MBA | 벤처투자전문가 | QMS 심사원 | 농업경제학박사",
@@ -73,7 +73,7 @@
   },
   {
     "id": 10,
-    "thumnail": "../../public/img/Company/CompanyManpower/male.png",
+    "thumnail": "/img/Company/CompanyManpower/male.png",
     "name": "임 성 진",
     "position": "책임 컨설턴트",
     "detail": "MBA | 경영학박사",
@@ -81,7 +81,7 @@
   },
   {
     "id": 11,
-    "thumnail": "../../public/img/Company/CompanyManpower/male.png",
+    "thumnail": "/img/Company/CompanyManpower/male.png",
     "name": "조 영 성",
     "position": "책임 컨설턴트 / 이사",
     "detail": "",
@@ -89,7 +89,7 @@
   },
   {
     "id": 12,
-    "thumnail": "../../public/img/Company/CompanyManpower/male.png",
+    "thumnail": "/img/Company/CompanyManpower/male.png",
     "name": "편 은 범",
     "position": "수석 컨설턴트",
     "detail": "부동산학 박사",
@@ -97,7 +97,7 @@
   },
   {
     "id": 13,
-    "thumnail": "../../public/img/Company/CompanyManpower/male.png",
+    "thumnail": "/img/Company/CompanyManpower/male.png",
     "name": "이 경 진",
     "position": "수석 컨설턴트 ",
     "detail": "경영지도사 | 국제공인컨설턴트 | 국제경영컨설팅협회 협의회 한국협회 부회장",
@@ -105,7 +105,7 @@
   },
   {
     "id": 14,
-    "thumnail": "../../public/img/Company/CompanyManpower/male.png",
+    "thumnail": "/img/Company/CompanyManpower/male.png",
     "name": "김 왕 용",
     "position": "수석 컨설턴트 / 고문",
     "detail": "MBA | 경영학박사 | 경영지도사",
@@ -113,7 +113,7 @@
   },
   {
     "id": 15,
-    "thumnail": "../../public/img/Company/CompanyManpower/male.png",
+    "thumnail": "/img/Company/CompanyManpower/male.png",
     "name": "전 병 우",
     "position": "수석 컨설턴트 / 고문",
     "detail": "마케팅박사 | 경영지도사 | 경영진단사 | PMP(프로젝트경영전문가) | CMC(국제공인경영컨설턴트) | PMS(생산성경영시스템)심사원",
@@ -121,7 +121,7 @@
   },
   {
     "id": 16,
-    "thumnail": "../../public/img/Company/CompanyManpower/male.png",
+    "thumnail": "/img/Company/CompanyManpower/male.png",
     "name": "엄 성 식",
     "position": "수석 컨설턴트 / 이사",
     "detail": "MBA | 경영학박사 | 경영지도사",
@@ -129,7 +129,7 @@
   },
   {
     "id": 17,
-    "thumnail": "../../public/img/Company/CompanyManpower/male.png",
+    "thumnail": "/img/Company/CompanyManpower/male.png",
     "name": "정 순 암",
     "position": "전무이사",
     "detail": "전 캔들미디어(코스닥 상장기업) 대표이사 | 전 한국정보공한(코스닥 상장기업) 대표이사 | 전 한국자산관리공사(KAMCO)",
@@ -137,7 +137,7 @@
   },
   {
     "id": 18,
-    "thumnail": "../../public/img/Company/CompanyManpower/male.png",
+    "thumnail": "/img/Company/CompanyManpower/female.png",
     "name": "박 민 경",
     "position": "선임컨설턴트",
     "detail": "기술거래사",
@@ -145,7 +145,7 @@
   },
   {
     "id": 19,
-    "thumnail": "../../public/img/Company/CompanyManpower/male.png",
+    "thumnail": "/img/Company/CompanyManpower/female.png",
     "name": "김 보 람",
     "position": "컨설턴트",
     "detail": "",
@@ -153,7 +153,7 @@
   },
   {
     "id": 20,
-    "thumnail": "../../public/img/Company/CompanyManpower/male.png",
+    "thumnail": "/img/Company/CompanyManpower/male.png",
     "name": "최 성 용",
     "position": "컨설턴트",
     "detail": "",
@@ -161,7 +161,7 @@
   },
   {
     "id": 21,
-    "thumnail": "../../public/img/Company/CompanyManpower/male.png",
+    "thumnail": "/img/Company/CompanyManpower/female.png",
     "name": "이 슬 비",
     "position": "컨설턴트",
     "detail": "",
@@ -169,7 +169,7 @@
   },
   {
     "id": 22,
-    "thumnail": "../../public/img/Company/CompanyManpower/male.png",
+    "thumnail": "/img/Company/CompanyManpower/male.png",
     "name": "정 모 철",
     "position": "중국",
     "detail": "국제공인경영컨설턴트(ICMCI CMC) | M&A컨설턴트",
@@ -177,7 +177,7 @@
   },
   {
     "id": 23,
-    "thumnail": "../../public/img/Company/CompanyManpower/male.png",
+    "thumnail": "/img/Company/CompanyManpower/male.png",
     "name": "Xia Wenhuan",
     "position": "중국",
     "detail": "스페인바로셀로나대학교 경영학 석사 | BTEC 기술거래중심부 주임 | ITTN 국제기술거래네트워크 주임",
@@ -185,7 +185,7 @@
   },
   {
     "id": 24,
-    "thumnail": "../../public/img/Company/CompanyManpower/male.png",
+    "thumnail": "/img/Company/CompanyManpower/male.png",
     "name": "Zhao Xieruo",
     "position": "중국",
     "detail": "중국산동대학교 경영학 석사 | 산동성교주상회 기업투자유치전담 | ITTN 국제기술거래네트워크 경리",
@@ -193,7 +193,7 @@
   },
   {
     "id": 25,
-    "thumnail": "../../public/img/Company/CompanyManpower/male.png",
+    "thumnail": "/img/Company/CompanyManpower/male.png",
     "name": "Nguyen Dinh Nam",
     "position": "베트남",
     "detail": "하노이국민경제대학 법학 석사 | 하노이해외기업투자유치자문회사 법률고문 | IPAVIETNAM 해외기업투자 및 M&A 수석컨설턴트",
@@ -201,7 +201,7 @@
   },
   {
     "id": 26,
-    "thumnail": "../../public/img/Company/CompanyManpower/male.png",
+    "thumnail": "/img/Company/CompanyManpower/male.png",
     "name": "Nguyen Viet Khoa",
     "position": "베트남",
     "detail": "하노이국민경제대학 경제학 석사 | INVIKO 산업기술인력양성교육기관 대표이사 | IPAVIETNAM 해외기술이전 및 M&A 전담컨설턴트",

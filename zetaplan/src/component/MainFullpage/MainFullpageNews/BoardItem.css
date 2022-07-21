@@ -13,10 +13,10 @@
   overflow: hidden;
   white-space: nowrap;
   width: 400px;
+  height: 100%;
 }
 
 .item-date {
-  margin-bottom: 3px;
   font-size: 15px;
   font-weight: 400;
   color: #2c3540;

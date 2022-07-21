@@ -1,13 +1,14 @@
 import React from 'react';
 import './BoardItem.css';
+import { Link } from 'react-router-dom';
 
 const GovernmentItem = ({ item }) => {
   return (
     <div className='product-item'>
-      <a href={item.link}>
+      <Link to={'/notice/support/detail/' + item.id}>
         <p className='item-title'>{item.title}</p>
         <p className='item-date'>{item.date}</p>
-      </a>
+      </Link>
     </div>
   );
 };

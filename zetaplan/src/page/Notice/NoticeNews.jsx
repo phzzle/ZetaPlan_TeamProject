@@ -41,13 +41,13 @@ const NoticeNews = ({ title, sub, id }) => {
             </form>
           </div>
           <div className='list-box'>
-            <div className='board-lists title'>
+            {/*             <div className='board-lists title'>
               <span className='id-name'>번호</span>
               <span className='list-title'>제목</span>
               <span className='list-author'>작성자</span>
               <span className='list-date'>날짜</span>
               <span className='list-view'>조회수</span>
-            </div>
+            </div> */}
             <ul className='news-notice-list'>
               {[...lists]
                 .reverse()
@@ -56,21 +56,28 @@ const NoticeNews = ({ title, sub, id }) => {
                 .map((item, idx) => {
                   return (
                     <li className='news-board-lists' key={item.id} data={item}>
-                      <Link to={'/notice/news/detail/' + item.id}>
+                      <Link
+                        to={'/notice/news/detail/' + item.id}
+                        className='news-board-lists-link'
+                      >
                         {/* <span className='news-id-name'>{item.num}</span> */}
-                        <span className='news-list-thumnail'></span>
-                        <span className='news-list-title'>{item.title}</span>
-                        <span className='news-list-content'>
-                          {item.content}
-                        </span>
-                        <span className='news-list-date'>{item.date}</span>
+                        <div className='news-list-thumnail'>
+                          <img src={item.thumnail} alt='' />
+                        </div>
+                        <div className='news-box-contents'>
+                          <span className='news-list-title'>{item.title}</span>
+                          <span className='news-list-content'>
+                            {item.content}
+                          </span>
+                          <span className='news-list-date'>{item.date}</span>
+                        </div>
                       </Link>
                     </li>
                   );
                 })}
             </ul>
             <Link to='/notice/editor/'>
-              <button className='writeBtn'>글쓰기</button>
+              <button className='news-writeBtn'>글쓰기</button>
             </Link>
             <Pagination
               total={lists.length}

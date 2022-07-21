@@ -8,7 +8,9 @@ const ManPowerItem = ({ item }) => {
       <li className='manpower-image'>
         <span className='item-name'>{item.name}</span>
         <span className='item-position'>{item.position}</span>
-        <div className='manpower-image-cover'></div>
+        <div className='manpower-image-cover'>
+          <img src={item.thumnail} alt='' />
+        </div>
       </li>
       <div className='ex-box'>
         <div className='ex-inner-box'>

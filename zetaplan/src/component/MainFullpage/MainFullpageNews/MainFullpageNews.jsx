@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import './MainFullpageNews.css';
-/* import { FaBullhorn } from 'react-icons/fa';
-import { GrDocumentPerformance } from 'react-icons/gr'; */
 import { BsPlusLg } from 'react-icons/bs';
-/* import { IoBusinessSharp, IoNewspaperSharp } from 'react-icons/io5'; */
 import NewsItem from './NewsItem';
 import InvestItem from './InvestItem';
 import PolicyInfoItem from './PolicyInfoItem';
 import ConsultingItem from './ConsultingItem';
+import { Link } from 'react-router-dom';
+
 const MainFullpageNews = () => {
   const [list1, setList1] = useState([]);
   const [list2, setList2] = useState([]);
@@ -74,10 +73,10 @@ const MainFullpageNews = () => {
                 <p>공지사항</p>
               </h3>
               <div className='board-list'>{InvestList}</div>
-              <a className='more-btn' href='/notice'>
+              <Link to={'/notice'} className='more-btn'>
                 <BsPlusLg className='more-icon' />
                 <div className='more-text'>더보기</div>
-              </a>
+              </Link>
             </div>
             <div className='board'>
               <h3 className='news-title'>
@@ -89,10 +88,11 @@ const MainFullpageNews = () => {
                 <p>뉴스</p>
               </h3>
               <div className='board-list'>{newsList}</div>
-              <a className='more-btn' href='/notice/news'>
+
+              <Link to={'/notice/news'} className='more-btn'>
                 <BsPlusLg className='more-icon' />
                 <div className='more-text'>더보기</div>
-              </a>
+              </Link>
             </div>
             <div className='board'>
               <h3 className='news-title'>
@@ -104,10 +104,10 @@ const MainFullpageNews = () => {
                 <p>기업지원정보</p>
               </h3>
               <div className='board-list'>{PolicyinfoList}</div>
-              <a className='more-btn' href='/notice/support'>
+              <Link to={'/notice/support'} className='more-btn'>
                 <BsPlusLg className='more-icon' />
                 <div className='more-text'>더보기</div>
-              </a>
+              </Link>
             </div>
 
             <div className='board'>
@@ -120,10 +120,10 @@ const MainFullpageNews = () => {
                 <p>컨설팅 실적</p>
               </h3>
               <div className='board-list'>{ConsultingList}</div>
-              <a className='more-btn' href='/notice/info'>
+              <Link to={'/notice/info'} className='more-btn'>
                 <BsPlusLg className='more-icon' />
                 <div className='more-text'>더보기</div>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
