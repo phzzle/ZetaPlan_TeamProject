@@ -22,11 +22,34 @@
 
 .footer_wrap .logo {
   background: url(./../../../public/img/common/logo_black.png) no-repeat center / cover;
-  width: 308px;
-  height: 121px;
-  margin-right: 80px;
+  width: 480px;
+  height: 140px;
+  margin-right: 50px;
 }
 
 .footer_paddingbtm {
   padding-bottom: 5px;
+}
+
+@media (max-width: 765px) {
+  .footer_wrap {
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 10px;
+  }
+  .footer_wrap .logo {
+    width: 240px;
+    height: 70px;
+  }
+
+  .footer_paddingbtm,
+  .footer_paddingbtm_center {
+    margin-left: 50px;
+  }
+  .footer_paddingbtm_center {
+    margin-bottom: 30px;
+  }
+  .footer_paddingbtm_btm {
+    display: none;
+  }
 }

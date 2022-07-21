@@ -86,3 +86,9 @@
 
   object-fit: cover;
 }
+
+@media (max-width: 765px) {
+  .FullPageFooter_img {
+    display: none;
+  }
+}
