@@ -2,6 +2,7 @@
 import React, {useEffect} from "react";
 import DetailFooter from "../../component/Detail/DetailFooter";
 import Header from "../../component/Header/Header";
+import "./EnglishInfo.css";
 
 const EnglishInfo = () => {
   useEffect(() => {
@@ -20,41 +21,84 @@ const EnglishInfo = () => {
   }, []);
 
   return (
-    <div className="EnglishInfo">
+    <div id="EnglishInfo">
       <Header />
       <div id="SubInner">
-        <div className="EnglishInfo-header">
-          <section>
-            <h1>公司信息</h1>
+        <section className="EnglishInfo-section1" id="EnglishInfo-section">
+          <h1 className="EnglishInfo-section-title">About Us</h1>
+          <div className="EnglishInfo-section-bar"></div>
+          <div className="EnglishInfo-section1-img"></div>
+          <div className="EnglishInfo-section1-img-line"></div>
+          <ul className="EnglishInfo-section1-content">
+            <li>
+              <span className="bold">Zeta Plan Investment Co, Ltd. </span> was established in 2006 as a investment
+              consulting company specializing in Venture Investment, Technology Transfer, M&A, Management Consulting,
+              and support services perform overseas. South Korea’s Bio, IT, Environment, Energy, Medical, High-tech
+              Machinery, Aerospace, Agri-Food, Marine Fisheries, Media, Content, Automobiles, Semiconductors with
+              early-stage investments in high technology, advanced manufacturing technology commercialization,
+              technology transfer the work is carried out systematically as China, Asia, Europe and the United States.
+            </li>
+            <li>
+              Particularly Zeta Plan Investment Co, Ltd. Korea Venture Business Association 15,000 companies, Technology
+              Small Business Innovation Association 15,000 companies, Industry and Technology Development Association
+              30,000 companies, owned concluded an agreement for the excellent technical support global technology
+              commercialization and technology transfer services promoting.
+            </li>
+          </ul>
+        </section>
+        <section className="EnglishInfo-section2" id="EnglishInfo-section">
+          <h1 className="EnglishInfo-section-title">Focus on Technology Transfer</h1>
+          <div className="EnglishInfo-section-bar"></div>
+          <div className="EnglishInfo-section2-content">
             <div>
-              Zeta Plan
-              Investment株式会社成立于2006年，是专门提供风险投资、技术转让、M&A、经营咨询，及海外支持服务的投资咨询公司。
+              Zeta Plan Investment Co, Ltd. has been a focus on promoting technology transfer business between Korea and
+              China. <br /> South Korea and China in the demand for technology and supply technology to perform
+              technology transfer and identify the role negotiation channels between the two countries.
             </div>
-            <div>
-              中国、亚洲、欧洲和美国正在对大韩民国的生物、IT、环境、能源、医疗、高科技机械、航空、农产品、水产品、媒体、内容、汽车、半导体、高新技术、高级制造技术的商业化、技术转让具体实施投资。
+          </div>
+          <div>
+            <div className="bold"> - Global Technology Transfer Network China and World Wide</div>
+            <div className="EnglishInfo-section2-content-img-have">
+              <div className="EnglishInfo-section2-content-img"></div>
+              <ul className="EnglishInfo-section2-content-img-right">
+                <li>Zeta Plan Investment Co, Ltd. is to form a global Technology Transfer network to 15 countries. </li>
+                <li>
+                  And a global technology transfer, especially Beijing, Tianjin, Shanghai, Qingdao, Zhejiang, Wenzhou
+                  and Hong Kong, has established a cooperative network for technology Transfer.
+                </li>
+              </ul>
             </div>
-            <div>
-              尤其是，Zeta Plan
-              Investment株式会社与风险事业协会的15,000家公司、中小企业创新协会的15,000家公司、产业及技术开发协会的30,000家公司签订了促进优质技术支持、世界技术商业化、技术转让服务的合同。
-            </div>
-          </section>
-        </div>
-        <div className="EnglishInfo-container">
-          <section>
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/LYPC6ElHa_s"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-          </section>
-          <section className="company-road-map-wrap">
-            <div id="map" style={{width: "800px", height: "400px"}}></div>
-          </section>
-        </div>
+            <div className="EnglishInfo-section2-content-img-worldwide"></div>
+          </div>
+        </section>
+        <section className="EnglishInfo-section3" id="EnglishInfo-section">
+          <h1 className="EnglishInfo-section-title">Our Clients</h1>
+          <div className="EnglishInfo-section-bar"></div>
+          <dl>
+            <dt>- Public Clients</dt>
+            <dd className="EnglishInfo-section3-public-img"></dd>
+            <dt>- Company Clients</dt>
+            <dd className="EnglishInfo-section3-company-img"></dd>
+            <dt>- University Clients</dt>
+            <dd className="EnglishInfo-section3-univ-img"></dd>
+          </dl>
+        </section>
+        <section className="EnglishInfo-section4" id="EnglishInfo-section">
+          <h1 className="EnglishInfo-section-title">Business Area</h1>
+          <div className="EnglishInfo-section-bar"></div>
+        </section>
+        <section className="company-road-map-wrap">
+          <div id="map" style={{width: "800px", height: "400px"}}></div>
+        </section>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/LYPC6ElHa_s"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
       </div>
       <DetailFooter />
     </div>
