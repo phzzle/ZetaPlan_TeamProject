@@ -197,7 +197,19 @@
 .detail-container-header-view {
     padding-right: 10px;
 }
-
+.detail-container-header-contents{padding: 20px;}
 .detail-sample-img {
     width: 100%;
 }
+.news-notice-list{}
+.news-board-lists{height: 200px;border: solid 1px black;}
+.news-list-thumnail{
+    background-image: url(../../../public/img/Notice/zetaplan_sample_img2.png);
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+/*     overflow: hidden;
+    box-shadow: 5px 5px 5px 5px gray; */
+  }
+  .news-list-content{}

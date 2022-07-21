@@ -8,23 +8,19 @@ import Pagination from './Pagination';
 import './NoticeList.css';
 import BoardSearch3 from './../../component/Search/BoardSearch3';
 import { Link } from 'react-router-dom';
-import { useNavigate } from 'react-router-dom';
+
 const NoticeColumn = ({ title, sub, id }) => {
   const [lists, setLists] = useState([]);
   const LIST_PER_PAGE = 20; // 한장에 보여질 리스트 수
   const [page, setPage] = useState(1); // 페이지
   const startNum = (page - 1) * LIST_PER_PAGE; // 0 10 20 30
   const endNum = startNum + LIST_PER_PAGE; // 10 20 30 40
-  const navigate = useNavigate();
+
   useEffect(() => {
     fetch('/data/policyInfo.json')
       .then((response) => response.json())
       .then((response) => setLists(response));
   }, []);
-
-  const goToNoticeColumnDetail = (id) => {
-    navigate(`/notice/support/detail/noticecolumndetail/`);
-  };
 
   return (
     <div>
@@ -55,7 +51,7 @@ const NoticeColumn = ({ title, sub, id }) => {
                 .map((data) => {
                   return (
                     <li className='board-lists' key={data.num}>
-                      <Link to={"/notice/support/detail/" + data.id}>
+                      <Link to={'/notice/support/detail/' + data.id}>
                         <span className='id-name'>{data.num}</span>
                         <span className='list-title'>{data.title}</span>
                         <span className='list-author'>{data.author}</span>

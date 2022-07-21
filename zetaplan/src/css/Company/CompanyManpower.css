@@ -1,10 +1,6 @@
 /* ManPower 인력 CSS */
 
-#SubInner {
-  width: 1200px;
-  max-width: 1200px;
-  margin: 0 auto;
-} /* 건들면 안돼 */
+
 
 .manpower-image {
   position: relative;

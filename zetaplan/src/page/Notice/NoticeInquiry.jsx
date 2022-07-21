@@ -8,7 +8,6 @@ import Pagination from './Pagination';
 import './NoticeList.css';
 import BoardSearch5 from '../../component/Search/BoardSearch5';
 import { Link } from 'react-router-dom';
-import { useNavigate } from 'react-router-dom';
 
 const NoticeInquiry = ({ title, sub, id }) => {
   const [lists, setLists] = useState([]);
@@ -16,17 +15,12 @@ const NoticeInquiry = ({ title, sub, id }) => {
   const [page, setPage] = useState(1); // 페이지
   const startNum = (page - 1) * LIST_PER_PAGE; // 0 10 20 30
   const endNum = startNum + LIST_PER_PAGE; // 10 20 30 40
-  const navigate = useNavigate();
 
   useEffect(() => {
     fetch('/data/qa.json')
-      .then((response) => response.json())
-      .then((response) => setLists(response));
+      .then((res) => res.json())
+      .then((data) => setLists(data));
   }, []);
-
-  const goToNoticeInquiryDetail = (id) => {
-    navigate(`/notice/inquiry/detail/NoticeInquiryDetail`);
-  };
 
   return (
     <div>
@@ -60,21 +54,16 @@ const NoticeInquiry = ({ title, sub, id }) => {
                 .reverse()
                 .slice(startNum, endNum)
                 .reverse()
-                .map(({ num, title, author, date, view, link }) => {
+                .map((item, idx) => {
                   return (
-                    <li className='board-lists' key={num}>
-                      {/* <a href={link}> */}
-                      <span className='id-name'>{num}</span>
-                      <span
-                        className='list-title'
-                        onClick={() => goToNoticeInquiryDetail(id)}
-                      >
-                        {title}
-                      </span>
-                      <span className='list-author'>{author}</span>
-                      <span className='list-date'>{date}</span>
-                      <span className='list-view'>{view}</span>
-                      {/* </a> */}
+                    <li className='board-lists' key={item.id} data={item}>
+                      <Link to={'/notice/inquiry/detail/' + item.id}>
+                        <span className='id-name'>{item.num}</span>
+                        <span className='list-title'>{item.title}</span>
+                        <span className='list-author'>{item.author}</span>
+                        <span className='list-date'>{item.date}</span>
+                        <span className='list-view'>{item.view}</span>
+                      </Link>
                     </li>
                   );
                 })}

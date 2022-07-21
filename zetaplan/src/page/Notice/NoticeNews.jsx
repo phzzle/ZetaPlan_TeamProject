@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 
 const NoticeNews = ({ title, sub, id }) => {
   const [lists, setLists] = useState([]);
-  const LIST_PER_PAGE = 20; // 한장에 보여질 리스트 수
+  const LIST_PER_PAGE = 10; // 한장에 보여질 리스트 수
   const [page, setPage] = useState(1); // 페이지
   const startNum = (page - 1) * LIST_PER_PAGE; // 0 10 20 30
   const endNum = startNum + LIST_PER_PAGE; // 10 20 30 40
@@ -48,20 +48,22 @@ const NoticeNews = ({ title, sub, id }) => {
               <span className='list-date'>날짜</span>
               <span className='list-view'>조회수</span>
             </div>
-            <ul className='notice-list'>
+            <ul className='news-notice-list'>
               {[...lists]
                 .reverse()
                 .slice(startNum, endNum)
                 .reverse()
                 .map((item, idx) => {
                   return (
-                    <li className='board-lists' key={item.id} data={item}>
+                    <li className='news-board-lists' key={item.id} data={item}>
                       <Link to={'/notice/news/detail/' + item.id}>
-                        <span className='id-name'>{item.num}</span>
-                        <span className='list-title'>{item.title}</span>
-                        <span className='list-author'>{item.author}</span>
-                        <span className='list-date'>{item.date}</span>
-                        <span className='list-view'>{item.view}</span>
+                        {/* <span className='news-id-name'>{item.num}</span> */}
+                        <span className='news-list-thumnail'></span>
+                        <span className='news-list-title'>{item.title}</span>
+                        <span className='news-list-content'>
+                          {item.content}
+                        </span>
+                        <span className='news-list-date'>{item.date}</span>
                       </Link>
                     </li>
                   );

@@ -6,11 +6,25 @@ import NoticeHeader from '../../../component/Detail/NoticeHeader';
 import '../NoticeList.css';
 import { useParams } from 'react-router-dom';
 
-const NoticeNewsDetail = ({ title, sub, newsData }) => {
+const NoticeNewsDetail = ({ newsData }) => {
   let { id } = useParams();
+
+  const showContent = (data) => {
+    if (data === '이미지') {
+      return (
+        <img
+          className='detail-sample-img'
+          src='/img/common/sample_img.jpg'
+          alt='샘플 이미지'
+        />
+      );
+    } else {
+      return data;
+    }
+  };
   return (
     <div>
-      <NoticeHeader title={title} sub={sub} />
+      <NoticeHeader title='Notice' sub='뉴스' />
       <div id='NoticeNewsDetail'>
         <div id='SubInner'>
           <h2 className='notice-title'>뉴스 세부페이지</h2>
@@ -41,7 +55,9 @@ const NoticeNewsDetail = ({ title, sub, newsData }) => {
                 </tr>
                 <tr>
                   <td>
-                    <td>{newsData[id - 1].content}</td>
+                    <td className='detail-container-header-contents'>
+                      {showContent(newsData[id - 1].content)}
+                    </td>
                   </td>
                 </tr>
                 <tr>
