@@ -168,3 +168,9 @@ input:focus {
 input {
     outline: none;
 }
+
+@media (max-width: 765px) {
+    .App>div>div {
+        height: auto !important;
+    }
+}
