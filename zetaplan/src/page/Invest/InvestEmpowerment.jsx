@@ -10,7 +10,6 @@ const InvestEmpowerment = ({ title, sub }) => {
       <div id='SubInner'>
         <section className="invest-title-container">
           <h2 className="invest-title">역량강화</h2>
-
         </section>
         <div className='image-container'>
           <img src="/img/Invest/empowerment.png" alt="" />
@@ -28,7 +27,7 @@ const InvestEmpowerment = ({ title, sub }) => {
             <p>기술금융 보증・대출기관인 기보, 신보, 중진공 등과의 협력 및 기술금융 투자 벤처캐피털 15개사와 투자심의 협력이 가능</p>
           </section>
           <section className='network-consulting-info'>
-            <h3 className='company-road-part'>기술금융 연계지원 하여 투자유치관련 협의 진행 </h3>
+            <h3 className='company-road-part network-consulting-title'>기술금융 연계지원 하여 투자유치관련 협의 진행 </h3>
             <p>기술금융 투융자지원 : 수진 기업 조달</p>
             <img src="/img/Invest/list01.png" alt="" />
             <p>기술금융 투자지원 : 수진 기업 조달

@@ -11,14 +11,6 @@ import { useParams } from 'react-router-dom';
 const NoticeInfoDetail = ({ infoData }) => {
   let { id } = useParams();
 
-  const showContent = (data) => {
-    if (data === "이미지") {
-      return <img className='detail-sample-img' src='/img/common/sample_img.jpg' alt="샘플 이미지" />
-    } else {
-      return data;
-    }
-  }
-
   return (
     <div>
       <NoticeHeader title="Notice" sub="컨설팅 실적" />
@@ -27,9 +19,43 @@ const NoticeInfoDetail = ({ infoData }) => {
           <div className='company-title-container'>
             <h2 className='company-title'>컨설팅 실적 세부페이지</h2>
           </div>
-          <div>
-            <span>{infoData[id - 1].title}</span>
+          <div className='detail-container'>
+            <table>
+              <thead>
+                <tr>
+                  <th>{infoData[id - 1].title}</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td className='detail-container-header-content'>
+                    <div>
+                      <span className='detail-container-header-view'>
+                        조회수 :{infoData[id - 1].view}
+                      </span>
+                      <span className='detail-container-header-author'>
+                        작성자 :{infoData[id - 1].author}
+                      </span>
+                    </div>
+                    <div>
+                      <span className='detail-container-header-date'>
+                        {infoData[id - 1].date}
+                      </span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <td>{infoData[id - 1].content}</td>
+                  </td>
+                </tr>
+                <tr>
+                  <td>다음글</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
+
         </div>
         <DetailFooter />
       </div>

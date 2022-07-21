@@ -93,3 +93,19 @@
     width: 45%;
     height: 80%;
 }
+
+@media screen and (max-width: 765px) {
+    #InvestBusiness2 #SubInner section table {
+        width: 100%;
+    }
+
+    #InvestBusiness2 section .image-investbusines2-container,
+    #InvestBusiness3 section .image-investbusines3-container {
+        width: 100%;
+    }
+
+    #InvestBusiness2 section img,
+    #InvestBusiness3 section img {
+        width: 100%;
+    }
+}

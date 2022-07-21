@@ -27,12 +27,6 @@
     height: 80%;
 }
 
-.invest-title-line {
-    width: 3px;
-    height: 50px;
-    background-color: #3B4B59;
-
-}
 
 .network-consulting h2 {
     display: flex;
@@ -52,4 +46,37 @@
 
 .network-consulting-info img {
     width: 1000px;
+}
+
+@media screen and (max-width: 765px) {
+    .invest-title-container {
+        width: 100%;
+    }
+
+    .image-container {
+        width: 80%;
+        margin: 0 auto 0 10%;
+    }
+
+    .image-container img {
+        width: 100%;
+    }
+
+    .network-consulting {
+        width: 100%;
+
+    }
+
+    .network-consulting-info {
+        width: 80%;
+        line-height: 1.2;
+        margin-left: 5%;
+    }
+
+    .network-consulting-info img {
+        width: 100%;
+        height: 150%;
+    }
+
+    .network-consulting-title {}
 }
