@@ -70,7 +70,7 @@
   color: #fff;
 }
 .company-info-bg.info-bg1 {
-  background: url(../../../public/img/Company/CompanyInfo/infoBg1.jpg) no-repeat center / cover;
+  background: url(../../../public/img/Company/CompanyInfo/infoBg5.jpg) no-repeat center / cover;
   background-attachment: fixed;
 }
 .company-info-bg.info-bg2 {
@@ -89,7 +89,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 100px 0;
+  height: 340px;
   background-color: #efefef;
 }
 .company-info-desc {
@@ -130,4 +130,13 @@
   font-size: 0.875rem;
   line-height: 160%;
   letter-spacing: 0.4px;
+}
+
+@media screen and (max-width: 765px) {
+  .company-info-bg {
+    height: 400px;
+  }
+  .network-table {
+    width: 90%;
+  }
 }

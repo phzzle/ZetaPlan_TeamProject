@@ -12,9 +12,111 @@ const AbroadSupport2 = () => {
 
       <section className='abroad-content-box'>
         <h4 className='abroad-title'>지원대상</h4>
-        <div className="abroad-content-img">
-          <img src="/img/Abroad/AbroadSupport/수출바우처 지원대상.jpg" alt="수출바우처 지원대상" />
-        </div>
+        <table className='abroad-desc-table abroad-desc-table-center'>
+          <colgroup>
+            <col style={{width: '8%'}} />
+            <col style={{width: '12%'}} />
+            <col style={{width: '18%'}} />
+            <col style={{width: ''}} />
+            <col style={{width: '14%'}} />
+            <col style={{width: '14%'}} />
+          </colgroup>
+          <thead>
+            <tr>
+              <th>주무부처</th>
+              <th>구분</th>
+              <th>세부사업명(기업수)</th>
+              <th>지원 대상</th>
+              <th>기업별 국고 지원한도</th>
+              <th>국고 보조율</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td rowSpan='8'>중기부</td>
+              <td rowSpan='4'>성장바우처</td>
+              <td>내수기업</td>
+              <td>전년도 직접수출 ‘0’</td>
+              <td>30백만원</td>
+              <td rowSpan='8'>
+                매출 규모에 따라 50% ~ 70%
+                <ul>
+                  <li>100억 미만 (70%)</li>
+                  <li>100-300억 미만 (60%)</li>
+                  <li>300억 이상 (50%)</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>수출초보기업</td>
+              <td>전년도 직접수출 ‘10만불 미만’</td>
+              <td>30백만원</td>
+            </tr>
+            <tr>
+              <td>수출유망기업</td>
+              <td>전년도 직접수출 ‘10~100만불 미만’</td>
+              <td>50백만원</td>
+            </tr>
+            <tr>
+              <td>수출성장기업</td>
+              <td>전년도 직접수출 ‘100~500만불 미만’</td>
+              <td>80백만원</td>
+            </tr>
+            <tr>
+              <td rowSpan='4'>혁신바우처</td>
+              <td>글로벌강소기업</td>
+              <td>글로벌 강소기업 및 소재부품장비 강소기업(수출 500만불 이상) 지정 유효기업</td>
+              <td>100백만원</td>
+            </tr>
+            <tr>
+              <td>브랜드K기업</td>
+              <td>브랜드 K 선정기업</td>
+              <td>30~100백만원</td>
+            </tr>
+            <tr>
+              <td>규제자유특구</td>
+              <td>규제 자유특구 입주기업</td>
+              <td>30~100백만원</td>
+            </tr>
+            <tr>
+              <td>스마트제조혁신</td>
+              <td>스마트공장 보급기업</td>
+              <td>30~100백만원</td>
+            </tr>
+            <tr>
+              <td rowSpan='4'>산업부</td>
+              <td rowSpan='4'>수출바우처<br/>통합형</td>
+              <td>중견글로벌 지원사업</td>
+              <td>
+                <ul>
+                  <li>(Pre)후보·예비 중견기업</li>
+                  <li>(중견글로벌)월드클래스 기업·중견기업</li>
+                  <li>(Post) 중견글로벌 졸업기업</li>
+                </ul>
+              </td>
+              <td>60~100백만원</td>
+              <td>30% ~ 70%</td>
+            </tr>
+            <tr>
+              <td>소재·부품·장비 선도기업</td>
+              <td>소재·부품·장비분야 국내 중소·중견기업</td>
+              <td>14~70백만원</td>
+              <td>50%-70%</td>
+            </tr>
+            <tr>
+              <td>소비재선도기업</td>
+              <td>5대 소비재 분야 유망중소·중견기업</td>
+              <td>14~39백만원</td>
+              <td>50%-70%</td>
+            </tr>
+            <tr>
+              <td>서비스선도기업</td>
+              <td>서비스 분야 유망중소·중견기업</td>
+              <td>30~28백만원</td>
+              <td>50%-70%</td>
+            </tr>
+          </tbody>
+        </table>
       </section>
 
       <section className='abroad-content-box'>
