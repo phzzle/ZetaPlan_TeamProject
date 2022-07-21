@@ -134,7 +134,6 @@
 
 @media screen and (max-width: 765px) {
   .company-title-container {
-    width: 640px;
     padding-top: 76px;
   }
   .company-title {
@@ -142,23 +141,29 @@
     margin-bottom: 20px;
   }
   .company-title-line {
+    width: 1.2px;
     height: 40px;
     margin-bottom: 34px;
   }
   .info-icon-container {
     flex-wrap: wrap;
+    padding: 18px 0;
+  }
+  .info-icon-container .info-icon-item {
+    width: 150px;
   }
   .info-icon-container .info-icon-item .info-icon-box {
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
+    margin-bottom: 10px;
   }
   .info-icon-container .info-icon-item .info-icon-box .info-icon {
-    font-size: 40px;
+    font-size: 36px;
   }
   .company-info-desc-box {
     width: auto;
-    padding: 40px;
-    box-sizing: content-box;
+    padding: 50px 40px;
+    height: auto;
   }
   .company-info-desc {
     flex-direction: column;
@@ -181,12 +186,8 @@
   }
   .company-info-desc .company-info-desc-content {
     width: 90%;
-    /* padding-top: 40px; */
   }
-  /* .company-info-bg {
+  .company-info-bg {
     height: 400px;
   }
-  .network-table {
-    width: 90%;
-  } */
 }

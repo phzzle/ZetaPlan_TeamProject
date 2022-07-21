@@ -3,3 +3,9 @@
   list-style-type: disc;
   list-style-position: inside;
 }
+
+@media screen and (max-width: 765px) {
+  .abroad-tab-contents {
+    margin-top: 42px;
+  }
+}

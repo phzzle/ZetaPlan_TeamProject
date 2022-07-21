@@ -2,7 +2,7 @@ import React from 'react';
 
 const AbroadProcessTab3 = () => {
   return (
-    <div>
+    <div className='abroad-tab-contents'>
       <section className='abroad-content-box'>
         <h4 className="abroad-title">
           해외법인 설립 안내

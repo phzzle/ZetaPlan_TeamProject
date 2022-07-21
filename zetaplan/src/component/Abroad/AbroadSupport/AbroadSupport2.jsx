@@ -151,7 +151,7 @@ const AbroadSupport2 = () => {
       
       <section className='abroad-content-box'>
         <h4 className='abroad-title'>진행 절차</h4>
-        <div className="abroad-content-i">
+        <div className="abroad-content-img">
           <img src="/img/Abroad/AbroadSupport/수출바우처 진행절차.jpg" alt="수출바우처 진행절차" />
         </div>
       </section>
