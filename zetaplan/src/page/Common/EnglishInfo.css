@@ -1,8 +1,103 @@
-.EnglishInfo {
+.EnglishInfo-section-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+.EnglishInfo-section-bar {
+  width: 1200px;
+  height: 1.5px;
+  background-color: #2c3540;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+#EnglishInfo-section {
+  margin-bottom: 120px;
+}
+.bold {
+  font-weight: bold;
+}
+/* ======================= */
+
+.EnglishInfo-section1 {
   padding-top: 100px;
 }
 
-.EnglishInfo-header > section {
-  padding-top: 100px;
-  font-size: 18px;
+.EnglishInfo-section1 .EnglishInfo-section1-img {
+  background: url(/public/img/common/logo.png);
+  width: 480px;
+  height: 140px;
+  margin: auto;
+  margin-top: 50px;
 }
+.EnglishInfo-section1-img-line {
+  width: 3px;
+  height: 50px;
+  background-color: #2c3540;
+  margin: auto;
+  margin-bottom: 30px;
+}
+.EnglishInfo-section1-content {
+  text-align: center;
+  line-height: 1.7;
+}
+
+.EnglishInfo-section1-content li {
+  margin-bottom: 30px;
+}
+
+/* ======================= */
+
+.EnglishInfo-section2-content div {
+  margin-bottom: 50px;
+  line-height: 1.7;
+}
+.EnglishInfo-section2-content-img-have {
+  display: flex;
+  padding-top: 50px;
+}
+.EnglishInfo-section2-content-img {
+  background: url(/public/img/Info/Info.png) no-repeat center / cover;
+  width: 372px;
+  height: 152px;
+  margin-left: 20px;
+  opacity: 0.7;
+}
+
+.EnglishInfo-section2-content-img-right {
+  width: 700px;
+  line-height: 1.7;
+  margin-left: 40px;
+  margin-top: 20px;
+  font-size: 14px;
+}
+.EnglishInfo-section2-content-img-right li:first-of-type {
+  margin-bottom: 10px;
+}
+.EnglishInfo-section2-content-img-worldwide {
+  background: url(/public/img/Info/worldwide.png);
+  width: 1200px;
+  height: 600px;
+}
+
+/* ======================= */
+
+.EnglishInfo-section3-public-img {
+  background: url(/public/img/Info/public\ clients.png) center / cover;
+  width: 1200px;
+  height: 300px;
+  margin: 50px 0;
+}
+.EnglishInfo-section3-company-img {
+  background: url(/public/img/Info/company\ clients.png) center / cover;
+  width: 1200px;
+  height: 330px;
+  margin: 50px 0;
+}
+.EnglishInfo-section3-univ-img {
+  background: url(/public/img/Info/university\ clients.png) center / cover;
+  width: 1200px;
+  height: 55px;
+  margin: 50px 0;
+}
+
+/* ======================= */
