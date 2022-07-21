@@ -1,10 +1,12 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import MAHeader from "../../component/Detail/MAHeader";
 import DetailFooter from "./../../component/Detail/DetailFooter";
 import "./../../css/MnAIpo/mnaprocess.css";
 import MnaProcess1 from "./../../component/MnaIpo/MnaProcess/MnaProcess1";
 import MnaProcess2 from "./../../component/MnaIpo/MnaProcess/MnaProcess2";
 import {MNA_PROCESS_DATA} from "./../../component/MnaIpo/MnaProcess/MnaData";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const MAProcess = ({title, sub}) => {
   const [content, setContent] = useState("first");
@@ -18,6 +20,12 @@ const MAProcess = ({title, sub}) => {
     first: <MnaProcess1 />,
     second: <MnaProcess2 />,
   };
+
+  useEffect(() => {
+    AOS.init({
+        duration : 1000
+    });
+});
 
   return (
     <div id="mnaprocess">
@@ -44,7 +52,7 @@ const MAProcess = ({title, sub}) => {
                 );
               })}
             </nav>
-            {content && <div className="detail-tab-content ">{selectComponent[content]}</div>}
+            {content && <div className="detail-tab-content " data-aos="fade-up">{selectComponent[content]}</div>}
           </div>
         </section>
       </div>

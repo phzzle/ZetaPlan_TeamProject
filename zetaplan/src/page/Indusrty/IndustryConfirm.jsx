@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import DetailFooter from '../../component/Detail/DetailFooter';
 import IndustryHeader from '../../component/Detail/IndustryHeader';
 import IndustryConfirmList1 from '../../component/Industry/IndustryConfirm/IndustryConfirmList1';
@@ -6,6 +6,8 @@ import { MAP_DATA_CONFIRM } from './../../component/Industry/IndustryConfirm/Map
 import IndustryConfirmList0 from './../../component/Industry/IndustryConfirm/IndustryConfirmList0';
 import IndustryConfirmList2 from './../../component/Industry/IndustryConfirm/IndustryConfirmList2';
 import './../../css/Company/companyInfo.css'
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const IndustryConfirm = ({title, sub}) => {
   const [content, setContent] = useState('first');
@@ -21,6 +23,12 @@ const IndustryConfirm = ({title, sub}) => {
     third: <IndustryConfirmList2 />
   };
 
+  useEffect(() => {
+    AOS.init({
+        duration : 1000
+    });
+});
+
   return (
     <div id='IndustryConfirm'>
       <IndustryHeader title={title} sub={sub} />
@@ -35,7 +43,7 @@ const IndustryConfirm = ({title, sub}) => {
           );
         })}
       </nav>
-      {content && <div className='detail-tab-content'>{selectComponent[content]}</div>}
+      {content && <div className='detail-tab-content' data-aos="fade-up">{selectComponent[content]}</div>}
       </div>
       <DetailFooter />
     </div>

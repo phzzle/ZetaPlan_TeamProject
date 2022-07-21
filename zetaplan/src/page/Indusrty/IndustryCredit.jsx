@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import DetailFooter from '../../component/Detail/DetailFooter';
 import IndustryHeader from '../../component/Detail/IndustryHeader';
 import IndustryCredit1 from '../../component/Industry/IndustryCredit/IndustryCredit1';
@@ -9,8 +9,8 @@ import { useState } from 'react';
 import { MAP_DATA_CREDIT } from '../../component/Industry/IndustryCredit/MapDataCredit';
 import IndustryCredit5 from '../../component/Industry/IndustryCredit/IndustryCredit5';
 import './../../css/Indusrty/industryCredit.css';
-
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const IndustryCredit = ({title, sub}) => {
 
@@ -29,6 +29,12 @@ const IndustryCredit = ({title, sub}) => {
     fifth: <IndustryCredit5 />
   };
 
+  useEffect(() => {
+    AOS.init({
+        duration : 1000
+    });
+});
+
   return (
     <div id='Credit'>
       <IndustryHeader title={title} sub={sub} />
@@ -43,7 +49,7 @@ const IndustryCredit = ({title, sub}) => {
           );
         })}
       </nav>
-      {content && <div className='detail-tab-content '>{selectComponent[content]}</div>}
+      {content && <div className='detail-tab-content ' data-aos="fade-up">{selectComponent[content]}</div>}
       </div>
       <DetailFooter />
     </div>

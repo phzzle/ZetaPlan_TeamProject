@@ -1,7 +1,7 @@
 import React from 'react';
 import DetailFooter from '../../component/Detail/DetailFooter';
 import IndustryHeader from '../../component/Detail/IndustryHeader';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import IndustryValue1 from '../../component/Industry/IndustryValue/IndustryValue1';
 import IndustryValue5 from '../../component/Industry/IndustryValue/IndustryValue5';
 import IndustryValue4 from '../../component/Industry/IndustryValue/IndustryValue4';
@@ -9,6 +9,8 @@ import IndustryValue2 from '../../component/Industry/IndustryValue/IndustryValue
 import IndustryValue3 from '../../component/Industry/IndustryValue/IndustryValue3';
 import { MAP_DATA_VALUE } from '../../component/Industry/IndustryValue/MapDataValue';
 import './../../css/Indusrty/industryValue.css'
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const IndustryValue = ({title, sub}) => {
   const [content, setContent] = useState('first');
@@ -27,6 +29,12 @@ const IndustryValue = ({title, sub}) => {
 
   };
 
+  useEffect(() => {
+    AOS.init({
+        duration : 1000
+    });
+});
+
   return (
     <div>
       <IndustryHeader title={title} sub={sub} />
@@ -41,7 +49,7 @@ const IndustryValue = ({title, sub}) => {
           );
         })}
       </nav>
-      {content && <div className='detail-tab-content '>{selectComponent[content]}</div>}
+      {content && <div className='detail-tab-content ' data-aos="fade-up">{selectComponent[content]}</div>}
       </div>
 
       <DetailFooter />

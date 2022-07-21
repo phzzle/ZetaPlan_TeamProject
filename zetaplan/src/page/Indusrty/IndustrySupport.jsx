@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import DetailFooter from '../../component/Detail/DetailFooter';
 import IndustryHeader from '../../component/Detail/IndustryHeader';
 import './../../css/Indusrty/industrySupport.css';
@@ -6,6 +6,8 @@ import IndustrySupport2 from './../../component/Industry/IndustrySupport/Industr
 import IndustrySupport4 from './../../component/Industry/IndustrySupport/IndustrySupport4';
 import { MAP_DATA } from './../../component/Industry/IndustrySupport/MapData';
 import './../../css/Indusrty/industrySupport.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const IndustrySupport = ({title, sub}) => {
   const [content, setContent] = useState('first');
@@ -22,6 +24,12 @@ const IndustrySupport = ({title, sub}) => {
     second: <IndustrySupport4 />
   };
 
+  useEffect(() => {
+    AOS.init({
+        duration : 1000
+    });
+});
+
   return (
     <div id='IndustrySupport'>
       <IndustryHeader title={title} sub={sub} />
@@ -36,7 +44,7 @@ const IndustrySupport = ({title, sub}) => {
           );
         })}
       </nav>
-      {content && <div className={active === content ? 'detail-tab-content active' : 'detail-tab-content'}>{selectComponent[content]}</div>}
+      {content && <div className={active === content ? 'detail-tab-content active' : 'detail-tab-content'} data-aos="fade-up">{selectComponent[content]}</div>}
       </div>
       <DetailFooter />
     </div>

@@ -1,10 +1,12 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import MAHeader from "../../component/Detail/MAHeader";
 import DetailFooter from "./../../component/Detail/DetailFooter";
 import "./../../css/MnAIpo/ipoprocess.css";
 import {IPO_PROCESS_DATA} from "./../../component/MnaIpo/IpoProcess/IpoProcessData";
 import IpoProcess1 from "../../component/MnaIpo/IpoProcess/IpoProcess1";
 import IpoProcess2 from "../../component/MnaIpo/IpoProcess/IpoProcess2";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const IpoProcess = ({title, sub}) => {
   const [content, setContent] = useState("first");
@@ -18,6 +20,12 @@ const IpoProcess = ({title, sub}) => {
     first: <IpoProcess1 />,
     second: <IpoProcess2 />,
   };
+
+  useEffect(() => {
+    AOS.init({
+        duration : 1000
+    });
+});
 
   return (
     <div id="ipoprocess">
@@ -44,7 +52,7 @@ const IpoProcess = ({title, sub}) => {
                 );
               })}
             </nav>
-            {content && <div className="detail-tab-content ">{selectComponent[content]}</div>}
+            {content && <div className="detail-tab-content "  data-aos="fade-up">{selectComponent[content]}</div>}
           </div>
         </section>
       </div>

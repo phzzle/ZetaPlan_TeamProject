@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import '../../css/Abroad/abroadProcess.css';
 import AbroadHeader from '../../component/Detail/AbroadHeader';
 import DetailFooter from '../../component/Detail/DetailFooter';
@@ -7,6 +7,8 @@ import { useState } from 'react';
 import AbroadProcessTab1 from '../../component/Abroad/AbroadProcess/AbroadProcessTab1';
 import AbroadProcessTab2 from '../../component/Abroad/AbroadProcess/AbroadProcessTab2';
 import AbroadProcessTab3 from '../../component/Abroad/AbroadProcess/AbroadProcessTab3';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const AbroadProcess = ({title, sub}) => {
   const [selectedContent, setSelectedContent] = useState('first');
@@ -18,6 +20,12 @@ const AbroadProcess = ({title, sub}) => {
   const changeTab = e => {
     setSelectedContent(e.target.name);
   }
+
+  useEffect(() => {
+    AOS.init({
+        duration : 1000
+    });
+});
 
   return (
     <div>
@@ -38,7 +46,7 @@ const AbroadProcess = ({title, sub}) => {
             </button>
           })}
         </nav>
-        {selectedContent && <div className='detail-tab-content'>{selectTab[selectedContent]}</div>}
+        {selectedContent && <div className='detail-tab-content' data-aos="fade-up">{selectTab[selectedContent]}</div>}
       </div>
 
       <DetailFooter />
