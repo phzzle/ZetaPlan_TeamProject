@@ -129,7 +129,7 @@
 .swiper-slide-active #MainSlide3 .main-slide-title,
 .swiper-slide-active #MainSlide4 .main-slide-title {
     opacity: 1;
-    animation: slideTitle 0.8s linear 0.1s;
+    animation: slideTitle 1.8s linear 0.1s;
     text-shadow: #2c3540 1px 1px, #2c3540 2px 2px, #2c3540 3px 3px, #2c3540 4px 4px;
 }
 
