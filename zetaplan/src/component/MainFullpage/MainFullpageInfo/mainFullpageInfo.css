@@ -19,11 +19,11 @@
 
 #fullpageInfo .main-info-container{
     max-width: 1280px;
-  margin: 0 auto;
-  box-sizing: border-box;
+    margin: 0 auto;
+    box-sizing: border-box;
     max-width: 1280px;
-  margin: 0 auto;
-  box-sizing: border-box;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
 #fullpageInfo .main-info-box{
@@ -40,7 +40,7 @@
     padding-left: 20px;
     margin-bottom: 40px;
   }
-#fullpageInfo #MainInner .main-info-title span {
+#fullpageInfo .main-info-title span {
     position: absolute;
     left: 4.5%;
     top: -50%;
@@ -106,6 +106,8 @@
    #navy-arrow{
     color: rgb(43, 53, 64);
     text-align: center;
+    line-height: 1.5;
+    padding-top: 5px;
     }
 #fullpageInfo  .ir-box>h2{
       font-size: 1.875rem;
@@ -113,7 +115,16 @@
       padding-bottom: 5%;
   }
  
-#fullpageInfo   .detail-box p{
+#fullpageInfo .detail-box p{
     text-align: center;
     padding: 5%;
 }
+
+/* 미디어쿼리 */
+
+
+@media screen and (max-width: 765px) {
+    #fullpageInfo .fullpageInfo-boxs {
+        flex-wrap: wrap;
+      }
+  }
