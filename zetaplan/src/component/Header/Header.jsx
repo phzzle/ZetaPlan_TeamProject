@@ -40,19 +40,18 @@ const Header = () => {
                     <ul className='main-sub-nav-ul'>
                       <li className="sub-nav-star"><div className='navStar'></div></li>
                         <li>
-                          M&A
                           <ul className='main-sub-detail-nav'>
-                            <li><Link to='/mna'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />M&A 개요</Link></li>
-                            <li><Link to='/mna/result'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />M&A 성과</Link></li>
-                            <li><Link to='/mna/process'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />M&A 프로세스</Link></li>
+                            <li><Link to='/mna'>M&A 개요</Link></li>
+                            <li><Link to='/mna/result'>M&A 성과</Link></li>
+                            <li><Link to='/mna/process'>M&A 프로세스</Link></li>
                           </ul>
                         </li>
                         <li>
-                          <div className='main-sub-nav-ipo'>IPO</div>
+                          <div className='main-sub-nav-ipo'></div>
                             <ul className='main-sub-detail-nav'>
-                              <li><Link to='/ipo'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />IPO 개요</Link></li>
-                              <li><Link to='/ipo/result'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />IPO 성과</Link></li>
-                              <li><Link to='/ipo/process'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />IPO 프로세스</Link></li>
+                              <li><Link to='/ipo'>IPO 개요</Link></li>
+                              <li><Link to='/ipo/result'>IPO 성과</Link></li>
+                              <li><Link to='/ipo/process'>IPO 프로세스</Link></li>
                             </ul>
                         </li>
                     </ul>
@@ -91,7 +90,7 @@ const Header = () => {
                         <li><Link to='/notice/request'>상담신청</Link></li>
                     </ul>
                     </div>
-                    <div className='main-sub-nav-left'></div>
+                    <div className='main-sub-nav-right'></div>
                   </div>
                 </div>
               </li>
@@ -113,19 +112,18 @@ const Header = () => {
                     <ul className='main-sub-nav-ul'>
                       <li className="sub-nav-star"><div className='navStar'></div></li>
                         <li>
-                          M&A
                           <ul className='main-sub-detail-nav'>
-                            <li><Link to='/mna'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />M&A 개요</Link></li>
-                            <li><Link to='/mna/result'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />M&A 성과</Link></li>
-                            <li><Link to='/mna/process'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />M&A 프로세스</Link></li>
+                            <li><Link to='/mna'>M&A 개요</Link></li>
+                            <li><Link to='/mna/result'>M&A 성과</Link></li>
+                            <li><Link to='/mna/process'>M&A 프로세스</Link></li>
                           </ul>
                         </li>
                         <li>
-                          <div className='main-sub-nav-ipo'>IPO</div>
+                          <div className='main-sub-nav-ipo'></div>
                             <ul className='main-sub-detail-nav'>
-                              <li><Link to='/ipo'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />IPO 개요</Link></li>
-                              <li><Link to='/ipo/result'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />IPO 성과</Link></li>
-                              <li><Link to='/ipo/process'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />IPO 프로세스</Link></li>
+                              <li><Link to='/ipo'>IPO 개요</Link></li>
+                              <li><Link to='/ipo/result'>IPO 성과</Link></li>
+                              <li><Link to='/ipo/process'>IPO 프로세스</Link></li>
                             </ul>
                         </li>
                     </ul>
@@ -164,7 +162,7 @@ const Header = () => {
                         <li><Link to='/notice/request'>상담신청</Link></li>
                     </ul>
                     </div>
-                    <div className='main-sub-nav-left'></div>
+                    <div className='main-sub-nav-right'></div>
                   </div>
                 </div>
               </li>
@@ -186,19 +184,18 @@ const Header = () => {
                     <ul className='main-sub-nav-ul'>
                       <li className="sub-nav-star"><div className='navStar'></div></li>
                         <li>
-                          M&A
                           <ul className='main-sub-detail-nav'>
-                            <li><Link to='/mna'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />M&A 개요</Link></li>
-                            <li><Link to='/mna/result'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />M&A 성과</Link></li>
-                            <li><Link to='/mna/process'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />M&A 프로세스</Link></li>
+                            <li><Link to='/mna'>M&A 개요</Link></li>
+                            <li><Link to='/mna/result'>M&A 성과</Link></li>
+                            <li><Link to='/mna/process'>M&A 프로세스</Link></li>
                           </ul>
                         </li>
                         <li>
-                          <div className='main-sub-nav-ipo'>IPO</div>
+                          <div className='main-sub-nav-ipo'></div>
                             <ul className='main-sub-detail-nav'>
-                              <li><Link to='/ipo'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />IPO 개요</Link></li>
-                              <li><Link to='/ipo/result'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />IPO 성과</Link></li>
-                              <li><Link to='/ipo/process'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />IPO 프로세스</Link></li>
+                              <li><Link to='/ipo'>IPO 개요</Link></li>
+                              <li><Link to='/ipo/result'>IPO 성과</Link></li>
+                              <li><Link to='/ipo/process'>IPO 프로세스</Link></li>
                             </ul>
                         </li>
                     </ul>
@@ -237,7 +234,7 @@ const Header = () => {
                         <li><Link to='/notice/request'>상담신청</Link></li>
                     </ul>
                     </div>
-                    <div className='main-sub-nav-left'></div>
+                    <div className='main-sub-nav-right'></div>
                   </div>
                 </div>
               </li>
@@ -259,19 +256,18 @@ const Header = () => {
                     <ul className='main-sub-nav-ul'>
                       <li className="sub-nav-star"><div className='navStar'></div></li>
                         <li>
-                          M&A
                           <ul className='main-sub-detail-nav'>
-                            <li><Link to='/mna'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />M&A 개요</Link></li>
-                            <li><Link to='/mna/result'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />M&A 성과</Link></li>
-                            <li><Link to='/mna/process'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />M&A 프로세스</Link></li>
+                            <li><Link to='/mna'>M&A 개요</Link></li>
+                            <li><Link to='/mna/result'>M&A 성과</Link></li>
+                            <li><Link to='/mna/process'>M&A 프로세스</Link></li>
                           </ul>
                         </li>
                         <li>
-                          <div className='main-sub-nav-ipo'>IPO</div>
+                          <div className='main-sub-nav-ipo'></div>
                             <ul className='main-sub-detail-nav'>
-                              <li><Link to='/ipo'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />IPO 개요</Link></li>
-                              <li><Link to='/ipo/result'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />IPO 성과</Link></li>
-                              <li><Link to='/ipo/process'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />IPO 프로세스</Link></li>
+                              <li><Link to='/ipo'>IPO 개요</Link></li>
+                              <li><Link to='/ipo/result'>IPO 성과</Link></li>
+                              <li><Link to='/ipo/process'>IPO 프로세스</Link></li>
                             </ul>
                         </li>
                     </ul>
@@ -310,7 +306,7 @@ const Header = () => {
                         <li><Link to='/notice/request'>상담신청</Link></li>
                     </ul>
                     </div>
-                    <div className='main-sub-nav-left'></div>
+                    <div className='main-sub-nav-right'></div>
                   </div>
                 </div>
               </li>
@@ -332,19 +328,18 @@ const Header = () => {
                     <ul className='main-sub-nav-ul'>
                       <li className="sub-nav-star"><div className='navStar'></div></li>
                         <li>
-                          M&A
                           <ul className='main-sub-detail-nav'>
-                            <li><Link to='/mna'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />M&A 개요</Link></li>
-                            <li><Link to='/mna/result'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />M&A 성과</Link></li>
-                            <li><Link to='/mna/process'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />M&A 프로세스</Link></li>
+                            <li><Link to='/mna'>M&A 개요</Link></li>
+                            <li><Link to='/mna/result'>M&A 성과</Link></li>
+                            <li><Link to='/mna/process'>M&A 프로세스</Link></li>
                           </ul>
                         </li>
                         <li>
-                          <div className='main-sub-nav-ipo'>IPO</div>
+                          <div className='main-sub-nav-ipo'></div>
                             <ul className='main-sub-detail-nav'>
-                              <li><Link to='/ipo'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />IPO 개요</Link></li>
-                              <li><Link to='/ipo/result'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />IPO 성과</Link></li>
-                              <li><Link to='/ipo/process'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />IPO 프로세스</Link></li>
+                              <li><Link to='/ipo'>IPO 개요</Link></li>
+                              <li><Link to='/ipo/result'>IPO 성과</Link></li>
+                              <li><Link to='/ipo/process'>IPO 프로세스</Link></li>
                             </ul>
                         </li>
                     </ul>
@@ -383,7 +378,7 @@ const Header = () => {
                         <li><Link to='/notice/request'>상담신청</Link></li>
                     </ul>
                     </div>
-                    <div className='main-sub-nav-left'></div>
+                    <div className='main-sub-nav-right'></div>
                   </div>
                 </div>
               </li>
@@ -405,19 +400,18 @@ const Header = () => {
                     <ul className='main-sub-nav-ul'>
                       <li className="sub-nav-star"><div className='navStar'></div></li>
                         <li>
-                          M&A
                           <ul className='main-sub-detail-nav'>
-                            <li><Link to='/mna'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />M&A 개요</Link></li>
-                            <li><Link to='/mna/result'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />M&A 성과</Link></li>
-                            <li><Link to='/mna/process'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />M&A 프로세스</Link></li>
+                            <li><Link to='/mna'>M&A 개요</Link></li>
+                            <li><Link to='/mna/result'>M&A 성과</Link></li>
+                            <li><Link to='/mna/process'>M&A 프로세스</Link></li>
                           </ul>
                         </li>
                         <li>
-                          <div className='main-sub-nav-ipo'>IPO</div>
+                          <div className='main-sub-nav-ipo'></div>
                             <ul className='main-sub-detail-nav'>
-                              <li><Link to='/ipo'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />IPO 개요</Link></li>
-                              <li><Link to='/ipo/result'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />IPO 성과</Link></li>
-                              <li><Link to='/ipo/process'><MdKeyboardArrowRight size="1rem" fill="#2C3540" />IPO 프로세스</Link></li>
+                              <li><Link to='/ipo'>IPO 개요</Link></li>
+                              <li><Link to='/ipo/result'>IPO 성과</Link></li>
+                              <li><Link to='/ipo/process'>IPO 프로세스</Link></li>
                             </ul>
                         </li>
                     </ul>
@@ -456,7 +450,7 @@ const Header = () => {
                         <li><Link to='/notice/request'>상담신청</Link></li>
                     </ul>
                     </div>
-                    <div className='main-sub-nav-left'></div>
+                    <div className='main-sub-nav-right'></div>
                   </div>
                 </div>
               </li>
