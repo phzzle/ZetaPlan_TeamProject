@@ -12,11 +12,13 @@
 
 #EnglishInfo-section {
   margin-bottom: 120px;
+  font-size: 14px;
+  line-height: 1.7;
 }
 .bold {
   font-weight: bold;
 }
-/* ======================= */
+/* =======================section1 */
 
 .EnglishInfo-section1 {
   padding-top: 100px;
@@ -45,7 +47,7 @@
   margin-bottom: 30px;
 }
 
-/* ======================= */
+/* =======================section2 */
 
 .EnglishInfo-section2-content div {
   margin-bottom: 50px;
@@ -76,10 +78,10 @@
 .EnglishInfo-section2-content-img-worldwide {
   background: url(/public/img/Info/worldwide.png);
   width: 1200px;
-  height: 600px;
+  height: 550px;
 }
 
-/* ======================= */
+/* =======================section3 */
 
 .EnglishInfo-section3-public-img {
   background: url(/public/img/Info/public\ clients.png) center / cover;
@@ -100,4 +102,83 @@
   margin: 50px 0;
 }
 
-/* ======================= */
+/* =======================section4 */
+.businessarea-img1 {
+  background: url(/public/img/Info/business\ area\ 1.png);
+  width: 454px;
+  height: 187px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  opacity: 0.8;
+}
+.EnglishInfo-section4 .EnglishInfo-section-content li {
+  margin-bottom: 10px;
+}
+.EnglishInfo-section4 .EnglishInfo-section-content > li:last-of-type {
+  margin-top: 40px;
+}
+
+.EnglishInfo-section4 .EnglishInfo-section-content table {
+  margin-top: 20px;
+  border-collapse: collapse;
+  border: 2px solid #2c3540;
+  line-height: 1.4;
+}
+.EnglishInfo-section4 .EnglishInfo-section-content table th,
+.EnglishInfo-section4 .EnglishInfo-section-content table td {
+  border: 2px solid #2c3540;
+}
+
+.EnglishInfo-section4 .EnglishInfo-section-content table th {
+  height: 40px;
+  line-height: 40px;
+  background-color: rgb(44, 53, 64, 0.7);
+  color: white;
+}
+.EnglishInfo-section4 .EnglishInfo-section-content table td {
+  padding: 10px 20px;
+}
+
+.businessarea-img2 {
+  background: url(/public//img/Info/business\ area\ 2.png) center / cover;
+  width: 442px;
+  height: 170px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  opacity: 0.8;
+}
+
+.businessarea-img3 {
+  background: url(/public//img/Info/business\ area\ 3.png) center / cover;
+  width: 520px;
+  height: 188px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  opacity: 0.8;
+}
+
+/* .businessarea-img4 {
+  background: url(/public//img/Info/business\ area\ 4.png) center / cover;
+  width: 442px;
+  height: 170px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  opacity: 0.8;
+}
+ */
+/* =======================section5 */
+.techtransfercase-img {
+  background: url(/public/img/Info/TECH\ TRANSFER\ CASE.png) center/ cover;
+  width: 1200px;
+  height: 650px;
+  margin-top: 30px;
+}
+/* =======================section6 */
+.EnglishInfo-section6 > dl {
+  margin-top: 30px;
+}
+.EnglishInfo-section6 > dl > dt {
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
