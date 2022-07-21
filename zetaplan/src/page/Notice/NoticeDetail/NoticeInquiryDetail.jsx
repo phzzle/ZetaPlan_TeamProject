@@ -27,7 +27,7 @@ const NoticeInquiryDetail = ({ inquiryData }) => {
       <NoticeHeader title='Notice' sub='문의하기' />
       <div id='NoticeInquiryDetail'>
         <div id='SubInner'>
-          <h2 className='notice-title'>문의하기 세부페이지</h2>
+          <h2 className='notice-title'>문의하기</h2>
           <div className='detail-container'>
             <table>
               <thead>

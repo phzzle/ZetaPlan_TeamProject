@@ -121,3 +121,40 @@
   padding-left: 80px;
   text-align: right;
 }
+
+/* 모바일 버전*/
+
+@media screen and (max-width: 765px) {
+  /*  #FullpageNews #MainInner {
+    height: 100%;
+  } */
+  .section-title {
+    margin-bottom: 40px;
+  }
+  .content-box {
+    width: 100%;
+  }
+  .board-box {
+    grid-template-columns: repeat(1, 4fr);
+    width: 95%;
+    flex-wrap: wrap;
+  }
+  .board {
+    width: 100%;
+    height: 100%;
+  }
+  .board-list {
+    width: 100%;
+  }
+  .news-title p {
+    font-size: 1.4rem;
+  }
+  .more-icon {
+    size: 24px;
+  }
+  .more-text {
+    font-size: 0.7rem;width: 40px;
+    top: -1%;
+    right: -3%;
+  }
+}

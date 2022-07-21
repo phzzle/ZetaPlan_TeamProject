@@ -60,3 +60,18 @@
 .PageNumButton:active {
   border: solid 1px #3b4b59;
 }
+
+@media screen and (max-width: 765px) {
+  .paginationBox {
+    width: 95%;
+  }
+  .PrevButton {
+    width: 95%;
+  }
+  .NextButton {
+    width: 95%;
+  }
+  .PageNumButton {
+    width: 95%;
+  }
+}

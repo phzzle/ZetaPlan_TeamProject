@@ -27,7 +27,7 @@ const NoticeNewsDetail = ({ newsData }) => {
       <NoticeHeader title='Notice' sub='뉴스' />
       <div id='NoticeNewsDetail'>
         <div id='SubInner'>
-          <h2 className='notice-title'>뉴스 세부페이지</h2>
+          <h2 className='notice-title'>뉴스</h2>
           <div className='detail-container'>
             <table>
               <thead>

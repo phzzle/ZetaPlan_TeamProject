@@ -1,3 +1,5 @@
+/* 게시판 css */
+
 .notice-title {
   width: 400px;
   height: 180px;
@@ -11,16 +13,10 @@
   color: #2c3540;
 }
 
-/* .list-name {
-    font-size: 1.5rem;
-    text-align: center;
-    margin-top: 2rem;
-    color: #b66666;
-} */
-
 .notice-list {
   font-size: 0.875rem;
   width: 1000px;
+  text-align: center;
 }
 
 .notice-list > li {
@@ -35,6 +31,7 @@
   width: 1200px;
   margin: 0 auto;
   position: relative;
+  text-align: center;
 }
 
 .board-lists {
@@ -42,7 +39,6 @@
   height: 35px;
   line-height: 35px;
   color: #2c3540;
-  /* text-align: left; */
 }
 
 .board-lists a {
@@ -55,11 +51,6 @@
   flex-wrap: wrap;
   border-top: 2px solid #2c3540;
   font-size: 0.875rem;
-}
-
-.board-lists span {
-  /*   display: block; 
-   border-left: 1px solid #ccc;  */
 }
 
 .board-lists.title .list-title {
@@ -99,11 +90,6 @@
 .list-view {
   width: 100px;
 }
-
-/* .listtitle:hover:hover {
-    background: rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-} */
 
 .inquireBtn {
   right: 5%;
@@ -165,42 +151,75 @@
   font-size: 1rem;
 }
 
-.detail-container table {
-  width: 100%;
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+/* 여기부터 디테일 페이지 css 나중에 나눠야함*/
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+.notice-detail-container {
+  margin-bottom: 30px;
   border: 1px solid #ccc;
+  border-top: 1px solid black;
+}
+.notice-detail-container table {
+  width: 100%;
+  /*   border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc; */
   border-collapse: collapse;
   text-align: left;
 }
 
-.detail-container table th,
-.detail-container table td {
-  border: 1px solid #ccc;
+.notice-detail-container table th,
+.notice-detail-container table td {
+  border-bottom: 1px solid #ccc;
+  font-size: 16px;
 }
 
-.detail-container table th {
+.notice-detail-container table th {
   height: 50px;
   line-height: 50px;
   padding-left: 10px;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
   background-color: rgba(204, 204, 204, 0.2);
 }
 
-.detail-container-header-content {
+.notice-detail-container-header-content {
   display: flex;
   justify-content: space-between;
   padding: 10px;
 }
 
-.detail-container-header-view {
+.notice-detail-container-header-view {
   padding-right: 10px;
 }
-.detail-container-header-contents {
-  padding: 20px;
+.notice-detail-container-header-date {
+  margin-left: 20px;
 }
-.detail-sample-img {
+.notice-detail-container-header-contents {
+  padding: 80px 160px;
+  height: 1000px;
+}
+.notice-detail-sample-img {
   width: 100%;
 }
+.notice-detail-first-list-link {
+  /*   position: absolute; */
+  /*   bottom: -117%;
+  right: 5%; */
+  display: flex;
+  justify-content: flex-end;
+}
+
+.notice-detail-first-list {
+  padding: 7px;
+  border-radius: 0.25rem;
+  color: #fff;
+  background: #3b4b59;
+  font-size: 0.87rem;
+}
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+/* 뉴스탭 css */
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
 
 .news-notice-list {
   border-top: 3px solid black;
@@ -234,21 +253,21 @@
 
 .news-list-title {
   display: block;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 23px;
   margin-bottom: 40px;
 }
 
 .news-list-content {
-  display: block;
   margin-bottom: 40px;
-  font-size: 17px;
+  font-size: 16px;
   width: 800px;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;/* 3줄 ellipsis 하기 */
+  -webkit-box-orient: vertical; /* 3줄 ellipsis 하기 */
+  color: #2c3540;
 }
 
 .news-list-date {
@@ -264,4 +283,27 @@
   color: #fff;
   background: #3b4b59;
   font-size: 0.87rem;
+}
+
+@media screen and (max-width: 765px) {
+  .board-search-container {
+    width: 95%;
+  }
+  .list-box {
+    width: 95%;
+  }
+  .notice-list{width: 95%; padding: 0 0; margin: 0 0;}
+  .board-lists{width: 95%; height: 50px;}
+  .board-lists.title {
+    display: none;
+  }
+  .id-name {
+    display: none;
+  }
+  .list-title{width: 400px;}
+/*   .list-author{display: block;} */
+.list-view{display: none;}
+.writeBtn{right: 10%;}
+.loginBtn{right: 20%;}
+
 }

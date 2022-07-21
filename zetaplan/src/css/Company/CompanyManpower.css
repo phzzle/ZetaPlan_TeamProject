@@ -120,3 +120,18 @@
   padding-top: 40px;
   font-size: 1.1rem;
 }
+
+@media screen and (max-width: 765px) {
+  .ex-box {
+    display: none;
+  }
+  .manpower-box {
+    display: flex;
+    /* flex-wrap: wrap; */
+  }
+  .manpower-outbox {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;/* flex-wrap: wrap; */
+  }
+}

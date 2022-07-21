@@ -14,12 +14,25 @@
   white-space: nowrap;
   width: 400px;
   height: 100%;
+  font-size: 0.938rem;
 }
 
 .item-date {
-  font-size: 15px;
+  font-size: 0.938rem;
   font-weight: 400;
   color: #2c3540;
   width: 150px;
   text-align: right;
+}
+
+@media screen and (max-width: 765px) {
+  .item-title {
+/*     width: 100%;    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    height: 100%; */}
+
+  .item-date {
+  /*   width: 100% */
+  }
 }
