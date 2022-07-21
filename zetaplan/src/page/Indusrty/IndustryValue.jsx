@@ -31,10 +31,7 @@ const IndustryValue = ({title, sub}) => {
     <div>
       <IndustryHeader title={title} sub={sub} />
       <div id='SubInner'>
-      <div className="company-title-container">
-          <h2 className='company-title'>가치평가</h2>
-          <div className='company-title-line'></div>
-        </div>
+          <h2 className='detail-title'>가치평가</h2>
         <nav className='detail-tab-lists'>
           {MAP_DATA_VALUE.map(data => {
           return (

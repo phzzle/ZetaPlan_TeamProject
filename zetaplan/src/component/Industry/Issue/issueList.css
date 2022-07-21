@@ -1,13 +1,8 @@
-#IndustryIssue .list-name{
-    font-size: 1.5rem;
-    text-align:center;
-    margin-top:2rem;
-    color:#b66666;
-}
 
-#IndustryIssue .issue-list{font-size:0.875rem;
-    margin:3rem auto;
-    width:1000px;
+#IndustryIssue .issue-list{
+    font-size:0.875rem;
+   /*  margin:3rem auto;
+    width:1000px; */
 }
 #IndustryIssue .issue-list>li{
     padding:0.5rem 1rem;

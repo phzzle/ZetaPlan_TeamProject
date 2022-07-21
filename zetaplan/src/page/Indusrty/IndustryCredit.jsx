@@ -33,10 +33,7 @@ const IndustryCredit = ({title, sub}) => {
     <div id='Credit'>
       <IndustryHeader title={title} sub={sub} />
       <div id='SubInner'>
-      <div className="company-title-container">
-          <h2 className='company-title'>신용평가</h2>
-          <div className='company-title-line'></div>
-        </div>
+        <h2 className='detail-title'>신용평가</h2>
         <nav className='detail-tab-lists'>
           {MAP_DATA_CREDIT.map(data => {
           return (

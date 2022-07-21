@@ -28,10 +28,7 @@ const IndustryTrade = ({title, sub}) => {
     <div id="Trade">
       <IndustryHeader title={title} sub={sub} />
       <div id="SubInner">
-        <div className="company-title-container">
-          <h2 className="company-title">기술거래</h2>
-          <div className="company-title-line"></div>
-        </div>
+        <h2 className="detail-title">기술거래</h2>
         <nav className="detail-tab-lists">
           {MAP_DATA_TRADE.map(data => {
             return (
