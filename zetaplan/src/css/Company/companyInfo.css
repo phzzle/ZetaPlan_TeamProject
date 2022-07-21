@@ -133,10 +133,60 @@
 }
 
 @media screen and (max-width: 765px) {
-  .company-info-bg {
+  .company-title-container {
+    width: 640px;
+    padding-top: 76px;
+  }
+  .company-title {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  .company-title-line {
+    height: 40px;
+    margin-bottom: 34px;
+  }
+  .info-icon-container {
+    flex-wrap: wrap;
+  }
+  .info-icon-container .info-icon-item .info-icon-box {
+    width: 100px;
+    height: 100px;
+  }
+  .info-icon-container .info-icon-item .info-icon-box .info-icon {
+    font-size: 40px;
+  }
+  .company-info-desc-box {
+    width: auto;
+    padding: 40px;
+    box-sizing: content-box;
+  }
+  .company-info-desc {
+    flex-direction: column;
+    width: 100%;
+  }
+  .company-info-desc .company-info-desc-title {
+    font-size: 24px;
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
+  .company-info-desc .company-info-desc-line {
+    margin-bottom: 80px;
+    transform: rotate(180deg);
+  }
+  .company-info-desc .company-info-desc-line span {
+    background-color: #9b9b9b;
+  }
+  .company-info-desc .company-info-desc-line span:last-child {
+    width: 80px;
+  }
+  .company-info-desc .company-info-desc-content {
+    width: 90%;
+    /* padding-top: 40px; */
+  }
+  /* .company-info-bg {
     height: 400px;
   }
   .network-table {
     width: 90%;
-  }
+  } */
 }
