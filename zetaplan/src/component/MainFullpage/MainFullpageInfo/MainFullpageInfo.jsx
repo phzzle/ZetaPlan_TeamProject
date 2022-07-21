@@ -5,7 +5,7 @@ import { ImArrowRight2 } from 'react-icons/im';
 const MainFullpageInfo = () => {
   return (
     <div id='fullpageInfo'>
-      <div id='MainInner'>
+      <div id='newsMainInner'>
         <div className="main-info-container">
         <div className='main-info-box'>
           <div className='main-info-title-box'>
