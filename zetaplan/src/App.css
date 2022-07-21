@@ -170,7 +170,7 @@ input {
 }
 
 @media (max-width: 765px) {
-    .App>div>div {
+    .fullpage-div {
         height: auto !important;
     }
 }

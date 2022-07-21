@@ -11,19 +11,19 @@ export default class Fullpage extends React.Component {
   render() {
     return (
       <FullPage controls controlsProps={{className: 'fullpage-paging'}}>
-        <Slide>
+        <Slide className='fullpage-div'>
           <MainFullpage />
         </Slide>
-        <Slide>
+        <Slide className='fullpage-div'>
           <MainFullpageInfo />
         </Slide>
-        <Slide>
+        <Slide className='fullpage-div'>
           <MainFullPageAbroad />
         </Slide>
-        <Slide>
+        <Slide className='fullpage-div'>
           <MainFullpageNews />
         </Slide>
-        <Slide>
+        <Slide className='fullpage-div'>
           <MainFullPageFooter />
         </Slide>
       </FullPage>
