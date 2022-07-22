@@ -178,6 +178,9 @@
 }
 
 @media (max-width: 765px) {
+    .company-header-nav>a {
+        display: none;
+    }
     #SubHeader .company-header-title-wrap {
         width: 50%;
         height: 50px;
@@ -193,5 +196,8 @@
     }
     #SubHeader .company-header-nav svg {
         display: none;
+    }
+    .sub-nav-depth2 {
+        width: 100%;
     }
 }

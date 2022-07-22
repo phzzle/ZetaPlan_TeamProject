@@ -98,7 +98,7 @@
 @media (max-width:765px) {
     #Hamburger {
         height: auto;
-        left: 12%;
+        left: 30%;
         color: #2c3540;
         background-color: #efefef;
         z-index: 9999;
@@ -114,10 +114,10 @@
     }
     @keyframes HamburgerOpen {
         from {
-            left: 30%;
+            left: 50%;
         }
         to {
-            left: 12%;
+            left: 30%;
         }
     }
 }
