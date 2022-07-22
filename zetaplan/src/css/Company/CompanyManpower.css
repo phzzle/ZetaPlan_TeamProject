@@ -126,12 +126,19 @@
     display: none;
   }
   .manpower-box {
-    display: flex;
-    /* flex-wrap: wrap; */
+   display: flex;
+/* width: 50%; */
+width: 130px;
+
   }
   .manpower-outbox {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;/* flex-wrap: wrap; */
-  }
+  }.manpower-image{width: 130px;height: 130px;}
+  .manpower-image-cover img{width: 130px;height: 130px;}
+  
+.manpower-image span:nth-child(1) {font-size: 0.9rem;}
+
+.manpower-image span:nth-child(2){font-size: 0.5rem;top: 92%;} 
 }

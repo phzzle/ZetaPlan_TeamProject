@@ -5,7 +5,7 @@ import DetailFooter from '../../component/Detail/DetailFooter';
 import NoticeHeader from '../../component/Detail/NoticeHeader';
 import { useState, useEffect } from 'react';
 import Pagination from './Pagination';
-import './NoticeList.css';
+import '../../css/Notice/NoticeList.css';
 import BoardSearch4 from '../../component/Search/BoardSearch4';
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
@@ -54,18 +54,18 @@ const NoticeInfo = ({ title, sub, id }) => {
                 .reverse()
                 .slice(startNum, endNum)
                 .reverse()
-                .map(({ num, title, author, date, view, id }) => {
+                .map((item, idx) => {
                   return (
-                    <li className='board-lists' key={num}>
-                      <Link to={'/notice/info/detail/' + id}>
-                        <span className='id-name'>{num}</span>
-                        <span
-                          className='list-title'>
-                          {title}
-                        </span>
-                        <span className='list-author'>{author}</span>
-                        <span className='list-date'>{date}</span>
-                        <span className='list-view'>{view}</span>
+                    <li className='board-lists' key={item.id} data={item}>
+                      <Link
+                        to={'/notice/detail/' + item.id}
+                        className='link-box'
+                      >
+                        <span className='id-name'>{item.num}</span>
+                        <span className='list-title'>{item.title}</span>
+                        <span className='list-author'>{item.author}</span>
+                        <span className='list-date'>{item.date}</span>
+                        <span className='list-view'>{item.view}</span>
                       </Link>
                     </li>
                   );

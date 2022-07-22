@@ -5,7 +5,7 @@ import DetailFooter from '../../component/Detail/DetailFooter';
 import NoticeHeader from '../../component/Detail/NoticeHeader';
 import { useState, useEffect } from 'react';
 import Pagination from './Pagination';
-import './NoticeList.css';
+import '../../css/Notice/NoticeList.css';
 import BoardSearch1 from './../../component/Search/BoardSearch1';
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
@@ -57,7 +57,10 @@ const Notice = ({ title, sub, auth, setAuth }) => {
                 .map((item, idx) => {
                   return (
                     <li className='board-lists' key={item.id} data={item}>
-                      <Link to={'/notice/detail/' + item.id}>
+                      <Link
+                        to={'/notice/detail/' + item.id}
+                        className='link-box'
+                      >
                         <span className='id-name'>{item.num}</span>
                         <span className='list-title'>{item.title}</span>
                         <span className='list-author'>{item.author}</span>

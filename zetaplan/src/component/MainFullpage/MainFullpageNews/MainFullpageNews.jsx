@@ -74,7 +74,7 @@ const MainFullpageNews = () => {
           <h2 className='section-title'>
             새소식<span>Notice</span>
           </h2>
-          <div className='board-box'>
+          <div className='board-box' data-aos='fade-up'>
             <div className='board'>
               <h3 className='news-title'>
                 {/* <FaBullhorn fill='#2C3540' size='36px' className='news-icon' /> */}

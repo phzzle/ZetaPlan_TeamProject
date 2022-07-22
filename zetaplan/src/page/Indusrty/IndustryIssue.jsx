@@ -4,25 +4,25 @@ import IndustryHeader from '../../component/Detail/IndustryHeader';
 import IssueList from '../../component/Industry/Issue/IssueList';
 import BoardSearch6 from './../../component/Search/BoardSearch6';
 
-const IndustryIssue = ({title, sub}) => {
+const IndustryIssue = ({ title, sub }) => {
   return (
-    <div id = 'IndustryIssue'>
+    <div id='IndustryIssue'>
       <IndustryHeader title={title} sub={sub} />
-      <div id="SubInner">
-          <h2 className='detail-title'>산업별이슈</h2>
+      <div id='SubInner'>
+        <h2 className='detail-title'>산업별이슈</h2>
         <div class='board-search-container'>
-            <form method='post' name='search' action='/notice'>
-              <table class='pull-right'>
-                <tr>
-                  <td></td>
-                  <td>
-                    <BoardSearch6 />
-                  </td>
-                  <td></td>
-                </tr>
-              </table>
-            </form>
-          </div>
+          <form method='post' name='search' action='/notice'>
+            <table class='pull-right'>
+              <tr>
+                <td></td>
+                <td>
+                  <BoardSearch6 />
+                </td>
+                <td></td>
+              </tr>
+            </table>
+          </form>
+        </div>
         <IssueList />
       </div>
       <DetailFooter />

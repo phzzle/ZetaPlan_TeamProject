@@ -5,7 +5,7 @@ import DetailFooter from '../../component/Detail/DetailFooter';
 import NoticeHeader from '../../component/Detail/NoticeHeader';
 import { useState, useEffect } from 'react';
 import Pagination from './Pagination';
-import './NoticeList.css';
+import '../../css/Notice/NoticeList.css';
 import BoardSearch3 from './../../component/Search/BoardSearch3';
 import { Link } from 'react-router-dom';
 

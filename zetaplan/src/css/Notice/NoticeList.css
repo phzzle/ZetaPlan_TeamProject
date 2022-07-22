@@ -22,7 +22,10 @@
 .notice-list > li {
   border-bottom: 1px solid #ccc;
 }
-
+.issue-list{font-size: 0.875rem;
+  width: 1000px;
+  text-align: center;}
+.issue-list > li{  border-bottom: 1px solid #ccc;}
 .notice-list > li:first-child {
   border-top: 1px solid #ccc;
 }
@@ -92,7 +95,7 @@
 }
 
 .inquireBtn {
-  right: 5%;
+  right: 0;
   bottom: 5%;
   padding: 7px;
   position: absolute;
@@ -126,6 +129,17 @@
   font-size: 0.87rem;
 }
 
+.rewriteBtn {
+  right: 17.5%;
+  bottom: 19.85%;
+  padding: 7px;
+  position: absolute;
+  border-radius: 0.25rem;
+  color: #fff;
+  background: #3b4b59;
+  font-size: 0.87rem;
+}
+
 .board-search-container {
   width: 1200px;
   display: flex;
@@ -151,15 +165,12 @@
   font-size: 1rem;
 }
 
-/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
-/* 여기부터 디테일 페이지 css 나중에 나눠야함*/
-/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
-.notice-detail-container {
+.detail-container {
   margin-bottom: 30px;
   border: 1px solid #ccc;
   border-top: 1px solid black;
 }
-.notice-detail-container table {
+.detail-container table {
   width: 100%;
   /*   border-left: 1px solid #ccc;
   border-right: 1px solid #ccc; */
@@ -167,13 +178,13 @@
   text-align: left;
 }
 
-.notice-detail-container table th,
-.notice-detail-container table td {
+.detail-container table th,
+.detail-container table td {
   border-bottom: 1px solid #ccc;
   font-size: 16px;
 }
 
-.notice-detail-container table th {
+.detail-container table th {
   height: 50px;
   line-height: 50px;
   padding-left: 10px;
@@ -182,34 +193,31 @@
   background-color: rgba(204, 204, 204, 0.2);
 }
 
-.notice-detail-container-header-content {
+.detail-container-header-content {
   display: flex;
   justify-content: space-between;
   padding: 10px;
 }
 
-.notice-detail-container-header-view {
+.detail-container-header-view {
   padding-right: 10px;
 }
-.notice-detail-container-header-date {
+.detail-container-header-date {
   margin-left: 20px;
 }
-.notice-detail-container-header-contents {
-  padding: 80px 160px;
-  height: 1000px;
+.detail-container-header-contents {
+  padding: 40px 80px;
+  height: auto;
 }
-.notice-detail-sample-img {
+.detail-sample-img {
   width: 100%;
 }
-.notice-detail-first-list-link {
-  /*   position: absolute; */
-  /*   bottom: -117%;
-  right: 5%; */
+.detail-first-list-link {
   display: flex;
   justify-content: flex-end;
 }
 
-.notice-detail-first-list {
+.detail-first-list {
   padding: 7px;
   border-radius: 0.25rem;
   color: #fff;
@@ -247,6 +255,7 @@
   height: 100%;
 }
 .news-box-contents {
+  text-align: left;
   width: 60%;
   margin-left: 100px;
 }
@@ -285,6 +294,19 @@
   font-size: 0.87rem;
 }
 
+.news-detail-thumnail {
+  width: 1000px;
+  margin: 0 auto;
+}
+.news-detail-thumnail img {
+  width: 100%;
+  height: 100%;
+}
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+/* 미디어 쿼리 */
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+
 @media screen and (max-width: 765px) {
   .board-search-container {
     width: 95%;
@@ -292,19 +314,84 @@
   .list-box {
     width: 95%;
   }
+  .notice-title {
+    width: 95%;
+    font-size: 24px;
+  }
+  .notice-list {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .link-box {
+    width: 100%;
+  }
 
-  .notice-list{width: 95%; padding: 0 0; margin: 0 0;}
-  .board-lists{width: 95%; height: 50px;}
+  .board-lists {
+    width: 100%;
+    height: 60px;
+    margin: 0 auto;
+    padding: 0 auto;
+  }
   .board-lists.title {
     display: none;
+  }
+  .detail-container table th {
+    font-size: 12px;
+  }
+  .detail-container table td {
+    font-size: 10px;
   }
   .id-name {
     display: none;
   }
-  .list-title{width: 400px;}
-/*   .list-author{display: block;} */
-.list-view{display: none;}
-.writeBtn{right: 10%;}
-.loginBtn{right: 20%;}
+  .list-title {
+    width: 100%;
+    padding: 0;
+    font-size: 0.8rem;
+    font-weight: 600;
+    height: 28px;
+    line-height: 30px;
+    margin: 0;
+    padding: 0;
+  }
+  .list-author {
+    width: 50px;
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-align: left;
+    height: 28px;
+    line-height: 30px;
+  }
+  .list-date {
+    width: 30%;
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-align: left;
+    height: 28px;
+    line-height: 30px;
+  }
 
+  .list-view {
+    display: none;
+  }
+  .writeBtn {
+    bottom: 4%;
+    right: 3%;
+    font-size: 0.37rem;
+  }
+  .loginBtn {
+    bottom: 4%;
+    right: 16%;
+    font-size: 0.37rem;
+  }
+  .detail-container-header-contents {
+    padding: 20px 40px;
+    height: auto;
+  }
+  .detail-first-list-link {
+    margin-left: 20px;
+  }
+  .detail-first-list {
+    font-size: 0.37rem;
+  }
 }

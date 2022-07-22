@@ -3,8 +3,9 @@
 import React from 'react';
 import DetailFooter from '../../../component/Detail/DetailFooter';
 import NoticeHeader from '../../../component/Detail/NoticeHeader';
-import '../NoticeList.css';
+import '../../../css/Notice/NoticeList.css';
 import { useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const NoticeNewsDetail = ({ newsData }) => {
   let { id } = useParams();
@@ -39,33 +40,37 @@ const NoticeNewsDetail = ({ newsData }) => {
                 <tr>
                   <td className='detail-container-header-content'>
                     <div>
-                      <span className='detail-container-header-view'>
-                        조회수 :{newsData[id - 1].view}
-                      </span>
                       <span className='detail-container-header-author'>
-                        작성자 :{newsData[id - 1].author}
+                        작성자 : {newsData[id - 1].author}
+                      </span>
+                      <span className='detail-container-header-date'>
+                        작성일 : {newsData[id - 1].date}
                       </span>
                     </div>
                     <div>
-                      <span className='detail-container-header-date'>
-                        {newsData[id - 1].date}
+                      <span className='detail-container-header-view'>
+                        조회수 : {newsData[id - 1].view}
                       </span>
                     </div>
                   </td>
                 </tr>
                 <tr>
                   <td>
+                    <div className='news-detail-thumnail'>
+                      <img src={newsData[id - 1].thumnail} alt='' />
+                    </div>
                     <td className='detail-container-header-contents'>
                       {showContent(newsData[id - 1].content)}
                     </td>
                   </td>
                 </tr>
-                <tr>
-                  <td>다음글</td>
-                </tr>
+                <tr></tr>
               </tbody>
             </table>
           </div>
+          <Link to={'/notice/news'} className='detail-first-list-link'>
+            <button className='detail-first-list'>목록</button>
+          </Link>
         </div>
         <DetailFooter />
       </div>

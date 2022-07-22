@@ -1,5 +1,5 @@
 import React from 'react';
-import './pagination.css';
+import '../../css/Notice/pagination.css';
 import { BiChevronLeft, BiChevronRight } from 'react-icons/bi';
 
 const Pagination = ({ total, page, setPage, LIST_PER_PAGE }) => {

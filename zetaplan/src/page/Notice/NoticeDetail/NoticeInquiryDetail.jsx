@@ -3,9 +3,10 @@
 import React from 'react';
 import DetailFooter from '../../../component/Detail/DetailFooter';
 import NoticeHeader from '../../../component/Detail/NoticeHeader';
-import '../NoticeList.css';
-
+import '../../../css/Notice/NoticeList.css';
+import { Link } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
+
 const NoticeInquiryDetail = ({ inquiryData }) => {
   let { id } = useParams();
   const showContent = (data) => {
@@ -39,16 +40,16 @@ const NoticeInquiryDetail = ({ inquiryData }) => {
                 <tr>
                   <td className='detail-container-header-content'>
                     <div>
-                      <span className='detail-container-header-view'>
-                        조회수 :{inquiryData[id - 1].view}
-                      </span>
                       <span className='detail-container-header-author'>
-                        작성자 :{inquiryData[id - 1].author}
+                        작성자 : {inquiryData[id - 1].author}
+                      </span>
+                      <span className='detail-container-header-date'>
+                        작성일 : {inquiryData[id - 1].date}
                       </span>
                     </div>
                     <div>
-                      <span className='detail-container-header-date'>
-                        {inquiryData[id - 1].date}
+                      <span className='detail-container-header-view'>
+                        조회수 : {inquiryData[id - 1].view}
                       </span>
                     </div>
                   </td>
@@ -60,12 +61,15 @@ const NoticeInquiryDetail = ({ inquiryData }) => {
                     </td>
                   </td>
                 </tr>
-                <tr>
-                  <td>다음글</td>
-                </tr>
               </tbody>
             </table>
           </div>
+          <Link to='/notice/editor/'>
+            <button className='rewriteBtn'>답글쓰기</button>
+          </Link>
+          <Link to={'/notice/inquiry'} className='detail-first-list-link'>
+            <button className='detail-first-list'>목록</button>
+          </Link>
         </div>
         <DetailFooter />
       </div>
