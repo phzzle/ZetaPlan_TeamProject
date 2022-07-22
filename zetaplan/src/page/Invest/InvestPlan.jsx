@@ -35,7 +35,40 @@ const InvestPlan = ({ title, sub }) => {
               <p>1~2개월 소요</p>
             </section>
             <section className='section s4'>
-              <table>
+              <ul>
+                <span>기업요약</span>
+                <li>– 보유기술</li>
+                <li>– 회사현황</li>
+                <li>– 사업추진 단계</li>
+                <li>– 사업화 발전 계획</li>
+              </ul>
+              <ul>
+                <span>기업요약</span>
+                <li>– 보유기술</li>
+                <li>– 회사현황</li>
+                <li>– 사업추진 단계</li>
+                <li>– 사업화 발전 계획</li>
+              </ul>
+              <ul>
+                <span>외부환경/내부역량/사업전략</span>
+                <li>– 분석요약</li>
+                <li>– 기준에 따른 평점제시</li>
+                <li>– 파트별 분석내용 활용법</li>
+                <li>– 기술분석 및 기술가치평가</li>
+              </ul>
+              <ul>
+                <span>재무분석</span>
+                <li>– 추정재무제표</li>
+                <li>– 기업 활용 재무프로그램제시</li>
+                <li>– 투자유치를 위한 기업가치평가</li>
+              </ul>
+              <ul>
+                <span>기업 발전을 위한 제안</span>
+                <li>– 기술개발로드맵</li>
+                <li>– 사업화로드맵</li>
+                <li>– 성공을 위한 분석자 및 전문컨설턴트의 의견</li>
+              </ul>
+              {/*           <table>
                 <tr>
                   <td>기업요약</td>
                   <td>외부환경/내부역량/사업전략</td>
@@ -58,7 +91,7 @@ const InvestPlan = ({ title, sub }) => {
                     <br /> – 사업화로드맵
                     <br /> – 성공을 위한 분석자 및 전문컨설턴트의 의견</td>
                 </tr>
-              </table>
+              </table> */}
             </section>
           </div>
         </div>

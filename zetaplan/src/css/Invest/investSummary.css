@@ -31,11 +31,11 @@
 }
 
 @media screen and (max-width: 765px) {
-    #InvestSummary.summary .investsummary-image-container {
-        width: 50%;
+    #InvestSummary .summary .investsummary-image-container {
+        width: 100%;
     }
 
-    #InvestSummary.summary .investsummary-image-container img {
+    #InvestSummary .summary .investsummary-image-container img {
         width: 100%;
     }
 }

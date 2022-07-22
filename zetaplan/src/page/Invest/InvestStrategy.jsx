@@ -54,6 +54,7 @@ const InvestStrategy = ({ title, sub }) => {
             <div className='strategy-circle1'>
               <span className='strategy-num1'>1차</span>
               <p className='strategy-des1'>예비진단</p>
+              <p></p>
             </div>
             <IoIosArrowForward id='strategy-arrow' />
             <div className='strategy-circle1'>

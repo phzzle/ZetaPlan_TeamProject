@@ -99,11 +99,13 @@
         width: 100%;
     }
 
+    #InvestBusiness1 section .image-investbusines-container,
     #InvestBusiness2 section .image-investbusines2-container,
     #InvestBusiness3 section .image-investbusines3-container {
         width: 100%;
     }
 
+    #InvestBusiness1 section img,
     #InvestBusiness2 section img,
     #InvestBusiness3 section img {
         width: 100%;

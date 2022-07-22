@@ -40,19 +40,37 @@
 .analysis section {
     line-height: 1.7;
     margin: 30px 0 80px 0;
-
 }
 
-.analysis .s4 table {
-    width: 1000px;
-
+.analysis .s4 {
+    width: 1100px;
+    display: flex;
 }
 
-.analysis .s4 table tr td {
-    border: solid 1px #000;
-    padding: 20px 10px;
-    text-align: left;
-    font-size: 16px;
-    padding: 20px;
+.analysis .s4 ul {
+    padding: 0 30px 0 0;
+}
+
+.analysis .s4 ul span {
+    font-weight: 700;
+}
+
+
+
+@media screen and (max-width: 765px) {
+    .investplan-image-container {
+        width: 100%;
+    }
+
+    .investplan-image-container img {
+        width: 100%;
+    }
+
+    .analysis .s4 {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .analysis .s4 ul {}
 
 }

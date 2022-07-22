@@ -25,15 +25,15 @@ const InvestBusiness = ({ title, sub }) => {
 
   useEffect(() => {
     AOS.init({
-        duration : 1000
+      duration: 1000
     });
-});
+  });
   return (
     <div id='InvestBusiness'>
       <InvestHeader title={title} sub={sub} />
       <div id='SubInner'>
         <section className="invest-title-container">
-          <h2 className="invest-title">경연컨설팅</h2>
+          <h2 className="invest-title">경영컨설팅</h2>
         </section>
         <nav className='detail-tab-lists'>
           {INVEST_BUSINESS_DATA.map(data => {
