@@ -95,6 +95,7 @@ const NoticeInquiryForm = ({ title, sub }) => {
                   <label htmlFor='inquiryContents' className='contents-title'>문의 내용</label>
                 </th>
                 <td>
+                  <div className='editor-box'>
                     <Editor
                       placeholder="내용을 입력해주세요."
                       previewStyle="vertical" // 미리보기 스타일 지정
@@ -115,6 +116,7 @@ const NoticeInquiryForm = ({ title, sub }) => {
                         setInput({...input, contents: contentsData})
                       }}
                     ></Editor>
+                  </div>
                 </td>
               </tr>
               <tr>
