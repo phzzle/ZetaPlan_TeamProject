@@ -6,8 +6,16 @@ import InvestItem from './InvestItem';
 import PolicyInfoItem from './PolicyInfoItem';
 import ConsultingItem from './ConsultingItem';
 import { Link } from 'react-router-dom';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const MainFullpageNews = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+    });
+  });
+
   const [list1, setList1] = useState([]);
   const [list2, setList2] = useState([]);
   const [list3, setList3] = useState([]);
