@@ -1,7 +1,12 @@
+#IndustryTransfer .industry-transfer-refer-wrap {
+    width: 100%;
+    text-align: end;
+}
+
 #IndustryTransfer .industry-transfer-refer {
     display: inline-block;
     font-size: 14px;
-    color: #2c3540;
+    color: #BF0628;
     margin-bottom: 10px;
 }
 
