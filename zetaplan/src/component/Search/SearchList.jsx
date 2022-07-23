@@ -3,6 +3,7 @@ import './../../css/Common/search.css';
 import { Link } from 'react-router-dom';
 
 const SearchList = ({data}) => {
+  console.log(data.link)
   return (
     <li className='search-lists'>
       <a href={data.link} className='search-list'>

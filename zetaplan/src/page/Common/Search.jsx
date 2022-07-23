@@ -41,7 +41,7 @@ const Search = () => {
         </div>
         <ul className='inner-search-result'>
         {
-          searchWord.map((ele) => <SearchList ket={ele.id} data={ele} />)
+          searchWord.map((ele) => <SearchList key={ele.id} data={ele} />)
         }
         </ul>
       </div>

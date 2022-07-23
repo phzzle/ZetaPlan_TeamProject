@@ -74,6 +74,7 @@
 #Search .search-list a {
     width: 100%;
     height: 100%;
+    cursor: pointer;
 }
 
 #Search .search-list span {
