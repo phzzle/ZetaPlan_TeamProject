@@ -14,3 +14,9 @@
     right: 25px;
     z-index: 9999;
 }
+
+@media (max-width: 765px) {
+    #SubChatBox {
+        right: 75px;
+    }
+}
