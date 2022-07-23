@@ -3,20 +3,13 @@ import {useParams} from "react-router-dom";
 import DetailFooter from "../../component/Detail/DetailFooter";
 import IndustryHeader from "../../component/Detail/IndustryHeader";
 import IndustryConfirmHistory from "../../component/Industry/IndustryConfirm/IndustryConfirmHistory";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 const IndustryConfirmDetail = ({data}) => {
   let {id} = useParams();
 
-  useEffect(() => {
-    AOS.init({
-        duration : 1000
-    });
-});
 
   return (
-    <div id="IndustryConfirmDetail" data-aos="fade-up">
+    <div id="IndustryConfirmDetail">
       <IndustryHeader title="Industry" sub="기업/기술 인증" />
       <div id="SubInner">
         <h2 className="detail-title">{data[id].name}</h2>

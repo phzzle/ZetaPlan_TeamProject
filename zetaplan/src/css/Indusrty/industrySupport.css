@@ -157,6 +157,9 @@
 }
 
 @media (max-width: 765px) {
+    .detail-title {
+        font-size: 30px;
+    }
     .detail-tab-content {
         width: 100%;
     }

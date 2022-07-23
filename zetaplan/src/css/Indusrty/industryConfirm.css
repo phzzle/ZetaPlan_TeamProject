@@ -133,9 +133,7 @@
     margin: 0 5px;
 }
 
-#IndustryConfirmDetail #Header {
-    top: -78px;
-}
+#IndustryConfirmDetail #Header {}
 
 #IndustryConfirmDetail p {
     font-size: 14px;
