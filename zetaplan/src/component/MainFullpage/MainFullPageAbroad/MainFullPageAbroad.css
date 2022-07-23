@@ -54,7 +54,8 @@
   #fullpageAbroad .main-abroad-title {
     font-size: 24px;
   }
-  .abroad-bg {
-    
+  #fullpageAbroad .abroad-bg {
+    left: -35vw;
+    width: 180%;
   }
 }
