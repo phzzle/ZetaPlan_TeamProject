@@ -20,7 +20,9 @@ const IndustryTransfer = ({title, sub}) => {
       <IndustryHeader title={title} sub={sub} />
       <div id='SubInner'>
         <h2 className="detail-title">기술이전 신청</h2>
-        <span className="industry-transfer-refer">&#42;는 필수작성</span>
+        <div className="industry-transfer-refer-wrap">
+          <span className="industry-transfer-refer">&#42;는 필수작성</span>
+        </div>
         <form action="" id='requestForm'>
           <table className='request-form-table'>
             <colgroup>
