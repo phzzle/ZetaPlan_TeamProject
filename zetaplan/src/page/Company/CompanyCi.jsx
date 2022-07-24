@@ -10,7 +10,7 @@ const CompanyCi = ({title, sub}) => {
       <div id="SubInner">
         <section className="company-ci-section1">
           <div className="company-ci-title-container">
-            <h2 className="company-ci-title">CI</h2>
+            <h2 className="detail-title">CI</h2>
             <div className="company-ci-title-line"></div>
           </div>
         </section>

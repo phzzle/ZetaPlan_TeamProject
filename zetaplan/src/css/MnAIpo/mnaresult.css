@@ -1,10 +1,6 @@
 .mnaipo-maresult-section {
   margin: 70px 0;
 }
-.mnaipo-maresult-section:first-child {
-  margin: 0;
-}
-
 #maresult .mnaipo-maresult-section div {
   margin-left: 10px;
   margin-top: 20px;
@@ -85,3 +81,5 @@
   border-radius: 10px;
 }
 /* ================================= */
+@media (max-width: 765px) {
+}
