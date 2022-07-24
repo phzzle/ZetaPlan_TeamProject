@@ -23,19 +23,15 @@ const IpoProcess = ({title, sub}) => {
 
   useEffect(() => {
     AOS.init({
-        duration : 1000
+      duration: 1000,
     });
-});
+  });
 
   return (
     <div id="ipoprocess">
       <MAHeader title={title} sub={sub} />
       <div id="SubInner">
-        <section className="mnaipo-ipoprocess-section1">
-          <div className="mnaipo-ipoprocess-title-container">
-            <h2 className="mnaipo-ipoprocess-title">IPO 프로세스</h2>
-          </div>
-        </section>
+        <h2 className="detail-title">IPO 프로세스</h2>
         <section className="mnaipo-ipoprocess-section">
           <div>
             <nav className="detail-tab-lists">
@@ -52,7 +48,11 @@ const IpoProcess = ({title, sub}) => {
                 );
               })}
             </nav>
-            {content && <div className="detail-tab-content "  data-aos="fade-up">{selectComponent[content]}</div>}
+            {content && (
+              <div className="detail-tab-content " data-aos="fade-up">
+                {selectComponent[content]}
+              </div>
+            )}
           </div>
         </section>
       </div>

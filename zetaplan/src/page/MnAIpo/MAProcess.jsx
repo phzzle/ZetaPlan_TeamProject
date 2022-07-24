@@ -23,19 +23,15 @@ const MAProcess = ({title, sub}) => {
 
   useEffect(() => {
     AOS.init({
-        duration : 1000
+      duration: 1000,
     });
-});
+  });
 
   return (
     <div id="mnaprocess">
       <MAHeader title={title} sub={sub} />
       <div id="SubInner">
-        <section className="mnaipo-maprocess-section1">
-          <div className="mnaipo-maprocess-title-container">
-            <h2 className="mnaipo-maprocess-title">M&A 프로세스</h2>
-          </div>
-        </section>
+        <h2 className="detail-title">M&A 프로세스</h2>
         <section className="mnaipo-iporesult-section">
           <div>
             <nav className="detail-tab-lists">
@@ -52,7 +48,11 @@ const MAProcess = ({title, sub}) => {
                 );
               })}
             </nav>
-            {content && <div className="detail-tab-content " data-aos="fade-up">{selectComponent[content]}</div>}
+            {content && (
+              <div className="detail-tab-content " data-aos="fade-up">
+                {selectComponent[content]}
+              </div>
+            )}
           </div>
         </section>
       </div>

@@ -8,11 +8,7 @@ const IpoSummary = ({title, sub}) => {
     <div id="iposummary">
       <MAHeader title={title} sub={sub} />
       <div id="SubInner">
-        <section className="mnaipo-iposummary-section1">
-          <div className="mnaipo-iposummary-title-container">
-            <h2 className="mnaipo-iposummary-title">IPO 개요</h2>
-          </div>
-        </section>
+        <h2 className="detail-title">IPO 개요</h2>
         <section className="mnaipo-iposummary-section">
           <span className="mnaipo-iposummary-part">IPO 란</span>
           <div>

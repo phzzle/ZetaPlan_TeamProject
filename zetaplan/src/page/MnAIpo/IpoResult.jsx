@@ -8,11 +8,7 @@ const IpoResult = ({title, sub}) => {
     <div id="iporesult">
       <MAHeader title={title} sub={sub} />
       <div id="SubInner">
-        <section className="mnaipo-iporesult-section1">
-          <div className="mnaipo-iporesult-title-container">
-            <h2 className="mnaipo-iporesult-title">IPO 성과</h2>
-          </div>
-        </section>
+        <h2 className="detail-title">IPO 성과</h2>
         <section className="mnaipo-iporesult-section">
           <span className="mnaipo-iporesult-part">IPO의 효과</span>
           <div className="iposummary-effect">

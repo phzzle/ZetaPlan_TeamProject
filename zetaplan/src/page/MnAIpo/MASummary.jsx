@@ -9,9 +9,7 @@ const MASummary = ({title, sub}) => {
       <MAHeader title={title} sub={sub} />
       <div id="SubInner">
         <section className="mnaipo-ma-section1">
-          <div className="mnaipo-ma-title-container">
-            <h2 className="mnaipo-ma-title">M&A</h2>
-          </div>
+          <h2 className="detail-title">M&A</h2>
         </section>
         <section className="mnaipo-ma-section">
           <span className="mnaipo-ma-part">M&A 란</span>

@@ -29,19 +29,6 @@
   top: 50%;
 }
 
-#ipoprocess .mnaipo-ipoprocess-section1 .mnaipo-ipoprocess-title-container {
-  padding-top: 100px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-#ipoprocess .mnaipo-ipoprocess-section1 .mnaipo-ipoprocess-title-container .mnaipo-ipoprocess-title {
-  font-weight: 700;
-  font-size: 24px;
-  color: #2c3540;
-  margin-bottom: 24px;
-}
-
 /* ============================== */
 
 #ipoprocess .mnaipo-ipoprocess-section .mnaipo-ipoprocess-section-img {
@@ -70,6 +57,7 @@
 
 .IpoProcess2 .mnaipo-ipoprocess-ipoconsult-part {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   width: 250px;
@@ -108,4 +96,15 @@
 
 .ipoprocess-step {
   width: 300px;
+}
+
+@media (max-width: 765px) {
+  #ipoprocess .mnaipo-ipoprocess-section .mnaipo-ipoprocess-section-img {
+    background: url(/public/img/MnaIpo/IpoProcess/ipo\ process.png) no-repeat center / cover;
+    width: 420px;
+    height: 150px;
+  }
+  .flex {
+    flex-wrap: wrap;
+  }
 }
