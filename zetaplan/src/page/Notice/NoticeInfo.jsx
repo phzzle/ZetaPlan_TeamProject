@@ -58,7 +58,7 @@ const NoticeInfo = ({ title, sub, id }) => {
                   return (
                     <li className='board-lists' key={item.id} data={item}>
                       <Link
-                        to={'/notice/detail/' + item.id}
+                        to={'/notice/info/detail/' + item.id}
                         className='link-box'
                       >
                         <span className='id-name'>{item.num}</span>

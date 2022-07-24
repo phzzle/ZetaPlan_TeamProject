@@ -130,7 +130,9 @@
   }
   .section-title {
     margin-bottom: 40px;
+    font-size: 24px;
   }
+  .section-title span{font-size: 24px; left: 15%;}
   .content-box {
     width: 100%;
   }
@@ -148,14 +150,15 @@
   }
   .news-title {
     width: 100%;
+    margin-left: 20px;
   }
   .news-title p {
-    width: 100%;
-    font-size: 1.3rem;
+    width: 90%;
+    font-size: 1.2rem;
   }
-  /*   .board-list {
-    width: 100%;
-  } */
+    .board-list {
+  text-align: left;
+  }
 
   .more-icon {
     size: 24px;
