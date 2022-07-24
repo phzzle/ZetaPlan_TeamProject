@@ -82,8 +82,7 @@ const MainFullpageInfo = () => {
             <div className='ir-box' id='navy'>
               <h2>경영컨설팅</h2>
               <p className='info-detail'>
-                `비용의 최소화 및 이익의 최대화` 실현 비즈니스
-                서비스 컨설팅
+                `비용의 최소화 및 이익의 최대화` 비즈니스 컨설팅
               </p>
               <div className='detail-box'>
                 <a href='/invest'>

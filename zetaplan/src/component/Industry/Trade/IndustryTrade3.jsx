@@ -2,8 +2,7 @@ import React from 'react';
 
 const IndustryTrade3 = () => {
     return (
-        <div>
-            <div id='IndustryTrade'>
+      <div id='IndustryTrade'>
          <section className='industry-trade-section'>
          <span className="industry-trade-part"> 기술구매 컨설팅</span>
                 <br />
@@ -133,7 +132,6 @@ const IndustryTrade3 = () => {
 
         </section>
         
-            </div>
         </div>
     );
 };

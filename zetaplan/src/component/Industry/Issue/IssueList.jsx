@@ -2,6 +2,7 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import Pagination from './Pagination';
 import '../../../css/Notice/NoticeList.css';
+import '../../../css/Indusrty/industryIssue.css';
 import { Link } from 'react-router-dom';
 
 const IssueList = () => {
@@ -45,9 +46,9 @@ const IssueList = () => {
             );
           })}
       </ul>
-      <a href='/login'>
-        <button className='login-button'>LogIn</button>
-      </a>
+      <Link to='/notice/editor/'>
+              <button className='writeBtn'>글쓰기</button>
+            </Link>
       <Pagination
         total={lists.length}
         page={page}

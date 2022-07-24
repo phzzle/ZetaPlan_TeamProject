@@ -4,6 +4,7 @@ import IndustryHeader from '../../component/Detail/IndustryHeader';
 import IssueList from '../../component/Industry/Issue/IssueList';
 import BoardSearch6 from './../../component/Search/BoardSearch6';
 
+
 const IndustryIssue = ({ title, sub }) => {
   return (
     <div id='IndustryIssue'>

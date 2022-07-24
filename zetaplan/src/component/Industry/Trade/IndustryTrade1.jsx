@@ -23,7 +23,7 @@ const IndustryTrade1 = () => {
              </section>
              <section className='industry-trade-section'>
                 <span className="industry-trade-part">기술거래 업무</span>
-               <ul className='industry-trade-list'>
+               <ol className='industry-trade-list'>
                    <li className='industry-trade-part-txt'>거래대상 이전기술의 발굴 : 경쟁력 있는 기술발굴과 Licensor의 거래조건 파악 및 중개계약 체결</li>
                    <li className='industry-trade-part-txt'>거래대상 수요기술의 발굴 : (주)제타플랜 현지 사무소(중국 및 베트남 등) 및 파트너를 통한 발굴</li>
                    <li className='industry-trade-part-txt'>공급대상 기술의 가치평가 : 기술성, 시장성, 권리성 및 사업성 등의 분석을 토대로 기술가치 평가</li>
@@ -32,7 +32,7 @@ const IndustryTrade1 = () => {
                    <li className='industry-trade-part-txt'>기술거래조건과 내용 협상 : 구체적인 기술이전 조건 제시 및 기술료 지급 방법 및 절차 등의 협상</li>
                    <li className='industry-trade-part-txt'>기술이전계약서 작성/검토 : 기술이전 계약서 초안 작성 및 기술이전 계약서의 법률적인 문제 검토</li>
                    <li className='industry-trade-part-txt'>기술거래 사후적 관리방안 : 기술이전 후 Tech-offer와 Tech-order간에 발생하는 분쟁 해결 컨설팅</li>
-               </ul>
+               </ol>
              </section>
 
              <section className='industry-trade-section'>
