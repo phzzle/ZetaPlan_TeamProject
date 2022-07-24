@@ -82,7 +82,6 @@ const CompanyCollabo = ({ title, sub }) => {
           <li><img src="/img/mainFullpage/mainFullpageFooter/FooterCompanyList/list59.png" alt="" /><a href="/">벤처기업협회</a></li>
           <li><img src="/img/mainFullpage/mainFullpageFooter/FooterCompanyList/list60.png" alt="" /><a href="/">녹색기술센터</a></li>
           <li><img src="/img/mainFullpage/mainFullpageFooter/FooterCompanyList/list61.png" alt="" /><a href="/">한국무역협회</a></li>
-          <li></li>
         </ul>
       </div>
       <DetailFooter />

@@ -77,3 +77,18 @@
     line-height: 1.5;
     color: #efefef;
 }
+
+@media screen and (max-width: 765px) {
+    #DetailFooter .logo {
+        height: 30%;
+        margin: 0;
+    }
+
+    #DetailFooter .footer-info {
+        height: 100%;
+        font-size: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

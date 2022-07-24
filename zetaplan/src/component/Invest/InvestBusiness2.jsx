@@ -5,9 +5,6 @@ const InvestBusiness2 = () => {
         <div id='InvestBusiness2'>
             <div id='SubInner'>
                 <section>
-                    <h3 className='company-road-part'>사업타당성분석</h3>
-                </section>
-                <section>
                     <h3 className='company-road-part'>정의</h3>
                     <p>사업 아이디어가 제품화 과정을 거쳐 시장에서 수요를 창출하여 사업이 성공할 가능성의 여부를 체계적이며 합리적인 방법으로 분석하는 것</p>
                     <p>신규사업의 타당성 여부를 체계적으로 검토하여 재무.경제적 의사결정에 필요한 기초자료를 제공</p>
