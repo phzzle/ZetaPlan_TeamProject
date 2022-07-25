@@ -3,7 +3,7 @@ import DetailFooter from '../../component/Detail/DetailFooter';
 import IndustryHeader from '../../component/Detail/IndustryHeader';
 import IssueList from '../../component/Industry/Issue/IssueList';
 import BoardSearch6 from './../../component/Search/BoardSearch6';
-
+import '../../css/Indusrty/industryIssue.css'
 
 const IndustryIssue = ({ title, sub }) => {
   return (

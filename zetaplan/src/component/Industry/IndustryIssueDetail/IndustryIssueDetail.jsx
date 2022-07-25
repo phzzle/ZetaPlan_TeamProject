@@ -5,8 +5,9 @@ import IndustryHeader from '../../Detail/IndustryHeader';
 import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
-const IndustryIssueDetail = ({ data }) => {
+const IndustryIssueDetail = ({ issueData }) => {
   let { id } = useParams();
+
   const showContent = (data) => {
     if (data === '이미지') {
       return (
@@ -30,7 +31,7 @@ const IndustryIssueDetail = ({ data }) => {
           <table>
             <thead>
               <tr>
-                <th>{data[id - 1].title}</th>
+                <th>{issueData[id - 1].title}</th>
               </tr>
             </thead>
             <tbody>
@@ -38,15 +39,15 @@ const IndustryIssueDetail = ({ data }) => {
                 <td className='detail-container-header-content'>
                   <div>
                     <span className='detail-container-header-author'>
-                      작성자 : {data[id - 1].author}
+                      작성자 : {issueData[id - 1].author}
                     </span>
                     <span className='detail-container-header-date'>
-                      작성일 : {data[id - 1].date}
+                      작성일 : {issueData[id - 1].date}
                     </span>
                   </div>
                   <div>
                     <span className='detail-container-header-view'>
-                      조회수 : {data[id - 1].view}
+                      조회수 : {issueData[id - 1].view}
                     </span>
                   </div>
                 </td>
@@ -54,7 +55,7 @@ const IndustryIssueDetail = ({ data }) => {
               <tr>
                 <td>
                   <td className='detail-container-header-contents'>
-                    {showContent(data[id - 1].content)}
+                    {showContent(issueData[id - 1].content)}
                   </td>
                 </td>
               </tr>

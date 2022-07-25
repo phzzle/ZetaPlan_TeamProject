@@ -2,7 +2,6 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import Pagination from './Pagination';
 import '../../../css/Notice/NoticeList.css';
-import '../../../css/Indusrty/industryIssue.css';
 import { Link } from 'react-router-dom';
 
 const IssueList = () => {
