@@ -22,10 +22,14 @@
 .notice-list > li {
   border-bottom: 1px solid #ccc;
 }
-.issue-list{font-size: 0.875rem;
+.issue-list {
+  font-size: 0.875rem;
   width: 1000px;
-  text-align: center;}
-.issue-list > li{  border-bottom: 1px solid #ccc;}
+  text-align: center;
+}
+.issue-list > li {
+  border-bottom: 1px solid #ccc;
+}
 .notice-list > li:first-child {
   border-top: 1px solid #ccc;
 }
@@ -129,17 +133,6 @@
   font-size: 0.87rem;
 }
 
-.rewriteBtn {
-  right: 17.5%;
-  bottom: 19.85%;
-  padding: 7px;
-  position: absolute;
-  border-radius: 0.25rem;
-  color: #fff;
-  background: #3b4b59;
-  font-size: 0.87rem;
-}
-
 .board-search-container {
   width: 1200px;
   display: flex;
@@ -212,11 +205,19 @@
 .detail-sample-img {
   width: 100%;
 }
-.detail-first-list-link {
+
+.inquiry-Btnbox {
   display: flex;
   justify-content: flex-end;
 }
-
+.rewriteBtn {
+  padding: 7px;
+  border-radius: 0.25rem;
+  color: #fff;
+  background: #3b4b59;
+  font-size: 0.87rem;
+  margin-right: 10px;
+}
 .detail-first-list {
   padding: 7px;
   border-radius: 0.25rem;
@@ -224,7 +225,6 @@
   background: #3b4b59;
   font-size: 0.87rem;
 }
-
 /* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
 /* 뉴스탭 css */
 /* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
@@ -252,7 +252,7 @@
 
 .news-list-thumnail img {
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 .news-box-contents {
   text-align: left;
@@ -300,7 +300,10 @@
 }
 .news-detail-thumnail img {
   width: 100%;
-  height: 100%;
+  height: auto;
+}
+.detail-first-list-link {
+  text-align: right;
 }
 
 /* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
@@ -337,6 +340,10 @@
   }
   .detail-container table th {
     font-size: 12px;
+    line-height: 30px;
+    margin: 0 auto;
+    padding-right: 10px;
+    vertical-align: middle;
   }
   .detail-container table td {
     font-size: 10px;
@@ -374,7 +381,7 @@
   .list-view {
     display: none;
   }
-  .writeBtn {
+  . {
     bottom: 4%;
     right: 3%;
     font-size: 0.37rem;
@@ -388,10 +395,71 @@
     padding: 20px 40px;
     height: auto;
   }
-  .detail-first-list-link {
-    margin-left: 20px;
-  }
-  .detail-first-list {
+
+  .inquireBtn {
+    bottom: 4%;
+    right: 3%;
     font-size: 0.37rem;
+  }
+  .rewriteBtn {
+    font-size: 0.37rem;
+    margin: 0;
+  }
+  #NoticeNewsDetail .detail-first-list-link {
+    text-align: right;
+  }
+  #NoticeDetail .detail-first-list-link {
+    text-align: right;
+  }
+  #NoticeColumnDetail .detail-first-list-link {
+    text-align: right;
+  }
+  #NoticeInfoDetail .detail-first-list-link {
+    text-align: right;
+  }
+  #NoticeInquiryDetail .detail-first-list-link {
+    margin-left: 5px;
+  }
+
+  /* 뉴스페이지 미디어쿼리 */
+
+  .news-board-lists-link {
+    display: block;
+    margin: 0 auto;
+  }
+  .news-list-thumnail {
+    margin: 0 auto;
+  }
+  .news-box-contents {
+    text-align: left;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .news-list-title {
+    font-size: 17px;
+    margin-bottom: 20px;
+  }
+  .news-list-content {
+    width: 100%;
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  .news-list-date {
+    font-size: 15px;
+    margin-bottom: 20px;
+    color: #2c3540;
+  }
+  .news-writeBtn {
+    bottom: 1.5%;
+    right: 3%;
+    font-size: 0.37rem;
+  }
+  .news-detail-thumnail {
+    width: 100%;
+    height: auto;
+  }
+  .news-detail-thumnail img {
+    width: 100%;
+    height: auto;
   }
 }

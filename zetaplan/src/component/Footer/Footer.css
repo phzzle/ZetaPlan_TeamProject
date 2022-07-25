@@ -40,11 +40,13 @@
   .footer_wrap .logo {
     width: 240px;
     height: 70px;
+    position: relative;
+    right: 25px;
   }
 
   .footer_paddingbtm,
   .footer_paddingbtm_center {
-    margin-left: 50px;
+    margin-left: 30px;
   }
   .footer_paddingbtm_center {
     margin-bottom: 30px;

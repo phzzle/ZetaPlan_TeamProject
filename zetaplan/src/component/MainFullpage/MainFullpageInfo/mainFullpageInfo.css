@@ -128,8 +128,8 @@
 
 @media screen and (max-width: 765px) {
     #fullpageInfo .ir-box{
-        width: 250px;
-        height: 150px;
+        width: 160px;
+        height: 100px;
     }
     #fullpageInfo .fullpageInfo-boxs {
         grid-template-columns: repeat(2, 2fr);
@@ -140,24 +140,23 @@
           border: none;
       }
       #fullpageInfo .detail-box{
-      font-size: 1.5rem;
+      font-size: 1rem;
       font-weight: bold;
       padding-bottom: 5%;
         }
       #fullpageInfo  .ir-box>h2{
-        font-size: 1.2rem;
+        font-size: 0.9rem;
         font-weight: bold;
         padding-bottom: 5%;
-        padding-top: 5%;
+        padding-top: 7%;
         }
-    #fullpageInfo .info-detail{
-        font-size: 0.5rem;
+    #fullpageInfo .ir-box .info-detail{
+        font-size: 0.3rem;
+        line-height: 1.2;
     }
     #fullpageInfo #blind{
         display: none;
     }
-    #fullpageInfo #changeColorNavy{
 
-    }
     
   }

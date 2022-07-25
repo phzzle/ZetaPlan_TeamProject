@@ -1,5 +1,6 @@
 import React from 'react';
 import './pagination.css'
+import { BiChevronRight, BiChevronLeft } from 'react-icons/bi';
 
 const Pagination = ({ total,page,setPage,LIST_PER_PAGE}) => {
     const PagesNum =  Math.ceil(total/LIST_PER_PAGE ) ; 
@@ -9,7 +10,7 @@ const Pagination = ({ total,page,setPage,LIST_PER_PAGE}) => {
     return (
         <div className='paginationBox'>
                 <button className='PrevButton' onClick={()=>{setPage(page-1)}} disabled={page === 1}  >
-                    이전
+                <BiChevronLeft />
                 </button>
                 {
                    pagesNumArray.fill().map((ele,i)=>{
@@ -27,7 +28,7 @@ const Pagination = ({ total,page,setPage,LIST_PER_PAGE}) => {
                
                 
                 <button className='NextButton' onClick={()=>{setPage(page+1)}} disabled={page === PagesNum} >
-                    이후
+                <BiChevronRight />
                 </button>
         </div>
         

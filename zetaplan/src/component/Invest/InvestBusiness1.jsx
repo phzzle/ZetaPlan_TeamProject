@@ -5,9 +5,6 @@ const InvestBusiness1 = () => {
         <div id='InvestBusiness1'>
             <div id="SubInner">
                 <section className="InvestBusiness">
-                    <h3 className='company-road-part'>경영컨설팅 정의</h3>
-                </section>
-                <section className="InvestBusiness">
                     <h3 className='company-road-part'>목표</h3>
                     <div className='image-investbusines-container'>
                         <img src="/img/Invest/result.png" alt="" />

@@ -52,7 +52,7 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   margin-bottom: 100px;
-  width: 1200px;
+  width: 100%;
 }
 
 .IpoProcess2 .mnaipo-ipoprocess-ipoconsult-part {
@@ -69,7 +69,7 @@
 }
 
 .IpoProcess2 .mnaipo-ipoprocess-advice-part table {
-  width: 1100px;
+  width: 95%;
   border: 2px solid #2c3540;
   text-align: left;
   border-collapse: collapse;
@@ -92,6 +92,22 @@
   padding: 10px 10px 10px;
 }
 
+#mnaipo-ipoprocess-section-dl {
+  display: none;
+}
+#mnaipo-ipoprocess-section-dl .mnaipo-ipoprocess-part {
+  margin-bottom: 30px;
+}
+#mnaipo-ipoprocess-section-dl dt {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+#mnaipo-ipoprocess-section-dl dd {
+  margin-left: 10px;
+}
+#mnaipo-ipoprocess-section-dl dl {
+  margin-bottom: 30px;
+}
 /* =============================================== */
 
 .ipoprocess-step {
@@ -100,11 +116,27 @@
 
 @media (max-width: 765px) {
   #ipoprocess .mnaipo-ipoprocess-section .mnaipo-ipoprocess-section-img {
-    background: url(/public/img/MnaIpo/IpoProcess/ipo\ process.png) no-repeat center / cover;
-    width: 420px;
-    height: 150px;
+    width: 280px;
+    height: 100px;
+    background-position: center;
+    background-size: cover;
   }
   .flex {
     flex-wrap: wrap;
+  }
+  .IpoProcess2 .mnaipo-ipoprocess-ipoconsult-parts {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  #mnaipo-ipoprocess-section-table {
+    display: none;
+  }
+  #mnaipo-ipoprocess-section-dl {
+    display: block;
+  }
+  .IpoProcess2 .mnaipo-ipoprocess-ipoconsult-part {
+    width: 130px;
+    height: 50px;
+    font-size: 14px;
   }
 }

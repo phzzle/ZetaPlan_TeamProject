@@ -112,3 +112,45 @@
 #Industrycredit5 #credit-btn{
     margin: auto;
 } */
+
+@media (max-width: 765px) {
+    #Industrycredit1 .industry-credit-des,
+#Industrycredit2 .industry-credit-des,
+#Industrycredit3 .industry-credit-des, 
+#Industrycredit4 .industry-credit-des,
+#Industrycredit5 .industry-credit-des {
+    width: 90%;
+}
+#Industrycredit1 .industry-credit-sub,
+#Industrycredit2 .industry-credit-sub,
+#Industrycredit3 .industry-credit-sub,
+#Industrycredit4 .industry-credit-sub,
+#Industrycredit5 .industry-credit-sub{
+    width: 90%;
+}
+.industry-credit-img {
+    width: 100%;
+}
+
+
+#Industrycredit1,
+#Industrycredit2,
+#Industrycredit3,
+#Industrycredit4,
+#Industrycredit5{
+    width: 95%;
+    margin: auto;
+}
+#Industrycredit1 .submit-btn-group,
+#Industrycredit2 .submit-btn-group,
+#Industrycredit3 .submit-btn-group,
+#Industrycredit4 .submit-btn-group,
+#Industrycredit5 .submit-btn-group{
+    margin: auto;
+    position: relative;
+    left: -25%;
+}
+.detail-tab-lists{
+    overflow: hidden;
+}
+}

@@ -64,12 +64,14 @@ const NoticeInquiryDetail = ({ inquiryData }) => {
               </tbody>
             </table>
           </div>
-          <Link to='/notice/editor/'>
-            <button className='rewriteBtn'>답글쓰기</button>
-          </Link>
-          <Link to={'/notice/inquiry'} className='detail-first-list-link'>
-            <button className='detail-first-list'>목록</button>
-          </Link>
+          <div className='inquiry-Btnbox'>
+            <Link to='/notice/editor/' className='detail-rewriteBtn'>
+              <button className='rewriteBtn'>답글쓰기</button>
+            </Link>
+            <Link to={'/notice/inquiry'} className='detail-first-list-link'>
+              <button className='detail-first-list'>목록</button>
+            </Link>
+          </div>
         </div>
         <DetailFooter />
       </div>

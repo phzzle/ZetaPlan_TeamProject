@@ -80,3 +80,12 @@
   padding-top: 5px;
   padding-bottom: 5px;
 }
+
+@media (max-width: 765px) {
+  #ma .mnaipo-ma-section .mnaipo-ma-classify-img {
+    display: none;
+  }
+  .mnaipo-ma-part-purpose table {
+    width: 96%;
+  }
+}

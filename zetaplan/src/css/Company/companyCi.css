@@ -1,26 +1,3 @@
-#companyCi {
-  color: #2c3540;
-}
-
-#companyCi .company-ci-section1 .company-ci-title-container {
-  padding-top: 100px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-#companyCi .company-ci-section1 .company-ci-title-container .company-ci-title {
-  font-weight: 700;
-  font-size: 24px;
-  color: #2c3540;
-  margin-bottom: 24px;
-}
-#companyCi .company-ci-section1 .company-ci-title-container .company-ci-title-line {
-  width: 3px;
-  height: 50px;
-  background-color: #3b4b59;
-  margin-bottom: 60px;
-}
-
 #companyCi #SubInner {
   text-align: center;
 }
@@ -37,11 +14,11 @@
   margin-top: 50px;
 }
 #companyCi .company-ci-section2 .logo-content .logo-content-top {
-  font-size: 1.4rem;
+  font-size: 22px;
   margin-bottom: 30px;
 }
 #companyCi .company-ci-section2 .logo-content .logo-content-bottom {
-  font-size: 1rem;
+  font-size: 16px;
   line-height: 1.7rem;
   margin-top: 50px;
   margin-bottom: 100px;
@@ -53,7 +30,7 @@
 /* ================================ */
 
 #companyCi .company-ci-section-left {
-  font-size: 1.4rem;
+  font-size: 18px;
   width: 250px;
   margin: 50px 0 0 15px;
   font-weight: bold;
@@ -72,7 +49,7 @@
 #companyCi .company-ci-section3 {
   border-top: 1px solid #333;
   text-align: left;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   display: flex;
 }
 
@@ -80,6 +57,7 @@
   margin-top: 50px;
   display: flex;
   text-align: center;
+  flex-wrap: wrap;
 }
 
 #companyCi .company-ci-section3 .company-ci-section-right .company-ci-logo-black {
@@ -96,4 +74,33 @@
 
 #companyCi .company-ci-logo-white-ul {
   margin-left: 200px;
+}
+
+@media (max-width: 765px) {
+  #companyCi .company-ci-logo-white-ul {
+    margin-left: 0;
+  }
+  #companyCi .company-ci-section-left {
+    width: 70px;
+  }
+  #companyCi .company-ci-section2 .logo-content .logo-content-top {
+    font-size: 14px;
+  }
+
+  #companyCi .company-ci-section2 .logo-content .logo-content-bottom {
+    font-size: 10px;
+  }
+
+  #companyCi .company-ci-section3 .company-ci-section-right .company-ci-logo-black,
+  #companyCi .company-ci-section3 .company-ci-section-right .company-ci-logo-white {
+    width: 200px;
+    height: 88px;
+  }
+  .download {
+    width: 200px;
+    font-size: 11px;
+  }
+  .company-ci-section-right {
+    margin-left: 30px;
+  }
 }

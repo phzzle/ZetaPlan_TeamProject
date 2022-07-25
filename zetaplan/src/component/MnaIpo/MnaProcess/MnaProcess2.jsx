@@ -25,7 +25,7 @@ const MnaProcess2 = () => {
         <span className="mnaipo-maprocess-part"> 2. M&A 대상 목표기업의 선정 </span>
         <div>
           <span>선정 방법 : 기회주의적 방법, 연구조사 방법, 기회주의적이며 연구조사하는 방법</span>
-          <table className="mnaipo-maprocess-part-select-table">
+          <table className="mnaipo-maprocess-part-select-table" id="mnaipo-maprocess-part-select-table-block">
             <colgroup>
               <col style={{width: "40%"}} />
               <col style={{width: "60%"}} />
@@ -73,6 +73,38 @@ const MnaProcess2 = () => {
               </tr>
             </tbody>
           </table>
+          <div id="mnaipo-maprocess-part-select-table-none">
+            <dl>
+              <dt>일반적인 기준</dt>
+              <dd>1) 서비스 산업과 제조업 중 선호 업종</dd>
+              <dd>2) 매수기업과의 결합 가능 정도</dd>
+              <dd>3) 매수호가 범위</dd>
+              <dd>4) 경쟁적 위치(시장 주도 혹은 부실기업)</dd>
+              <dd>5) 산업구조(경쟁사 숫자 및 크기)</dd>
+              <dd>6) 과거 수익성</dd>
+              <dd>7) 과거와 예측된 미래의 성장 추세</dd>
+              <dd>8) 자본투자의 강도(intensity) : 현금사용율</dd>
+              <dd>9) 기술,시장,법률 및 정치적 위험 부담</dd>
+              <dd>10) 자본 시장 전체대비 투자 위험도</dd>
+              <dd>11) 피매수 기업의 재무상태 예측</dd>
+              <dd>12) 금융 및 영업의 Leverage Effect</dd>
+            </dl>
+            <dl>
+              <dt>실무적 관점에서의 판단 기준</dt>
+              <dd>1) 기업의 생산성이 낮고 보수성향에 의해 자산활용이 안되는 기업</dd>
+              <dd>
+                2) 부동산등의 가치평가가 낮게 되어있고 현금보유 등 자금조달능력이 뛰어나며 부채비율이 상대적으로 낮은
+                기업
+              </dd>
+              <dd>3) 강력한 조직을 갖추고 판매망과 브랜드 이미지가 뛰어난 기업</dd>
+              <dd>4) 제1대 주주의 소유비율이 낮고 기업의 인지도가 높은 기업(적대적 M&A)인 경우 필수</dd>
+              <dd>5) 경영환경 변화에 대응하여 꾸준히 성장할수있는 잠재력이 높은 기업</dd>
+              <dd>
+                6) 노사관계에 불화가 높고 친인척이 임원으로 회사전반에 대하여 전체회사 직원의 사기를 저하시키고 있는
+                기업
+              </dd>
+            </dl>
+          </div>
         </div>
       </section>
       <section className="mnaipo-maprocess-section">

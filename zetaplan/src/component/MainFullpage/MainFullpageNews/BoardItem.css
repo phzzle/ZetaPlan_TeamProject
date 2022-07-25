@@ -26,19 +26,30 @@
 }
 
 @media screen and (max-width: 765px) {
-  .product-item {width: 100%;}
-  .product-item p{width: 100%;}
+  .product-item {
+    width: 100%;
+    margin: 25px 20px;
 
-    .product-item p:first-child {
-     width:  70%;font-size: 0.9rem;
-    }
-    .product-item p:last-child {
-      width:  30%;font-size: 0.9rem;
-     }
-     .item-title {
-      width:70%;  }
-  .item-date {
-    width: 30%; 
   }
-  a{width: 90%;}
+  .product-item p {
+    width: 100%;
+  }
+  .product-item p:first-child {
+    width: 70%;
+    font-size: 0.9rem;
+  }
+  .product-item p:last-child {
+    width: 30%;
+    font-size: 0.9rem;
+  }
+  .item-title {
+    width: 70%;
+  }
+  .item-date {
+    width: 30%;
+  }
+
+  .product-item a {
+    width: 90%;
+  }
 }

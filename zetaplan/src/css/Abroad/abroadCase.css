@@ -36,11 +36,11 @@
   border-radius: 4px;
 }
 .abroad-support-card-title {
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 .abroad-desc-list {
-  font-size: 14px;
+  font-size: 0.875rem;
   margin-left: 10px;
   margin-bottom: 20px;
 }
@@ -61,7 +61,7 @@
 .abroad-desc-table {
   width: 900px;
   border: 1px solid #2C3540;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 .abroad-desc-table th, .abroad-desc-table td {
   border: 1px solid #2C3540;

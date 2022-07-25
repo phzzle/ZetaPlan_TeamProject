@@ -60,6 +60,7 @@ import NoticeInquiryDetail from './page/Notice/NoticeDetail/NoticeInquiryDetail'
 import NoticeNewsDetail from './page/Notice/NoticeDetail/NoticeNewsDetail';
 import tradeList from './component/Industry/IndustryDetail/techTrade_detail.json';
 import infoList from './page/Notice/NoticeDetail/consulting_Detail.json'
+import IndustryIssueDetail from './component/Industry/IndustryIssueDetail/IndustryIssueDetail';
 
 function App() {
   const [data, setData] = useState(tradeList);
@@ -155,6 +156,7 @@ function App() {
           <Route path='/notice/info/:word' element={<SearchNotice4 />} />
           <Route path='/notice/inquiry/:word' element={<SearchNotice5 />} />
           <Route path='/industry/:word' element={<SearchIndustry1 />} />
+          <Route path='/industry/detail/:id' element={<IndustryIssueDetail data={data} />} />
           <Route path='/industry/trade/:word' element={<SearchIndustry2 />} />
           <Route path='/industry/trade/detail/:id' element={<IndustryDetail data={data} />} />
           <Route path='/notice/editor/' element={<LoginRedirect auth={auth} />} />

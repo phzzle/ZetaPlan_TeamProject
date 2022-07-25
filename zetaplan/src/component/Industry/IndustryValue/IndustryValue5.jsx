@@ -4,13 +4,11 @@ const IndustryValue5 = () => {
     return (
         <div id='IndustryValue'>
         <section className='industry-value-section'>
-          <span className="industry-value-part"> 기술금융투자 </span>
-          <br />
-          <br />
+          <h2 className="industry-value-part"> 기술금융투자 </h2>     
           <p className='industry-value-part-txt'>
           벤처투자조합의 투자 대상이 기업 지분이나 프로젝트 등으로 한정되어 있어, 벤처캐피탈은 지식재산권 보유 기업에 대한 지분 투자와 같이 간접적인 방식으로 지식재산권에 투자했으나, 「한국벤처투자조합 관리규정」이 개정(개정 일자 : ‘15.11.16)됨에 따라 창업투자회사 또는 유한회사가 운용하는 벤처투자조합이 지식재산권을 직접 매입․매각할 수 있다.
-          <br />  
-           </p>
+          </p>
+
            <div>
             <table id='value-table'>
               <colgroup>
@@ -34,32 +32,30 @@ const IndustryValue5 = () => {
              </table>
             </div>
 
-           <br />
-           <br />
-           <span className="industry-value-part">  성장사다리펀드</span>
-          <br />
-          <br />
+            </section>
+
+          <section className='industry-value-section'>
+          <h2 className="industry-value-part">  성장사다리펀드</h2>
           <p className='industry-value-part-txt'>
           성장사다리펀드는 우수한 지식재산권(IP)를 보유한 증소∙중견기업에 투자 방식의 자금을 제공하여 기업의 IP보유에 따른 기회비용을 줄이고 IP활용성을 높이기 위하여 IP투자펀들 조성하여 사업화를 지원하고, 국내 IP 생태계 구축과 국내 IP 금융 활성화를 유도하고 있다.
-          <br />  
-           </p>
-           <br />
-           <span className="industry-value-part">   지원내용</span>
-          <br />
-          <br />
+         </p>
+          
+         </section> 
+         <section className='industry-value-section'>
+           <h2 className="industry-value-part">   지원내용</h2>
           <p className='industry-value-part-txt'>
           국내 국책은행 및 시중은행의 기술신용평가기반 무보증 신용대출은 우수기술보유기업에게 저금리로 자금을 지원하며, 기업당 3억 ~ 10억원 규모로 기업의 성장을 지원한다.
-          <br />  
+           
            </p>
-           <br />
-           <span className="industry-value-part"> 준비내용</span>
-          <br />
-          <br />
-          <p className='industry-value-part-txt'>
+           </section>
+
+<section className='industry-value-section'>
+           <h2 className="industry-value-part"> 준비내용</h2>
+           <p className='industry-value-part-txt'>
           TCB평가대출을 받고자 하는 기술력 우수중소기업은 TCB평가를 대비하여 회사의 기술사업화 역량(경영주의 기술 경영능력, 기술개발역량, 제품화역량, 영업역량)과 더불어 기술경쟁력(기술우위성, 기술시장규모, 시장경쟁력)에 대한 근거자료를 준비가 필요하다.
-          <br />  
+           
            </p>
-           <br />
+          
           <div>
             <table>
               <colgroup>

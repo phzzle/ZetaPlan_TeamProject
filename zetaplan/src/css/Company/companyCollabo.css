@@ -47,15 +47,26 @@
 
 @media screen and (max-width: 765px) {
     #CompanyCollabo #SubInner .company_list {
-        width: 80%;
-
-    }
-
-    .company_list li {
-        width: 90%;
-    }
-
-    .company_list li img {
         width: 100%;
+
+
+
+    }
+
+    #CompanyCollabo #SubInner .company_list li {
+        width: 30%;
+        height: 90px;
+        margin-right: 3%;
+    }
+
+    #CompanyCollabo #SubInner .company_list li img {
+        width: 100%;
+        height: 30%;
+    }
+
+    #CompanyCollabo #SubInner .company_list li:hover a {
+        width: 100%;
+        height: 50%;
+        font-size: 10px;
     }
 }

@@ -46,6 +46,7 @@
   display: flex;
   border: 1.5px solid #2c3540;
   padding-bottom: 30px;
+  padding-right: 30px;
 }
 
 .mnaipo-maprocess-part-general-num {
@@ -65,6 +66,7 @@
   display: flex;
   border: 1.5px solid #2c3540;
   padding-bottom: 30px;
+  padding-right: 30px;
 }
 .mnaipo-maprocess-part-broker-num {
   font-weight: bold;
@@ -122,8 +124,23 @@
   margin-bottom: 10px;
 }
 
+#mnaipo-maprocess-part-select-table-none {
+  display: none;
+}
+
 @media (max-width: 765px) {
   .mnaprocess1 {
-    margin-left: 70px;
+    margin-left: 20px;
+  }
+  .mnaprocess1 .mnaipo-maprocess-section .mnaipo-maprocess-part-general > div,
+  .mnaipo-maprocess-part-broker > div {
+    width: 300px;
+    padding-right: 20px;
+  }
+  .mnaprocess2 .mnaipo-maprocess-part-select-table {
+    display: none;
+  }
+  #mnaipo-maprocess-part-select-table-none {
+    display: block;
   }
 }

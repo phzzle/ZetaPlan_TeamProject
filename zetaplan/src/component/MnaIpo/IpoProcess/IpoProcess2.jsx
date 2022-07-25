@@ -18,7 +18,7 @@ const IpoProcess2 = () => {
           <div className="mnaipo-ipoprocess-ipoconsult-part">주식공모 IR 자문</div>
         </div>
       </section>
-      <section className="mnaipo-ipoprocess-section">
+      <section className="mnaipo-ipoprocess-section" id="mnaipo-ipoprocess-section-table">
         <span className="mnaipo-ipoprocess-part">상장요건 자문</span>
         <div className="mnaipo-ipoprocess-advice-part">
           <table>
@@ -85,6 +85,48 @@ const IpoProcess2 = () => {
             </tbody>
           </table>
         </div>
+      </section>
+      <section className="mnaipo-ipoprocess-section" id="mnaipo-ipoprocess-section-dl">
+        <span className="mnaipo-ipoprocess-part">상장요건 자문</span>
+        <dl>
+          <dt>1. 질적요건 심사표</dt>
+          <dd>시작성</dd>
+          <dd>수익성</dd>
+          <dd>재무상태</dd>
+          <dd>기술성</dd>
+          <dd>경영성</dd>
+        </dl>
+        <dl>
+          <dt>2. 영업위혐 평가서</dt>
+          <dd>영업환경관련</dd>
+          <dd>재무관련</dd>
+          <dd>관계회사관련</dd>
+          <dd>유통주식관련</dd>
+          <dd>기타사항</dd>
+        </dl>
+        <dl>
+          <dt>3. 경영지원시스템 평가표</dt>
+          <dd>최대주주 등에 관한 사항</dd>
+          <dd>이해관계자에 관한 사항</dd>
+          <dd>관계회사에 관한 사항</dd>
+          <dd>이사회, 감사, 외부감사인 등에 관한 사항 </dd>
+          <dd>회계처리에 관한 사항</dd>
+          <dd>자금관리시스템에 관한 사항</dd>
+        </dl>
+        <dl>
+          <dt>4. 대표주관업무 모범기준</dt>
+          <dd>회사의 개요</dd>
+          <dd>자본</dd>
+          <dd>주요제품의 시장성</dd>
+          <dd>생산 (매입)</dd>
+          <dd>영업활동 (매출)</dd>
+          <dd>재무적 안정성</dd>
+          <dd>관계회사</dd>
+          <dd>자산관리</dd>
+          <dd>지배구조, 이해관계자간 거래</dd>
+          <dd>인사 및 노무</dd>
+          <dd>기타사항</dd>
+        </dl>
       </section>
     </div>
   );
