@@ -18,7 +18,7 @@
 }
 #fullpageAbroad .main-abroad-title {
   position: relative;
-  font-size: 30px;
+  font-size: 1.875rem;
   font-weight: bold;
   display: block;
   color: #2c3540;
@@ -52,7 +52,7 @@
     height: 340px;
   }
   #fullpageAbroad .main-abroad-title {
-    font-size: 24px;
+    font-size: 1.5rem;
   }
   #fullpageAbroad .abroad-bg {
     left: -35vw;
