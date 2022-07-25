@@ -337,12 +337,18 @@ background-size .3s calc(.3s - var(--_s, 0s));
 }
 
 @media (max-width: 765px) {
+    #MainInner {
+        width: 90% !important;
+    }
     #Header .header-left {
         display: flex;
         justify-content: flex-start;
     }
     #Header .header-nav-wrap .main-nav {
         display: none;
+    }
+    #Header .header-right {
+        width: auto;
     }
     #Header .header-right .lang-box {
         display: none;
@@ -352,7 +358,6 @@ background-size .3s calc(.3s - var(--_s, 0s));
     }
     #Header .header-hamburger-btn {
         visibility: visible;
-        margin-left: 30%;
     }
 }
 

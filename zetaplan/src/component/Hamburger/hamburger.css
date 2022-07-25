@@ -98,7 +98,7 @@
 @media (max-width:765px) {
     #Hamburger {
         height: auto;
-        left: 35%;
+        left: 40%;
         color: #2c3540;
         background-color: #efefef;
         z-index: 9999;
@@ -117,7 +117,7 @@
             left: 50%;
         }
         to {
-            left: 35%;
+            left: 40%;
         }
     }
 }
