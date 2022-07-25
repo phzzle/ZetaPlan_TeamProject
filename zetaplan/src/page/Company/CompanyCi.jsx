@@ -9,9 +9,9 @@ const CompanyCi = ({title, sub}) => {
       <CompanyHeader title={title} sub={sub} />
       <div id="SubInner">
         <section className="company-ci-section1">
-          <div className="company-ci-title-container">
-            <h2 className="detail-title">CI</h2>
-            <div className="company-ci-title-line"></div>
+          <div className="company-title-container">
+            <h2 className="company-title">CI</h2>
+            <div className="company-title-line"></div>
           </div>
         </section>
         <section className="company-ci-section2">

@@ -124,6 +124,10 @@
   margin-bottom: 10px;
 }
 
+#mnaipo-maprocess-part-select-table-none {
+  display: none;
+}
+
 @media (max-width: 765px) {
   .mnaprocess1 {
     margin-left: 20px;
@@ -132,5 +136,11 @@
   .mnaipo-maprocess-part-broker > div {
     width: 300px;
     padding-right: 20px;
+  }
+  .mnaprocess2 .mnaipo-maprocess-part-select-table {
+    display: none;
+  }
+  #mnaipo-maprocess-part-select-table-none {
+    display: block;
   }
 }
