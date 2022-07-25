@@ -381,7 +381,7 @@
   .list-view {
     display: none;
   }
-  .writeBtn {
+  . {
     bottom: 4%;
     right: 3%;
     font-size: 0.37rem;

@@ -100,9 +100,10 @@
 
 @media (max-width: 765px) {
   #ipoprocess .mnaipo-ipoprocess-section .mnaipo-ipoprocess-section-img {
-    background: url(/public/img/MnaIpo/IpoProcess/ipo\ process.png) no-repeat center / cover;
-    width: 420px;
-    height: 150px;
+    width: 280px;
+    height: 100px;
+    background-position: center;
+    background-size: cover;
   }
   .flex {
     flex-wrap: wrap;
