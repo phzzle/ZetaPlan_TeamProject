@@ -463,7 +463,7 @@ const Header = () => {
             <div className='lang-list'>
               <Link to='/' className='lang'>KOR</Link>
               <Link to='/english' className='lang'>ENG</Link>
-              <Link to='/china' className='lang'>CH</Link>
+              <Link to='/china' className='lang'>CHN</Link>
             </div>
           </button>
           <SearchForm />
