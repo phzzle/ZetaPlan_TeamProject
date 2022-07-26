@@ -78,5 +78,9 @@
         height: 150%;
     }
 
-    .network-consulting-title {}
+    #InvestEmpowerment .network-consulting .last::after {
+        position: absolute;
+        top: 75%;
+        right: 52%;
+    }
 }

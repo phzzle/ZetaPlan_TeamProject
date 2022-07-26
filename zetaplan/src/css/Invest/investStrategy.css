@@ -3,7 +3,8 @@
     text-align: center;
 }
 
-.strategy-container1 .strategy-circle1 {
+.strategy-container1 .strategy-circle1,
+.strategy-circle2 {
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -65,8 +66,19 @@
 
     }
 
+    .strategy-container1 .strategy-circle2 {
+        width: 25%;
+        height: 100%;
+        padding: 4% 0;
+        margin: 1%;
+        text-align: center;
+        line-height: 1.5;
+        font-size: 8px;
+
+    }
+
     #strategy-arrow {
         height: 10%;
-        margin-top: 3%;
+        margin-top: 5%;
     }
 }

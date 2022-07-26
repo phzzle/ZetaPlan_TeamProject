@@ -51,22 +51,22 @@ const InvestStrategy = ({ title, sub }) => {
         <section className='strategy2'>
           <h3 className='company-road-part'> 재무분석 및 투자유치 IR 컨설팅</h3>
           <div className='strategy-container1'>
-            <div className='strategy-circle1'>
+            <div className='strategy-circle2'>
               <span className='strategy-num1'>1차</span>
               <p className='strategy-des1'>예비진단</p>
             </div>
             <IoIosArrowForward id='strategy-arrow' />
-            <div className='strategy-circle1'>
+            <div className='strategy-circle2'>
               <span className='strategy-num1'>2차</span>
               <p className='strategy-des1'>재무분석</p>
             </div>
             <IoIosArrowForward id='strategy-arrow' />
-            <div className='strategy-circle1'>
+            <div className='strategy-circle2'>
               <span className='strategy-num1'>3차</span>
               <p className='strategy-des1'>투자유치준비</p>
             </div>
             <IoIosArrowForward id='strategy-arrow' />
-            <div className='strategy-circle1'>
+            <div className='strategy-circle2'>
               <span className='strategy-num1'>4차</span>
               <p className='strategy-des1'>투자유치 실행/IPO</p>
             </div>
