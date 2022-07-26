@@ -47,11 +47,11 @@
         display: none;
     }
     #MainInner {
-        width: 95%;
+        width: 85%;
         margin: 0 auto;
     }
     #SubInner {
-        width: 95%;
+        width: 90%;
         margin: auto;
         padding-bottom: 5%;
         box-sizing: border-box;
