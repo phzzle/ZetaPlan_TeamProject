@@ -10,10 +10,7 @@ const InvestStrategy = ({ title, sub }) => {
     <div id='InvestStrategy'>
       <InvestHeader title={title} sub={sub} />
       <div id='SubInner'>
-        <section className="invest-title-container">
-          <h2 className="invest-title">전략수립</h2>
-
-        </section>
+        <h2 className="detail-title">전략수립</h2>
         <section className='strategy1'>
           <h3 className='company-road-part'> 기업진단 및 기업전략 분석자문</h3>
           <div className='strategy-container1'>

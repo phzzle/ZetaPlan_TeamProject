@@ -3,8 +3,20 @@
     text-align: center;
 }
 
-.strategy-container1 .strategy-circle1,
-.strategy-circle2 {
+.strategy-container1 .strategy-circle1 {
+    width: 150px;
+    height: 140px;
+    border-radius: 50%;
+    background-color: rgba(59, 75, 89, 0.8);
+    color: #efefef;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 30px;
+}
+
+.strategy-container1 .strategy-circle2 {
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -69,7 +81,7 @@
     .strategy-container1 .strategy-circle2 {
         width: 25%;
         height: 100%;
-        padding: 4% 0;
+        padding: 5% 0;
         margin: 1%;
         text-align: center;
         line-height: 1.5;

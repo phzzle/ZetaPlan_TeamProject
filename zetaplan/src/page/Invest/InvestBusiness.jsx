@@ -32,9 +32,7 @@ const InvestBusiness = ({ title, sub }) => {
     <div id='InvestBusiness'>
       <InvestHeader title={title} sub={sub} />
       <div id='SubInner'>
-        <section className="invest-title-container">
-          <h2 className="invest-title">경영컨설팅</h2>
-        </section>
+        <h2 className="detail-title">경영컨설팅</h2>
         <nav className='detail-tab-lists'>
           {INVEST_BUSINESS_DATA.map(data => {
             return (

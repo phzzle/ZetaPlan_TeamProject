@@ -8,9 +8,7 @@ const InvestSummary = ({ title, sub }) => {
     <div id='InvestSummary'>
       <InvestHeader title={title} sub={sub} />
       <div id='SubInner'>
-        <section className="invest-title-container">
-          <h2 className="invest-title">투자IR 컨설팅 개요</h2>
-        </section>
+        <h2 className="detail-title">투자IR 컨설팅 개요</h2>
         <section className='summary'>
           <h3 className='company-road-part'>컨설팅 개요</h3>
           <span>우수한 기업의 투자IR 및 사업화 지원기관 네트워크를 통해 투자유치 희망기업의 요구에 부합하는 컨설팅 </span>
@@ -27,7 +25,7 @@ const InvestSummary = ({ title, sub }) => {
           </div>
         </section>
         <section className="invest-title-container-success">
-          <h2 className="invest-title">투자유치 성공사례</h2>
+          <h2 className="detail-title">투자유치 성공사례</h2>
         </section>
         <section className='summary'>
 

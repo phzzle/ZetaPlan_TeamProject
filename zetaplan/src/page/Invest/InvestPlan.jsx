@@ -9,10 +9,7 @@ const InvestPlan = ({ title, sub }) => {
     <div id='InvestPlan'>
       <InvestHeader title={title} sub={sub} />
       <div id='SubInner'>
-        <section className="invest-title-container">
-          <h2 className="invest-title">사업계획서/IR</h2>
-
-        </section>
+        <h2 className="detail-title">사업계획서/IR</h2>
         <div className='investplan-image-container'>
           <h2 className='company-road-part'>투자 IR 사업계획서 </h2>
           <img src="/img/Invest/plan.png" alt="" />

@@ -4,6 +4,10 @@
     align-items: center;
 }
 
+#InvestSummary .invest-title-container-success {
+    margin-bottom: 80px;
+}
+
 #InvestSummary .investsummary-image-container {
     width: 1100px;
     height: auto;

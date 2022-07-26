@@ -8,9 +8,7 @@ const InvestEmpowerment = ({ title, sub }) => {
     <div id='InvestEmpowerment'>
       <InvestHeader title={title} sub={sub} />
       <div id='SubInner'>
-        <section className="invest-title-container">
-          <h2 className="invest-title">역량강화</h2>
-        </section>
+        <h2 className="detail-title">역량강화</h2>
         <div className='image-container'>
           <img src="/img/Invest/empowerment.png" alt="" />
         </div>
@@ -37,7 +35,7 @@ const InvestEmpowerment = ({ title, sub }) => {
         </div>
       </div>
       <DetailFooter />
-    </div>
+    </div >
   );
 };
 
