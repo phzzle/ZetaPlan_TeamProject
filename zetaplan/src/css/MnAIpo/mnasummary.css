@@ -52,13 +52,11 @@
 .mnaipo-ma-part-purpose table {
   width: 80%;
   margin-top: 30px;
-  border: 1px solid #2c3540;
   text-align: left;
-  border-collapse: collapse;
 }
 .mnaipo-ma-part-purpose table th,
 .mnaipo-ma-part-purpose table td {
-  border: 2px solid #2c3540;
+  border: 1px solid #2c3540;
 }
 
 .mnaipo-ma-part-purpose table th {
