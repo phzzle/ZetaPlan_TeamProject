@@ -12,6 +12,7 @@ import MainSlide1 from './../MainSlide/MainSlide1';
 import MainSlide2 from './../MainSlide/MainSlide2';
 import MainSlide3 from './../MainSlide/MainSlide3';
 import MainSlide4 from './../MainSlide/MainSlide4';
+import SubChatBox from './../ChatBox/SubChatBox';
 
 const MainFullpage = () => {
   return (
@@ -37,7 +38,7 @@ const MainFullpage = () => {
           <SwiperSlide className='swiper-slide'><MainSlide3 /></SwiperSlide>
           <SwiperSlide className='swiper-slide'><MainSlide4 /></SwiperSlide>
         </Swiper>
-        <ChatBox />
+        <SubChatBox />
       </div>
     </div>
   );
