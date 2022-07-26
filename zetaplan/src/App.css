@@ -173,4 +173,7 @@ input {
     .fullpage-div {
         height: auto !important;
     }
+    body {
+        overflow-x: hidden;
+    }
 }

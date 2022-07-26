@@ -361,6 +361,7 @@ background-size .3s calc(.3s - var(--_s, 0s));
     }
     #Header .header-hamburger-btn {
         visibility: visible;
+        margin-left: 30px;
     }
 }
 

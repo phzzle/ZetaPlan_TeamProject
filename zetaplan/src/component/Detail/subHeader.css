@@ -197,6 +197,9 @@
     #SubHeader .company-header-nav svg {
         display: none;
     }
+    #SubHeader .company-header-nav .sub-nav-depth2-sub svg {
+        display: none;
+    }
     .sub-nav-depth2 {
         width: 100%;
     }
