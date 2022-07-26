@@ -337,6 +337,9 @@ background-size .3s calc(.3s - var(--_s, 0s));
 }
 
 @media (max-width: 765px) {
+    #Header {
+        width: 100%;
+    }
     #MainInner {
         width: 90% !important;
     }

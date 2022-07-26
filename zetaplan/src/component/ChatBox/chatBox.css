@@ -85,6 +85,8 @@
         align-items: center;
         background-color: transparent;
         box-shadow: none;
+        left: 50%;
+        transform: translateX(-50%);
     }
     #ChatBox .chatbox-title {
         display: none;
