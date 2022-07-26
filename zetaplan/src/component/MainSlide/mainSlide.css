@@ -878,9 +878,17 @@
 }
 
 @media (max-width: 765px) {
+    .main-slide-by {
+        top: 32%;
+        font-size: 16px;
+        word-break: keep-all;
+        line-height: 1.2;
+    }
     .main-slide-title {
         width: 80%;
-        font-size: 40px;
+        font-size: 36px;
+        line-height: 1.2;
+        word-break: keep-all;
     }
     .main-slide-btn {
         top: 50%;
