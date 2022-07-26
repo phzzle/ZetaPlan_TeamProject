@@ -16,3 +16,8 @@
     width: 100%;
     height: auto;
 }
+
+#FullpageMain #SubChatBox {
+    right: 40px;
+    bottom: 40px;
+}
