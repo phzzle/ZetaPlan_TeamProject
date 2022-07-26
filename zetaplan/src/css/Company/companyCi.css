@@ -29,13 +29,6 @@
 
 /* ================================ */
 
-#companyCi .company-ci-section-left {
-  font-size: 18px;
-  width: 250px;
-  margin: 50px 0 0 15px;
-  font-weight: bold;
-}
-
 .download {
   width: 250px;
   height: 40px;
@@ -79,9 +72,6 @@
 @media (max-width: 765px) {
   #companyCi .company-ci-logo-white-ul {
     margin-left: 0;
-  }
-  #companyCi .company-ci-section-left {
-    width: 70px;
   }
   #companyCi .company-ci-section2 .logo-content .logo-content-top {
     font-size: 14px;

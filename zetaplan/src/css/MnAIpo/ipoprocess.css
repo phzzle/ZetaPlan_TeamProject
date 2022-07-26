@@ -139,4 +139,7 @@
     height: 50px;
     font-size: 14px;
   }
+  #ipoprocess .mnaipo-ipoprocess-section div {
+    margin-left: 5px;
+  }
 }

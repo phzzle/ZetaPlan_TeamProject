@@ -6,7 +6,7 @@ const Footer = () => {
     <div className="footer">
       <div className="footer_wrap">
         <div className="logo"></div>
-        <div>
+        <div className="footer_padding">
           <div className="footer_paddingbtm">
             Zeta Plan Investment Co., Ltd. Copyright 2006~2020
             <br />

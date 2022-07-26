@@ -43,7 +43,9 @@
     position: relative;
     right: 25px;
   }
-
+  .footer_padding {
+    margin-right: 20px;
+  }
   .footer_paddingbtm,
   .footer_paddingbtm_center {
     margin-left: 30px;
