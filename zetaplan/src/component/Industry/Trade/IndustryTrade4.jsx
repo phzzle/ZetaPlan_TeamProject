@@ -64,7 +64,7 @@ const IndustryTrade4 = () => {
                 })}
             </ul>
             <a href="/login">
-              <button className="login-button">LogIn</button>
+              <button className="writeBtn">글쓰기</button>
             </a>
             <Pagination total={lists.length} page={page} setPage={setPage} LIST_PER_PAGE={LIST_PER_PAGE} />
           </div>

@@ -77,7 +77,6 @@ const MainFullpageNews = () => {
           <div className='board-box' data-aos='fade-up'>
             <div className='board'>
               <h3 className='news-title'>
-                {/* <FaBullhorn fill='#2C3540' size='36px' className='news-icon' /> */}
                 <p>공지사항</p>
               </h3>
               <div className='board-list'>{InvestList}</div>
@@ -88,11 +87,6 @@ const MainFullpageNews = () => {
             </div>
             <div className='board'>
               <h3 className='news-title'>
-                {/* <IoNewspaperSharp
-                  size='36px'
-                  fill='#2C3540'
-                  className='news-icon'
-                /> */}
                 <p>뉴스</p>
               </h3>
               <div className='board-list'>{newsList}</div>
@@ -104,11 +98,6 @@ const MainFullpageNews = () => {
             </div>
             <div className='board'>
               <h3 className='news-title'>
-                {/* <IoBusinessSharp
-                  size='36px'
-                  fill='#2C3540'
-                  className='news-icon'
-                /> */}
                 <p>기업지원정보</p>
               </h3>
               <div className='board-list'>{PolicyinfoList}</div>
@@ -120,11 +109,6 @@ const MainFullpageNews = () => {
 
             <div className='board'>
               <h3 className='news-title'>
-                {/* <GrDocumentPerformance
-                  fill='#2C3540'
-                  size='36px'
-                  className='news-icon'
-                /> */}
                 <p>컨설팅 실적</p>
               </h3>
               <div className='board-list'>{ConsultingList}</div>

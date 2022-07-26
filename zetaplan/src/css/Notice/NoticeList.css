@@ -201,6 +201,7 @@
 .detail-container-header-contents {
   padding: 40px 80px;
   height: auto;
+  line-height: 1.8;
 }
 .detail-sample-img {
   width: 100%;
@@ -340,7 +341,7 @@
   }
   .detail-container table th {
     font-size: 0.8rem;
-    line-height: 30px;
+    line-height: 1.8;
     margin: 0 auto;
     padding-right: 10px;
     vertical-align: middle;
@@ -394,6 +395,7 @@
   .detail-container-header-contents {
     padding: 20px 40px;
     height: auto;
+    line-height: 1.6;
   }
   .detail-container-header-author {
     font-size: 0.7rem;
