@@ -223,7 +223,7 @@
   border-radius: 0.25rem;
   color: #fff;
   background: #3b4b59;
-  font-size: 0.37rem;
+  font-size: 1rem;
 }
 /* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
 /* 뉴스탭 css */
@@ -428,7 +428,9 @@
   #NoticeInquiryDetail .detail-first-list-link {
     margin-left: 5px;
   }
-
+  .detail-first-list {
+    font-size: 0.7rem;
+  }
   /* 뉴스페이지 미디어쿼리 */
 
   .news-board-lists-link {
