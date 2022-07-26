@@ -118,4 +118,7 @@
     .login {
         width: 100%;
     }
+    .login .company-road-part::after {
+        display: none;
+    }
 }

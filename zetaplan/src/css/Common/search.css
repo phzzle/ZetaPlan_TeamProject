@@ -243,6 +243,14 @@
     }
     .auto-search-box {
         left: 16px;
-        width: 70%;
+        width: 80%;
+    }
+    .board-search-box-wrap .search-input {
+        width: 100%;
+        font-size: 14px;
+        margin: 0 10px;
+    }
+    .board-search-box-wrap .search-input::placeholder {
+        display: none;
     }
 }

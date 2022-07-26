@@ -62,7 +62,7 @@ const BoardSearch1 = () => {
   return (
     <div id="SearchForm" className='board-search-box'>
       <div className='board-search-box-wrap'>
-        <input type='text' className='search-input' name='search' placeholder='검색어를 입력하세요.'
+        <input type='text' className='search-input' name='search' placeholder='검색'
           defaultValue={inputValue} 
           onChange={handleInputChange}
           onKeyUp={handleInputChange}
