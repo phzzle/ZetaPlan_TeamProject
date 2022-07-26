@@ -223,7 +223,7 @@
   border-radius: 0.25rem;
   color: #fff;
   background: #3b4b59;
-  font-size: 0.87rem;
+  font-size: 0.37rem;
 }
 /* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
 /* 뉴스탭 css */
@@ -339,14 +339,14 @@
     display: none;
   }
   .detail-container table th {
-    font-size: 12px;
+    font-size: 0.8rem;
     line-height: 30px;
     margin: 0 auto;
     padding-right: 10px;
     vertical-align: middle;
   }
   .detail-container table td {
-    font-size: 10px;
+    font-size: 1rem;
   }
   .id-name {
     display: none;
@@ -381,7 +381,7 @@
   .list-view {
     display: none;
   }
-  . {
+  .writeBtn {
     bottom: 4%;
     right: 3%;
     font-size: 0.37rem;
@@ -395,7 +395,15 @@
     padding: 20px 40px;
     height: auto;
   }
-
+  .detail-container-header-author {
+    font-size: 0.7rem;
+  }
+  .detail-container-header-date {
+    font-size: 0.7rem;
+  }
+  .detail-container-header-view {
+    font-size: 0.7rem;
+  }
   .inquireBtn {
     bottom: 4%;
     right: 3%;
@@ -436,16 +444,16 @@
     width: 100%;
   }
   .news-list-title {
-    font-size: 17px;
+    font-size: 1.063rem;
     margin-bottom: 20px;
   }
   .news-list-content {
     width: 100%;
-    font-size: 15px;
+    font-size: 0.938rem;
     margin-bottom: 20px;
   }
   .news-list-date {
-    font-size: 15px;
+    font-size: 0.938rem;
     margin-bottom: 20px;
     color: #2c3540;
   }

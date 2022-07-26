@@ -6,9 +6,11 @@ import NoticeHeader from '../../../component/Detail/NoticeHeader';
 import '../../../css/Notice/NoticeList.css';
 import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const NoticeDetail = ({ noticeData, item }) => {
   let { id } = useParams();
+
   const showContent = (data) => {
     if (data === '이미지') {
       return (
@@ -60,20 +62,7 @@ const NoticeDetail = ({ noticeData, item }) => {
                     </td>
                   </td>
                 </tr>
-                <tr>
-                  {/*                   <Link
-                    to={'/notice/detail/'}
-                    className='detail-first-list-link'
-                  >
-                    <button className='detail-first-list'>다음</button>
-                  </Link>
-                  <Link
-                    to={'/notice/detail/'}
-                    className='detail-first-list-link'
-                  >
-                    <button className='detail-first-list'>이전</button>
-                  </Link> */}
-                </tr>
+                <tr></tr>
               </tbody>
             </table>
           </div>
