@@ -28,12 +28,12 @@ const CompanyCi = ({title, sub}) => {
           </div>
         </section>
         <section className="company-ci-section3">
-          <div className="company-ci-section-left">로고</div>
+          <div className="company-title">로고</div>
           <div className="company-ci-section-right">
             <ul className="company-ci-logo-black-ul">
               <li className="company-ci-logo-black"></li>
               <li>
-                <a href="/img/common/logo.png" download>
+                <a href="/public/img/common/logo.png" download>
                   <button className="download">(주) 제타플랜 CI Black ver 다운로드</button>
                 </a>
               </li>
@@ -41,7 +41,7 @@ const CompanyCi = ({title, sub}) => {
             <ul className="company-ci-logo-white-ul">
               <li className="company-ci-logo-white"></li>
               <li>
-                <a href="/img/common/logo_white.png" download>
+                <a href="/public/img/common/logo_white.png" download>
                   <button className="download">(주) 제타플랜 CI White ver 다운로드</button>
                 </a>
               </li>
