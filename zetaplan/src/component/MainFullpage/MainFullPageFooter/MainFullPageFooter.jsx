@@ -13,16 +13,16 @@ const MainFullPageFooter = () => {
       <Footer />
       <div className="FullPageFooter_img">
         <div id="MainInner">
-          <div className="contact">
-            <h1>
-              CONSULTING CONTACT
-              <span className="IoIosArrowDroprightCircle">
-                <a href="/notice/request">
+          <a href="/notice/request">
+            <div className="contact">
+              <h1>
+                CONSULTING CONTACT
+                <span className="IoIosArrowDroprightCircle">
                   <IoIosArrowDroprightCircle />
-                </a>
-              </span>
-            </h1>
-          </div>
+                </span>
+              </h1>
+            </div>
+          </a>
           <div className="cooperative_list">
             <div className="company_list">협력기관</div>
             <Swiper
