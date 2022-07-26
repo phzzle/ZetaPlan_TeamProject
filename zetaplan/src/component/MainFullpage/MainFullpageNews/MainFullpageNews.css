@@ -132,7 +132,10 @@
     margin-bottom: 40px;
     font-size: 24px;
   }
-  .section-title span{font-size: 24px; left: 15%;}
+  .section-title span {
+    font-size: 24px;
+    left: 15%;
+  }
   .content-box {
     width: 100%;
   }
@@ -156,8 +159,8 @@
     width: 90%;
     font-size: 1.2rem;
   }
-    .board-list {
-  text-align: left;
+  .board-list {
+    text-align: left;
   }
 
   .more-icon {

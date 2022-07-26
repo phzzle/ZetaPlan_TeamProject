@@ -23,6 +23,7 @@
   color: #2c3540;
   width: 150px;
   text-align: right;
+  vertical-align: top;
 }
 
 @media screen and (max-width: 765px) {

@@ -101,7 +101,7 @@
 .inquireBtn {
   right: 0;
   bottom: 5%;
-  padding: 7px;
+  padding: 7px 16px;
   position: absolute;
   border-radius: 0.25rem;
   color: #fff;
@@ -112,20 +112,20 @@
 
 .loginBtn {
   display: block;
-  right: 5%;
+  right: 7%;
   bottom: 5%;
-  padding: 7px;
+  padding: 7px 16px;
   position: absolute;
   border-radius: 0.25rem;
   color: #fff;
   background: #3b4b59;
-  font-size: 0.85rem;
+  font-size: 0.87rem;
 }
 
 .writeBtn {
   right: 0;
   bottom: 5%;
-  padding: 7px;
+  padding: 7px 16px;
   position: absolute;
   border-radius: 0.25rem;
   color: #fff;
@@ -212,7 +212,7 @@
   justify-content: flex-end;
 }
 .rewriteBtn {
-  padding: 7px;
+  padding: 7px 16px;
   border-radius: 0.25rem;
   color: #fff;
   background: #3b4b59;
@@ -220,11 +220,11 @@
   margin-right: 10px;
 }
 .detail-first-list {
-  padding: 7px;
+  padding: 7px 16px;
   border-radius: 0.25rem;
   color: #fff;
   background: #3b4b59;
-  font-size: 1rem;
+  font-size: 0.87rem;
 }
 /* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
 /* 뉴스탭 css */
@@ -287,7 +287,7 @@
 .news-writeBtn {
   right: 0;
   bottom: 2%;
-  padding: 7px;
+  padding: 7px 16px;
   position: absolute;
   border-radius: 0.25rem;
   color: #fff;
@@ -348,6 +348,7 @@
   }
   .detail-container table td {
     font-size: 1rem;
+    line-height: 1.6;
   }
   .id-name {
     display: none;
@@ -385,12 +386,12 @@
   .writeBtn {
     bottom: 4%;
     right: 3%;
-    font-size: 0.37rem;
+    font-size: 0.6rem;
   }
   .loginBtn {
     bottom: 4%;
-    right: 16%;
-    font-size: 0.37rem;
+    right: 22%;
+    font-size: 0.6rem;
   }
   .detail-container-header-contents {
     padding: 20px 40px;
@@ -409,10 +410,10 @@
   .inquireBtn {
     bottom: 4%;
     right: 3%;
-    font-size: 0.37rem;
+    font-size: 0.6rem;
   }
   .rewriteBtn {
-    font-size: 0.37rem;
+    font-size: 0.6rem;
     margin: 0;
   }
   #NoticeNewsDetail .detail-first-list-link {
@@ -462,9 +463,10 @@
     color: #2c3540;
   }
   .news-writeBtn {
+    padding: 7px 16px;
     bottom: 1.5%;
     right: 3%;
-    font-size: 0.37rem;
+    font-size: 0.6rem;
   }
   .news-detail-thumnail {
     width: 100%;
