@@ -55,13 +55,13 @@
   margin-bottom: 30px;
 }
 .mnaipo-maresult-part-main-left dd {
-  border: 1.5px solid #2c3540;
+  border: 1px solid #2c3540;
   padding: 10px 20px 10px;
   border-radius: 10px;
   margin-bottom: 22px;
 }
 .mnaipo-maresult-part-main-center dl {
-  border: 1.5px solid #2c3540;
+  border: 1px solid #2c3540;
   padding: 15px 15px 15px;
   border-radius: 10px;
   margin-bottom: 10px;
@@ -71,7 +71,7 @@
   margin-bottom: 5px;
 }
 .mnaipo-maresult-part-main-right dl {
-  border: 1.5px solid #2c3540;
+  border: 1px solid #2c3540;
   padding: 15px 15px 15px;
   border-radius: 10px;
 }

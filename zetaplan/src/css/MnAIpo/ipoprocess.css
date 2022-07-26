@@ -70,7 +70,7 @@
 
 .IpoProcess2 .mnaipo-ipoprocess-advice-part table {
   width: 95%;
-  border: 2px solid #2c3540;
+  border: 1px solid #2c3540;
   text-align: left;
   border-collapse: collapse;
   margin-top: 50px;
@@ -85,7 +85,7 @@
 .IpoProcess2 .mnaipo-ipoprocess-advice-part table th,
 .IpoProcess2 .mnaipo-ipoprocess-advice-part table td {
   padding: 10px;
-  border: 2px solid #2c3540;
+  border: 1px solid #2c3540;
 }
 
 .IpoProcess2 .mnaipo-ipoprocess-advice-part table tbody td ul {
