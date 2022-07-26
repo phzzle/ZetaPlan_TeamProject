@@ -10,12 +10,11 @@ const InvestProcess = ({ title, sub }) => {
       <InvestHeader title={title} sub={sub} />
       <div id='SubInner'>
         <h2 className="detail-title">투자 컨설팅 과정</h2>
-        <div className='investprocess-image-container'>
-          <img src="/img/Invest/process.png" alt="" />
+        <div className='investprocess-image-container '>
+          <img src="/img/Invest/process.png" alt="" className='first' />
         </div>
-        <section className="invest-title-container">
-          <h2 className="invest-title">제타플랜의 차별적 컨설팅</h2>
-        </section>
+        <div className='line'></div>
+        <h2 className="detail-title">제타플랜의 차별적 컨설팅</h2>
         <div className='investprocess-image-container'>
           <img src="/img/Invest/discriminatory_consulting.png" alt="" />
         </div>

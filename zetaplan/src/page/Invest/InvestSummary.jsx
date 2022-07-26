@@ -24,6 +24,7 @@ const InvestSummary = ({ title, sub }) => {
             <img src="/img/Invest/consulting_content.png" alt="" />
           </div>
         </section>
+        <div className='line'></div>
         <section className="invest-title-container-success">
           <h2 className="detail-title">투자유치 성공사례</h2>
         </section>

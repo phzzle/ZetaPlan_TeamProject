@@ -12,6 +12,10 @@
     height: 70%;
 }
 
+.first {
+    margin-bottom: 100px;
+}
+
 @media screen and (max-width: 765px) {
     #InvestProcess .investprocess-image-container {
         width: 100%;

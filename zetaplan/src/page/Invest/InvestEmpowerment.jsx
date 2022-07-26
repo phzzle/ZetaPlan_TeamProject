@@ -10,10 +10,11 @@ const InvestEmpowerment = ({ title, sub }) => {
       <div id='SubInner'>
         <h2 className="detail-title">역량강화</h2>
         <div className='image-container'>
-          <img src="/img/Invest/empowerment.png" alt="" />
+          <img src="/img/Invest/empowerment.png" alt="" className='first' />
         </div>
+        <div className='line'></div>
         <div className='network-consulting'>
-          <h2>네트워크를 활용한 컨설팅</h2>
+          <h2 className="detail-title">네트워크를 활용한 컨설팅</h2>
           <section className='network-consulting-info'>
             <h3 className='company-road-part'>네트워크를 활용한 컨설팅이란?</h3>
             <p>국내벤처캐피탈, 기술금융 투융자의 현실적 추진을 통한 투자유치 목표달성</p>
