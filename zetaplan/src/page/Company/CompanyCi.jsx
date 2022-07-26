@@ -34,7 +34,9 @@ const CompanyCi = ({title, sub}) => {
               <li className="company-ci-logo-black"></li>
               <li>
                 <a href="/public/img/common/logo.png" download>
-                  <button className="download">(주) 제타플랜 CI Black ver 다운로드</button>
+                  <button className="download">
+                    <span className="display-none">(주) 제타플랜 CI </span>Black ver 다운로드
+                  </button>
                 </a>
               </li>
             </ul>
@@ -42,7 +44,9 @@ const CompanyCi = ({title, sub}) => {
               <li className="company-ci-logo-white"></li>
               <li>
                 <a href="/public/img/common/logo_white.png" download>
-                  <button className="download">(주) 제타플랜 CI White ver 다운로드</button>
+                  <button className="download">
+                    <span className="display-none">(주) 제타플랜 CI</span> White ver 다운로드
+                  </button>
                 </a>
               </li>
             </ul>

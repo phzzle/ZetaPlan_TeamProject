@@ -48,17 +48,14 @@
 
 #companyCi .company-ci-section3 {
   border-top: 1px solid #333;
-  text-align: left;
   margin-bottom: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding-top: 50px;
 }
 
 #companyCi .company-ci-section3 .company-ci-section-right {
   margin-top: 50px;
   display: flex;
+  justify-content: center;
   text-align: center;
   flex-wrap: wrap;
 }
@@ -93,17 +90,20 @@
   #companyCi .company-ci-section2 .logo-content .logo-content-bottom {
     font-size: 10px;
   }
-
+  #companyCi .company-ci-section3 .company-ci-section-right {
+    justify-content: space-around;
+  }
   #companyCi .company-ci-section3 .company-ci-section-right .company-ci-logo-black,
   #companyCi .company-ci-section3 .company-ci-section-right .company-ci-logo-white {
-    width: 200px;
-    height: 88px;
+    width: 130px;
+    height: 55px;
   }
   .download {
-    width: 200px;
+    width: 130px;
     font-size: 11px;
   }
-  .company-ci-section-right {
-    margin-left: 30px;
+
+  .display-none {
+    display: none;
   }
 }
