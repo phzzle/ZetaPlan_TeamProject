@@ -188,6 +188,9 @@
     width: 90%;
   }
   .company-info-bg {
-    height: 400px;
+    height: 300px;
+  }
+  .company-info-bg.info-bg1, .company-info-bg.info-bg2, .company-info-bg.info-bg3, .company-info-bg.info-bg4 {
+    background-attachment: scroll;
   }
 }

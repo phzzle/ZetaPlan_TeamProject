@@ -39,7 +39,8 @@
 }
 #iporesult table th,
 #iporesult table td {
-  border: 2px solid #2c3540;
+  border: 1px solid #2c3540;
+  border-collapse: collapse;
 }
 #iporesult table th {
   text-align: center;

@@ -44,7 +44,7 @@
 
 .mnaprocess1 .mnaipo-maprocess-section .mnaipo-maprocess-part-general > div {
   display: flex;
-  border: 1.5px solid #2c3540;
+  border: 1px solid #2c3540;
   padding-bottom: 30px;
   padding-right: 30px;
 }
@@ -64,7 +64,7 @@
 
 .mnaipo-maprocess-part-broker > div {
   display: flex;
-  border: 1.5px solid #2c3540;
+  border: 1px solid #2c3540;
   padding-bottom: 30px;
   padding-right: 30px;
 }
