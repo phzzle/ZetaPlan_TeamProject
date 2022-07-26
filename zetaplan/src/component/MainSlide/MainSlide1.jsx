@@ -51,7 +51,9 @@ const MainSlide1 = () => {
           <div className='main-slide-star'></div>
         </div>
       </div>
-      <span className='main-slide-by'>ZetaPlanInvestment</span>
+      <span className='main-slide-by'>
+        기업성장의 성공 비즈니스 파트너
+      </span>
       <div className='main-slide-title'>
         <div className='main-slide-title-wrap'>
           <span>Z</span>

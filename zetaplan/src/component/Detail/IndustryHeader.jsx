@@ -11,7 +11,7 @@ const IndustryHeader = ({title, sub}) => {
       <div className='company-header-banner industry-header-banner'>
         <div className='company-header-title-wrap'>
           <h2 className='company-header-title'>Industry</h2>
-          <p className='company-header-des'>지구상의 모든 기업들의 시작과 성장과 안정을 위한 컨설팅 솔루션 제공</p>
+          <p className='company-header-des'>Successful business partner for corporate growth</p>
         </div>
         <nav className='company-header-nav'>
           <a href='/'><AiFillHome size="30px" /></a>

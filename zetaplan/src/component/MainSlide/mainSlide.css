@@ -48,6 +48,7 @@
     transform: translateX(-50%);
     color: #efefef;
     font-size: 20px;
+    text-align: center;
 }
 
 .swiper-slide-active .main-slide-by {
