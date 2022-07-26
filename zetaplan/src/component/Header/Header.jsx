@@ -23,7 +23,7 @@ const Header = () => {
           <nav className='header-nav'>
             <ul className='main-nav'>
               <li className="main-nav-list">
-                <Link to='/company' className='main-nav-list-li'>Company</Link>
+                <a href='/company' className='main-nav-list-li'>Company</a>
                 <div className='main-sub-nav'>
                   <div  className='main-sub-box'>
                     <div className='main-sub-nav-left'></div>
@@ -95,7 +95,7 @@ const Header = () => {
                 </div>
               </li>
               <li className="main-nav-list">
-                <Link to='/mna' className='main-nav-list-li'>M&A/IPO</Link>
+                <a href='/mna' className='main-nav-list-li'>M&A/IPO</a>
                 <div className='main-sub-nav'>
                   <div  className='main-sub-box'>
                     <div className='main-sub-nav-left'></div>
@@ -167,7 +167,7 @@ const Header = () => {
                 </div>
               </li>
               <li className="main-nav-list">
-                <Link to='/invest' className='main-nav-list-li'>투자/경영</Link>
+                <a href='/invest' className='main-nav-list-li'>투자/경영</a>
                 <div className='main-sub-nav'>
                   <div  className='main-sub-box'>
                     <div className='main-sub-nav-left'></div>
@@ -239,7 +239,7 @@ const Header = () => {
                 </div>
               </li>
               <li className="main-nav-list">
-                <Link to='/abroad' className='main-nav-list-li'>Abroad</Link>
+                <a href='/abroad' className='main-nav-list-li'>Abroad</a>
                 <div className='main-sub-nav'>
                   <div  className='main-sub-box'>
                     <div className='main-sub-nav-left'></div>
@@ -311,7 +311,7 @@ const Header = () => {
                 </div>
               </li>
               <li className="main-nav-list">
-                <Link to='/industry' className='main-nav-list-li'>Industry</Link>
+                <a href='/industry' className='main-nav-list-li'>Industry</a>
                 <div className='main-sub-nav'>
                   <div  className='main-sub-box'>
                     <div className='main-sub-nav-left'></div>
@@ -383,7 +383,7 @@ const Header = () => {
                 </div>
               </li>
               <li className="main-nav-list">
-                <Link to='/notice' className='main-nav-list-li'>Notice</Link>
+                <a href='/notice' className='main-nav-list-li'>Notice</a>
                 <div className='main-sub-nav'>
                   <div  className='main-sub-box'>
                     <div className='main-sub-nav-left'></div>
