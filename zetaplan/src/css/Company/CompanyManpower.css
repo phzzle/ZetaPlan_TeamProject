@@ -2,18 +2,19 @@
 
 .manpower-image {
   position: relative;
-  width: 210px;
-  height: 210px;
+  width: 230px;
+  height: 230px;
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 50%;
   overflow: hidden;
   box-shadow: 2px 2px 2px 2px rgb(184, 184, 184);
+  cursor: pointer;
 }
 
 .manpower-image-cover img {
-  width: 210px;
-  height: 210px;
+  width: 230px;
+  height: 230px;
 }
 
 /* .manpower-image-cover {
@@ -51,12 +52,12 @@
   position: absolute;
   /*   top: 95%;
   left: 73%; */
-  top: 89%;
+  top: 88%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 0.9rem;
   font-weight: 400;
-  z-index: 1;
+  z-index: 0;
   text-align: center;
   /*   color: #3b4b59; */
   background-color: #2c3540;
@@ -64,36 +65,66 @@
   width: 100%;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  padding-bottom: 7px;
+  padding: 6px;
   display: block;
 }
 .manpower-outbox {
+  /*   float: left;
+  width: 23%;
+  margin: 0 1%; */
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   row-gap: 50px;
-  column-gap: 28px;
-  justify-items: center;
+  column-gap: 90px;
+  justify-items: flex-start;
   padding-bottom: 120px;
+  /*   width: 102%;
+  margin-left: -1%;
+  position: relative; */
 }
 .manpower-box {
-  display: flex;
+  width: 230px;
+  /*   float: left;
+  width: 23%;
+  margin: 0 1%; */
+  height: auto;
+  /*   display: flex;
   row-gap: 55px;
   column-gap: 28px;
-
-  padding-bottom: 60px;
+  padding-bottom: 60px; */
 }
-
+/* .manpower-box:hover {
+  background-color: gray;
+} */
 .ex-box {
-  display: block;
+  /*   display: block; */
   /* position: absolute; */
   /*   display: none; */
-  width: 340px;
-  height: auto;
-  top: 90%;
+  /*   margin-top: 30px;
+  width: 1200px;
+  height: 250px;
   z-index: 3;
   background-color: #2c3540;
   color: #fff;
+  box-shadow: 2px 2px 2px 2px rgb(184, 184, 184); */
+}
+
+.ex-box.on {
+  display: block;
+  width: 1200px;
+  margin-top: 30px;
+  /*   margin-bottom: 357px; */
+  /*   z-index: 9999; */
+  background-color: #2c3540;
+  color: #fff;
   box-shadow: 2px 2px 2px 2px rgb(184, 184, 184);
+}
+
+.ex-box.off {
+  display: none;
+}
+.ex-box.off .manpower-box {
+  background-color: #a2a2a2;
 }
 .ex-inner-box {
   padding: 15px;
@@ -109,12 +140,17 @@
   font-size: 1.3rem;
   line-height: 1.5em;
 }
-
+.ex-name {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
 .close-icon {
-  position: absolute;
-  right: 5px;
-  top: 5px;
+  /*   position: absolute;
+  right: 9%;
+  top: 71%; */
   fill: #fff;
+  cursor: pointer;
 }
 .item-detail {
   padding-top: 10px;
