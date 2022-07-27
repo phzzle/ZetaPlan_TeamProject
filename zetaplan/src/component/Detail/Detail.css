@@ -85,10 +85,9 @@
     }
 
     #DetailFooter .footer-info {
-        height: 100%;
         font-size: 12px;
         display: flex;
-        justify-content: center;
         align-items: center;
+        padding-right: 9px;
     }
 }
