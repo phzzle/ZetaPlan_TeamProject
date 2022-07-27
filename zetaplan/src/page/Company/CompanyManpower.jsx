@@ -12,9 +12,11 @@ const CompanyManpower = ({ title, sub }) => {
       .then((response) => setList(response));
   }, []);
 
-  const manPower = list.map((item) => {
-    return <ManPowerItem key={item.id} item={item} />;
+  
+  const manPower = list.map((item, idx) => {
+    return <ManPowerItem key={item.id} item={item} idx={idx} />;
   });
+
   return (
     <div>
       <CompanyHeader title={title} sub={sub} />

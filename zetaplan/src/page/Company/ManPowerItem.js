@@ -5,12 +5,18 @@ import { useState } from 'react';
 
 const ManPowerItem = ({ item }) => {
   const [isOn, setIsOn] = useState(false);
+  const [boxMargin, setBoxMargin] = useState('0')
   const showBox = () => {
-    setIsOn((isOn) => !isOn);
+    setIsOn(true)
+    setBoxMargin('260');
   };
-  /*   console.log(item); */
+  const closeModal = () => {
+    setIsOn(!isOn);
+    setBoxMargin('0')
+  }
+
   return (
-    <ul className='manpower-box'>
+    <ul className='manpower-box' style={{marginBottom: `${boxMargin}px`}}>
       <li className='manpower-image' onClick={showBox}>
         <span className='item-name'>{item.name}</span>
         <span className='item-position'>{item.position}</span>
@@ -26,8 +32,8 @@ const ManPowerItem = ({ item }) => {
               <span className='item-name2'>{item.name}</span> &nbsp;
               <span className='item-position2'>{item.position}</span>
             </h5>
-            <button>
-              <VscClose className='close-icon' size='40px' onClick={showBox} />
+            <button onClick={closeModal}>
+              <VscClose className='close-icon' size='40px' />
             </button>
           </div>
           <div className='ex-sentence'>
