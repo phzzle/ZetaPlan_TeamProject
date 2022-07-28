@@ -7,8 +7,6 @@ import categoryData from '../../component/Notice/NoticeRequestCategoryData';
 import { handleCategoryFnc } from '../../component/Notice/noticeRequestFnc';
 import { handleInputFnc } from '../../component/Notice/noticeRequestFnc';
 import { handleChkBoxFnc } from '../../component/Notice/noticeRequestFnc';
-import { submitFnc } from '../../component/Notice/noticeRequestFnc';
-import { goBack } from '../../component/Notice/noticeRequestFnc';
 
 const NoticeRequest = ({title, sub}) => {
   const navigate = useNavigate();
@@ -33,7 +31,7 @@ const NoticeRequest = ({title, sub}) => {
     // form 제출 함수
     e.preventDefault();
     alert('작성하신 컨설팅요청이 전송되었습니다. 메인페이지로 이동합니다.');
-    // form이 처리되는 로직 추가
+    // form 처리 로직 추가
     navigate('/'); 
   }
   const goBack = () => {
