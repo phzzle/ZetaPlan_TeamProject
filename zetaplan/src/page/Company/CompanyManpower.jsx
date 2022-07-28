@@ -3,7 +3,8 @@ import DetailFooter from '../../component/Detail/DetailFooter';
 import '../../css/Company/CompanyManpower.css';
 import React, { useState, useEffect } from 'react';
 import ManPowerItem from './ManPowerItem';
-import ManpowerModal from './ManpowerModal';
+import CompanyManAcco from './CompanyManAcco';
+import { useNavigate } from 'react-router-dom';
 
 const CompanyManpower = ({ title, sub }) => {
   const [list, setList] = useState([]);
@@ -12,24 +13,6 @@ const CompanyManpower = ({ title, sub }) => {
       .then((response) => response.json())
       .then((response) => setList(response));
   }, []);
-
-  const [modalOpen, setModalOpen] = useState(false);
-  const [boxMargin, setBoxMargin] = useState('0');
-  const [contents, setContents] = useState(''); 
-  const manPower = list.map((item, idx) => {
-    return <div className='manpower-container'>
-      <ManPowerItem 
-        key={item.id} 
-        item={item}
-        boxMargin={boxMargin}
-        setContents={setContents}
-        setModalOpen={setModalOpen}
-        setBoxMargin={setBoxMargin}
-        lineNum={Math.floor(idx/4)}
-      />
-    </div>;
-  });
-  console.log(boxMargin)
 
   return (
     <div>
@@ -40,13 +23,11 @@ const CompanyManpower = ({ title, sub }) => {
           <div className='company-title-line'></div>
         </div>
         <div className='manpower-outbox'>
-          {manPower} {/* manPower.js 파일 삽입 */}
-          {contents&&<ManpowerModal 
-            contents={contents}
-            modalOpen={modalOpen}
-            setModalOpen={setModalOpen}
-            boxMargin={boxMargin}
-          />}
+          <div className='manpower-profile-wrap'>
+          {
+            list.map((ele) => <CompanyManAcco key={ele.id} item={ele} />)
+          }
+          </div>
         </div>
       </div>
       <DetailFooter />
