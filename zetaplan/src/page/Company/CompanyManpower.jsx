@@ -2,9 +2,7 @@ import CompanyHeader from '../../component/Detail/CompanyHeader';
 import DetailFooter from '../../component/Detail/DetailFooter';
 import '../../css/Company/CompanyManpower.css';
 import React, { useState, useEffect } from 'react';
-import ManPowerItem from './ManPowerItem';
 import CompanyManAcco from './CompanyManAcco';
-import { useNavigate } from 'react-router-dom';
 
 const CompanyManpower = ({ title, sub }) => {
   const [list, setList] = useState([]);
