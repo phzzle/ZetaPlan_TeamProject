@@ -107,10 +107,12 @@
     height: 220px;
    /*  display: none; */
    opacity: 0;
+   background-color: #efefef;
     box-sizing: border-box;
-    background-image: url(../../../../public/img/mainFullpage/mainFullpageInfo/infobg01.jpg);
+/*     background-image: url(../../../../public/img/mainFullpage/mainFullpageInfo/infobg01.jpg);
+
     -webkit-filter: grayscale(100%) ;
-    filter: grayscale(70%);
+    filter: grayscale(70%); */
     background-position: top;
     color: rgb(43, 53, 64);
     overflow: hidden;
