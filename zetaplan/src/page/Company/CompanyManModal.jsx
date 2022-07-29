@@ -1,8 +1,8 @@
 import React from 'react';
-import { AiOutlineCloseCircle } from "react-icons/ai";
-import './../../css/Company/companyman_accodion.css';
+import { AiOutlineCloseCircle } from 'react-icons/ai';
+import './../../css/Company/CompanyManpower.css';
 
-const CompanyManModal = ({item, onClose}) => {
+const CompanyManModal = ({ item, onClose }) => {
   const handleClose = () => {
     onClose?.();
   };
@@ -13,7 +13,12 @@ const CompanyManModal = ({item, onClose}) => {
         <div className='modal-top'>
           <h4>{item.name}</h4>
           <h6>{item.position}</h6>
-          <AiOutlineCloseCircle onClick={handleClose} fill='#fff' size="48px" />
+          <AiOutlineCloseCircle
+            className='close-button'
+            onClick={handleClose}
+            fill='#fff'
+            size='40px'
+          />
         </div>
         <div className='modal-bottom'>
           <span>{item.subposition}</span>

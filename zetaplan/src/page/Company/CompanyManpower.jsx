@@ -22,9 +22,9 @@ const CompanyManpower = ({ title, sub }) => {
         </div>
         <div className='manpower-outbox'>
           <div className='manpower-profile-wrap'>
-          {
-            list.map((ele) => <CompanyManAcco key={ele.id} item={ele} />)
-          }
+            {list.map((ele) => (
+              <CompanyManAcco key={ele.id} item={ele} />
+            ))}
           </div>
         </div>
       </div>
