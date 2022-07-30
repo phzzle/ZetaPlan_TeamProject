@@ -58,8 +58,8 @@
         color: #2c3540;
     }
     .company-road-map-wrap {
-        width: 80%;
-        height: 30%;
+        width: 100%;
+        height: 20%;
         margin: 20px 10px;
         overflow: hidden;
     }
