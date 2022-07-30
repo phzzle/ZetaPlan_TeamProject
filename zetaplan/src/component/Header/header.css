@@ -346,7 +346,7 @@ background-size .3s calc(.3s - var(--_s, 0s));
     #Header .header-left {
         display: flex;
         justify-content: flex-start;
-        margin-right: 14%;
+        margin-right: 18%;
     }
     #Header .header-nav-wrap .main-nav {
         display: none;
