@@ -1,4 +1,4 @@
-# Zetaplan Webpage Development by 3Team
+# Zetaplan Webpage Development by Team3
 >> http://zetaplan-team3.s3-website.ap-northeast-2.amazonaws.com/
 
 > Team Member
