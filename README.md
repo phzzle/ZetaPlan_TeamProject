@@ -4,6 +4,11 @@
 > Team Member
 >> 박현지. 송인지. 이현아. 전대성. 전영주. 한정아(팀장)
 
+## start
+
+* $ npm start
+* 이후 http://localhost:3000에서 접속 가능합니다.
+
 ## Color
 * #BF0628
 * #3B4B59
